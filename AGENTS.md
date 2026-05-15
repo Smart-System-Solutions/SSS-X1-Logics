@@ -111,3 +111,9 @@ Eine Aufgabe gilt als abgeschlossen, wenn:
 - kostenlos/lizenzpflichtig nicht geraten wurde,
 - README oder Changelog verständlich sind,
 - offene Punkte klar markiert sind.
+
+## Weiterentwicklung von Projektregeln
+
+Wenn im Chat eine neue wiederkehrende Regel, ein neuer Sicherheitsstandard, eine neue Arbeitsweise oder ein dauerhaft relevanter Use-Case entsteht, soll Codex aktiv fragen, ob die passende AGENTS.md ergänzt werden soll.
+
+AGENTS.md darf nur nach ausdrücklicher Freigabe geändert werden.
