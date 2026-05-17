@@ -9,6 +9,8 @@ Dieser Ordner enthält den Index für Website-Inhalte, die direkt aus dem Git-Re
 
 Die Website sollte bevorzugt `index.de.json` lesen und anschließend die referenzierten Baustein-Dateien laden.
 
+Bausteine mit Hauptversion 1 oder 2 dürfen nicht in die Website aufgenommen werden. Sie können im Repository für historische oder technische Zwecke vorhanden sein, sind aber nicht für die Website-Ausspielung bestimmt.
+
 Beim Release-Build mit Distribution kopiert `00_Dokumente\Signieren\BuildLogicPackages.ps1` die Inhalte zusätzlich nach `SSS-X1-Logics`:
 
 - `WebsiteContent/index.de.json`

@@ -27,76 +27,136 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "number",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (number)."
                    },
                    {
                        "name":  "ExceedingValue",
+                       "terms":  {
+                                     "en":  "E xc ee di ng Va l u e",
+                                     "de":  "E xc ee di ng Va l u e"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E xc ee di ng Va lu e\u0027 (number)."
+                       "description":  "Eingang für \u0027E xc ee di ng Va l u e\u0027 / \u0027E xc ee di ng Va l u e\u0027 (number)."
                    },
                    {
                        "name":  "UndercuttingValue",
+                       "terms":  {
+                                     "en":  "U nd er cu tt in gV al u e",
+                                     "de":  "U nd er cu tt in gV al u e"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027U nd er cu tt in gV al ue\u0027 (number)."
+                       "description":  "Eingang für \u0027U nd er cu tt in gV al u e\u0027 / \u0027U nd er cu tt in gV al u e\u0027 (number)."
                    },
                    {
                        "name":  "ExceedingValueHigh",
+                       "terms":  {
+                                     "en":  "E xc ee di ng Va lu eH i g h",
+                                     "de":  "E xc ee di ng Va lu eH i g h"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E xc ee di ng Va lu eH ig h\u0027 (number)."
+                       "description":  "Eingang für \u0027E xc ee di ng Va lu eH i g h\u0027 / \u0027E xc ee di ng Va lu eH i g h\u0027 (number)."
                    },
                    {
                        "name":  "ConditionValueForReset",
+                       "terms":  {
+                                     "en":  "C on di ti on Va lu eF or Re s e t",
+                                     "de":  "C on di ti on Va lu eF or Re s e t"
+                                 },
                        "type":  "number",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti on Va lu eF or Re s e t\u0027 / \u0027C on di ti on Va lu eF or Re s e t\u0027 (number)."
                    },
                    {
                        "name":  "TimeExceedingValue",
+                       "terms":  {
+                                     "en":  "T im eE xc ee di ng Va l u e",
+                                     "de":  "T im eE xc ee di ng Va l u e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eE xc ee di ng Va l u e\u0027 / \u0027T im eE xc ee di ng Va l u e\u0027 (timespan)."
                    },
                    {
                        "name":  "TimeExceedingValueHigh",
+                       "terms":  {
+                                     "en":  "T im eE xc ee di ng Va lu eH i g h",
+                                     "de":  "T im eE xc ee di ng Va lu eH i g h"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eE xc ee di ng Va lu eH i g h\u0027 / \u0027T im eE xc ee di ng Va lu eH i g h\u0027 (timespan)."
                    },
                    {
                        "name":  "TimeUndercuttingValue",
+                       "terms":  {
+                                     "en":  "T im eU nd er cu tt in gV al u e",
+                                     "de":  "T im eU nd er cu tt in gV al u e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eU nd er cu tt in gV al u e\u0027 / \u0027T im eU nd er cu tt in gV al u e\u0027 (timespan)."
                    },
                    {
                        "name":  "Reset",
+                       "terms":  {
+                                     "en":  "R es e t",
+                                     "de":  "R es e t"
+                                 },
                        "type":  "bool",
                        "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück."
                    },
                    {
                        "name":  "AlwaysReset",
+                       "terms":  {
+                                     "en":  "A lw ay sR es e t",
+                                     "de":  "A lw ay sR es e t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A lw ay sR es et\u0027 (bool)."
+                       "description":  "Eingang für \u0027A lw ay sR es e t\u0027 / \u0027A lw ay sR es e t\u0027 (bool)."
                    },
                    {
                        "name":  "TimeUndercuttingValueToEarly",
+                       "terms":  {
+                                     "en":  "T im eU nd er cu tt in gV al ue To Ea r l y",
+                                     "de":  "T im eU nd er cu tt in gV al ue To Ea r l y"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eU nd er cu tt in gV al ue To Ea r l y\u0027 / \u0027T im eU nd er cu tt in gV al ue To Ea r l y\u0027 (timespan)."
                    },
                    {
                        "name":  "StoragePath",
+                       "terms":  {
+                                     "en":  "S to ra ge Pa t h",
+                                     "de":  "S to ra ge Pa t h"
+                                 },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -104,36 +164,64 @@
     "outputs":  [
                     {
                         "name":  "ValueExceeded",
+                        "terms":  {
+                                      "en":  "V al ue Ex ce ed e d",
+                                      "de":  "V al ue Ex ce ed e d"
+                                  },
                         "type":  "bool",
-                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                        "description":  "Ausgang für \u0027V al ue Ex ce ed e d\u0027 / \u0027V al ue Ex ce ed e d\u0027 (bool)."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgain",
+                        "terms":  {
+                                      "en":  "V al ue Ex ce ed ed An dU nd er cu tA ga i n",
+                                      "de":  "V al ue Ex ce ed ed An dU nd er cu tA ga i n"
+                                  },
                         "type":  "bool",
-                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed An dU nd er cu tA ga i n\u0027 / \u0027V al ue Ex ce ed ed An dU nd er cu tA ga i n\u0027 (bool)."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgainToEarly",
+                        "terms":  {
+                                      "en":  "V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y",
+                                      "de":  "V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y"
+                                  },
                         "type":  "bool",
-                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y\u0027 / \u0027V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y\u0027 (bool)."
                     },
                     {
                         "name":  "ValueExceededButNotIncreasedHigh",
+                        "terms":  {
+                                      "en":  "V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h",
+                                      "de":  "V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h"
+                                  },
                         "type":  "bool",
-                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h\u0027 / \u0027V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

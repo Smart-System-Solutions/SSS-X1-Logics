@@ -29,101 +29,181 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "ActivateCoolingWithoutAccuDependece",
+                       "terms":  {
+                                     "en":  "A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e",
+                                     "de":  "A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e\u0027 / \u0027A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e\u0027 (bool)."
                    },
                    {
                        "name":  "ActivateCoolingOnlyWithAdditionalTemperatureInsideDependence",
+                       "terms":  {
+                                     "en":  "A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e",
+                                     "de":  "A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e\u0027 / \u0027A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e\u0027 (bool)."
                    },
                    {
                        "name":  "HeatingCooling",
+                       "terms":  {
+                                     "en":  "H ea ti ng Co ol i n g",
+                                     "de":  "H ea ti ng Co ol i n g"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027H ea ti ng Co ol in g\u0027 (bool)."
+                       "description":  "Eingang für \u0027H ea ti ng Co ol i n g\u0027 / \u0027H ea ti ng Co ol i n g\u0027 (bool)."
                    },
                    {
                        "name":  "Summer",
+                       "terms":  {
+                                     "en":  "S um m e r",
+                                     "de":  "S um m e r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um me r\u0027 (bool)."
+                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
                    },
                    {
                        "name":  "AdditionalTrigger",
+                       "terms":  {
+                                     "en":  "A dd it io na lT ri gg e r",
+                                     "de":  "A dd it io na lT ri gg e r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A dd it io na lT ri gg er\u0027 (bool)."
+                       "description":  "Eingang für \u0027A dd it io na lT ri gg e r\u0027 / \u0027A dd it io na lT ri gg e r\u0027 (bool)."
                    },
                    {
                        "name":  "Condition",
+                       "terms":  {
+                                     "en":  "C on di ti o n",
+                                     "de":  "C on di ti o n"
+                                 },
                        "type":  "bool",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti o n\u0027 / \u0027C on di ti o n\u0027 (bool)."
                    },
                    {
                        "name":  "ConditionAdditional01",
+                       "terms":  {
+                                     "en":  "C on di ti on Ad di ti on a l01",
+                                     "de":  "C on di ti on Ad di ti on a l01"
+                                 },
                        "type":  "bool",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti on Ad di ti on a l01\u0027 / \u0027C on di ti on Ad di ti on a l01\u0027 (bool)."
                    },
                    {
                        "name":  "ConditionAdditional02",
+                       "terms":  {
+                                     "en":  "C on di ti on Ad di ti on a l02",
+                                     "de":  "C on di ti on Ad di ti on a l02"
+                                 },
                        "type":  "bool",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti on Ad di ti on a l02\u0027 / \u0027C on di ti on Ad di ti on a l02\u0027 (bool)."
                    },
                    {
                        "name":  "TemperatureOutside",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re Ou ts i d e",
+                                     "de":  "T em pe ra tu re Ou ts i d e"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts i d e\u0027 / \u0027T em pe ra tu re Ou ts i d e\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureOutsideThreshold",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho l d",
+                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho l d"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureInside",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re In si d e",
+                                     "de":  "T em pe ra tu re In si d e"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re In si d e\u0027 / \u0027T em pe ra tu re In si d e\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re In si de Th re sh o l d",
+                                     "de":  "T em pe ra tu re In si de Th re sh o l d"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh o l d\u0027 / \u0027T em pe ra tu re In si de Th re sh o l d\u0027 (number)."
                    },
                    {
                        "name":  "AdditionalTemperatureInsideDependenceThreshold",
+                       "terms":  {
+                                     "en":  "A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d",
+                                     "de":  "A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d\u0027 / \u0027A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d\u0027 (number)."
                    },
                    {
                        "name":  "NumberOfAccuDependence",
+                       "terms":  {
+                                     "en":  "N um be rO fA cc uD ep en de n c e",
+                                     "de":  "N um be rO fA cc uD ep en de n c e"
+                                 },
                        "type":  "int",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027N um be rO fA cc uD ep en de n c e\u0027 / \u0027N um be rO fA cc uD ep en de n c e\u0027 (int)."
                    },
                    {
                        "name":  "AccuActual",
+                       "terms":  {
+                                     "en":  "A cc uA ct u a l",
+                                     "de":  "A cc uA ct u a l"
+                                 },
                        "type":  "number",
-                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung."
+                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
                    },
                    {
                        "name":  "AccuDependence",
+                       "terms":  {
+                                     "en":  "A cc uD ep en de n c e",
+                                     "de":  "A cc uD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027A cc uD ep en de n c e\u0027 / \u0027A cc uD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "TimeDependence",
+                       "terms":  {
+                                     "en":  "T im eD ep en de n c e",
+                                     "de":  "T im eD ep en de n c e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eD ep en de n c e\u0027 / \u0027T im eD ep en de n c e\u0027 (timespan)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -131,51 +211,91 @@
     "outputs":  [
                     {
                         "name":  "Cooling",
+                        "terms":  {
+                                      "en":  "C oo li n g",
+                                      "de":  "C oo li n g"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027C oo li ng\u0027 (bool)."
+                        "description":  "Ausgang für \u0027C oo li n g\u0027 / \u0027C oo li n g\u0027 (bool)."
                     },
                     {
                         "name":  "OperationModeCooling",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol i n g",
+                                      "de":  "O pe ra ti on Mo de Co ol i n g"
+                                  },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in g\u0027 (ByteValueObject)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol i n g\u0027 / \u0027O pe ra ti on Mo de Co ol i n g\u0027 (ByteValueObject)."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional01",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol in gA dd it io n a l01",
+                                      "de":  "O pe ra ti on Mo de Co ol in gA dd it io n a l01"
+                                  },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io na l01\u0027 (ByteValueObject)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l01\u0027 / \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l01\u0027 (ByteValueObject)."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional02",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol in gA dd it io n a l02",
+                                      "de":  "O pe ra ti on Mo de Co ol in gA dd it io n a l02"
+                                  },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io na l02\u0027 (ByteValueObject)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l02\u0027 / \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l02\u0027 (ByteValueObject)."
                     },
                     {
                         "name":  "OperationModeCoolingString",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol in gS tr i n g",
+                                      "de":  "O pe ra ti on Mo de Co ol in gS tr i n g"
+                                  },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in g\u0027 (string)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr i n g\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr i n g\u0027 (string)."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional01",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01",
+                                      "de":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01"
+                                  },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io na l01\u0027 (string)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01\u0027 (string)."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional02",
+                        "terms":  {
+                                      "en":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02",
+                                      "de":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02"
+                                  },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io na l02\u0027 (string)."
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02\u0027 (string)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

@@ -26,28 +26,48 @@
     "inputs":  [
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "string",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (string)."
                    },
                    {
                        "name":  "StringWithoutYear",
+                       "terms":  {
+                                     "en":  "S tr in gW it ho ut Ye a r",
+                                     "de":  "S tr in gW it ho ut Ye a r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S tr in gW it ho ut Ye ar\u0027 (bool)."
+                       "description":  "Eingang für \u0027S tr in gW it ho ut Ye a r\u0027 / \u0027S tr in gW it ho ut Ye a r\u0027 (bool)."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "UtcDateTime",
+                        "terms":  {
+                                      "en":  "U tc Da te Ti m e",
+                                      "de":  "U tc Da te Ti m e"
+                                  },
                         "type":  "datetime",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027U tc Da te Ti m e\u0027 / \u0027U tc Da te Ti m e\u0027 (datetime)."
                     },
                     {
                         "name":  "LocalTime",
+                        "terms":  {
+                                      "en":  "L oc al Ti m e",
+                                      "de":  "L oc al Ti m e"
+                                  },
                         "type":  "datetime",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027L oc al Ti m e\u0027 / \u0027L oc al Ti m e\u0027 (datetime)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

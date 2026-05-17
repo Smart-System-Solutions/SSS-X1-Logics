@@ -30,56 +30,100 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "TriggerReadStorage",
+                       "terms":  {
+                                     "en":  "T ri gg er Re ad St or a g e",
+                                     "de":  "T ri gg er Re ad St or a g e"
+                                 },
                        "type":  "bool",
-                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                       "description":  "Eingang für \u0027T ri gg er Re ad St or a g e\u0027 / \u0027T ri gg er Re ad St or a g e\u0027 (bool)."
                    },
                    {
                        "name":  "WriteOutputIfInputWasSet",
+                       "terms":  {
+                                     "en":  "W ri te Ou tp ut If In pu tW as S e t",
+                                     "de":  "W ri te Ou tp ut If In pu tW as S e t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027W ri te Ou tp ut If In pu tW as Se t\u0027 (bool)."
+                       "description":  "Eingang für \u0027W ri te Ou tp ut If In pu tW as S e t\u0027 / \u0027W ri te Ou tp ut If In pu tW as S e t\u0027 (bool)."
                    },
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "any",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (any)."
                    },
                    {
                        "name":  "StoragePath",
+                       "terms":  {
+                                     "en":  "S to ra ge Pa t h",
+                                     "de":  "S to ra ge Pa t h"
+                                 },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
                    },
                    {
                        "name":  "DelayAfterInitialize",
+                       "terms":  {
+                                     "en":  "D el ay Af te rI ni ti al i z e",
+                                     "de":  "D el ay Af te rI ni ti al i z e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027D el ay Af te rI ni ti al i z e\u0027 / \u0027D el ay Af te rI ni ti al i z e\u0027 (timespan)."
                    },
                    {
                        "name":  "ActivateReadStorageAfterDelay",
+                       "terms":  {
+                                     "en":  "A ct iv at eR ea dS to ra ge Af te rD el a y",
+                                     "de":  "A ct iv at eR ea dS to ra ge Af te rD el a y"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eR ea dS to ra ge Af te rD el ay\u0027 (bool)."
+                       "description":  "Eingang für \u0027A ct iv at eR ea dS to ra ge Af te rD el a y\u0027 / \u0027A ct iv at eR ea dS to ra ge Af te rD el a y\u0027 (bool)."
                    },
                    {
                        "name":  "ActivateSaveStorageInFirstRun",
+                       "terms":  {
+                                     "en":  "A ct iv at eS av eS to ra ge In Fi rs tR u n",
+                                     "de":  "A ct iv at eS av eS to ra ge In Fi rs tR u n"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eS av eS to ra ge In Fi rs tR un\u0027 (bool)."
+                       "description":  "Eingang für \u0027A ct iv at eS av eS to ra ge In Fi rs tR u n\u0027 / \u0027A ct iv at eS av eS to ra ge In Fi rs tR u n\u0027 (bool)."
                    },
                    {
                        "name":  "Type",
+                       "terms":  {
+                                     "en":  "T y p e",
+                                     "de":  "T y p e"
+                                 },
                        "type":  "string",
-                       "description":  "Eingang für \u0027T yp e\u0027 (string)."
+                       "description":  "Eingang für \u0027T y p e\u0027 / \u0027T y p e\u0027 (string)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -87,36 +131,64 @@
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "any",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
                     },
                     {
                         "name":  "OutputOnlyTrigger",
+                        "terms":  {
+                                      "en":  "O ut pu tO nl yT ri gg e r",
+                                      "de":  "O ut pu tO nl yT ri gg e r"
+                                  },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut pu tO nl yT ri gg er\u0027 (any)."
+                        "description":  "Ausgang für \u0027O ut pu tO nl yT ri gg e r\u0027 / \u0027O ut pu tO nl yT ri gg e r\u0027 (any)."
                     },
                     {
                         "name":  "OutputOnlyRestart",
+                        "terms":  {
+                                      "en":  "O ut pu tO nl yR es ta r t",
+                                      "de":  "O ut pu tO nl yR es ta r t"
+                                  },
                         "type":  "any",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027O ut pu tO nl yR es ta r t\u0027 / \u0027O ut pu tO nl yR es ta r t\u0027 (any)."
                     },
                     {
                         "name":  "OutputOnlyInput",
+                        "terms":  {
+                                      "en":  "O ut pu tO nl yI np u t",
+                                      "de":  "O ut pu tO nl yI np u t"
+                                  },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut pu tO nl yI np ut\u0027 (any)."
+                        "description":  "Ausgang für \u0027O ut pu tO nl yI np u t\u0027 / \u0027O ut pu tO nl yI np u t\u0027 (any)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

@@ -25,56 +25,100 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (bool)."
                    },
                    {
                        "name":  "ResetOutput",
+                       "terms":  {
+                                     "en":  "R es et Ou tp u t",
+                                     "de":  "R es et Ou tp u t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Ou tp ut\u0027 (bool)."
+                       "description":  "Eingang für \u0027R es et Ou tp u t\u0027 / \u0027R es et Ou tp u t\u0027 (bool)."
                    },
                    {
                        "name":  "ResetOutputIfInputIsFalse",
+                       "terms":  {
+                                     "en":  "R es et Ou tp ut If In pu tI sF al s e",
+                                     "de":  "R es et Ou tp ut If In pu tI sF al s e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Ou tp ut If In pu tI sF al se\u0027 (bool)."
+                       "description":  "Eingang für \u0027R es et Ou tp ut If In pu tI sF al s e\u0027 / \u0027R es et Ou tp ut If In pu tI sF al s e\u0027 (bool)."
                    },
                    {
                        "name":  "TakeLongTime",
+                       "terms":  {
+                                     "en":  "T ak eL on gT i m e",
+                                     "de":  "T ak eL on gT i m e"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T ak eL on gT i m e\u0027 / \u0027T ak eL on gT i m e\u0027 (bool)."
                    },
                    {
                        "name":  "TakeShortTime",
+                       "terms":  {
+                                     "en":  "T ak eS ho rt Ti m e",
+                                     "de":  "T ak eS ho rt Ti m e"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T ak eS ho rt Ti m e\u0027 / \u0027T ak eS ho rt Ti m e\u0027 (bool)."
                    },
                    {
                        "name":  "TakeShortTimeWhenLongTimeFinished",
+                       "terms":  {
+                                     "en":  "T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d",
+                                     "de":  "T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d\u0027 / \u0027T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d\u0027 (bool)."
                    },
                    {
                        "name":  "ShortTime",
+                       "terms":  {
+                                     "en":  "S ho rt Ti m e",
+                                     "de":  "S ho rt Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ho rt Ti m e\u0027 / \u0027S ho rt Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LongTime",
+                       "terms":  {
+                                     "en":  "L on gT i m e",
+                                     "de":  "L on gT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027L on gT i m e\u0027 / \u0027L on gT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -82,21 +126,37 @@
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

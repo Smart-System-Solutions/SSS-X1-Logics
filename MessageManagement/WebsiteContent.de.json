@@ -27,38 +27,66 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "SetMessage",
+                       "terms":  {
+                                     "en":  "S et Me ss a g e",
+                                     "de":  "S et Me ss a g e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Me ss ag e\u0027 (bool)."
+                       "description":  "Eingang für \u0027S et Me ss a g e\u0027 / \u0027S et Me ss a g e\u0027 (bool)."
                    },
                    {
                        "name":  "ResetMessage",
+                       "terms":  {
+                                     "en":  "R es et Me ss a g e",
+                                     "de":  "R es et Me ss a g e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Me ss ag e\u0027 (bool)."
+                       "description":  "Eingang für \u0027R es et Me ss a g e\u0027 / \u0027R es et Me ss a g e\u0027 (bool)."
                    },
                    {
                        "name":  "MessageCondition",
+                       "terms":  {
+                                     "en":  "M es sa ge Co nd it i o n",
+                                     "de":  "M es sa ge Co nd it i o n"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027M es sa ge Co nd it io n\u0027 (bool)."
+                       "description":  "Eingang für \u0027M es sa ge Co nd it i o n\u0027 / \u0027M es sa ge Co nd it i o n\u0027 (bool)."
                    },
                    {
                        "name":  "ResetMessageIfConditionFalse",
+                       "terms":  {
+                                     "en":  "R es et Me ss ag eI fC on di ti on Fa l s e",
+                                     "de":  "R es et Me ss ag eI fC on di ti on Fa l s e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Me ss ag eI fC on di ti on Fa ls e\u0027 (bool)."
+                       "description":  "Eingang für \u0027R es et Me ss ag eI fC on di ti on Fa l s e\u0027 / \u0027R es et Me ss ag eI fC on di ti on Fa l s e\u0027 (bool)."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

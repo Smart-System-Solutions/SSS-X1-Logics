@@ -32,56 +32,100 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "CurrentPower",
+                       "terms":  {
+                                     "en":  "C ur re nt Po w e r",
+                                     "de":  "C ur re nt Po w e r"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027C ur re nt Po we r\u0027 (number)."
+                       "description":  "Eingang für \u0027C ur re nt Po w e r\u0027 / \u0027C ur re nt Po w e r\u0027 (number)."
                    },
                    {
                        "name":  "Threshold",
+                       "terms":  {
+                                     "en":  "T hr es ho l d",
+                                     "de":  "T hr es ho l d"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T hr es ho ld\u0027 (number)."
+                       "description":  "Eingang für \u0027T hr es ho l d\u0027 / \u0027T hr es ho l d\u0027 (number)."
                    },
                    {
                        "name":  "CosPhi_1",
+                       "terms":  {
+                                     "en":  "C os P h i-1",
+                                     "de":  "C os P h i-1"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027C os Ph i_1\u0027 (number)."
+                       "description":  "Eingang für \u0027C os P h i-1\u0027 / \u0027C os P h i-1\u0027 (number)."
                    },
                    {
                        "name":  "CosPhi_2",
+                       "terms":  {
+                                     "en":  "C os P h i-2",
+                                     "de":  "C os P h i-2"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027C os Ph i_2\u0027 (number)."
+                       "description":  "Eingang für \u0027C os P h i-2\u0027 / \u0027C os P h i-2\u0027 (number)."
                    },
                    {
                        "name":  "UpdateTime",
+                       "terms":  {
+                                     "en":  "U pd at eT i m e",
+                                     "de":  "U pd at eT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027U pd at eT i m e\u0027 / \u0027U pd at eT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "ShortTime",
+                       "terms":  {
+                                     "en":  "S ho rt Ti m e",
+                                     "de":  "S ho rt Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ho rt Ti m e\u0027 / \u0027S ho rt Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LongTime",
+                       "terms":  {
+                                     "en":  "L on gT i m e",
+                                     "de":  "L on gT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027L on gT i m e\u0027 / \u0027L on gT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "StoragePath",
+                       "terms":  {
+                                     "en":  "S to ra ge Pa t h",
+                                     "de":  "S to ra ge Pa t h"
+                                 },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -89,81 +133,145 @@
     "outputs":  [
                     {
                         "name":  "PowerDayLongTime",
+                        "terms":  {
+                                      "en":  "P ow er Da yL on gT i m e",
+                                      "de":  "P ow er Da yL on gT i m e"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027P ow er Da yL on gT i m e\u0027 / \u0027P ow er Da yL on gT i m e\u0027 (number)."
                     },
                     {
                         "name":  "PowerDayShortTime",
+                        "terms":  {
+                                      "en":  "P ow er Da yS ho rt Ti m e",
+                                      "de":  "P ow er Da yS ho rt Ti m e"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027P ow er Da yS ho rt Ti m e\u0027 / \u0027P ow er Da yS ho rt Ti m e\u0027 (number)."
                     },
                     {
                         "name":  "CurrentPowerUpdateTime",
+                        "terms":  {
+                                      "en":  "C ur re nt Po we rU pd at eT i m e",
+                                      "de":  "C ur re nt Po we rU pd at eT i m e"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027C ur re nt Po we rU pd at eT i m e\u0027 / \u0027C ur re nt Po we rU pd at eT i m e\u0027 (number)."
                     },
                     {
                         "name":  "CurrentPowerShortTime",
+                        "terms":  {
+                                      "en":  "C ur re nt Po we rS ho rt Ti m e",
+                                      "de":  "C ur re nt Po we rS ho rt Ti m e"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027C ur re nt Po we rS ho rt Ti m e\u0027 / \u0027C ur re nt Po we rS ho rt Ti m e\u0027 (number)."
                     },
                     {
                         "name":  "CurrentPowerLongTime",
+                        "terms":  {
+                                      "en":  "C ur re nt Po we rL on gT i m e",
+                                      "de":  "C ur re nt Po we rL on gT i m e"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027C ur re nt Po we rL on gT i m e\u0027 / \u0027C ur re nt Po we rL on gT i m e\u0027 (number)."
                     },
                     {
                         "name":  "PowerTotal",
+                        "terms":  {
+                                      "en":  "P ow er To t a l",
+                                      "de":  "P ow er To t a l"
+                                  },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er To ta l\u0027 (number)."
+                        "description":  "Ausgang für \u0027P ow er To t a l\u0027 / \u0027P ow er To t a l\u0027 (number)."
                     },
                     {
                         "name":  "PowerLastDay",
+                        "terms":  {
+                                      "en":  "P ow er La st D a y",
+                                      "de":  "P ow er La st D a y"
+                                  },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La st Da y\u0027 (number)."
+                        "description":  "Ausgang für \u0027P ow er La st D a y\u0027 / \u0027P ow er La st D a y\u0027 (number)."
                     },
                     {
                         "name":  "PowerLast7Days",
+                        "terms":  {
+                                      "en":  "P ow er La s t7 Da y s",
+                                      "de":  "P ow er La s t7 Da y s"
+                                  },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La st7 Da ys\u0027 (number)."
+                        "description":  "Ausgang für \u0027P ow er La s t7 Da y s\u0027 / \u0027P ow er La s t7 Da y s\u0027 (number)."
                     },
                     {
                         "name":  "PowerLast30Days",
+                        "terms":  {
+                                      "en":  "P ow er La s t30 Da y s",
+                                      "de":  "P ow er La s t30 Da y s"
+                                  },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La st30 Da ys\u0027 (number)."
+                        "description":  "Ausgang für \u0027P ow er La s t30 Da y s\u0027 / \u0027P ow er La s t30 Da y s\u0027 (number)."
                     },
                     {
                         "name":  "PowerLast365Days",
+                        "terms":  {
+                                      "en":  "P ow er La s t365 Da y s",
+                                      "de":  "P ow er La s t365 Da y s"
+                                  },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La st365 Da ys\u0027 (number)."
+                        "description":  "Ausgang für \u0027P ow er La s t365 Da y s\u0027 / \u0027P ow er La s t365 Da y s\u0027 (number)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleUpdate",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Up da t e",
+                                      "de":  "L og Sc he du le Up da t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleShort",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Sh o r t",
+                                      "de":  "L og Sc he du le Sh o r t"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleLong",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Lo n g",
+                                      "de":  "L og Sc he du le Lo n g"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleReset",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Re s e t",
+                                      "de":  "L og Sc he du le Re s e t"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

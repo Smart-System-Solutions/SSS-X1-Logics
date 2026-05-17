@@ -27,48 +27,84 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "Delay",
+                       "terms":  {
+                                     "en":  "D el a y",
+                                     "de":  "D el a y"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027D el a y\u0027 / \u0027D el a y\u0027 (timespan)."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "LastRestartX1String",
+                        "terms":  {
+                                      "en":  "L as tR es ta r t X1 St ri n g",
+                                      "de":  "L as tR es ta r t X1 St ri n g"
+                                  },
                         "type":  "string",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027L as tR es ta r t X1 St ri n g\u0027 / \u0027L as tR es ta r t X1 St ri n g\u0027 (string)."
                     },
                     {
                         "name":  "LastTelegramX1String",
+                        "terms":  {
+                                      "en":  "L as tT el eg ra m X1 St ri n g",
+                                      "de":  "L as tT el eg ra m X1 St ri n g"
+                                  },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027L as tT el eg ra mX1 St ri ng\u0027 (string)."
+                        "description":  "Ausgang für \u0027L as tT el eg ra m X1 St ri n g\u0027 / \u0027L as tT el eg ra m X1 St ri n g\u0027 (string)."
                     },
                     {
                         "name":  "LastRestartX1",
+                        "terms":  {
+                                      "en":  "L as tR es ta r t X1",
+                                      "de":  "L as tR es ta r t X1"
+                                  },
                         "type":  "datetime",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027L as tR es ta r t X1\u0027 / \u0027L as tR es ta r t X1\u0027 (datetime)."
                     },
                     {
                         "name":  "LastTelegramX1",
+                        "terms":  {
+                                      "en":  "L as tT el eg ra m X1",
+                                      "de":  "L as tT el eg ra m X1"
+                                  },
                         "type":  "datetime",
-                        "description":  "Ausgang für \u0027L as tT el eg ra mX1\u0027 (datetime)."
+                        "description":  "Ausgang für \u0027L as tT el eg ra m X1\u0027 / \u0027L as tT el eg ra m X1\u0027 (datetime)."
                     },
                     {
                         "name":  "SDCardAvailaible",
+                        "terms":  {
+                                      "en":  "S DC ar dA va il ai b l e",
+                                      "de":  "S DC ar dA va il ai b l e"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S DC ar dA va il ai bl e\u0027 (bool)."
+                        "description":  "Ausgang für \u0027S DC ar dA va il ai b l e\u0027 / \u0027S DC ar dA va il ai b l e\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

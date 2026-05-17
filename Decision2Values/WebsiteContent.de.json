@@ -29,33 +29,57 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "TakeFirstValue",
+                       "terms":  {
+                                     "en":  "T ak eF ir st Va l u e",
+                                     "de":  "T ak eF ir st Va l u e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eF ir st Va lu e\u0027 (bool)."
+                       "description":  "Eingang für \u0027T ak eF ir st Va l u e\u0027 / \u0027T ak eF ir st Va l u e\u0027 (bool)."
                    },
                    {
                        "name":  "Value1",
+                       "terms":  {
+                                     "en":  "V al u e1",
+                                     "de":  "V al u e1"
+                                 },
                        "type":  "any",
-                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                       "description":  "Eingang für \u0027V al u e1\u0027 / \u0027V al u e1\u0027 (any)."
                    },
                    {
                        "name":  "Value2",
+                       "terms":  {
+                                     "en":  "V al u e2",
+                                     "de":  "V al u e2"
+                                 },
                        "type":  "any",
-                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                       "description":  "Eingang für \u0027V al u e2\u0027 / \u0027V al u e2\u0027 (any)."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "any",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

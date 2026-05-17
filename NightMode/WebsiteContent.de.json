@@ -28,61 +28,109 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "NightModeActive",
+                       "terms":  {
+                                     "en":  "N ig ht Mo de Ac ti v e",
+                                     "de":  "N ig ht Mo de Ac ti v e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027N ig ht Mo de Ac ti ve\u0027 (bool)."
+                       "description":  "Eingang für \u0027N ig ht Mo de Ac ti v e\u0027 / \u0027N ig ht Mo de Ac ti v e\u0027 (bool)."
                    },
                    {
                        "name":  "SkipFirstNightModeTrigger",
+                       "terms":  {
+                                     "en":  "S ki pF ir st Ni gh tM od eT ri gg e r",
+                                     "de":  "S ki pF ir st Ni gh tM od eT ri gg e r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S ki pF ir st Ni gh tM od eT ri gg er\u0027 (bool)."
+                       "description":  "Eingang für \u0027S ki pF ir st Ni gh tM od eT ri gg e r\u0027 / \u0027S ki pF ir st Ni gh tM od eT ri gg e r\u0027 (bool)."
                    },
                    {
                        "name":  "NumberOfBlinds",
+                       "terms":  {
+                                     "en":  "N um be rO fB li n d s",
+                                     "de":  "N um be rO fB li n d s"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fB li n d s\u0027 / \u0027N um be rO fB li n d s\u0027 (int)."
                    },
                    {
                        "name":  "DeactivateBlindsOn",
+                       "terms":  {
+                                     "en":  "D ea ct iv at eB li nd s O n",
+                                     "de":  "D ea ct iv at eB li nd s O n"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO n\u0027 (bool)."
+                       "description":  "Eingang für \u0027D ea ct iv at eB li nd s O n\u0027 / \u0027D ea ct iv at eB li nd s O n\u0027 (bool)."
                    },
                    {
                        "name":  "DeactivateBlindsOff",
+                       "terms":  {
+                                     "en":  "D ea ct iv at eB li nd sO f f",
+                                     "de":  "D ea ct iv at eB li nd sO f f"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO ff\u0027 (bool)."
+                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO f f\u0027 / \u0027D ea ct iv at eB li nd sO f f\u0027 (bool)."
                    },
                    {
                        "name":  "BlindsOnStartTime",
+                       "terms":  {
+                                     "en":  "B li nd sO nS ta rt Ti m e",
+                                     "de":  "B li nd sO nS ta rt Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027B li nd sO nS ta rt Ti m e\u0027 / \u0027B li nd sO nS ta rt Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "BlindsOnEndTime",
+                       "terms":  {
+                                     "en":  "B li nd sO nE nd Ti m e",
+                                     "de":  "B li nd sO nE nd Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027B li nd sO nE nd Ti m e\u0027 / \u0027B li nd sO nE nd Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "BlindsOffStartTime",
+                       "terms":  {
+                                     "en":  "B li nd sO ff St ar tT i m e",
+                                     "de":  "B li nd sO ff St ar tT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027B li nd sO ff St ar tT i m e\u0027 / \u0027B li nd sO ff St ar tT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "BlindsOffEndTime",
+                       "terms":  {
+                                     "en":  "B li nd sO ff En dT i m e",
+                                     "de":  "B li nd sO ff En dT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027B li nd sO ff En dT i m e\u0027 / \u0027B li nd sO ff En dT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -90,36 +138,64 @@
     "outputs":  [
                     {
                         "name":  "Blinds",
+                        "terms":  {
+                                      "en":  "B li n d s",
+                                      "de":  "B li n d s"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027B li nd s\u0027 (bool)."
+                        "description":  "Ausgang für \u0027B li n d s\u0027 / \u0027B li n d s\u0027 (bool)."
                     },
                     {
                         "name":  "NightModeOnSetTrue",
+                        "terms":  {
+                                      "en":  "N ig ht Mo de On Se tT r u e",
+                                      "de":  "N ig ht Mo de On Se tT r u e"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tT ru e\u0027 (bool)."
+                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tT r u e\u0027 / \u0027N ig ht Mo de On Se tT r u e\u0027 (bool)."
                     },
                     {
                         "name":  "NightModeOnSetFalse",
+                        "terms":  {
+                                      "en":  "N ig ht Mo de On Se tF al s e",
+                                      "de":  "N ig ht Mo de On Se tF al s e"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tF al se\u0027 (bool)."
+                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tF al s e\u0027 / \u0027N ig ht Mo de On Se tF al s e\u0027 (bool)."
                     },
                     {
                         "name":  "NightModeOffSetTrue",
+                        "terms":  {
+                                      "en":  "N ig ht Mo de Of fS et Tr u e",
+                                      "de":  "N ig ht Mo de Of fS et Tr u e"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Tr ue\u0027 (bool)."
+                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Tr u e\u0027 / \u0027N ig ht Mo de Of fS et Tr u e\u0027 (bool)."
                     },
                     {
                         "name":  "NightModeOffSetFalse",
+                        "terms":  {
+                                      "en":  "N ig ht Mo de Of fS et Fa l s e",
+                                      "de":  "N ig ht Mo de Of fS et Fa l s e"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Fa ls e\u0027 (bool)."
+                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Fa l s e\u0027 / \u0027N ig ht Mo de Of fS et Fa l s e\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

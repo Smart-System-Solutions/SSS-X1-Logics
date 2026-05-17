@@ -30,26 +30,6 @@
         "websiteUrl":  "https://smart-system-solutions.de/accumanageheating/"
     },
     {
-        "project":  "LogicAlarm",
-        "component":  "Alarm",
-        "slug":  "alarm",
-        "title":  "Alarm",
-        "version":  "1.0.3",
-        "contentPath":  "Alarm/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/alarm/"
-    },
-    {
-        "project":  "LogicAverage",
-        "component":  "Average",
-        "slug":  "average",
-        "title":  "Durchschnitt",
-        "version":  "2.0.24",
-        "contentPath":  "Average/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/average/"
-    },
-    {
         "project":  "LogicBlockTelegrams",
         "component":  "BlockTelegrams",
         "slug":  "blocktelegrams",
@@ -80,16 +60,6 @@
         "websiteUrl":  "https://smart-system-solutions.de/calculateenergy/"
     },
     {
-        "project":  "LogicCalculateEnergyHeatingPump",
-        "component":  "CalculateEnergyHeatingPump",
-        "slug":  "calculateenergyheatingpump",
-        "title":  "Leistung von Wärmepumpe berechnen",
-        "version":  "1.0.11",
-        "contentPath":  "CalculateEnergyHeatingPump/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/calculateenergyheatingpump/"
-    },
-    {
         "project":  "LogicCalculateEnergyLamps",
         "component":  "CalculateEnergyLamps",
         "slug":  "calculateenergylamps",
@@ -98,16 +68,6 @@
         "contentPath":  "CalculateEnergyLamps/WebsiteContent.de.json",
         "sourceStatus":  "website-adapted",
         "websiteUrl":  "https://smart-system-solutions.de/calculateenergylamps/"
-    },
-    {
-        "project":  "LogicCompareDateTime",
-        "component":  "CompareDateTime",
-        "slug":  "comparedatetime",
-        "title":  "Vergleiche - DateTime",
-        "version":  "1.0.3",
-        "contentPath":  "CompareDateTime/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/comparedatetime/"
     },
     {
         "project":  "LogicComputerManagement",
@@ -170,46 +130,6 @@
         "websiteUrl":  "https://smart-system-solutions.de/decision4values/"
     },
     {
-        "project":  "LogicEnergyForecast",
-        "component":  "EnergyForecast",
-        "slug":  "energyforecast",
-        "title":  "Energievorhersage",
-        "version":  "1.0.3",
-        "contentPath":  "EnergyForecast/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/energyforecast/"
-    },
-    {
-        "project":  "LogicEnergyMediator",
-        "component":  "EnergyMediator",
-        "slug":  "energymediator",
-        "title":  "Energie Mediator",
-        "version":  "1.0.5",
-        "contentPath":  "EnergyMediator/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/energymediator/"
-    },
-    {
-        "project":  "LogicHeating",
-        "component":  "Heating",
-        "slug":  "heating",
-        "title":  "Heizung",
-        "version":  "1.0.3",
-        "contentPath":  "Heating/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/heating/"
-    },
-    {
-        "project":  "LogicHomeHolidayMode",
-        "component":  "HomeHolidayMode",
-        "slug":  "homeholidaymode",
-        "title":  "Zuhause-Urlaubs-Modus",
-        "version":  "2.0.46",
-        "contentPath":  "HomeHolidayMode/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/homeholidaymode/"
-    },
-    {
         "project":  "LogicInfo",
         "component":  "Info",
         "slug":  "info",
@@ -218,36 +138,6 @@
         "contentPath":  "Info/WebsiteContent.de.json",
         "sourceStatus":  "website-adapted",
         "websiteUrl":  "https://smart-system-solutions.de/info/"
-    },
-    {
-        "project":  "LogicManageAccu",
-        "component":  "ManageAccu",
-        "slug":  "manageaccu",
-        "title":  "Manage Akku",
-        "version":  "1.0.3",
-        "contentPath":  "ManageAccu/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/manageaccu/"
-    },
-    {
-        "project":  "LogicManageCar",
-        "component":  "ManageCar",
-        "slug":  "managecar",
-        "title":  "Manage Auto",
-        "version":  "1.0.3",
-        "contentPath":  "ManageCar/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/managecar/"
-    },
-    {
-        "project":  "LogicManageDevices",
-        "component":  "ManageDevices",
-        "slug":  "managedevices",
-        "title":  "Manage Geräte",
-        "version":  "1.0.3",
-        "contentPath":  "ManageDevices/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/managedevices/"
     },
     {
         "project":  "LogicMessageManagement",
@@ -300,36 +190,6 @@
         "websiteUrl":  "https://smart-system-solutions.de/ondelay/"
     },
     {
-        "project":  "LogicPingDevice",
-        "component":  "PingDevice",
-        "slug":  "pingdevice",
-        "title":  "Ping",
-        "version":  "2.0.18",
-        "contentPath":  "PingDevice/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/pingdevice/"
-    },
-    {
-        "project":  "LogicPresenceMode",
-        "component":  "PresenceMode",
-        "slug":  "presencemode",
-        "title":  "Anwesenheitsmodus",
-        "version":  "1.0.4",
-        "contentPath":  "PresenceMode/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/presencemode/"
-    },
-    {
-        "project":  "LogicReadInfluxDB",
-        "component":  "ReadInfluxDB",
-        "slug":  "readinfluxdb",
-        "title":  "Lese InfluxDB",
-        "version":  "2.0.7",
-        "contentPath":  "ReadInfluxDB/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/readinfluxdb/"
-    },
-    {
         "project":  "LogicReleaseBlindTracking",
         "component":  "ReleaseBlindTracking",
         "slug":  "releaseblindtracking",
@@ -348,16 +208,6 @@
         "contentPath":  "ResetAtMidnight/WebsiteContent.de.json",
         "sourceStatus":  "website-adapted",
         "websiteUrl":  "https://smart-system-solutions.de/resetatmidnight/"
-    },
-    {
-        "project":  "LogicRound",
-        "component":  "Round",
-        "slug":  "round",
-        "title":  "Runden",
-        "version":  "1.0.3",
-        "contentPath":  "Round/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/round/"
     },
     {
         "project":  "LogicSaveAndLoadValues",
@@ -508,15 +358,5 @@
         "contentPath":  "WaitAfterInitialize/WebsiteContent.de.json",
         "sourceStatus":  "website-adapted",
         "websiteUrl":  "https://smart-system-solutions.de/waitafterinitialize/"
-    },
-    {
-        "project":  "LogicWaterTemperature",
-        "component":  "WaterTemperature",
-        "slug":  "watertemperature",
-        "title":  "Wassertemperatur",
-        "version":  "1.0.47",
-        "contentPath":  "WaterTemperature/WebsiteContent.de.json",
-        "sourceStatus":  "generated",
-        "websiteUrl":  "https://smart-system-solutions.de/watertemperature/"
     }
 ]

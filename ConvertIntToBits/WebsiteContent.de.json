@@ -26,23 +26,39 @@
     "inputs":  [
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "int",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (int)."
                    },
                    {
                        "name":  "NumberOfOutputs",
+                       "terms":  {
+                                     "en":  "N um be rO fO ut pu t s",
+                                     "de":  "N um be rO fO ut pu t s"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fO ut pu t s\u0027 / \u0027N um be rO fO ut pu t s\u0027 (int)."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

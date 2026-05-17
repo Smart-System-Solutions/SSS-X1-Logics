@@ -29,191 +29,343 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "BlindTrackingManual",
+                       "terms":  {
+                                     "en":  "B li nd Tr ac ki ng Ma nu a l",
+                                     "de":  "B li nd Tr ac ki ng Ma nu a l"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Ma nu al\u0027 (bool)."
+                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Ma nu a l\u0027 / \u0027B li nd Tr ac ki ng Ma nu a l\u0027 (bool)."
                    },
                    {
                        "name":  "BlindTrackingAutomatic",
+                       "terms":  {
+                                     "en":  "B li nd Tr ac ki ng Au to ma t i c",
+                                     "de":  "B li nd Tr ac ki ng Au to ma t i c"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Au to ma ti c\u0027 (bool)."
+                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Au to ma t i c\u0027 / \u0027B li nd Tr ac ki ng Au to ma t i c\u0027 (bool)."
                    },
                    {
                        "name":  "Summer",
+                       "terms":  {
+                                     "en":  "S um m e r",
+                                     "de":  "S um m e r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um me r\u0027 (bool)."
+                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
                    },
                    {
                        "name":  "Rain",
+                       "terms":  {
+                                     "en":  "R a i n",
+                                     "de":  "R a i n"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R ai n\u0027 (bool)."
+                       "description":  "Eingang für \u0027R a i n\u0027 / \u0027R a i n\u0027 (bool)."
                    },
                    {
                        "name":  "Day",
+                       "terms":  {
+                                     "en":  "D a y",
+                                     "de":  "D a y"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ay\u0027 (bool)."
+                       "description":  "Eingang für \u0027D a y\u0027 / \u0027D a y\u0027 (bool)."
                    },
                    {
                        "name":  "Holiday",
+                       "terms":  {
+                                     "en":  "H ol id a y",
+                                     "de":  "H ol id a y"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027H ol id ay\u0027 (bool)."
+                       "description":  "Eingang für \u0027H ol id a y\u0027 / \u0027H ol id a y\u0027 (bool)."
                    },
                    {
                        "name":  "WindToHigh",
+                       "terms":  {
+                                     "en":  "W in dT oH i g h",
+                                     "de":  "W in dT oH i g h"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027W in dT oH ig h\u0027 (bool)."
+                       "description":  "Eingang für \u0027W in dT oH i g h\u0027 / \u0027W in dT oH i g h\u0027 (bool)."
                    },
                    {
                        "name":  "Storm",
+                       "terms":  {
+                                     "en":  "S to r m",
+                                     "de":  "S to r m"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S to rm\u0027 (bool)."
+                       "description":  "Eingang für \u0027S to r m\u0027 / \u0027S to r m\u0027 (bool)."
                    },
                    {
                        "name":  "TemperatureInside",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re In si d e",
+                                     "de":  "T em pe ra tu re In si d e"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re In si d e\u0027 / \u0027T em pe ra tu re In si d e\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureOutside",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re Ou ts i d e",
+                                     "de":  "T em pe ra tu re Ou ts i d e"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts i d e\u0027 / \u0027T em pe ra tu re Ou ts i d e\u0027 (number)."
                    },
                    {
                        "name":  "BrightnessOutside",
+                       "terms":  {
+                                     "en":  "B ri gh tn es sO ut si d e",
+                                     "de":  "B ri gh tn es sO ut si d e"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sO ut si de\u0027 (number)."
+                       "description":  "Eingang für \u0027B ri gh tn es sO ut si d e\u0027 / \u0027B ri gh tn es sO ut si d e\u0027 (number)."
                    },
                    {
                        "name":  "Azimut",
+                       "terms":  {
+                                     "en":  "A zi m u t",
+                                     "de":  "A zi m u t"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A zi mu t\u0027 (number)."
+                       "description":  "Eingang für \u0027A zi m u t\u0027 / \u0027A zi m u t\u0027 (number)."
                    },
                    {
                        "name":  "StartBrightnessThresholdAlways",
+                       "terms":  {
+                                     "en":  "S ta rt Br ig ht ne ss Th re sh ol dA lw a y s",
+                                     "de":  "S ta rt Br ig ht ne ss Th re sh ol dA lw a y s"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Th re sh ol dA lw a y s\u0027 / \u0027S ta rt Br ig ht ne ss Th re sh ol dA lw a y s\u0027 (number)."
                    },
                    {
                        "name":  "EndBrightnessThresholdAlways",
+                       "terms":  {
+                                     "en":  "E nd Br ig ht ne ss Th re sh ol dA lw a y s",
+                                     "de":  "E nd Br ig ht ne ss Th re sh ol dA lw a y s"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027E nd Br ig ht ne ss Th re sh ol dA lw a y s\u0027 / \u0027E nd Br ig ht ne ss Th re sh ol dA lw a y s\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re In si de Th re sh o l d",
+                                     "de":  "T em pe ra tu re In si de Th re sh o l d"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh o l d\u0027 / \u0027T em pe ra tu re In si de Th re sh o l d\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureInsideThresholdAlways",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re In si de Th re sh ol dA lw a y s",
+                                     "de":  "T em pe ra tu re In si de Th re sh ol dA lw a y s"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh ol dA lw a y s\u0027 / \u0027T em pe ra tu re In si de Th re sh ol dA lw a y s\u0027 (number)."
                    },
                    {
                        "name":  "StartAzimutAlways",
+                       "terms":  {
+                                     "en":  "S ta rt Az im ut Al wa y s",
+                                     "de":  "S ta rt Az im ut Al wa y s"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Az im ut Al wa y s\u0027 / \u0027S ta rt Az im ut Al wa y s\u0027 (number)."
                    },
                    {
                        "name":  "EndAzimutAlways",
+                       "terms":  {
+                                     "en":  "E nd Az im ut Al wa y s",
+                                     "de":  "E nd Az im ut Al wa y s"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027E nd Az im ut Al wa y s\u0027 / \u0027E nd Az im ut Al wa y s\u0027 (number)."
                    },
                    {
                        "name":  "NumberOfStartDependence",
+                       "terms":  {
+                                     "en":  "N um be rO fS ta rt De pe nd en c e",
+                                     "de":  "N um be rO fS ta rt De pe nd en c e"
+                                 },
                        "type":  "int",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027N um be rO fS ta rt De pe nd en c e\u0027 / \u0027N um be rO fS ta rt De pe nd en c e\u0027 (int)."
                    },
                    {
                        "name":  "StartTemperatureOutsideThresholdDependence",
+                       "terms":  {
+                                     "en":  "S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e",
+                                     "de":  "S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 / \u0027S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "StartBrightnessOutsideDependence",
+                       "terms":  {
+                                     "en":  "S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e",
+                                     "de":  "S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e\u0027 / \u0027S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "StartBrightnessOutsideThresholdDependence",
+                       "terms":  {
+                                     "en":  "S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e",
+                                     "de":  "S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e\u0027 / \u0027S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e\u0027 (number)."
                    },
                    {
                        "name":  "StartAzimutThresholdDependence",
+                       "terms":  {
+                                     "en":  "S ta rt Az im ut Th re sh ol dD ep en de n c e",
+                                     "de":  "S ta rt Az im ut Th re sh ol dD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Az im ut Th re sh ol dD ep en de n c e\u0027 / \u0027S ta rt Az im ut Th re sh ol dD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "NumberOfEndDependence",
+                       "terms":  {
+                                     "en":  "N um be rO fE nd De pe nd en c e",
+                                     "de":  "N um be rO fE nd De pe nd en c e"
+                                 },
                        "type":  "int",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027N um be rO fE nd De pe nd en c e\u0027 / \u0027N um be rO fE nd De pe nd en c e\u0027 (int)."
                    },
                    {
                        "name":  "EndAzimutThresholdDependence",
+                       "terms":  {
+                                     "en":  "E nd Az im ut Th re sh ol dD ep en de n c e",
+                                     "de":  "E nd Az im ut Th re sh ol dD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027E nd Az im ut Th re sh ol dD ep en de n c e\u0027 / \u0027E nd Az im ut Th re sh ol dD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "EndTemperatureOutsideThresholdDependence",
+                       "terms":  {
+                                     "en":  "E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e",
+                                     "de":  "E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e"
+                                 },
                        "type":  "number",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 / \u0027E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 (number)."
                    },
                    {
                        "name":  "DelayThreshold",
+                       "terms":  {
+                                     "en":  "D el ay Th re sh o l d",
+                                     "de":  "D el ay Th re sh o l d"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027D el ay Th re sh o l d\u0027 / \u0027D el ay Th re sh o l d\u0027 (timespan)."
                    },
                    {
                        "name":  "DelayCycle",
+                       "terms":  {
+                                     "en":  "D el ay Cy c l e",
+                                     "de":  "D el ay Cy c l e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027D el ay Cy c l e\u0027 / \u0027D el ay Cy c l e\u0027 (timespan)."
                    },
                    {
                        "name":  "ResetManualWasSetAfterTime",
+                       "terms":  {
+                                     "en":  "R es et Ma nu al Wa sS et Af te rT i m e",
+                                     "de":  "R es et Ma nu al Wa sS et Af te rT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027R es et Ma nu al Wa sS et Af te rT i m e\u0027 / \u0027R es et Ma nu al Wa sS et Af te rT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "HolidayBlindDown",
+                       "terms":  {
+                                     "en":  "H ol id ay Bl in dD o w n",
+                                     "de":  "H ol id ay Bl in dD o w n"
+                                 },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027H ol id ay Bl in dD ow n\u0027 (timespan)."
+                       "description":  "Eingang für \u0027H ol id ay Bl in dD o w n\u0027 / \u0027H ol id ay Bl in dD o w n\u0027 (timespan)."
                    },
                    {
                        "name":  "HolidayBlindUp",
+                       "terms":  {
+                                     "en":  "H ol id ay Bl in d U p",
+                                     "de":  "H ol id ay Bl in d U p"
+                                 },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027H ol id ay Bl in dU p\u0027 (timespan)."
+                       "description":  "Eingang für \u0027H ol id ay Bl in d U p\u0027 / \u0027H ol id ay Bl in d U p\u0027 (timespan)."
                    },
                    {
                        "name":  "TemperatureOutsideThreshold",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho l d",
+                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho l d"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 (number)."
                    },
                    {
                        "name":  "TemperatureOutsideThresholdAlways",
+                       "terms":  {
+                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s",
+                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s"
+                                 },
                        "type":  "number",
-                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s\u0027 (number)."
                    },
                    {
                        "name":  "BrightnessTemperatureThreshold",
+                       "terms":  {
+                                     "en":  "B ri gh tn es sT em pe ra tu re Th re sh o l d",
+                                     "de":  "B ri gh tn es sT em pe ra tu re Th re sh o l d"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sT em pe ra tu re Th re sh ol d\u0027 (number)."
+                       "description":  "Eingang für \u0027B ri gh tn es sT em pe ra tu re Th re sh o l d\u0027 / \u0027B ri gh tn es sT em pe ra tu re Th re sh o l d\u0027 (number)."
                    },
                    {
                        "name":  "BrightnessOutsideThreshold",
+                       "terms":  {
+                                     "en":  "B ri gh tn es sO ut si de Th re sh o l d",
+                                     "de":  "B ri gh tn es sO ut si de Th re sh o l d"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sO ut si de Th re sh ol d\u0027 (number)."
+                       "description":  "Eingang für \u0027B ri gh tn es sO ut si de Th re sh o l d\u0027 / \u0027B ri gh tn es sO ut si de Th re sh o l d\u0027 (number)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -221,41 +373,73 @@
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "OutputBlindStorm",
+                        "terms":  {
+                                      "en":  "O ut pu tB li nd St o r m",
+                                      "de":  "O ut pu tB li nd St o r m"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut pu tB li nd St or m\u0027 (bool)."
+                        "description":  "Ausgang für \u0027O ut pu tB li nd St o r m\u0027 / \u0027O ut pu tB li nd St o r m\u0027 (bool)."
                     },
                     {
                         "name":  "OutputBlindHoliday",
+                        "terms":  {
+                                      "en":  "O ut pu tB li nd Ho li d a y",
+                                      "de":  "O ut pu tB li nd Ho li d a y"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut pu tB li nd Ho li da y\u0027 (bool)."
+                        "description":  "Ausgang für \u0027O ut pu tB li nd Ho li d a y\u0027 / \u0027O ut pu tB li nd Ho li d a y\u0027 (bool)."
                     },
                     {
                         "name":  "ReleaseStartedThisDay",
+                        "terms":  {
+                                      "en":  "R el ea se St ar te dT hi sD a y",
+                                      "de":  "R el ea se St ar te dT hi sD a y"
+                                  },
                         "type":  "bool",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027R el ea se St ar te dT hi sD a y\u0027 / \u0027R el ea se St ar te dT hi sD a y\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleCycle",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Cy c l e",
+                                      "de":  "L og Sc he du le Cy c l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogScheduleHour",
+                        "terms":  {
+                                      "en":  "L og Sc he du le Ho u r",
+                                      "de":  "L og Sc he du le Ho u r"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

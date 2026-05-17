@@ -25,56 +25,100 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "ActivateResetWithTime",
+                       "terms":  {
+                                     "en":  "A ct iv at eR es et Wi th Ti m e",
+                                     "de":  "A ct iv at eR es et Wi th Ti m e"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027A ct iv at eR es et Wi th Ti m e\u0027 / \u0027A ct iv at eR es et Wi th Ti m e\u0027 (bool)."
                    },
                    {
                        "name":  "OnlyActOnTrue",
+                       "terms":  {
+                                     "en":  "O nl yA ct On Tr u e",
+                                     "de":  "O nl yA ct On Tr u e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027O nl yA ct On Tr ue\u0027 (bool)."
+                       "description":  "Eingang für \u0027O nl yA ct On Tr u e\u0027 / \u0027O nl yA ct On Tr u e\u0027 (bool)."
                    },
                    {
                        "name":  "ResetIfWrongSequence",
+                       "terms":  {
+                                     "en":  "R es et If Wr on gS eq ue n c e",
+                                     "de":  "R es et If Wr on gS eq ue n c e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et If Wr on gS eq ue nc e\u0027 (bool)."
+                       "description":  "Eingang für \u0027R es et If Wr on gS eq ue n c e\u0027 / \u0027R es et If Wr on gS eq ue n c e\u0027 (bool)."
                    },
                    {
                        "name":  "SetFalseToOutputIfReset",
+                       "terms":  {
+                                     "en":  "S et Fa ls eT oO ut pu tI fR es e t",
+                                     "de":  "S et Fa ls eT oO ut pu tI fR es e t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Fa ls eT oO ut pu tI fR es et\u0027 (bool)."
+                       "description":  "Eingang für \u0027S et Fa ls eT oO ut pu tI fR es e t\u0027 / \u0027S et Fa ls eT oO ut pu tI fR es e t\u0027 (bool)."
                    },
                    {
                        "name":  "NumberOfInputs",
+                       "terms":  {
+                                     "en":  "N um be rO fI np u t s",
+                                     "de":  "N um be rO fI np u t s"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fI np u t s\u0027 / \u0027N um be rO fI np u t s\u0027 (int)."
                    },
                    {
                        "name":  "Inputs",
+                       "terms":  {
+                                     "en":  "I np u t s",
+                                     "de":  "I np u t s"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np ut s\u0027 (bool)."
+                       "description":  "Eingang für \u0027I np u t s\u0027 / \u0027I np u t s\u0027 (bool)."
                    },
                    {
                        "name":  "Reset",
+                       "terms":  {
+                                     "en":  "R es e t",
+                                     "de":  "R es e t"
+                                 },
                        "type":  "bool",
                        "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück."
                    },
                    {
                        "name":  "ResetTime",
+                       "terms":  {
+                                     "en":  "R es et Ti m e",
+                                     "de":  "R es et Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027R es et Ti m e\u0027 / \u0027R es et Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -82,21 +126,37 @@
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

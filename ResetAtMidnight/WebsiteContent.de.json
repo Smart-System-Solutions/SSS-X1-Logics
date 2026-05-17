@@ -33,46 +33,82 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "Input",
+                       "terms":  {
+                                     "en":  "I np u t",
+                                     "de":  "I np u t"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (bool)."
                    },
                    {
                        "name":  "LastCycleTimeBeforeMidnight",
+                       "terms":  {
+                                     "en":  "L as tC yc le Ti me Be fo re Mi dn ig h t",
+                                     "de":  "L as tC yc le Ti me Be fo re Mi dn ig h t"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027L as tC yc le Ti me Be fo re Mi dn ig h t\u0027 / \u0027L as tC yc le Ti me Be fo re Mi dn ig h t\u0027 (bool)."
                    },
                    {
                        "name":  "CycleTime",
+                       "terms":  {
+                                     "en":  "C yc le Ti m e",
+                                     "de":  "C yc le Ti m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027C yc le Ti m e\u0027 / \u0027C yc le Ti m e\u0027 (timespan)."
                    },
                    {
                        "name":  "InputHaveToBeFalse",
+                       "terms":  {
+                                     "en":  "I np ut Ha ve To Be Fa l s e",
+                                     "de":  "I np ut Ha ve To Be Fa l s e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np ut Ha ve To Be Fa ls e\u0027 (bool)."
+                       "description":  "Eingang für \u0027I np ut Ha ve To Be Fa l s e\u0027 / \u0027I np ut Ha ve To Be Fa l s e\u0027 (bool)."
                    },
                    {
                        "name":  "InputHaveToBeTrue",
+                       "terms":  {
+                                     "en":  "I np ut Ha ve To Be Tr u e",
+                                     "de":  "I np ut Ha ve To Be Tr u e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np ut Ha ve To Be Tr ue\u0027 (bool)."
+                       "description":  "Eingang für \u0027I np ut Ha ve To Be Tr u e\u0027 / \u0027I np ut Ha ve To Be Tr u e\u0027 (bool)."
                    },
                    {
                        "name":  "SetFalseAfterSetTrue",
+                       "terms":  {
+                                     "en":  "S et Fa ls eA ft er Se tT r u e",
+                                     "de":  "S et Fa ls eA ft er Se tT r u e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Fa ls eA ft er Se tT ru e\u0027 (bool)."
+                       "description":  "Eingang für \u0027S et Fa ls eA ft er Se tT r u e\u0027 / \u0027S et Fa ls eA ft er Se tT r u e\u0027 (bool)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -80,21 +116,37 @@
     "outputs":  [
                     {
                         "name":  "Output",
+                        "terms":  {
+                                      "en":  "O ut p u t",
+                                      "de":  "O ut p u t"
+                                  },
                         "type":  "bool",
-                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

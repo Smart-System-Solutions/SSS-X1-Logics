@@ -27,31 +27,55 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "IpAddress",
+                       "terms":  {
+                                     "en":  "I pA dd re s s",
+                                     "de":  "I pA dd re s s"
+                                 },
                        "type":  "string",
-                       "description":  "Eingang für \u0027I pA dd re ss\u0027 (string)."
+                       "description":  "Eingang für \u0027I pA dd re s s\u0027 / \u0027I pA dd re s s\u0027 (string)."
                    },
                    {
                        "name":  "Port",
+                       "terms":  {
+                                     "en":  "P o r t",
+                                     "de":  "P o r t"
+                                 },
                        "type":  "int",
-                       "description":  "Eingang für \u0027P or t\u0027 (int)."
+                       "description":  "Eingang für \u0027P o r t\u0027 / \u0027P o r t\u0027 (int)."
                    },
                    {
                        "name":  "Start",
+                       "terms":  {
+                                     "en":  "S ta r t",
+                                     "de":  "S ta r t"
+                                 },
                        "type":  "bool",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta r t\u0027 / \u0027S ta r t\u0027 (bool)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -59,11 +83,19 @@
     "outputs":  [
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

@@ -29,41 +29,73 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "Summer",
+                       "terms":  {
+                                     "en":  "S um m e r",
+                                     "de":  "S um m e r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um me r\u0027 (bool)."
+                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
                    },
                    {
                        "name":  "StartAccuValue",
+                       "terms":  {
+                                     "en":  "S ta rt Ac cu Va l u e",
+                                     "de":  "S ta rt Ac cu Va l u e"
+                                 },
                        "type":  "int",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027S ta rt Ac cu Va l u e\u0027 / \u0027S ta rt Ac cu Va l u e\u0027 (int)."
                    },
                    {
                        "name":  "EndAccuValue",
+                       "terms":  {
+                                     "en":  "E nd Ac cu Va l u e",
+                                     "de":  "E nd Ac cu Va l u e"
+                                 },
                        "type":  "int",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027E nd Ac cu Va l u e\u0027 / \u0027E nd Ac cu Va l u e\u0027 (int)."
                    },
                    {
                        "name":  "SetPointShift",
+                       "terms":  {
+                                     "en":  "S et Po in tS hi f t",
+                                     "de":  "S et Po in tS hi f t"
+                                 },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S et Po in tS hi ft\u0027 (number)."
+                       "description":  "Eingang für \u0027S et Po in tS hi f t\u0027 / \u0027S et Po in tS hi f t\u0027 (number)."
                    },
                    {
                        "name":  "AccuActual",
+                       "terms":  {
+                                     "en":  "A cc uA ct u a l",
+                                     "de":  "A cc uA ct u a l"
+                                 },
                        "type":  "number",
-                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung."
+                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -71,16 +103,28 @@
     "outputs":  [
                     {
                         "name":  "SendSetPointShift",
+                        "terms":  {
+                                      "en":  "S en dS et Po in tS hi f t",
+                                      "de":  "S en dS et Po in tS hi f t"
+                                  },
                         "type":  "number",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027S en dS et Po in tS hi f t\u0027 / \u0027S en dS et Po in tS hi f t\u0027 (number)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

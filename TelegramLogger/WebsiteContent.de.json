@@ -25,36 +25,64 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "NumberOfInputsToLog",
+                       "terms":  {
+                                     "en":  "N um be rO fI np ut sT oL o g",
+                                     "de":  "N um be rO fI np ut sT oL o g"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fI np ut sT oL o g\u0027 / \u0027N um be rO fI np ut sT oL o g\u0027 (int)."
                    },
                    {
                        "name":  "InputsToLog",
+                       "terms":  {
+                                     "en":  "I np ut sT oL o g",
+                                     "de":  "I np ut sT oL o g"
+                                 },
                        "type":  "any",
-                       "description":  "Eingang für \u0027I np ut sT oL og\u0027 (any)."
+                       "description":  "Eingang für \u0027I np ut sT oL o g\u0027 / \u0027I np ut sT oL o g\u0027 (any)."
                    },
                    {
                        "name":  "NumberOfFirstInputs",
+                       "terms":  {
+                                     "en":  "N um be rO fF ir st In pu t s",
+                                     "de":  "N um be rO fF ir st In pu t s"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fF ir st In pu t s\u0027 / \u0027N um be rO fF ir st In pu t s\u0027 (int)."
                    },
                    {
                        "name":  "NumberOfLastInputs",
+                       "terms":  {
+                                     "en":  "N um be rO fL as tI np u t s",
+                                     "de":  "N um be rO fL as tI np u t s"
+                                 },
                        "type":  "int",
-                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                       "description":  "Eingang für \u0027N um be rO fL as tI np u t s\u0027 / \u0027N um be rO fL as tI np u t s\u0027 (int)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -62,11 +90,19 @@
     "outputs":  [
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }

@@ -30,66 +30,118 @@
     "inputs":  [
                    {
                        "name":  "Activate",
+                       "terms":  {
+                                     "en":  "A ct iv a t e",
+                                     "de":  "A ct iv a t e"
+                                 },
                        "type":  "bool",
                        "description":  "Aktiviert oder deaktiviert den Baustein."
                    },
                    {
                        "name":  "TriggerStart",
+                       "terms":  {
+                                     "en":  "T ri gg er St a r t",
+                                     "de":  "T ri gg er St a r t"
+                                 },
                        "type":  "bool",
-                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                       "description":  "Eingang für \u0027T ri gg er St a r t\u0027 / \u0027T ri gg er St a r t\u0027 (bool)."
                    },
                    {
                        "name":  "TriggerShutdown",
+                       "terms":  {
+                                     "en":  "T ri gg er Sh ut do w n",
+                                     "de":  "T ri gg er Sh ut do w n"
+                                 },
                        "type":  "bool",
-                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                       "description":  "Eingang für \u0027T ri gg er Sh ut do w n\u0027 / \u0027T ri gg er Sh ut do w n\u0027 (bool)."
                    },
                    {
                        "name":  "Online",
+                       "terms":  {
+                                     "en":  "O nl i n e",
+                                     "de":  "O nl i n e"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027O nl in e\u0027 (bool)."
+                       "description":  "Eingang für \u0027O nl i n e\u0027 / \u0027O nl i n e\u0027 (bool)."
                    },
                    {
                        "name":  "ConditionOnline",
+                       "terms":  {
+                                     "en":  "C on di ti on On li n e",
+                                     "de":  "C on di ti on On li n e"
+                                 },
                        "type":  "bool",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti on On li n e\u0027 / \u0027C on di ti on On li n e\u0027 (bool)."
                    },
                    {
                        "name":  "ActivateTurnOnOffSocketPC",
+                       "terms":  {
+                                     "en":  "A ct iv at eT ur nO nO ff So ck et P C",
+                                     "de":  "A ct iv at eT ur nO nO ff So ck et P C"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et PC\u0027 (bool)."
+                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et P C\u0027 / \u0027A ct iv at eT ur nO nO ff So ck et P C\u0027 (bool)."
                    },
                    {
                        "name":  "ActivateTurnOnOffSocketMonitor",
+                       "terms":  {
+                                     "en":  "A ct iv at eT ur nO nO ff So ck et Mo ni t o r",
+                                     "de":  "A ct iv at eT ur nO nO ff So ck et Mo ni t o r"
+                                 },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et Mo ni to r\u0027 (bool)."
+                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et Mo ni t o r\u0027 / \u0027A ct iv at eT ur nO nO ff So ck et Mo ni t o r\u0027 (bool)."
                    },
                    {
                        "name":  "ConditionTurnOffSocketPC",
+                       "terms":  {
+                                     "en":  "C on di ti on Tu rn Of fS oc ke t P C",
+                                     "de":  "C on di ti on Tu rn Of fS oc ke t P C"
+                                 },
                        "type":  "bool",
-                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                       "description":  "Eingang für \u0027C on di ti on Tu rn Of fS oc ke t P C\u0027 / \u0027C on di ti on Tu rn Of fS oc ke t P C\u0027 (bool)."
                    },
                    {
                        "name":  "TimeToTurnOffSocketPC",
+                       "terms":  {
+                                     "en":  "T im eT oT ur nO ff So ck et P C",
+                                     "de":  "T im eT oT ur nO ff So ck et P C"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eT oT ur nO ff So ck et P C\u0027 / \u0027T im eT oT ur nO ff So ck et P C\u0027 (timespan)."
                    },
                    {
                        "name":  "TimeToTurnOffSocketMonitor",
+                       "terms":  {
+                                     "en":  "T im eT oT ur nO ff So ck et Mo ni t o r",
+                                     "de":  "T im eT oT ur nO ff So ck et Mo ni t o r"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027T im eT oT ur nO ff So ck et Mo ni t o r\u0027 / \u0027T im eT oT ur nO ff So ck et Mo ni t o r\u0027 (timespan)."
                    },
                    {
                        "name":  "UpdateTime",
+                       "terms":  {
+                                     "en":  "U pd at eT i m e",
+                                     "de":  "U pd at eT i m e"
+                                 },
                        "type":  "timespan",
-                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                       "description":  "Eingang für \u0027U pd at eT i m e\u0027 / \u0027U pd at eT i m e\u0027 (timespan)."
                    },
                    {
                        "name":  "LicenseKey01",
+                       "terms":  {
+                                     "en":  "L ic en se K e y01",
+                                     "de":  "L ic en se K e y01"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    },
                    {
                        "name":  "LicenseKey02",
+                       "terms":  {
+                                     "en":  "L ic en se K e y02",
+                                     "de":  "L ic en se K e y02"
+                                 },
                        "type":  "string",
                        "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
                    }
@@ -97,41 +149,73 @@
     "outputs":  [
                     {
                         "name":  "Start",
+                        "terms":  {
+                                      "en":  "S ta r t",
+                                      "de":  "S ta r t"
+                                  },
                         "type":  "bool",
-                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                        "description":  "Ausgang für \u0027S ta r t\u0027 / \u0027S ta r t\u0027 (bool)."
                     },
                     {
                         "name":  "Shutdown",
+                        "terms":  {
+                                      "en":  "S hu td o w n",
+                                      "de":  "S hu td o w n"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S hu td ow n\u0027 (bool)."
+                        "description":  "Ausgang für \u0027S hu td o w n\u0027 / \u0027S hu td o w n\u0027 (bool)."
                     },
                     {
                         "name":  "Status",
+                        "terms":  {
+                                      "en":  "S ta t u s",
+                                      "de":  "S ta t u s"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S ta tu s\u0027 (bool)."
+                        "description":  "Ausgang für \u0027S ta t u s\u0027 / \u0027S ta t u s\u0027 (bool)."
                     },
                     {
                         "name":  "SocketPC",
+                        "terms":  {
+                                      "en":  "S oc ke t P C",
+                                      "de":  "S oc ke t P C"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S oc ke tP C\u0027 (bool)."
+                        "description":  "Ausgang für \u0027S oc ke t P C\u0027 / \u0027S oc ke t P C\u0027 (bool)."
                     },
                     {
                         "name":  "SocketMonitor",
+                        "terms":  {
+                                      "en":  "S oc ke tM on it o r",
+                                      "de":  "S oc ke tM on it o r"
+                                  },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S oc ke tM on it or\u0027 (bool)."
+                        "description":  "Ausgang für \u0027S oc ke tM on it o r\u0027 / \u0027S oc ke tM on it o r\u0027 (bool)."
                     },
                     {
                         "name":  "LogExecute",
+                        "terms":  {
+                                      "en":  "L og Ex ec u t e",
+                                      "de":  "L og Ex ec u t e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogSchedule",
+                        "terms":  {
+                                      "en":  "L og Sc he du l e",
+                                      "de":  "L og Sc he du l e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     },
                     {
                         "name":  "LogLicense",
+                        "terms":  {
+                                      "en":  "L og Li ce n s e",
+                                      "de":  "L og Li ce n s e"
+                                  },
                         "type":  "string",
                         "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
                     }
