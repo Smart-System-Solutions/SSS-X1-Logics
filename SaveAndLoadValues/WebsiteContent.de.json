@@ -1,0 +1,166 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicSaveAndLoadValues",
+    "assembly":  "smart_system_solutions_de.Logic.SaveAndLoadValues.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.18",
+    "slug":  "saveandloadvalues",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/saveandloadvalues/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Speichere und lese Werte",
+                  "en":  "Save And Load Values"
+              },
+    "shortDescription":  "Stellt die Logik \u0027Speichere und lese Werte\u0027 für Smart-System-Solutions-Bausteine bereit.",
+    "specialFeatures":  [
+                            "Datenpersistenz: Die Methode ermöglicht das Speichern und spätere Wiederherstellen eines Wertes aus einer Datei.",
+                            "Automatische Wiederherstellung: Nach einem Neustart oder nach einer einstellbaren Verzögerung kann der gespeicherte Wert automatisch wieder geladen werden.",
+                            "Flexible Eingaben: Es können verschiedene Datentypen gespeichert und wiederhergestellt werden (z. B. Zahlen, Texte, Wahrheitswerte).",
+                            "Lizenzprüfung: Das System erfordert eine gültige Lizenz zur Nutzung.",
+                            "Speicherung auf SD-Karte Die Werte werden auf einer SD-Karte unter /opt/card/SmartSystemSolutions/saveandload/ gespeichert. Falls keine SD-Karte vorhanden ist, kann die Speicherung nicht durchgeführt werden.",
+                            "Fehlerbehandlung: Es werden verschiedene Fehler abgefangen, insbesondere bei Dateioperationen oder ungültigen Eingaben.",
+                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                        ],
+    "detailedDescription":  [
+                                "Diese Methode ermöglicht das Speichern und Wiederherstellen von Werten auf einer SD-Karte. Durch Aktivierung der Speicherfunktion wird ein eingegebener Wert gespeichert, der später wieder abgerufen werden kann – entweder manuell oder automatisch nach einer definierten Verzögerung. Die Funktion unterstützt verschiedene Datentypen wie Zahlen, Texte und Wahrheitswerte. Zudem kann sie so konfiguriert werden, dass gespeicherte Werte nach einem Systemneustart automatisch wiederhergestellt werden. Hinweis: Besonders nützlich beim Austausch von Zustandlosen Werten mit anderen Systemen (z.B: HomeAssistant) ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "TriggerReadStorage",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "WriteOutputIfInputWasSet",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027W ri te Ou tp ut If In pu tW as Se t\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "StoragePath",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                   },
+                   {
+                       "name":  "DelayAfterInitialize",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "ActivateReadStorageAfterDelay",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eR ea dS to ra ge Af te rD el ay\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateSaveStorageInFirstRun",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eS av eS to ra ge In Fi rs tR un\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Type",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027T yp e\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "OutputOnlyTrigger",
+                        "type":  "any",
+                        "description":  "Ausgang für \u0027O ut pu tO nl yT ri gg er\u0027 (any)."
+                    },
+                    {
+                        "name":  "OutputOnlyRestart",
+                        "type":  "any",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "OutputOnlyInput",
+                        "type":  "any",
+                        "description":  "Ausgang für \u0027O ut pu tO nl yI np ut\u0027 (any)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Speichere und lese Werte\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.18",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.18 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

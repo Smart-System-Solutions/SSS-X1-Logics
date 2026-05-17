@@ -1,0 +1,146 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicSequenceBool",
+    "assembly":  "smart_system_solutions_de.Logic.SequenceBool.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "sequencebool",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/sequencebool/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Reihenfolgenschalter",
+                  "en":  "Sequence Switch"
+              },
+    "shortDescription":  "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität :",
+                            "Die Anzahl der zu überwachenden"
+                        ],
+    "detailedDescription":  [
+                                "Diese Funktion überwacht eine festgelegte Abfolge von digitalen Signalen (z. B. Schalter oder Taster) und erkennt, ob diese in der korrekten Reihenfolge aktiviert werden. Wird die vollständige Abfolge korrekt eingehalten, wird ein Ausgabesignal auf „Ein“ gesetzt. Es besteht außerdem die Möglichkeit, die Abfolge bei einem Fehler automatisch zurückzusetzen oder eine zeitgesteuerte Rücksetzung zu aktivieren. Diese Logik ist besonders geeignet für Szenarien, in denen eine bestimmte Reihenfolge zur Aktivierung notwendig ist – etwa bei Sicherheitsfreigaben oder Zugangskontrollen. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "ActivateResetWithTime",
+                       "type":  "bool",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "OnlyActOnTrue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027O nl yA ct On Tr ue\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ResetIfWrongSequence",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027R es et If Wr on gS eq ue nc e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "SetFalseToOutputIfReset",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S et Fa ls eT oO ut pu tI fR es et\u0027 (bool)."
+                   },
+                   {
+                       "name":  "NumberOfInputs",
+                       "type":  "int",
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                   },
+                   {
+                       "name":  "Inputs",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027I np ut s\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Reset",
+                       "type":  "bool",
+                       "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück."
+                   },
+                   {
+                       "name":  "ResetTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "bool",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Reihenfolgenschalter\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

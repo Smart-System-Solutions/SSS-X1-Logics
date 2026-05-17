@@ -1,0 +1,177 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicAccuManage",
+    "assembly":  "smart_system_solutions_de.Logic.AccuManage.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.27",
+    "slug":  "accumanage",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/accumanage/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Akku Management",
+                  "en":  "Accu Management"
+              },
+    "shortDescription":  "Steuert Verbraucher oder Betriebszustände abhängig von Akkuladung, Zeitbedingungen und konfigurierten Grenzwerten.",
+    "specialFeatures":  [
+                            "Flexible Aktivierungsbedingungen: Der Baustein kann basierend auf verschiedenen Kriterien wie Akkuladung, Temperaturbedingungen, Zeitsteuerung oder einer Kombination dieser Faktoren aktiviert und deaktiviert werden.",
+                            "Zeitbasierte Steuerung: Es kann eine automatische Aktivierung oder Deaktivierung nach einer definierten Zeit erfolgen.",
+                            "Lizenzvalidierung: Der Baustein prüft, ob eine gültige Lizenz und eine unmanipulierte .dll-Datei vorliegen. Ohne gültige Lizenz ist keine Funktion gewährleistet.",
+                            "Temperaturbedingung: Die Aktivierung erfolgt nur, wenn die aktuelle Temperatur ( Temperature ) unter einem definierten Grenzwert ( TemperatureEnd ) liegt.",
+                            "Fehlerbehandlung: Ausführliche Try-Catch-Blöcke sichern den Baustein gegen Fehler ab und erzeugen detaillierte Logs zur Diagnose.",
+                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                        ],
+    "detailedDescription":  [
+                                "Steuert Verbraucher oder Betriebszustände abhängig von Akkuladung, Zeitbedingungen und konfigurierten Grenzwerten.",
+                                "Der Baustein \u0027Akku Management\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "ActivateOutputWithAccu",
+                       "type":  "bool",
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung."
+                   },
+                   {
+                       "name":  "ActivateOutputWithTime",
+                       "type":  "bool",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "Condition",
+                       "type":  "bool",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "ConditionTemperature",
+                       "type":  "bool",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "TriggerOutput",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "StartAccuValue",
+                       "type":  "int",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "EndAccuValue",
+                       "type":  "int",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "Temperature",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "TemperatureEnd",
+                       "type":  "number",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "AccuActual",
+                       "type":  "number",
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung."
+                   },
+                   {
+                       "name":  "TimeTriggerOutput",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "bool",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "RestOutputTime",
+                        "type":  "string",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleStartWithTime",
+                        "type":  "string",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "LogScheduleReset",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Akku Management\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.27",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.27 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

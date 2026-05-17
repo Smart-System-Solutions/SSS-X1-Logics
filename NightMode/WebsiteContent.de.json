@@ -1,0 +1,169 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicNightMode",
+    "assembly":  "smart_system_solutions_de.Logic.NightMode.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "nightmode",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/nightmode/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Nachtmodus",
+                  "en":  "Night Mode"
+              },
+    "shortDescription":  "Ermittelt einen Betriebsmodus wie Zuhause, Urlaub, Nacht oder Anwesenheit und stellt diesen für nachgelagerte Logiken bereit.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
+                        ],
+    "detailedDescription":  [
+                                "Ermittelt einen Betriebsmodus wie Zuhause, Urlaub, Nacht oder Anwesenheit und stellt diesen für nachgelagerte Logiken bereit.",
+                                "Der Baustein \u0027Nachtmodus\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "NightModeActive",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027N ig ht Mo de Ac ti ve\u0027 (bool)."
+                   },
+                   {
+                       "name":  "SkipFirstNightModeTrigger",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S ki pF ir st Ni gh tM od eT ri gg er\u0027 (bool)."
+                   },
+                   {
+                       "name":  "NumberOfBlinds",
+                       "type":  "int",
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                   },
+                   {
+                       "name":  "DeactivateBlindsOn",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO n\u0027 (bool)."
+                   },
+                   {
+                       "name":  "DeactivateBlindsOff",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO ff\u0027 (bool)."
+                   },
+                   {
+                       "name":  "BlindsOnStartTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "BlindsOnEndTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "BlindsOffStartTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "BlindsOffEndTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Blinds",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027B li nd s\u0027 (bool)."
+                    },
+                    {
+                        "name":  "NightModeOnSetTrue",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tT ru e\u0027 (bool)."
+                    },
+                    {
+                        "name":  "NightModeOnSetFalse",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tF al se\u0027 (bool)."
+                    },
+                    {
+                        "name":  "NightModeOffSetTrue",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Tr ue\u0027 (bool)."
+                    },
+                    {
+                        "name":  "NightModeOffSetFalse",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Fa ls e\u0027 (bool)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Anwesenheit, Zuhause-/Urlaubsstatus oder Nachtbetrieb bestimmen den Modus für Heizung, Warmwasser oder weitere Komfortfunktionen.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

@@ -1,0 +1,522 @@
+[
+    {
+        "project":  "LogicAccuManage",
+        "component":  "AccuManage",
+        "slug":  "accumanage",
+        "title":  "Akku Management",
+        "version":  "3.0.27",
+        "contentPath":  "AccuManage/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/accumanage/"
+    },
+    {
+        "project":  "LogicAccuManageCooling",
+        "component":  "AccuManageCooling",
+        "slug":  "accumanagecooling",
+        "title":  "Akku Management - Kühlen",
+        "version":  "3.0.23",
+        "contentPath":  "AccuManageCooling/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/accumanagecooling/"
+    },
+    {
+        "project":  "LogicAccuManageHeating",
+        "component":  "AccuManageHeating",
+        "slug":  "accumanageheating",
+        "title":  "Akku Management - Heizen",
+        "version":  "3.0.17",
+        "contentPath":  "AccuManageHeating/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/accumanageheating/"
+    },
+    {
+        "project":  "LogicAlarm",
+        "component":  "Alarm",
+        "slug":  "alarm",
+        "title":  "Alarm",
+        "version":  "1.0.3",
+        "contentPath":  "Alarm/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/alarm/"
+    },
+    {
+        "project":  "LogicAverage",
+        "component":  "Average",
+        "slug":  "average",
+        "title":  "Durchschnitt",
+        "version":  "2.0.24",
+        "contentPath":  "Average/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/average/"
+    },
+    {
+        "project":  "LogicBlockTelegrams",
+        "component":  "BlockTelegrams",
+        "slug":  "blocktelegrams",
+        "title":  "Telegramme blockieren",
+        "version":  "3.0.17",
+        "contentPath":  "BlockTelegrams/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/blocktelegrams/"
+    },
+    {
+        "project":  "LogicCalculateAverageTime",
+        "component":  "CalculateAverageTime",
+        "slug":  "calculteaveragetime",
+        "title":  "Berechen Durchschnitt mit Zeitfilter",
+        "version":  "3.0.17",
+        "contentPath":  "CalculateAverageTime/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/calculteaveragetime/"
+    },
+    {
+        "project":  "LogicCalculateEnergy",
+        "component":  "CalculateEnergy",
+        "slug":  "calculateenergy",
+        "title":  "Leistung berechnen",
+        "version":  "3.0.35",
+        "contentPath":  "CalculateEnergy/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/calculateenergy/"
+    },
+    {
+        "project":  "LogicCalculateEnergyHeatingPump",
+        "component":  "CalculateEnergyHeatingPump",
+        "slug":  "calculateenergyheatingpump",
+        "title":  "Leistung von Wärmepumpe berechnen",
+        "version":  "1.0.11",
+        "contentPath":  "CalculateEnergyHeatingPump/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/calculateenergyheatingpump/"
+    },
+    {
+        "project":  "LogicCalculateEnergyLamps",
+        "component":  "CalculateEnergyLamps",
+        "slug":  "calculateenergylamps",
+        "title":  "Leistung von Lampen berechnen",
+        "version":  "3.0.35",
+        "contentPath":  "CalculateEnergyLamps/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/calculateenergylamps/"
+    },
+    {
+        "project":  "LogicCompareDateTime",
+        "component":  "CompareDateTime",
+        "slug":  "comparedatetime",
+        "title":  "Vergleiche - DateTime",
+        "version":  "1.0.3",
+        "contentPath":  "CompareDateTime/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/comparedatetime/"
+    },
+    {
+        "project":  "LogicComputerManagement",
+        "component":  "ComputerManagement",
+        "slug":  "computermanagement",
+        "title":  "Computerverwaltung",
+        "version":  "3.0.17",
+        "contentPath":  "ComputerManagement/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/computermanagement/"
+    },
+    {
+        "project":  "LogicConvertIntToBits",
+        "component":  "ConvertIntToBits",
+        "slug":  "convertinttobits",
+        "title":  "Konvertiere Int zu Bits",
+        "version":  "3.0.17",
+        "contentPath":  "ConvertIntToBits/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/convertinttobits/"
+    },
+    {
+        "project":  "LogicConvertStringToDateTime",
+        "component":  "ConvertStringToDateTime",
+        "slug":  "convertstringtodatetime",
+        "title":  "Konvertiere String zu DateTime",
+        "version":  "3.0.17",
+        "contentPath":  "ConvertStringToDateTime/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/convertstringtodatetime/"
+    },
+    {
+        "project":  "LogicDeactivateOutput",
+        "component":  "DeactivateOutput",
+        "slug":  "deactivateoutput",
+        "title":  "Deaktiviere Ausgang",
+        "version":  "3.0.18",
+        "contentPath":  "DeactivateOutput/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/deactivateoutput/"
+    },
+    {
+        "project":  "LogicDecision2Values",
+        "component":  "Decision2Values",
+        "slug":  "decision2values",
+        "title":  "Entscheidung - 2 Werte",
+        "version":  "3.0.17",
+        "contentPath":  "Decision2Values/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/decision2values/"
+    },
+    {
+        "project":  "LogicDecision4Values",
+        "component":  "Decision4Values",
+        "slug":  "decision4values",
+        "title":  "Entscheidung - 4 Werte",
+        "version":  "3.0.17",
+        "contentPath":  "Decision4Values/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/decision4values/"
+    },
+    {
+        "project":  "LogicEnergyForecast",
+        "component":  "EnergyForecast",
+        "slug":  "energyforecast",
+        "title":  "Energievorhersage",
+        "version":  "1.0.3",
+        "contentPath":  "EnergyForecast/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/energyforecast/"
+    },
+    {
+        "project":  "LogicEnergyMediator",
+        "component":  "EnergyMediator",
+        "slug":  "energymediator",
+        "title":  "Energie Mediator",
+        "version":  "1.0.5",
+        "contentPath":  "EnergyMediator/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/energymediator/"
+    },
+    {
+        "project":  "LogicHeating",
+        "component":  "Heating",
+        "slug":  "heating",
+        "title":  "Heizung",
+        "version":  "1.0.3",
+        "contentPath":  "Heating/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/heating/"
+    },
+    {
+        "project":  "LogicHomeHolidayMode",
+        "component":  "HomeHolidayMode",
+        "slug":  "homeholidaymode",
+        "title":  "Zuhause-Urlaubs-Modus",
+        "version":  "2.0.46",
+        "contentPath":  "HomeHolidayMode/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/homeholidaymode/"
+    },
+    {
+        "project":  "LogicInfo",
+        "component":  "Info",
+        "slug":  "info",
+        "title":  "Info",
+        "version":  "3.0.17",
+        "contentPath":  "Info/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/info/"
+    },
+    {
+        "project":  "LogicManageAccu",
+        "component":  "ManageAccu",
+        "slug":  "manageaccu",
+        "title":  "Manage Akku",
+        "version":  "1.0.3",
+        "contentPath":  "ManageAccu/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/manageaccu/"
+    },
+    {
+        "project":  "LogicManageCar",
+        "component":  "ManageCar",
+        "slug":  "managecar",
+        "title":  "Manage Auto",
+        "version":  "1.0.3",
+        "contentPath":  "ManageCar/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/managecar/"
+    },
+    {
+        "project":  "LogicManageDevices",
+        "component":  "ManageDevices",
+        "slug":  "managedevices",
+        "title":  "Manage Geräte",
+        "version":  "1.0.3",
+        "contentPath":  "ManageDevices/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/managedevices/"
+    },
+    {
+        "project":  "LogicMessageManagement",
+        "component":  "MessageManagement",
+        "slug":  "messagemanagement",
+        "title":  "Nachrichtenverwaltung",
+        "version":  "3.0.21",
+        "contentPath":  "MessageManagement/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/messagemanagement/"
+    },
+    {
+        "project":  "LogicMinReplaceCurrentWidth",
+        "component":  "MinReplaceCurrentWidth",
+        "slug":  "minreplacecurrentwidth",
+        "title":  "Setze Minimale Breite Ersatzstrombereich",
+        "version":  "3.0.40",
+        "contentPath":  "MinReplaceCurrentWidth/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/minreplacecurrentwidth/"
+    },
+    {
+        "project":  "LogicMultipleSummator",
+        "component":  "MultipleSummator",
+        "slug":  "multiplesummator",
+        "title":  "Mehrfachsummierer",
+        "version":  "3.0.17",
+        "contentPath":  "MultipleSummator/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/multiplesummator/"
+    },
+    {
+        "project":  "LogicNightMode",
+        "component":  "NightMode",
+        "slug":  "nightmode",
+        "title":  "Nachtmodus",
+        "version":  "3.0.17",
+        "contentPath":  "NightMode/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/nightmode/"
+    },
+    {
+        "project":  "LogicOnDelay",
+        "component":  "OnDelay",
+        "slug":  "ondelay",
+        "title":  "Einschaltverzögerung",
+        "version":  "3.0.17",
+        "contentPath":  "OnDelay/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/ondelay/"
+    },
+    {
+        "project":  "LogicPingDevice",
+        "component":  "PingDevice",
+        "slug":  "pingdevice",
+        "title":  "Ping",
+        "version":  "2.0.18",
+        "contentPath":  "PingDevice/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/pingdevice/"
+    },
+    {
+        "project":  "LogicPresenceMode",
+        "component":  "PresenceMode",
+        "slug":  "presencemode",
+        "title":  "Anwesenheitsmodus",
+        "version":  "1.0.4",
+        "contentPath":  "PresenceMode/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/presencemode/"
+    },
+    {
+        "project":  "LogicReadInfluxDB",
+        "component":  "ReadInfluxDB",
+        "slug":  "readinfluxdb",
+        "title":  "Lese InfluxDB",
+        "version":  "2.0.7",
+        "contentPath":  "ReadInfluxDB/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/readinfluxdb/"
+    },
+    {
+        "project":  "LogicReleaseBlindTracking",
+        "component":  "ReleaseBlindTracking",
+        "slug":  "releaseblindtracking",
+        "title":  "Freigabe Jalousie-Nachführung",
+        "version":  "3.0.37",
+        "contentPath":  "ReleaseBlindTracking/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/releaseblindtracking/"
+    },
+    {
+        "project":  "LogicResetAtMidnight",
+        "component":  "ResetAtMidnight",
+        "slug":  "resetatmidnight",
+        "title":  "Reset um Mitternacht",
+        "version":  "3.0.28",
+        "contentPath":  "ResetAtMidnight/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/resetatmidnight/"
+    },
+    {
+        "project":  "LogicRound",
+        "component":  "Round",
+        "slug":  "round",
+        "title":  "Runden",
+        "version":  "1.0.3",
+        "contentPath":  "Round/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/round/"
+    },
+    {
+        "project":  "LogicSaveAndLoadValues",
+        "component":  "SaveAndLoadValues",
+        "slug":  "saveandloadvalues",
+        "title":  "Speichere und lese Werte",
+        "version":  "3.0.18",
+        "contentPath":  "SaveAndLoadValues/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/saveandloadvalues/"
+    },
+    {
+        "project":  "LogicSelectionTime",
+        "component":  "SelectionTime",
+        "slug":  "selectiontime",
+        "title":  "Ausgang nach unterschiedlichen Zeiten triggern",
+        "version":  "3.0.21",
+        "contentPath":  "SelectionTime/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/selectiontime/"
+    },
+    {
+        "project":  "LogicSendByDifferenceMaxMin",
+        "component":  "SendByDifferenceMaxMin",
+        "slug":  "sendbydifferencemaxmin",
+        "title":  "Sendet nach Differenz und Max Min Value",
+        "version":  "3.0.17",
+        "contentPath":  "SendByDifferenceMaxMin/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/sendbydifferencemaxmin/"
+    },
+    {
+        "project":  "LogicSequenceBool",
+        "component":  "SequenceBool",
+        "slug":  "sequencebool",
+        "title":  "Reihenfolgenschalter",
+        "version":  "3.0.17",
+        "contentPath":  "SequenceBool/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/sequencebool/"
+    },
+    {
+        "project":  "LogicSkipFirstTelegram",
+        "component":  "SkipFirstTelegram",
+        "slug":  "skipfirsttelegram",
+        "title":  "Ignoriere erstes Telegram",
+        "version":  "3.0.17",
+        "contentPath":  "SkipFirstTelegram/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/skipfirsttelegram/"
+    },
+    {
+        "project":  "LogicSleepOnLan",
+        "component":  "SleepOnLan",
+        "slug":  "sleeponlan",
+        "title":  "SleepOnLan - UDP",
+        "version":  "3.0.16",
+        "contentPath":  "SleepOnLan/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/sleeponlan/"
+    },
+    {
+        "project":  "LogicTakeHighestValue",
+        "component":  "TakeHighestValue",
+        "slug":  "takehighestvalue",
+        "title":  "Höchster Wert",
+        "version":  "3.0.17",
+        "contentPath":  "TakeHighestValue/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/takehighestvalue/"
+    },
+    {
+        "project":  "LogicTakeLowestValue",
+        "component":  "TakeLowestValue",
+        "slug":  "takelowestvalue",
+        "title":  "Niedrigster Wert",
+        "version":  "3.0.17",
+        "contentPath":  "TakeLowestValue/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/takelowestvalue/"
+    },
+    {
+        "project":  "LogicTelegramByTrigger",
+        "component":  "TelegramByTrigger",
+        "slug":  "telegrambytrigger",
+        "title":  "Beim Triggern Telegramm senden",
+        "version":  "3.0.17",
+        "contentPath":  "TelegramByTrigger/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/telegrambytrigger/"
+    },
+    {
+        "project":  "LogicTelegramLogger",
+        "component":  "TelegramLogger",
+        "slug":  "telegramlogger",
+        "title":  "Telegramm Logger",
+        "version":  "3.0.17",
+        "contentPath":  "TelegramLogger/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/telegramlogger/"
+    },
+    {
+        "project":  "LogicTelegramOnceADay",
+        "component":  "TelegramOnceADay",
+        "slug":  "telegramonceaday",
+        "title":  "Telegramm einmal pro Tag senden",
+        "version":  "3.0.17",
+        "contentPath":  "TelegramOnceADay/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/telegramonceaday/"
+    },
+    {
+        "project":  "LogicTelegramTriggerByTimes",
+        "component":  "TelegramTriggerByTimes",
+        "slug":  "telegramtriggerbytimes",
+        "title":  "Telegramm nach Zeiten triggern",
+        "version":  "3.0.17",
+        "contentPath":  "TelegramTriggerByTimes/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/telegramtriggerbytimes/"
+    },
+    {
+        "project":  "LogicTimeControlledTelegram",
+        "component":  "TimeControlledTelegram",
+        "slug":  "timecontrolledtelegram",
+        "title":  "Zeitgesteuerte Telegramme",
+        "version":  "3.0.17",
+        "contentPath":  "TimeControlledTelegram/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/timecontrolledtelegram/"
+    },
+    {
+        "project":  "LogicValueTime",
+        "component":  "ValueTime",
+        "slug":  "valuetime",
+        "title":  "Schwellenwert-Überwachungsbaustein mit Zeitintervall-Logik",
+        "version":  "3.0.17",
+        "contentPath":  "ValueTime/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/valuetime/"
+    },
+    {
+        "project":  "LogicWaitAfterInitialize",
+        "component":  "WaitAfterInitialize",
+        "slug":  "waitafterinitialize",
+        "title":  "Wartezeit nach Initialisierung",
+        "version":  "3.0.17",
+        "contentPath":  "WaitAfterInitialize/WebsiteContent.de.json",
+        "sourceStatus":  "website-adapted",
+        "websiteUrl":  "https://smart-system-solutions.de/waitafterinitialize/"
+    },
+    {
+        "project":  "LogicWaterTemperature",
+        "component":  "WaterTemperature",
+        "slug":  "watertemperature",
+        "title":  "Wassertemperatur",
+        "version":  "1.0.47",
+        "contentPath":  "WaterTemperature/WebsiteContent.de.json",
+        "sourceStatus":  "generated",
+        "websiteUrl":  "https://smart-system-solutions.de/watertemperature/"
+    }
+]

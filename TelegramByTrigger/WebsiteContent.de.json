@@ -1,0 +1,124 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicTelegramByTrigger",
+    "assembly":  "smart_system_solutions_de.Logic.TelegramByTrigger.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "telegrambytrigger",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/telegrambytrigger/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Beim Triggern Telegramm senden",
+                  "en":  "Send Telegram By Trigger"
+              },
+    "shortDescription":  "Diese Funktion gibt einen bestimmten Wert aus, sobald ein Auslösesignal erkannt wird. Voraussetzung ist, dass die Funktion aktiviert wurde. Falls kein gültiger Wert vorliegt, kann alternativ ein festgelegter Standardwert ausgegeben werden. Die Funktion eignet sich ideal, um zum",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität: Die Funktion kann mit beliebigen Datentypen arbeiten (Zahlen, Texte, Zustände etc.). Sie entscheidet je nach Gültigkeit des Werts, ob der echte Eingabewert oder der definierte Ersatzwert verwendet wird.",
+                            "Fehlerbehandlung: Es wird intern geprüft, ob es zu Fehlern kommt (z. B. durch fehlende Werte). Diese Informationen werden im Protokollausgang bereitgestellt.",
+                            "Grenzen und Validierungen: Es wird automatisch geprüft, ob ein gültiger Wert am Eingang vorhanden ist. Nur dann erfolgt eine Ausgabe. Falls nicht und die Ersatzwert-Option aktiv ist, wird geprüft, ob der Ersatzwert gültig ist. ###"
+                        ],
+    "detailedDescription":  [
+                                "Diese Funktion gibt einen bestimmten Wert aus, sobald ein Auslösesignal erkannt wird. Voraussetzung ist, dass die Funktion aktiviert wurde. Falls kein gültiger Wert vorliegt, kann alternativ ein festgelegter Standardwert ausgegeben werden. Die Funktion eignet sich ideal, um zum",
+                                "Der Baustein \u0027Beim Triggern Telegramm senden\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "Trigger",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "SetToDefaultValueIfInputHasNoValue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S et To De fa ul tV al ue If In pu tH as No Va lu e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "DefaultValue",
+                       "type":  "any",
+                       "description":  "Eingang für \u0027D ef au lt Va lu e\u0027 (any)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Telegrammfluss gezielt steuern",
+                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "steps":  [
+                                       "Baustein aktivieren.",
+                                       "Eingangswert und Bedingung verbinden.",
+                                       "Ausgang mit der nachgelagerten Logik verbinden.",
+                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

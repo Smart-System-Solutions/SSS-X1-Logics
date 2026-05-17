@@ -1,0 +1,116 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicDecision4Values",
+    "assembly":  "smart_system_solutions_de.Logic.Decision4Values.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "decision4values",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/decision4values/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Entscheidung - 4 Werte",
+                  "en":  "Decision - 4 Values"
+              },
+    "shortDescription":  "Die Methode Decision4Values dient dazu, basierend auf zwei logischen Entscheidungen einen der vier Eingabewerte als Ausgabe zu bestimmen. Diese Auswahl wird nur vorgenommen, wenn die Logik aktiviert ist. Fehler, die während der Ausführung auftreten, werden erfasst und im Protokoll ausgegeben. ##",
+    "specialFeatures":  [
+                            "Flexibilität durch Benutzerentscheidungen: Die Auswahl der Ausgabe erfolgt basierend auf zwei Entscheidungsvariablen, die verschiedene Werte als Ausgabe festlegen.",
+                            "Aktivierungskontrolle: Die Logik wird nur ausgeführt, wenn die Aktivierungsvariable gesetzt ist.",
+                            "Optimierte Ausgabeaktualisierung: Die Ausgabe wird nur aktualisiert, wenn sich der ausgewählte Wert geändert hat, was unnötige Aktualisierungen reduziert.",
+                            "Protokollierung: Die Methode speichert und zeigt eventuelle Fehler durch die Variable LogExecute an. ###"
+                        ],
+    "detailedDescription":  [
+                                "Die Methode Decision4Values dient dazu, basierend auf zwei logischen Entscheidungen einen der vier Eingabewerte als Ausgabe zu bestimmen. Diese Auswahl wird nur vorgenommen, wenn die Logik aktiviert ist. Fehler, die während der Ausführung auftreten, werden erfasst und im Protokoll ausgegeben. ##",
+                                "Der Baustein \u0027Entscheidung - 4 Werte\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "DecisionFirstAndSecondValue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ec is io nF ir st An dS ec on dV al ue\u0027 (bool)."
+                   },
+                   {
+                       "name":  "DecisionFirstAndThirdValue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ec is io nF ir st An dT hi rd Va lu e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Value1",
+                       "type":  "any",
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                   },
+                   {
+                       "name":  "Value2",
+                       "type":  "any",
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                   },
+                   {
+                       "name":  "Value3",
+                       "type":  "any",
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                   },
+                   {
+                       "name":  "Value4",
+                       "type":  "any",
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Entscheidung - 4 Werte\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

@@ -1,0 +1,127 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicTimeControlledTelegram",
+    "assembly":  "smart_system_solutions_de.Logic.TimeControlledTelegram.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "timecontrolledtelegram",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/timecontrolledtelegram/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Zeitgesteuerte Telegramme",
+                  "en":  "Time Controlled Telegram"
+              },
+    "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität:",
+                            "Die Verzögerungszeit kann individuell angepasst werden.",
+                            "Möglichkeit, zwischen „nur bei Änderung senden“ und „immer senden“ zu wählen.",
+                            "Unterstützt verschiedene Datentypen – etwa Zahlen, Texte oder Schaltbefehle.",
+                            "Fehlerbehandlung:",
+                            "Bei jeder Ausführung und beim Zeitplanstart wird geprüft, ob Fehler aufgetreten sind.",
+                            "Entsprechende Fehlermeldungen werden in Textfeldern ausgegeben – so ist eine einfache Analyse möglich.",
+                            "Grenzen und Validierungen:"
+                        ],
+    "detailedDescription":  [
+                                "Diese Funktion dient dazu, einen bestimmten Wert zeitgesteuert weiterzugeben. Sie wird aktiviert, wenn ein Startsignal gegeben wird, und sendet den Wert nach einer festgelegten Verzögerung. Dabei kann gewählt werden, ob der Wert nur gesendet werden soll, wenn er sich verändert hat. Zusätzlich gibt die Funktion Informationen zum Ausführungszeitpunkt und zu möglichen Fehlern als Text zurück. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "OnlyWriteChangedValue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027O nl yW ri te Ch an ge dV al ue\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "Delay",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Telegrammfluss gezielt steuern",
+                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "steps":  [
+                                       "Baustein aktivieren.",
+                                       "Eingangswert und Bedingung verbinden.",
+                                       "Ausgang mit der nachgelagerten Logik verbinden.",
+                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

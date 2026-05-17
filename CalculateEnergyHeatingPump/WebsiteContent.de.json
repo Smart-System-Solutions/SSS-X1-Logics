@@ -1,0 +1,225 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicCalculateEnergyHeatingPump",
+    "assembly":  "smart_system_solutions_de.Logic.CalculateEnergyHeatingPump.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "1.0.11",
+    "slug":  "calculateenergyheatingpump",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/calculateenergyheatingpump/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Leistung von Wärmepumpe berechnen",
+                  "en":  "Calculate Energy Heating Pump"
+              },
+    "shortDescription":  "Berechnet und protokolliert Energie- und Leistungswerte einer Wärmepumpe auf Basis der konfigurierten Eingangsgrößen.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
+                        ],
+    "detailedDescription":  [
+                                "Berechnet und protokolliert Energie- und Leistungswerte einer Wärmepumpe auf Basis der konfigurierten Eingangsgrößen.",
+                                "Der Baustein \u0027Leistung von Wärmepumpe berechnen\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "BoilerOn",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027B oi le rO n\u0027 (bool)."
+                   },
+                   {
+                       "name":  "CurrentPowerHeatStorage",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we rH ea tS to ra ge\u0027 (number)."
+                   },
+                   {
+                       "name":  "CurrentPowerAuxiliaryHeating01",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we rA ux il ia ry He at in g01\u0027 (number)."
+                   },
+                   {
+                       "name":  "CurrentPowerAuxiliaryHeating02",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we rA ux il ia ry He at in g02\u0027 (number)."
+                   },
+                   {
+                       "name":  "CurrentPowerCompressor",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we rC om pr es so r\u0027 (number)."
+                   },
+                   {
+                       "name":  "CurrentPowerControlSystem",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we rC on tr ol Sy st em\u0027 (number)."
+                   },
+                   {
+                       "name":  "StoragePath",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                   },
+                   {
+                       "name":  "UpdateTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "CurrentPowerHeatingPump",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027C ur re nt Po we rH ea ti ng Pu mp\u0027 (number)."
+                    },
+                    {
+                        "name":  "CurrentPowerHeatStorageOutput",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027C ur re nt Po we rH ea tS to ra ge Ou tp ut\u0027 (number)."
+                    },
+                    {
+                        "name":  "CurrentPowerAuxiliaryHeatingPump",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027C ur re nt Po we rA ux il ia ry He at in gP um p\u0027 (number)."
+                    },
+                    {
+                        "name":  "CurrentPowerHeatingPumpAuxiliaryHeatingPump",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027C ur re nt Po we rH ea ti ng Pu mp Au xi li ar yH ea ti ng Pu mp\u0027 (number)."
+                    },
+                    {
+                        "name":  "CurrentPowerHeatingPumpHeatStorageAuxiliaryHeatingPump",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027C ur re nt Po we rH ea ti ng Pu mp He at St or ag eA ux il ia ry He at in gP um p\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pD ay\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatStorageDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at St or ag eD ay\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerAuxiliaryHeatingPumpDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er Au xi li ar yH ea ti ng Pu mp Da y\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpAuxiliaryHeatingPumpDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pA ux il ia ry He at in gP um pD ay\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpHeatStorageAuxiliaryHeatingPumpDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pH ea tS to ra ge Au xi li ar yH ea ti ng Pu mp Da y\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pT ot al\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatStorageTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at St or ag eT ot al\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerAuxiliaryHeatingPumpTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er Au xi li ar yH ea ti ng Pu mp To ta l\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpAuxiliaryHeatingPumpTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pA ux il ia ry He at in gP um pT ot al\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerHeatingPumpHeatStorageAuxiliaryHeatingPumpTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er He at in gP um pH ea tS to ra ge Au xi li ar yH ea ti ng Pu mp To ta l\u0027 (number)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleReset",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Die Wärmepumpe liefert Leistungswerte, aus denen der Baustein Energiekennzahlen für Monitoring und Optimierung erzeugt.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "1.0.11",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 1.0.11 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

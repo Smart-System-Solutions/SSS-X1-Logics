@@ -1,0 +1,169 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicHomeHolidayMode",
+    "assembly":  "smart_system_solutions_de.Logic.HomeHolidayMode.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "2.0.46",
+    "slug":  "homeholidaymode",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/homeholidaymode/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Zuhause-Urlaubs-Modus",
+                  "en":  "Home-Holiday-Mode"
+              },
+    "shortDescription":  "Ermittelt einen Betriebsmodus wie Zuhause, Urlaub, Nacht oder Anwesenheit und stellt diesen für nachgelagerte Logiken bereit.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
+                        ],
+    "detailedDescription":  [
+                                "Ermittelt einen Betriebsmodus wie Zuhause, Urlaub, Nacht oder Anwesenheit und stellt diesen für nachgelagerte Logiken bereit.",
+                                "Der Baustein \u0027Zuhause-Urlaubs-Modus\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "Home",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027H om e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "NearHome",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027N ea rH om e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Presence",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027P re se nc e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "NumberOfHolidayVariants",
+                       "type":  "int",
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                   },
+                   {
+                       "name":  "HolidayVariant",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027H ol id ay Va ri an t\u0027 (bool)."
+                   },
+                   {
+                       "name":  "EndOfHoliday",
+                       "type":  "datetime",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "HomeStatus",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027H om eS ta tu s\u0027 (bool)."
+                    },
+                    {
+                        "name":  "HolidayStatus",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027H ol id ay St at us\u0027 (bool)."
+                    },
+                    {
+                        "name":  "PresenceStatus",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027P re se nc eS ta tu s\u0027 (bool)."
+                    },
+                    {
+                        "name":  "NearHomeStatus",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027N ea rH om eS ta tu s\u0027 (bool)."
+                    },
+                    {
+                        "name":  "ChoosenHolidayVariant",
+                        "type":  "int",
+                        "description":  "Ausgang für \u0027C ho os en Ho li da yV ar ia nt\u0027 (int)."
+                    },
+                    {
+                        "name":  "HolidayVariantStatus",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027H ol id ay Va ri an tS ta tu s\u0027 (bool)."
+                    },
+                    {
+                        "name":  "BackFromHolidayInHours",
+                        "type":  "int",
+                        "description":  "Ausgang für \u0027B ac kF ro mH ol id ay In Ho ur s\u0027 (int)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Anwesenheit, Zuhause-/Urlaubsstatus oder Nachtbetrieb bestimmen den Modus für Heizung, Warmwasser oder weitere Komfortfunktionen.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "2.0.46",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 2.0.46 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

@@ -1,0 +1,213 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicCalculateEnergy",
+    "assembly":  "smart_system_solutions_de.Logic.CalculateEnergy.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.35",
+    "slug":  "calculateenergy",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/calculateenergy/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Leistung berechnen",
+                  "en":  "Calculate Energy"
+              },
+    "shortDescription":  "Diese Logik berechnet den Energieverbrauch auf Basis eines extern gelieferten Leistungswertes – zum",
+    "specialFeatures":  [
+                            "Ideal für MDT AMI oder ähnliche Messgeräte mit Leistungswertausgabe.",
+                            "Zwei Korrekturfaktoren (CosPhi) ermöglichen realistische Berechnung abhängig von der Last.",
+                            "Zeitintervalle frei konfigurierbar für Update-, Kurzzeit- und Langzeitanalyse.",
+                            "Daten bleiben erhalten durch Speicherung auf SD-Karte – auch bei Stromausfall oder Neustart.",
+                            "Tagesverbrauch kann optional um Mitternacht zurückgesetzt werden.",
+                            "System reagiert automatisch , wenn keine gültigen Leistungsdaten mehr geliefert werden.",
+                            "Protokollierung bei jeder Funktionseinheit , z. B. zur Fehlersuche. ###"
+                        ],
+    "detailedDescription":  [
+                                "Diese Logik berechnet den Energieverbrauch auf Basis eines extern gelieferten Leistungswertes – zum",
+                                "Der Baustein \u0027Leistung berechnen\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "CurrentPower",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C ur re nt Po we r\u0027 (number)."
+                   },
+                   {
+                       "name":  "Threshold",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027T hr es ho ld\u0027 (number)."
+                   },
+                   {
+                       "name":  "CosPhi_1",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C os Ph i_1\u0027 (number)."
+                   },
+                   {
+                       "name":  "CosPhi_2",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027C os Ph i_2\u0027 (number)."
+                   },
+                   {
+                       "name":  "UpdateTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "ShortTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LongTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StoragePath",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "PowerDayLongTime",
+                        "type":  "number",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "PowerDayShortTime",
+                        "type":  "number",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "CurrentPowerUpdateTime",
+                        "type":  "number",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "CurrentPowerShortTime",
+                        "type":  "number",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "CurrentPowerLongTime",
+                        "type":  "number",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "PowerTotal",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er To ta l\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerLastDay",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er La st Da y\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerLast7Days",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er La st7 Da ys\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerLast30Days",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er La st30 Da ys\u0027 (number)."
+                    },
+                    {
+                        "name":  "PowerLast365Days",
+                        "type":  "number",
+                        "description":  "Ausgang für \u0027P ow er La st365 Da ys\u0027 (number)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleUpdate",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleShort",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleLong",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogScheduleReset",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Energie- oder Leistungswerte werden gesammelt, berechnet und an eine Visualisierung oder Optimierungslogik übergeben.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.35",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.35 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

@@ -1,0 +1,225 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicAccuManageCooling",
+    "assembly":  "smart_system_solutions_de.Logic.AccuManageCooling.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.23",
+    "slug":  "accumanagecooling",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/accumanagecooling/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Akku Management - Kühlen",
+                  "en":  "Accu Management - Cooling"
+              },
+    "shortDescription":  "Steuert eine akku- und temperaturabhängige Kühlfreigabe für Gebäudeautomation und berücksichtigt dabei Innen-/Außentemperatur, Betriebszustand, Zeitlogik und Diagnoseausgaben.",
+    "specialFeatures":  [
+                            "Flexible Steuerung des Kühlbetriebs: Dieser Baustein ermöglicht eine dynamische und anpassbare Kühlung, basierend auf verschiedenen Bedingungen wie Innen- und Außentemperaturen, Akkuladung und anderen Faktoren.",
+                            "Zeitbasierte Steuerung: Die Kühlung kann zeitabhängig gesteuert werden, abhängig von konfigurierten Zeitplänen.",
+                            "Lizenzvalidierung: Der Baustein prüft, ob eine gültige Lizenz und eine unmanipulierte .dll-Datei vorliegen. Ohne gültige Lizenz ist keine Funktion gewährleistet.",
+                            "Fehlerbehandlung: Ausführliche Try-Catch-Blöcke sichern den Baustein gegen Fehler ab und erzeugen detaillierte Logs zur Diagnose.",
+                            "Zusätzliche Sicherheits- und Komfortmodi: Die Klasse berücksichtigt Sommer- und Heizbetrieb sowie zusätzliche Triggerbedingungen.",
+                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                        ],
+    "detailedDescription":  [
+                                "Dieser Baustein steuert ein Kühlungssystem, das auf mehreren Eingabekriterien basiert. Sie erlaubt es, Bedingungen wie Innen- und Außentemperaturen, die Akkuladung und bestimmte Zeitpläne zu berücksichtigen, um den Kühlmodus dynamisch anzupassen. Außerdem werden Lizenzen validiert, um die Nutzung des Systems zu autorisieren. Die Ergebnisse der Ausführung werden protokolliert und in mehreren"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "ActivateCoolingWithoutAccuDependece",
+                       "type":  "bool",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "ActivateCoolingOnlyWithAdditionalTemperatureInsideDependence",
+                       "type":  "bool",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "HeatingCooling",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027H ea ti ng Co ol in g\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Summer",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S um me r\u0027 (bool)."
+                   },
+                   {
+                       "name":  "AdditionalTrigger",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A dd it io na lT ri gg er\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Condition",
+                       "type":  "bool",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "ConditionAdditional01",
+                       "type":  "bool",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "ConditionAdditional02",
+                       "type":  "bool",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "TemperatureOutside",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "TemperatureOutsideThreshold",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "TemperatureInside",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "TemperatureInsideThreshold",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "AdditionalTemperatureInsideDependenceThreshold",
+                       "type":  "number",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "NumberOfAccuDependence",
+                       "type":  "int",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "AccuActual",
+                       "type":  "number",
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung."
+                   },
+                   {
+                       "name":  "AccuDependence",
+                       "type":  "number",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "TimeDependence",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Cooling",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027C oo li ng\u0027 (bool)."
+                    },
+                    {
+                        "name":  "OperationModeCooling",
+                        "type":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in g\u0027 (ByteValueObject)."
+                    },
+                    {
+                        "name":  "OperationModeCoolingAdditional01",
+                        "type":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io na l01\u0027 (ByteValueObject)."
+                    },
+                    {
+                        "name":  "OperationModeCoolingAdditional02",
+                        "type":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io na l02\u0027 (ByteValueObject)."
+                    },
+                    {
+                        "name":  "OperationModeCoolingString",
+                        "type":  "string",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in g\u0027 (string)."
+                    },
+                    {
+                        "name":  "OperationModeCoolingStringAdditional01",
+                        "type":  "string",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io na l01\u0027 (string)."
+                    },
+                    {
+                        "name":  "OperationModeCoolingStringAdditional02",
+                        "type":  "string",
+                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io na l02\u0027 (string)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Akku Management - Kühlen\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.23",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.23 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

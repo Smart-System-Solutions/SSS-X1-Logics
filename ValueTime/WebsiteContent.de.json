@@ -1,0 +1,183 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicValueTime",
+    "assembly":  "smart_system_solutions_de.Logic.ValueTime.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "valuetime",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/valuetime/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Schwellenwert-Überwachungsbaustein mit Zeitintervall-Logik",
+                  "en":  "Threshold Monitoring Block with Time Interval Logic"
+              },
+    "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität:",
+                            "Die Überwachungsgrenzen und Zeitintervalle sind vollständig über"
+                        ],
+    "detailedDescription":  [
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+                                "Der Baustein \u0027Schwellenwert-Überwachungsbaustein mit Zeitintervall-Logik\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "number",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "ExceedingValue",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027E xc ee di ng Va lu e\u0027 (number)."
+                   },
+                   {
+                       "name":  "UndercuttingValue",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027U nd er cu tt in gV al ue\u0027 (number)."
+                   },
+                   {
+                       "name":  "ExceedingValueHigh",
+                       "type":  "number",
+                       "description":  "Eingang für \u0027E xc ee di ng Va lu eH ig h\u0027 (number)."
+                   },
+                   {
+                       "name":  "ConditionValueForReset",
+                       "type":  "number",
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss."
+                   },
+                   {
+                       "name":  "TimeExceedingValue",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "TimeExceedingValueHigh",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "TimeUndercuttingValue",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "Reset",
+                       "type":  "bool",
+                       "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück."
+                   },
+                   {
+                       "name":  "AlwaysReset",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A lw ay sR es et\u0027 (bool)."
+                   },
+                   {
+                       "name":  "TimeUndercuttingValueToEarly",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StoragePath",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "ValueExceeded",
+                        "type":  "bool",
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                    },
+                    {
+                        "name":  "ValueExceededAndUndercutAgain",
+                        "type":  "bool",
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                    },
+                    {
+                        "name":  "ValueExceededAndUndercutAgainToEarly",
+                        "type":  "bool",
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                    },
+                    {
+                        "name":  "ValueExceededButNotIncreasedHigh",
+                        "type":  "bool",
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

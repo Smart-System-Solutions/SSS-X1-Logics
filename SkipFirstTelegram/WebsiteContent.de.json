@@ -1,0 +1,98 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicSkipFirstTelegram",
+    "assembly":  "smart_system_solutions_de.Logic.SkipFirstTelegram.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "skipfirsttelegram",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/skipfirsttelegram/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Ignoriere erstes Telegram",
+                  "en":  "Skip First Telegram"
+              },
+    "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität: Der Eingang kann beliebige Werte enthalten – Zahlen, Texte, Zustände usw. Die Funktion erkennt automatisch, wann ein Wert eintrifft, und verarbeitet diesen je nach Status (erstes oder weiteres Telegramm).",
+                            "Fehlerbehandlung: Es ist eine Fehlerbehandlung integriert. Sollte ein Fehler auftreten, wird dieser samt Zeitstempel im Protokoll („LogExecute“) festgehalten.",
+                            "Grenzen und Validierungen: Es werden nur gesetzte Werte berücksichtigt. Leere oder nicht gesetzte Werte lösen keine Aktion aus. ###"
+                        ],
+    "detailedDescription":  [
+                                "Diese Funktion sorgt dafür, dass ein erster eingehender Wert ignoriert wird und erst der darauffolgende Wert verarbeitet und weitergegeben wird. Sie ist besonders dann hilfreich, wenn initiale Daten nach einem Neustart oder einer Verbindung nicht weitergeleitet werden sollen. Zusätzlich wird ein Protokoll darüber geführt, ob ein Wert übersprungen oder verarbeitet wurde. Die Ausgabe enthält also immer erst ab dem zweiten Eingang ein Ergebnis. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Telegrammfluss gezielt steuern",
+                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "steps":  [
+                                       "Baustein aktivieren.",
+                                       "Eingangswert und Bedingung verbinden.",
+                                       "Ausgang mit der nachgelagerten Logik verbinden.",
+                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

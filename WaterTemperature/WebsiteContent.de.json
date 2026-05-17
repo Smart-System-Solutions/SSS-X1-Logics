@@ -1,0 +1,309 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicWaterTemperature",
+    "assembly":  "smart_system_solutions_de.Logic.WaterTemperature.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "1.0.47",
+    "slug":  "watertemperature",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/watertemperature/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Wassertemperatur",
+                  "en":  "Water - Temperature"
+              },
+    "shortDescription":  "Regelt den Warmwasser-Sollwert anhand von Anwesenheit, Zuhause-/Urlaubsstatus, Tageskontext und optionalem Legionellenmodus.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
+                        ],
+    "detailedDescription":  [
+                                "Regelt den Warmwasser-Sollwert anhand von Anwesenheit, Zuhause-/Urlaubsstatus, Tageskontext und optionalem Legionellenmodus.",
+                                "Der Baustein \u0027Wassertemperatur\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "KeepWaterTemperatureManual",
+                       "type":  "bool",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "TriggerWaterTemperatureManual",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "TriggerWaterTemperatureManual02",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "TriggerWaterTemperatureLegionella",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "TriggerWaterTemperaturePresenceDayStandard",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "TriggerWaterTemperaturePresenceDayComfort",
+                       "type":  "bool",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "WaterTemperatureActualValue",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "DayNight",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ay Ni gh t\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Home",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027H om e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "NearHome",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027N ea rH om e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "StartOfTheDay",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StartOfTheNight",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StartOfTheDayWeekend",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StartOfTheNightWeekend",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "Presence",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027P re se nc e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ChoosenHolidayVariant",
+                       "type":  "int",
+                       "description":  "Eingang für \u0027C ho os en Ho li da yV ar ia nt\u0027 (int)."
+                   },
+                   {
+                       "name":  "NumberOfHolidayVariants",
+                       "type":  "int",
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                   },
+                   {
+                       "name":  "WaterTemperatureHolidayVariantMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureHolidayVariantMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "BackFromHolidayInHours",
+                       "type":  "int",
+                       "description":  "Eingang für \u0027B ac kF ro mH ol id ay In Ho ur s\u0027 (int)."
+                   },
+                   {
+                       "name":  "WaterTemperatureManual",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureManual02",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureHomeMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureHomeMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePersonsFarAwayMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePersonsFarAwayMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceDayComfortMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceDayComfortMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureNearHomeMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureNearHomeMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceDayStandardMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceDayStandardMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceNightMax",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperaturePresenceNightMin",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureLegionella",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureDeactivated",
+                       "type":  "number",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "WaterTemperatureUsedOwnHysteresis",
+                       "type":  "bool",
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                   },
+                   {
+                       "name":  "PersonsFarAway",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027P er so ns Fa rA wa y\u0027 (bool)."
+                   },
+                   {
+                       "name":  "DeactivatePersonsFarAway",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027D ea ct iv at eP er so ns Fa rA wa y\u0027 (bool)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "WaterTemperatureSetPoint",
+                        "type":  "number",
+                        "description":  "Temperaturwert für die Regel- oder Vergleichslogik."
+                    },
+                    {
+                        "name":  "ChoosenMode",
+                        "type":  "string",
+                        "description":  "Aktueller Modus oder gewählte Betriebsart als Text."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Wassertemperatur\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "1.0.47",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 1.0.47 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

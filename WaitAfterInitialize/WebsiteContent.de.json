@@ -1,0 +1,142 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicWaitAfterInitialize",
+    "assembly":  "smart_system_solutions_de.Logic.WaitAfterInitialize.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "waitafterinitialize",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/waitafterinitialize/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Wartezeit nach Initialisierung",
+                  "en":  "Wait After Initialize - Time"
+              },
+    "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität:",
+                            "Die Wartezeit ist individuell anpassbar.",
+                            "Es kann gewählt werden, ob ein bestehender Eingangswert übernommen oder ein definierter Standardwert gesetzt wird.",
+                            "Das Verhalten nach Systemstart lässt sich flexibel konfigurieren.",
+                            "Fehlerbehandlung:",
+                            "Alle Ausnahmen (Fehler im Ablauf) werden intern aufgefangen und in Protokollen dokumentiert.",
+                            "Bei falscher Typangabe wird eine Fehlermeldung generiert, ohne den Ablauf zu unterbrechen.",
+                            "Grenzen und Validierungen:"
+                        ],
+    "detailedDescription":  [
+                                "Diese Funktion ermöglicht eine zeitverzögerte Ausgabe eines Eingangswertes. Sobald das System initialisiert ist, wartet es eine definierte Zeitspanne ab, bevor ein Ausgang aktiviert wird. Dabei kann konfiguriert werden, ob der Ausgang den aktuellen Eingangswert übernehmen soll oder einen festen Standardwert (z. B. true , false , 0 , etc.). Das Verhalten ist insbesondere beim Hochfahren eines Systems oder bei zeitkritischen Abläufen hilfreich, in denen eine sofortige Reaktion unerwünscht ist. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "WaitingTime",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "SetOutputAfterInitializeToInputValue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S et Ou tp ut Af te rI ni ti al iz eT oI np ut Va lu e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "SetOutputAfterInitializeToFalse",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S et Ou tp ut Af te rI ni ti al iz eT oF al se\u0027 (bool)."
+                   },
+                   {
+                       "name":  "SetOutputAfterInitializeToTrue",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027S et Ou tp ut Af te rI ni ti al iz eT oT ru e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Type",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027T yp e\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

@@ -1,0 +1,579 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicEnergyMediator",
+    "assembly":  "smart_system_solutions_de.Logic.EnergyMediator.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "1.0.5",
+    "slug":  "energymediator",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/energymediator/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Energie Mediator",
+                  "en":  "Energy Mediator"
+              },
+    "shortDescription":  "Berechnet, bewertet oder vermittelt Energie- und Leistungswerte für Energiemanagement-Szenarien.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten."
+                        ],
+    "detailedDescription":  [
+                                "Berechnet, bewertet oder vermittelt Energie- und Leistungswerte für Energiemanagement-Szenarien.",
+                                "Der Baustein \u0027Energie Mediator\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday00_01",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y00_01\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday01_02",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y01_02\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday02_03",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y02_03\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday03_04",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y03_04\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday04_05",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y04_05\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday05_06",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y05_06\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday06_07",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y06_07\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday07_08",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y07_08\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday08_09",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y08_09\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday09_10",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y09_10\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday10_11",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y10_11\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday11_12",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y11_12\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday12_13",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y12_13\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday13_14",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y13_14\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday14_15",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y14_15\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday15_16",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y15_16\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday16_17",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y16_17\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday17_18",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y17_18\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday18_19",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y18_19\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday19_20",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y19_20\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday20_21",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y20_21\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday21_22",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y21_22\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday22_23",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y22_23\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXToday23_24",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To da y23_24\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow00_01",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow00_01\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow01_02",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow01_02\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow02_03",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow02_03\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow03_04",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow03_04\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow04_05",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow04_05\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow05_06",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow05_06\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow06_07",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow06_07\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow07_08",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow07_08\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow08_09",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow08_09\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow09_10",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow09_10\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow10_11",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow10_11\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow11_12",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow11_12\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow12_13",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow12_13\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow13_14",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow13_14\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow14_15",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow14_15\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow15_16",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow15_16\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow16_17",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow16_17\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow17_18",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow17_18\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow18_19",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow18_19\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow19_20",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow19_20\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow20_21",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow20_21\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow21_22",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow21_22\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow22_23",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow22_23\u0027 (string)."
+                   },
+                   {
+                       "name":  "HouseholdEPEXTomorrow23_24",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ou se ho ld EP EX To mo rr ow23_24\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday00_01",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay00_01\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday01_02",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay01_02\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday02_03",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay02_03\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday03_04",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay03_04\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday04_05",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay04_05\u0027 (string)."
+                   },
+                   {
+                       "name":  "HHeatPumpEPEXToday05_06",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H He at Pu mp EP EX To da y05_06\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday06_07",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay06_07\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday07_08",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay07_08\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday08_09",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay08_09\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday09_10",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay09_10\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday10_11",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay10_11\u0027 (string)."
+                   },
+                   {
+                       "name":  "HHeatPumpEPEXToday11_12",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H He at Pu mp EP EX To da y11_12\u0027 (string)."
+                   },
+                   {
+                       "name":  "HHeatPumpEPEXToday12_13",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H He at Pu mp EP EX To da y12_13\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday13_14",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay13_14\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday14_15",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay14_15\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday15_16",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay15_16\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday16_17",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay16_17\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday17_18",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay17_18\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday18_19",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay18_19\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday19_20",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay19_20\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday20_21",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay20_21\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday21_221",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay21_221\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday22_23",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay22_23\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXToday23_24",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT od ay23_24\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow01_02",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w01_02\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow02_03",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w02_03\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow03_04",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w03_04\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow04_05",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w04_05\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow05_06",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w05_06\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow06_07",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w06_07\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow07_08",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w07_08\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow08_09",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w08_09\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow09_10",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w09_10\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow10_11",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w10_11\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow11_12",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w11_12\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow12_13",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w12_13\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow13_14",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w13_14\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow14_15",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w14_15\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow15_16",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w15_16\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow16_17",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w16_17\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow17_18",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w17_18\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow18_19",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w18_19\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow19_20",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w19_20\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow20_21",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w20_21\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow21_221",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w21_221\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTomorrow22_23",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT om or ro w22_23\u0027 (string)."
+                   },
+                   {
+                       "name":  "HeatPumpEPEXTTomorrow23_24",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027H ea tP um pE PE XT To mo rr ow23_24\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Energie- oder Leistungswerte werden gesammelt, berechnet und an eine Visualisierung oder Optimierungslogik übergeben.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "1.0.5",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 1.0.5 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

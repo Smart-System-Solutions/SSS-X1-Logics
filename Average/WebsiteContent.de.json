@@ -1,0 +1,184 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicAverage",
+    "assembly":  "smart_system_solutions_de.Logic.Average.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "2.0.24",
+    "slug":  "average",
+    "source":  {
+                   "status":  "generated",
+                   "websiteUrl":  "https://smart-system-solutions.de/average/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Durchschnitt",
+                  "en":  "Average"
+              },
+    "shortDescription":  "Berechnet Durchschnittswerte über definierte Zeiträume oder Intervalle und stellt geglättete Werte für weitere Logiken bereit.",
+    "specialFeatures":  [
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
+                        ],
+    "detailedDescription":  [
+                                "Berechnet Durchschnittswerte über definierte Zeiträume oder Intervalle und stellt geglättete Werte für weitere Logiken bereit.",
+                                "Der Baustein \u0027Durchschnitt\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "ActivateMinute",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eM in ut e\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateHour",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eH ou r\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateDay",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eD ay\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateWeek",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eW ee k\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateMonth",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eM on th\u0027 (bool)."
+                   },
+                   {
+                       "name":  "ActivateYear",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eY ea r\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "Delay",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "StoragePath",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027S to ra ge Pa th\u0027 (string)."
+                   },
+                   {
+                       "name":  "Type",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027T yp e\u0027 (string)."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "AverageMinute",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "AverageHour",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "AverageDay",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "AverageWeek",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "AverageMonth",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "AverageYear",
+                        "type":  "number",
+                        "description":  "Berechneter Durchschnittswert für den jeweiligen Zeitraum."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Durchschnitt\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "2.0.24",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 2.0.24 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

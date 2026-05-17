@@ -1,0 +1,98 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicTakeHighestValue",
+    "assembly":  "smart_system_solutions_de.Logic.TakeHighestValue.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "takehighestvalue",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/takehighestvalue/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Höchster Wert",
+                  "en":  "Highest Value"
+              },
+    "shortDescription":  "Diese Methode findet den höchsten Wert aus einer Liste von Eingabewerten. Die Berechnung wird nur durchgeführt, wenn die Methode aktiviert ist, und alle Eingabewerte gültig sind. Der höchste Wert wird anschließend als Ergebnis ausgegeben, und der Prozess sowie eventuelle Fehler werden protokolliert. ##",
+    "specialFeatures":  [
+                            "Dynamische Anpassung der"
+                        ],
+    "detailedDescription":  [
+                                "Diese Methode findet den höchsten Wert aus einer Liste von Eingabewerten. Die Berechnung wird nur durchgeführt, wenn die Methode aktiviert ist, und alle Eingabewerte gültig sind. Der höchste Wert wird anschließend als Ergebnis ausgegeben, und der Prozess sowie eventuelle Fehler werden protokolliert. ##",
+                                "Der Baustein \u0027Höchster Wert\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "NumberOfInputs",
+                       "type":  "int",
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte."
+                   },
+                   {
+                       "name":  "Inputs",
+                       "type":  "any",
+                       "description":  "Eingang für \u0027I np ut s\u0027 (any)."
+                   },
+                   {
+                       "name":  "Type",
+                       "type":  "string",
+                       "description":  "Eingang für \u0027T yp e\u0027 (string)."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Höchster Wert\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

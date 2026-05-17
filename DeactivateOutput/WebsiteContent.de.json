@@ -1,0 +1,123 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicDeactivateOutput",
+    "assembly":  "smart_system_solutions_de.Logic.DeactivateOutput.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.18",
+    "slug":  "deactivateoutput",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/deactivateoutput/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Deaktiviere Ausgang",
+                  "en":  "Deactivate Output"
+              },
+    "shortDescription":  "Stellt die Logik \u0027Deaktiviere Ausgang\u0027 für Smart-System-Solutions-Bausteine bereit.",
+    "specialFeatures":  [
+                            "Funktionale Flexibilität :",
+                            "Das Verhalten kann durch zwei Steuersignale beeinflusst werden: Aktivierung der Ausgabe und Invertierung der Logik .",
+                            "Die Eingabe und Ausgabe unterstützen beliebige Datentypen (z. B. Zahlen, Texte, Boolesche Werte etc.).",
+                            "Fehlerbehandlung :",
+                            "Alle Vorgänge sind in einer Fehlerüberwachung integriert. Tritt ein Fehler auf, wird dieser mit Zeitstempel dokumentiert.",
+                            "Grenzen und Validierungen :",
+                            "Bei erstmaligem Start wird das Verhalten initialisiert, selbst wenn kein neuer Wert gesetzt wurde.",
+                            "Eine Ausgabe erfolgt nur, wenn ein gültiger Eingabewert vorliegt und die Ausgabe nicht blockiert ist. ###"
+                        ],
+    "detailedDescription":  [
+                                "Der Baustein ermöglicht es, ein Signal (egal welchen Typs) gezielt freizugeben oder zu blockieren – basierend auf einem Steuerwert. Durch eine zusätzliche Option kann das Verhalten umgekehrt werden, sodass auch eine Negativlogik möglich ist. Es eignet sich ideal, um die Weitergabe von Informationen oder Steuerbefehlen abhängig von bestimmten Bedingungen flexibel zu steuern. Pro Ausführung wird automatisch ein Log erstellt, das das Verhalten dokumentiert und Fehler erfasst. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "ActivateOutput",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027A ct iv at eO ut pu t\u0027 (bool)."
+                   },
+                   {
+                       "name":  "InvertActivation",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027I nv er tA ct iv at io n\u0027 (bool)."
+                   },
+                   {
+                       "name":  "IgnoreFalseInputs",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027I gn or eF al se In pu ts\u0027 (bool)."
+                   },
+                   {
+                       "name":  "IgnoreTrueInputs",
+                       "type":  "bool",
+                       "description":  "Eingang für \u0027I gn or eT ru eI np ut s\u0027 (bool)."
+                   },
+                   {
+                       "name":  "Input",
+                       "type":  "any",
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "any",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Deaktiviere Ausgang\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.18",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.18 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

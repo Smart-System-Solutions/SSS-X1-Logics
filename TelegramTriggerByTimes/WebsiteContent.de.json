@@ -1,0 +1,119 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicTelegramTriggerByTimes",
+    "assembly":  "smart_system_solutions_de.Logic.TelegramTriggerByTimes.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "telegramtriggerbytimes",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/telegramtriggerbytimes/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Telegramm nach Zeiten triggern",
+                  "en":  "Telegram Trigger By Times"
+              },
+    "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+    "specialFeatures":  [
+                            "Flexible Anzahl an Auslösezeiten Die Anzahl der gewünschten Uhrzeiten kann flexibel zwischen 1 und 30 eingestellt werden. Die Funktion passt sich dynamisch an die Anzahl der eingetragenen Uhrzeiten an.",
+                            "Tägliches Zurücksetzen der Auslösung Jede eingestellte Uhrzeit wird pro Tag nur einmal ausgelöst . Nach Mitternacht werden alle Zeitpunkte automatisch zurückgesetzt, sodass sie am nächsten Tag erneut aktiviert werden können.",
+                            "Fehlerprotokollierung integriert Sollte es zu einem Fehler bei der Ausführung oder Terminplanung kommen, wird dieser automatisch im Protokoll vermerkt , sodass eine einfache Analyse möglich ist.",
+                            "Automatische Protokollierung von Aktivitäten Die Logik dokumentiert sowohl, wann sie aktiviert/deaktiviert wurde , als auch wann eine Auslösezeit tatsächlich erreicht und ausgeführt wurde .",
+                            "Zeitgesteuerte Wiederholungsprüfung alle 30 Sekunden Intern wird alle 30 Sekunden überprüft, ob eine der eingestellten Uhrzeiten erreicht wurde. Dadurch wird eine präzise Ausführung ermöglicht. ###"
+                        ],
+    "detailedDescription":  [
+                                "Diese Logik ermöglicht es, eine Aktion automatisch zu bestimmten Uhrzeiten auszulösen. Dabei können bis zu 30 verschiedene Zeiten eingestellt werden, an denen ein Signal gesendet wird. Die Funktion überprüft regelmäßig, ob eine dieser Zeiten erreicht wurde, und gibt dann ein entsprechendes Signal aus. Zusätzlich wird protokolliert, wann der Auslösevorgang gestartet und wann er tatsächlich durchgeführt wurde. Dies ist besonders nützlich für zeitgesteuerte Automatisierungsprozesse. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "NumberOfTriggerByTime",
+                       "type":  "int",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   },
+                   {
+                       "name":  "TriggerByTime",
+                       "type":  "timespan",
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion."
+                   },
+                   {
+                       "name":  "LicenseKey01",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   },
+                   {
+                       "name":  "LicenseKey02",
+                       "type":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "Output",
+                        "type":  "bool",
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogLicense",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Telegrammfluss gezielt steuern",
+                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "steps":  [
+                                       "Baustein aktivieren.",
+                                       "Eingangswert und Bedingung verbinden.",
+                                       "Ausgang mit der nachgelagerten Logik verbinden.",
+                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Benötigt der Baustein eine Lizenz?",
+                    "answer":  "Der Baustein enthält Lizenzprüfungen. Die Lizenzschlüssel werden über die entsprechenden Eingänge bereitgestellt."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}

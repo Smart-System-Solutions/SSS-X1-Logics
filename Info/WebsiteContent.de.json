@@ -1,0 +1,114 @@
+{
+    "schemaVersion":  1,
+    "project":  "LogicInfo",
+    "assembly":  "smart_system_solutions_de.Logic.Info.dll",
+    "packageId":  "183FBF6C-AE53-4393-A2A5-2CBE0F1696AF",
+    "version":  "3.0.17",
+    "slug":  "info",
+    "source":  {
+                   "status":  "website-adapted",
+                   "websiteUrl":  "https://smart-system-solutions.de/info/",
+                   "reviewedAt":  "2026-05-16"
+               },
+    "title":  {
+                  "de":  "Info",
+                  "en":  "Info"
+              },
+    "shortDescription":  "Stellt die Logik \u0027Info\u0027 für Smart-System-Solutions-Bausteine bereit.",
+    "specialFeatures":  [
+                            "Flexible Zeitsteuerung: Die Klasse bietet eine zeitgesteuerte Aktivierung, die über die Eingabe „Delay“ angepasst werden kann. Das Intervall beträgt standardmäßig 30 Sekunden und kann auf mindestens 5 Sekunden festgelegt werden.",
+                            "Automatischer Zeitplan: Bei Aktivierung wird ein Zeitplan initiiert, der periodisch aktualisiert wird. Wird die Aktivierung deaktiviert, stoppt der Zeitplan automatisch.",
+                            "Fehlerbehandlung: Die Klasse verfügt über integrierte Try-Catch-Blöcke zur Erfassung und Protokollierung von Fehlern während der Ausführung und Planung.",
+                            "Protokollierung: Änderungen und Ereignisse werden in den"
+                        ],
+    "detailedDescription":  [
+                                "Die Baustein Info überwacht und verwaltet zeitgesteuerte Aktionen in einem Gira X1-System. Sie bietet eine flexible Steuerung von Prozessen über eine Aktivierung und eine einstellbare Verzögerung. Zusätzlich zeichnet sie wichtige Systeminformationen wie Neustarts und Telegramm-Zeitstempel auf. Der Baustein prüft auch, ob eine SD-Karte im System vorhanden ist. ##"
+                            ],
+    "inputs":  [
+                   {
+                       "name":  "Activate",
+                       "type":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                   },
+                   {
+                       "name":  "Delay",
+                       "type":  "timespan",
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "name":  "LastRestartX1String",
+                        "type":  "string",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "LastTelegramX1String",
+                        "type":  "string",
+                        "description":  "Ausgang für \u0027L as tT el eg ra mX1 St ri ng\u0027 (string)."
+                    },
+                    {
+                        "name":  "LastRestartX1",
+                        "type":  "datetime",
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung."
+                    },
+                    {
+                        "name":  "LastTelegramX1",
+                        "type":  "datetime",
+                        "description":  "Ausgang für \u0027L as tT el eg ra mX1\u0027 (datetime)."
+                    },
+                    {
+                        "name":  "SDCardAvailaible",
+                        "type":  "bool",
+                        "description":  "Ausgang für \u0027S DC ar dA va il ai bl e\u0027 (bool)."
+                    },
+                    {
+                        "name":  "LogExecute",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    },
+                    {
+                        "name":  "LogSchedule",
+                        "type":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                    }
+                ],
+    "examples":  [
+                     {
+                         "title":  "Typische Verwendung",
+                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Info\u0027 zentral wiederverwendbar abzubilden.",
+                         "steps":  [
+                                       "Baustein in der Logikengine platzieren.",
+                                       "Erforderliche Eingänge verbinden.",
+                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
+                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                   ]
+                     }
+                 ],
+    "faq":  [
+                {
+                    "question":  "Wofür wird der Baustein verwendet?",
+                    "answer":  "Der Baustein kapselt eine wiederverwendbare Automatisierungslogik und stellt deren Ergebnis über definierte Ausgänge bereit."
+                },
+                {
+                    "question":  "Was bewirkt der Eingang Activate?",
+                    "answer":  "Mit Activate kann die Verarbeitung des Bausteins ein- oder ausgeschaltet werden."
+                },
+                {
+                    "question":  "Wie kann die Funktion geprüft werden?",
+                    "answer":  "Die Log-Ausgänge liefern Diagnoseinformationen zu Ausführung, Zeitplanung, Fehlern oder Lizenzstatus."
+                }
+            ],
+    "changelog":  [
+                      {
+                          "version":  "3.0.17",
+                          "date":  "2026-05-17",
+                          "changes":  [
+                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
+                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                      ]
+                      }
+                  ]
+}
