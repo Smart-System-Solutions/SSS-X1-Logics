@@ -151,9 +151,9 @@
                           "version":  "3.0.17",
                           "date":  "2026-05-18",
                           "changes":  [
-                                          "Neue signierte Version 3.0.17 bereitgestellt.",
+                                          "Bausteinpaket in Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Metadaten auf diese Version synchronisiert.",
+                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
                                           "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
                                       ]
                       }
