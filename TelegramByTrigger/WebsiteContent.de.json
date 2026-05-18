@@ -29,94 +29,104 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Trigger",
                        "terms":  {
-                                     "en":  "T ri gg e r",
-                                     "de":  "T ri gg e r"
+                                     "de":  "Trigger",
+                                     "en":  "Trigger"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ri gg e r\u0027 / \u0027T ri gg e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Trigger\u0027 / \u0027Trigger\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "en":  "I np u t",
-                                     "de":  "I np u t"
+                                     "de":  "Eingang",
+                                     "en":  "Input"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
                    },
                    {
                        "name":  "SetToDefaultValueIfInputHasNoValue",
                        "terms":  {
-                                     "en":  "S et To De fa ul tV al ue If In pu tH as No Va l u e",
-                                     "de":  "S et To De fa ul tV al ue If In pu tH as No Va l u e"
+                                     "de":  "Auf Standardwert setzen wenn der Eingang keinen Wert hat",
+                                     "en":  "Set To Default Value If Input Has No Value"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et To De fa ul tV al ue If In pu tH as No Va l u e\u0027 / \u0027S et To De fa ul tV al ue If In pu tH as No Va l u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Auf Standardwert setzen wenn der Eingang keinen Wert hat\u0027 / \u0027Set To Default Value If Input Has No Value\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "DefaultValue",
                        "terms":  {
-                                     "en":  "D ef au lt Va l u e",
-                                     "de":  "D ef au lt Va l u e"
+                                     "de":  "Standardwert",
+                                     "en":  "Default Value"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027D ef au lt Va l u e\u0027 / \u0027D ef au lt Va l u e\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Standardwert\u0027 / \u0027Default Value\u0027. Datentyp: any."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -152,7 +162,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

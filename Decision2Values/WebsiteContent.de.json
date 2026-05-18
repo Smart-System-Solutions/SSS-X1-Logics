@@ -30,58 +30,64 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "TakeFirstValue",
                        "terms":  {
-                                     "en":  "T ak eF ir st Va l u e",
-                                     "de":  "T ak eF ir st Va l u e"
+                                     "de":  "Nimm Wert 1",
+                                     "en":  "Take First Value"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eF ir st Va l u e\u0027 / \u0027T ak eF ir st Va l u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Nimm Wert 1\u0027 / \u0027Take First Value\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Value1",
                        "terms":  {
-                                     "en":  "V al u e1",
-                                     "de":  "V al u e1"
+                                     "de":  "Wert 1",
+                                     "en":  "Value 1"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e1\u0027 / \u0027V al u e1\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 1\u0027 / \u0027Value 1\u0027. Datentyp: any."
                    },
                    {
                        "name":  "Value2",
                        "terms":  {
-                                     "en":  "V al u e2",
-                                     "de":  "V al u e2"
+                                     "de":  "Wert 2",
+                                     "en":  "Value 2"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e2\u0027 / \u0027V al u e2\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 2\u0027 / \u0027Value 2\u0027. Datentyp: any."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -113,7 +119,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

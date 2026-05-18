@@ -30,85 +30,94 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "DecisionFirstAndSecondValue",
                        "terms":  {
-                                     "en":  "D ec is io nF ir st An dS ec on dV al u e",
-                                     "de":  "D ec is io nF ir st An dS ec on dV al u e"
+                                     "de":  "Entscheidung Wert 1 und Wert 2",
+                                     "en":  "Decision First And Second Value"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ec is io nF ir st An dS ec on dV al u e\u0027 / \u0027D ec is io nF ir st An dS ec on dV al u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Entscheidung Wert 1 und Wert 2\u0027 / \u0027Decision First And Second Value\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "DecisionFirstAndThirdValue",
                        "terms":  {
-                                     "en":  "D ec is io nF ir st An dT hi rd Va l u e",
-                                     "de":  "D ec is io nF ir st An dT hi rd Va l u e"
+                                     "de":  "Entscheidung Wert 1 und Wert 3",
+                                     "en":  "Decision First And Third Value"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ec is io nF ir st An dT hi rd Va l u e\u0027 / \u0027D ec is io nF ir st An dT hi rd Va l u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Entscheidung Wert 1 und Wert 3\u0027 / \u0027Decision First And Third Value\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Value1",
                        "terms":  {
-                                     "en":  "V al u e1",
-                                     "de":  "V al u e1"
+                                     "de":  "Wert 1",
+                                     "en":  "Value 1"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e1\u0027 / \u0027V al u e1\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 1\u0027 / \u0027Value 1\u0027. Datentyp: any."
                    },
                    {
                        "name":  "Value2",
                        "terms":  {
-                                     "en":  "V al u e2",
-                                     "de":  "V al u e2"
+                                     "de":  "Wert 2",
+                                     "en":  "Value 2"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e2\u0027 / \u0027V al u e2\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 2\u0027 / \u0027Value 2\u0027. Datentyp: any."
                    },
                    {
                        "name":  "Value3",
                        "terms":  {
-                                     "en":  "V al u e3",
-                                     "de":  "V al u e3"
+                                     "de":  "Wert 3",
+                                     "en":  "Value 3"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e3\u0027 / \u0027V al u e3\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 3\u0027 / \u0027Value 3\u0027. Datentyp: any."
                    },
                    {
                        "name":  "Value4",
                        "terms":  {
-                                     "en":  "V al u e4",
-                                     "de":  "V al u e4"
+                                     "de":  "Wert 4",
+                                     "en":  "Value 4"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027V al u e4\u0027 / \u0027V al u e4\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Wert 4\u0027 / \u0027Value 4\u0027. Datentyp: any."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -140,7 +149,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

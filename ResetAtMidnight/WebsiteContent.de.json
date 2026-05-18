@@ -34,121 +34,134 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "en":  "I np u t",
-                                     "de":  "I np u t"
+                                     "de":  "Eingang",
+                                     "en":  "Input"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "LastCycleTimeBeforeMidnight",
                        "terms":  {
-                                     "en":  "L as tC yc le Ti me Be fo re Mi dn ig h t",
-                                     "de":  "L as tC yc le Ti me Be fo re Mi dn ig h t"
+                                     "de":  "Last Cycle Zeit Before Midnight",
+                                     "en":  "Last Cycle Time Before Midnight"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027L as tC yc le Ti me Be fo re Mi dn ig h t\u0027 / \u0027L as tC yc le Ti me Be fo re Mi dn ig h t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Last Cycle Zeit Before Midnight\u0027 / \u0027Last Cycle Time Before Midnight\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "CycleTime",
                        "terms":  {
-                                     "en":  "C yc le Ti m e",
-                                     "de":  "C yc le Ti m e"
+                                     "de":  "Aktualisierungszeit",
+                                     "en":  "Cycle Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027C yc le Ti m e\u0027 / \u0027C yc le Ti m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Cycle Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "InputHaveToBeFalse",
                        "terms":  {
-                                     "en":  "I np ut Ha ve To Be Fa l s e",
-                                     "de":  "I np ut Ha ve To Be Fa l s e"
+                                     "de":  "Eingang muss FALSE sein",
+                                     "en":  "Input Have To Be False"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np ut Ha ve To Be Fa l s e\u0027 / \u0027I np ut Ha ve To Be Fa l s e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Eingang muss FALSE sein\u0027 / \u0027Input Have To Be False\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "InputHaveToBeTrue",
                        "terms":  {
-                                     "en":  "I np ut Ha ve To Be Tr u e",
-                                     "de":  "I np ut Ha ve To Be Tr u e"
+                                     "de":  "Eingang muss TRUE sein",
+                                     "en":  "Input Have To Be True"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np ut Ha ve To Be Tr u e\u0027 / \u0027I np ut Ha ve To Be Tr u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Eingang muss TRUE sein\u0027 / \u0027Input Have To Be True\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "SetFalseAfterSetTrue",
                        "terms":  {
-                                     "en":  "S et Fa ls eA ft er Se tT r u e",
-                                     "de":  "S et Fa ls eA ft er Se tT r u e"
+                                     "de":  "Setze FALSE nach TRUE",
+                                     "en":  "Set False After Set True"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Fa ls eA ft er Se tT r u e\u0027 / \u0027S et Fa ls eA ft er Se tT r u e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Setze FALSE nach TRUE\u0027 / \u0027Set False After Set True\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 01",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 02",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -184,7 +197,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.28",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.28 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

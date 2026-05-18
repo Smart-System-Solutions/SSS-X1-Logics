@@ -28,202 +28,224 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "en":  "I np u t",
-                                     "de":  "I np u t"
+                                     "de":  "Eingang",
+                                     "en":  "Input"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: number."
                    },
                    {
                        "name":  "ExceedingValue",
                        "terms":  {
-                                     "en":  "E xc ee di ng Va l u e",
-                                     "de":  "E xc ee di ng Va l u e"
+                                     "de":  "Zu ÃƒÂ¼berschreitender Wert",
+                                     "en":  "Exceeding Value"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E xc ee di ng Va l u e\u0027 / \u0027E xc ee di ng Va l u e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Zu ÃƒÂ¼berschreitender Wert\u0027 / \u0027Exceeding Value\u0027. Datentyp: number."
                    },
                    {
                        "name":  "UndercuttingValue",
                        "terms":  {
-                                     "en":  "U nd er cu tt in gV al u e",
-                                     "de":  "U nd er cu tt in gV al u e"
+                                     "de":  "Zu unterschreitender Wert",
+                                     "en":  "Undercutting Value"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027U nd er cu tt in gV al u e\u0027 / \u0027U nd er cu tt in gV al u e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Zu unterschreitender Wert\u0027 / \u0027Undercutting Value\u0027. Datentyp: number."
                    },
                    {
                        "name":  "ExceedingValueHigh",
                        "terms":  {
-                                     "en":  "E xc ee di ng Va lu eH i g h",
-                                     "de":  "E xc ee di ng Va lu eH i g h"
+                                     "de":  "Zu ÃƒÂ¼berschreitender Wert (Hoch)",
+                                     "en":  "Exceeding Value High"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E xc ee di ng Va lu eH i g h\u0027 / \u0027E xc ee di ng Va lu eH i g h\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Zu ÃƒÂ¼berschreitender Wert (Hoch)\u0027 / \u0027Exceeding Value High\u0027. Datentyp: number."
                    },
                    {
                        "name":  "ConditionValueForReset",
                        "terms":  {
-                                     "en":  "C on di ti on Va lu eF or Re s e t",
-                                     "de":  "C on di ti on Va lu eF or Re s e t"
+                                     "de":  "Bedingungswert fÃƒÂ¼r Reset (Zu unterschreitender Wert)",
+                                     "en":  "Condition Value For Reset"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027C on di ti on Va lu eF or Re s e t\u0027 / \u0027C on di ti on Va lu eF or Re s e t\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Bedingungswert fÃƒÂ¼r Reset (Zu unterschreitender Wert)\u0027 / \u0027Condition Value For Reset\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TimeExceedingValue",
                        "terms":  {
-                                     "en":  "T im eE xc ee di ng Va l u e",
-                                     "de":  "T im eE xc ee di ng Va l u e"
+                                     "de":  "Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert",
+                                     "en":  "Time Exceeding Value"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eE xc ee di ng Va l u e\u0027 / \u0027T im eE xc ee di ng Va l u e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert\u0027 / \u0027Time Exceeding Value\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeExceedingValueHigh",
                        "terms":  {
-                                     "en":  "T im eE xc ee di ng Va lu eH i g h",
-                                     "de":  "T im eE xc ee di ng Va lu eH i g h"
+                                     "de":  "Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert (Hoch)",
+                                     "en":  "Time Exceeding Value High"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eE xc ee di ng Va lu eH i g h\u0027 / \u0027T im eE xc ee di ng Va lu eH i g h\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert (Hoch)\u0027 / \u0027Time Exceeding Value High\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeUndercuttingValue",
                        "terms":  {
-                                     "en":  "T im eU nd er cu tt in gV al u e",
-                                     "de":  "T im eU nd er cu tt in gV al u e"
+                                     "de":  "Zeit fÃƒÂ¼r den unterschreitenden Wert",
+                                     "en":  "Time Undercutting Value"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eU nd er cu tt in gV al u e\u0027 / \u0027T im eU nd er cu tt in gV al u e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den unterschreitenden Wert\u0027 / \u0027Time Undercutting Value\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "Reset",
                        "terms":  {
-                                     "en":  "R es e t",
-                                     "de":  "R es e t"
+                                     "de":  "Neustart",
+                                     "en":  "Reset"
                                  },
                        "type":  "bool",
-                       "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück."
+                       "dataType":  "bool",
+                       "description":  "Setzt den internen Zustand oder die gespeicherten Werte zurück. Datentyp: bool."
                    },
                    {
                        "name":  "AlwaysReset",
                        "terms":  {
-                                     "en":  "A lw ay sR es e t",
-                                     "de":  "A lw ay sR es e t"
+                                     "de":  "Always ZurÃ¼cksetzen",
+                                     "en":  "Always Reset"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A lw ay sR es e t\u0027 / \u0027A lw ay sR es e t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Always ZurÃ¼cksetzen\u0027 / \u0027Always Reset\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TimeUndercuttingValueToEarly",
                        "terms":  {
-                                     "en":  "T im eU nd er cu tt in gV al ue To Ea r l y",
-                                     "de":  "T im eU nd er cu tt in gV al ue To Ea r l y"
+                                     "de":  "Zeit fÃƒÂ¼r den unterschreitenden Wert (Zu FrÃƒÂ¼h)",
+                                     "en":  "Time Undercutting Value To Early"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eU nd er cu tt in gV al ue To Ea r l y\u0027 / \u0027T im eU nd er cu tt in gV al ue To Ea r l y\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den unterschreitenden Wert (Zu FrÃƒÂ¼h)\u0027 / \u0027Time Undercutting Value To Early\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "en":  "S to ra ge Pa t h",
-                                     "de":  "S to ra ge Pa t h"
+                                     "de":  "Speicherpfad",
+                                     "en":  "Storage Path"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027Speicherpfad\u0027 / \u0027Storage Path\u0027. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "ValueExceeded",
                         "terms":  {
-                                      "en":  "V al ue Ex ce ed e d",
-                                      "de":  "V al ue Ex ce ed e d"
+                                      "de":  "LÃƒÂ¤uft (Wert ÃƒÂ¼berschritten)",
+                                      "en":  "Value Exceeded"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027V al ue Ex ce ed e d\u0027 / \u0027V al ue Ex ce ed e d\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027LÃƒÂ¤uft (Wert ÃƒÂ¼berschritten)\u0027 / \u0027Value Exceeded\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgain",
                         "terms":  {
-                                      "en":  "V al ue Ex ce ed ed An dU nd er cu tA ga i n",
-                                      "de":  "V al ue Ex ce ed ed An dU nd er cu tA ga i n"
+                                      "de":  "Fertig (Wert ÃƒÂ¼berschritten und danach wieder unterschritten)",
+                                      "en":  "Value Exceeded And Undercut Again"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed An dU nd er cu tA ga i n\u0027 / \u0027V al ue Ex ce ed ed An dU nd er cu tA ga i n\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Fertig (Wert ÃƒÂ¼berschritten und danach wieder unterschritten)\u0027 / \u0027Value Exceeded And Undercut Again\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgainToEarly",
                         "terms":  {
-                                      "en":  "V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y",
-                                      "de":  "V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y"
+                                      "de":  "Fehler 1 (Wert ÃƒÂ¼berschritten und danach wieder unterschritten (zu frÃƒÂ¼h))",
+                                      "en":  "Value Exceeded And Undercut Again To Early"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y\u0027 / \u0027V al ue Ex ce ed ed An dU nd er cu tA ga in To Ea r l y\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Fehler 1 (Wert ÃƒÂ¼berschritten und danach wieder unterschritten (zu frÃƒÂ¼h))\u0027 / \u0027Value Exceeded And Undercut Again To Early\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededButNotIncreasedHigh",
                         "terms":  {
-                                      "en":  "V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h",
-                                      "de":  "V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h"
+                                      "de":  "Fehler 2 (Wert ÃƒÂ¼berschritten aber hohen ÃƒÅ“berschreitungswert nicht erreicht)",
+                                      "en":  "Value Exceeded But Not Increased High"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h\u0027 / \u0027V al ue Ex ce ed ed Bu tN ot In cr ea se dH i g h\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Fehler 2 (Wert ÃƒÂ¼berschritten aber hohen ÃƒÅ“berschreitungswert nicht erreicht)\u0027 / \u0027Value Exceeded But Not Increased High\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -259,7 +281,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

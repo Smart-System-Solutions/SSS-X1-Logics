@@ -5,7 +5,8 @@ Dieser Ordner enthält den Index für Website-Inhalte, die direkt aus dem Git-Re
 - `index.de.json` listet alle Bausteine und deren Content-Dateien.
 - Jeder produktive Baustein besitzt eine eigene Datei `WebsiteContent.de.json` im jeweiligen Projektordner.
 - Die Inhalte sind in feste Abschnitte gegliedert: Kurzbeschreibung, Besonderheiten, detaillierte Beschreibung, Eingänge, Ausgänge, Beispiele, FAQ und Changelog.
-- `Build-WebsiteContent.ps1` erzeugt die Dateien reproduzierbar aus Manifest, Code-Metadaten und optional vorhandenen Website-Seiten.
+- Eingänge und Ausgänge werden als Listen gepflegt. Jeder Eintrag enthält den technischen Namen, deutsche und englische Bezeichnungen aus den Resource-Dateien sowie den Datentyp.
+- `Build-WebsiteContent.ps1` erzeugt die Dateien reproduzierbar aus Manifest, Code-Metadaten, Resource-Dateien und optional vorhandenen Website-Seiten.
 
 Die Website sollte bevorzugt `index.de.json` lesen und anschließend die referenzierten Baustein-Dateien laden.
 

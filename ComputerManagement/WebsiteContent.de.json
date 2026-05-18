@@ -31,193 +31,214 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerStart",
                        "terms":  {
-                                     "en":  "T ri gg er St a r t",
-                                     "de":  "T ri gg er St a r t"
+                                     "de":  "Trigger Start Computer",
+                                     "en":  "Trigger Start"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ri gg er St a r t\u0027 / \u0027T ri gg er St a r t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Trigger Start Computer\u0027 / \u0027Trigger Start\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerShutdown",
                        "terms":  {
-                                     "en":  "T ri gg er Sh ut do w n",
-                                     "de":  "T ri gg er Sh ut do w n"
+                                     "de":  "Trigger Computer herunterfahren",
+                                     "en":  "Trigger Shutdown"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ri gg er Sh ut do w n\u0027 / \u0027T ri gg er Sh ut do w n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Trigger Computer herunterfahren\u0027 / \u0027Trigger Shutdown\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Online",
                        "terms":  {
-                                     "en":  "O nl i n e",
-                                     "de":  "O nl i n e"
+                                     "de":  "Computer Online",
+                                     "en":  "Online"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027O nl i n e\u0027 / \u0027O nl i n e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Computer Online\u0027 / \u0027Online\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionOnline",
                        "terms":  {
-                                     "en":  "C on di ti on On li n e",
-                                     "de":  "C on di ti on On li n e"
+                                     "de":  "Bedingung Online",
+                                     "en":  "Condition Online"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti on On li n e\u0027 / \u0027C on di ti on On li n e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung Online\u0027 / \u0027Condition Online\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateTurnOnOffSocketPC",
                        "terms":  {
-                                     "en":  "A ct iv at eT ur nO nO ff So ck et P C",
-                                     "de":  "A ct iv at eT ur nO nO ff So ck et P C"
+                                     "de":  "Aktiviere Steckdose Computer Ein-/Ausschalten",
+                                     "en":  "Activate Turn On Off Socket PC"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et P C\u0027 / \u0027A ct iv at eT ur nO nO ff So ck et P C\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere Steckdose Computer Ein-/Ausschalten\u0027 / \u0027Activate Turn On Off Socket PC\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateTurnOnOffSocketMonitor",
                        "terms":  {
-                                     "en":  "A ct iv at eT ur nO nO ff So ck et Mo ni t o r",
-                                     "de":  "A ct iv at eT ur nO nO ff So ck et Mo ni t o r"
+                                     "de":  "Aktiviere Steckdose Bildschirm Ein-/Ausschalten",
+                                     "en":  "Activate Turn On Off Socket Monitor"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eT ur nO nO ff So ck et Mo ni t o r\u0027 / \u0027A ct iv at eT ur nO nO ff So ck et Mo ni t o r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere Steckdose Bildschirm Ein-/Ausschalten\u0027 / \u0027Activate Turn On Off Socket Monitor\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionTurnOffSocketPC",
                        "terms":  {
-                                     "en":  "C on di ti on Tu rn Of fS oc ke t P C",
-                                     "de":  "C on di ti on Tu rn Of fS oc ke t P C"
+                                     "de":  "Bedingung Steckdose PC ausschalten",
+                                     "en":  "Condition Turn Off Socket PC"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti on Tu rn Of fS oc ke t P C\u0027 / \u0027C on di ti on Tu rn Of fS oc ke t P C\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung Steckdose PC ausschalten\u0027 / \u0027Condition Turn Off Socket PC\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TimeToTurnOffSocketPC",
                        "terms":  {
-                                     "en":  "T im eT oT ur nO ff So ck et P C",
-                                     "de":  "T im eT oT ur nO ff So ck et P C"
+                                     "de":  "ZeitverzÃƒÂ¶gerung Steckdose Computer ausscchalten",
+                                     "en":  "Time To Turn Off Socket PC"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eT oT ur nO ff So ck et P C\u0027 / \u0027T im eT oT ur nO ff So ck et P C\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027ZeitverzÃƒÂ¶gerung Steckdose Computer ausscchalten\u0027 / \u0027Time To Turn Off Socket PC\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeToTurnOffSocketMonitor",
                        "terms":  {
-                                     "en":  "T im eT oT ur nO ff So ck et Mo ni t o r",
-                                     "de":  "T im eT oT ur nO ff So ck et Mo ni t o r"
+                                     "de":  "ZeitverzÃƒÂ¶gerung Steckdose Bildschirm ausscchalten",
+                                     "en":  "Time To Turn Off Socket Monitor"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eT oT ur nO ff So ck et Mo ni t o r\u0027 / \u0027T im eT oT ur nO ff So ck et Mo ni t o r\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027ZeitverzÃƒÂ¶gerung Steckdose Bildschirm ausscchalten\u0027 / \u0027Time To Turn Off Socket Monitor\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "en":  "U pd at eT i m e",
-                                     "de":  "U pd at eT i m e"
+                                     "de":  "Aktualisierungszeit",
+                                     "en":  "Update Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027U pd at eT i m e\u0027 / \u0027U pd at eT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Start",
                         "terms":  {
-                                      "en":  "S ta r t",
-                                      "de":  "S ta r t"
+                                      "de":  "Starte Computer",
+                                      "en":  "Start"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S ta r t\u0027 / \u0027S ta r t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Starte Computer\u0027 / \u0027Start\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "Shutdown",
                         "terms":  {
-                                      "en":  "S hu td o w n",
-                                      "de":  "S hu td o w n"
+                                      "de":  "Computer herunterfahren",
+                                      "en":  "Shutdown"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S hu td o w n\u0027 / \u0027S hu td o w n\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Computer herunterfahren\u0027 / \u0027Shutdown\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "Status",
                         "terms":  {
-                                      "en":  "S ta t u s",
-                                      "de":  "S ta t u s"
+                                      "de":  "Status Computer",
+                                      "en":  "Status"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S ta t u s\u0027 / \u0027S ta t u s\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Status Computer\u0027 / \u0027Status\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "SocketPC",
                         "terms":  {
-                                      "en":  "S oc ke t P C",
-                                      "de":  "S oc ke t P C"
+                                      "de":  "Steckdose PC",
+                                      "en":  "Socket PC"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S oc ke t P C\u0027 / \u0027S oc ke t P C\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Steckdose PC\u0027 / \u0027Socket PC\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "SocketMonitor",
                         "terms":  {
-                                      "en":  "S oc ke tM on it o r",
-                                      "de":  "S oc ke tM on it o r"
+                                      "de":  "Steckdose Bildschirm",
+                                      "en":  "Socket Monitor"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S oc ke tM on it o r\u0027 / \u0027S oc ke tM on it o r\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Steckdose Bildschirm\u0027 / \u0027Socket Monitor\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -253,7 +274,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

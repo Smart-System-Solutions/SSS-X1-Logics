@@ -29,175 +29,194 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "NightModeActive",
                        "terms":  {
-                                     "en":  "N ig ht Mo de Ac ti v e",
-                                     "de":  "N ig ht Mo de Ac ti v e"
+                                     "de":  "Nachtmodus Aktiv",
+                                     "en":  "Night Mode Active"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027N ig ht Mo de Ac ti v e\u0027 / \u0027N ig ht Mo de Ac ti v e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Nachtmodus Aktiv\u0027 / \u0027Night Mode Active\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "SkipFirstNightModeTrigger",
                        "terms":  {
-                                     "en":  "S ki pF ir st Ni gh tM od eT ri gg e r",
-                                     "de":  "S ki pF ir st Ni gh tM od eT ri gg e r"
+                                     "de":  "Ersten Nachtmodus-Trigger ÃƒÂ¼berspringen",
+                                     "en":  "Skip First Night Mode Trigger"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S ki pF ir st Ni gh tM od eT ri gg e r\u0027 / \u0027S ki pF ir st Ni gh tM od eT ri gg e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Ersten Nachtmodus-Trigger ÃƒÂ¼berspringen\u0027 / \u0027Skip First Night Mode Trigger\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "NumberOfBlinds",
                        "terms":  {
-                                     "en":  "N um be rO fB li n d s",
-                                     "de":  "N um be rO fB li n d s"
+                                     "de":  "Anzahl RolllÃƒÂ¤den",
+                                     "en":  "Number Of Blinds"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fB li n d s\u0027 / \u0027N um be rO fB li n d s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl RolllÃƒÂ¤den\u0027 / \u0027Number Of Blinds\u0027. Datentyp: int."
                    },
                    {
                        "name":  "DeactivateBlindsOn",
                        "terms":  {
-                                     "en":  "D ea ct iv at eB li nd s O n",
-                                     "de":  "D ea ct iv at eB li nd s O n"
+                                     "de":  "Deactivate Blinds On",
+                                     "en":  "Deactivate Blinds On"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ea ct iv at eB li nd s O n\u0027 / \u0027D ea ct iv at eB li nd s O n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Deactivate Blinds On\u0027 / \u0027Deactivate Blinds On\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "DeactivateBlindsOff",
                        "terms":  {
-                                     "en":  "D ea ct iv at eB li nd sO f f",
-                                     "de":  "D ea ct iv at eB li nd sO f f"
+                                     "de":  "Deactivate Blinds Off",
+                                     "en":  "Deactivate Blinds Off"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D ea ct iv at eB li nd sO f f\u0027 / \u0027D ea ct iv at eB li nd sO f f\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Deactivate Blinds Off\u0027 / \u0027Deactivate Blinds Off\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "BlindsOnStartTime",
                        "terms":  {
-                                     "en":  "B li nd sO nS ta rt Ti m e",
-                                     "de":  "B li nd sO nS ta rt Ti m e"
+                                     "de":  "Startzeit Rollladen schlieÃƒÅ¸en",
+                                     "en":  "Blinds On Start Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027B li nd sO nS ta rt Ti m e\u0027 / \u0027B li nd sO nS ta rt Ti m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Startzeit Rollladen schlieÃƒÅ¸en\u0027 / \u0027Blinds On Start Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOnEndTime",
                        "terms":  {
-                                     "en":  "B li nd sO nE nd Ti m e",
-                                     "de":  "B li nd sO nE nd Ti m e"
+                                     "de":  "Endzeit Rollladen schlieÃƒÅ¸en",
+                                     "en":  "Blinds On End Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027B li nd sO nE nd Ti m e\u0027 / \u0027B li nd sO nE nd Ti m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Endzeit Rollladen schlieÃƒÅ¸en\u0027 / \u0027Blinds On End Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOffStartTime",
                        "terms":  {
-                                     "en":  "B li nd sO ff St ar tT i m e",
-                                     "de":  "B li nd sO ff St ar tT i m e"
+                                     "de":  "Startzeit Rollladen ÃƒÂ¶ffnen",
+                                     "en":  "Blinds Off Start Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027B li nd sO ff St ar tT i m e\u0027 / \u0027B li nd sO ff St ar tT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Startzeit Rollladen ÃƒÂ¶ffnen\u0027 / \u0027Blinds Off Start Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOffEndTime",
                        "terms":  {
-                                     "en":  "B li nd sO ff En dT i m e",
-                                     "de":  "B li nd sO ff En dT i m e"
+                                     "de":  "Endzeit Rollladen ÃƒÂ¶ffnen",
+                                     "en":  "Blinds Off End Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027B li nd sO ff En dT i m e\u0027 / \u0027B li nd sO ff En dT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Endzeit Rollladen ÃƒÂ¶ffnen\u0027 / \u0027Blinds Off End Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Blinds",
                         "terms":  {
-                                      "en":  "B li n d s",
-                                      "de":  "B li n d s"
+                                      "de":  "Blinds",
+                                      "en":  "Blinds"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027B li n d s\u0027 / \u0027B li n d s\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Blinds\u0027 / \u0027Blinds\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "NightModeOnSetTrue",
                         "terms":  {
-                                      "en":  "N ig ht Mo de On Se tT r u e",
-                                      "de":  "N ig ht Mo de On Se tT r u e"
+                                      "de":  "Nachtmodus Ein setzt TRUE",
+                                      "en":  "Night Mode On Set True"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tT r u e\u0027 / \u0027N ig ht Mo de On Se tT r u e\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Nachtmodus Ein setzt TRUE\u0027 / \u0027Night Mode On Set True\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "NightModeOnSetFalse",
                         "terms":  {
-                                      "en":  "N ig ht Mo de On Se tF al s e",
-                                      "de":  "N ig ht Mo de On Se tF al s e"
+                                      "de":  "Nachtmodus Ein setzt FALSE",
+                                      "en":  "Night Mode On Set False"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de On Se tF al s e\u0027 / \u0027N ig ht Mo de On Se tF al s e\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Nachtmodus Ein setzt FALSE\u0027 / \u0027Night Mode On Set False\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "NightModeOffSetTrue",
                         "terms":  {
-                                      "en":  "N ig ht Mo de Of fS et Tr u e",
-                                      "de":  "N ig ht Mo de Of fS et Tr u e"
+                                      "de":  "Nachtmodus Aus setzt TRUE",
+                                      "en":  "Night Mode Off Set True"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Tr u e\u0027 / \u0027N ig ht Mo de Of fS et Tr u e\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Nachtmodus Aus setzt TRUE\u0027 / \u0027Night Mode Off Set True\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "NightModeOffSetFalse",
                         "terms":  {
-                                      "en":  "N ig ht Mo de Of fS et Fa l s e",
-                                      "de":  "N ig ht Mo de Of fS et Fa l s e"
+                                      "de":  "Nachtmodus Aus setzt FALSE",
+                                      "en":  "Night Mode Off Set False"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027N ig ht Mo de Of fS et Fa l s e\u0027 / \u0027N ig ht Mo de Of fS et Fa l s e\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Nachtmodus Aus setzt FALSE\u0027 / \u0027Night Mode Off Set False\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -233,7 +252,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

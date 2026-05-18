@@ -32,301 +32,334 @@
                    {
                        "name":  "Active",
                        "terms":  {
-                                     "en":  "A ct i v e",
-                                     "de":  "A ct i v e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Active"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct i v e\u0027 / \u0027A ct i v e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere\u0027 / \u0027Active\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "en":  "S um m e r",
-                                     "de":  "S um m e r"
+                                     "de":  "Sommer",
+                                     "en":  "Summer"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Sommer\u0027 / \u0027Summer\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "HeatingCooling",
                        "terms":  {
-                                     "en":  "H ea ti ng Co ol i n g",
-                                     "de":  "H ea ti ng Co ol i n g"
+                                     "de":  "Heizen/KÃƒÂ¼hlen",
+                                     "en":  "HeatingCooling"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027H ea ti ng Co ol i n g\u0027 / \u0027H ea ti ng Co ol i n g\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Heizen/KÃƒÂ¼hlen\u0027 / \u0027HeatingCooling\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "SetManual",
                        "terms":  {
-                                     "en":  "S et Ma nu a l",
-                                     "de":  "S et Ma nu a l"
+                                     "de":  "Setze Manuell",
+                                     "en":  "SetManual"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Ma nu a l\u0027 / \u0027S et Ma nu a l\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Setze Manuell\u0027 / \u0027SetManual\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TakeAccuPowerConsumptionCalculation",
                        "terms":  {
-                                     "en":  "T ak eA cc uP ow er Co ns um pt io nC al cu la ti o n",
-                                     "de":  "T ak eA cc uP ow er Co ns um pt io nC al cu la ti o n"
+                                     "de":  "Verwende Akku-Berechnung aufgrund von Leistungsverbrauch",
+                                     "en":  "TakeAccuPowerConsumptionCalculation"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eA cc uP ow er Co ns um pt io nC al cu la ti o n\u0027 / \u0027T ak eA cc uP ow er Co ns um pt io nC al cu la ti o n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Verwende Akku-Berechnung aufgrund von Leistungsverbrauch\u0027 / \u0027TakeAccuPowerConsumptionCalculation\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Sunrise",
                        "terms":  {
-                                     "en":  "S un ri s e",
-                                     "de":  "S un ri s e"
+                                     "de":  "Sonnenaufgang",
+                                     "en":  "Sunrise"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027S un ri s e\u0027 / \u0027S un ri s e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Sonnenaufgang\u0027 / \u0027Sunrise\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "Sunset",
                        "terms":  {
-                                     "en":  "S un s e t",
-                                     "de":  "S un s e t"
+                                     "de":  "Sonnenuntergang",
+                                     "en":  "Sunset"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027S un s e t\u0027 / \u0027S un s e t\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Sonnenuntergang\u0027 / \u0027Sunset\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "MinimumWidthManual",
                        "terms":  {
-                                     "en":  "M in im um Wi dt hM an u a l",
-                                     "de":  "M in im um Wi dt hM an u a l"
+                                     "de":  "Minimale Ersatzstrombreite Manuell [%]",
+                                     "en":  "MinimumWidthManual"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027M in im um Wi dt hM an u a l\u0027 / \u0027M in im um Wi dt hM an u a l\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Minimale Ersatzstrombreite Manuell [%]\u0027 / \u0027MinimumWidthManual\u0027. Datentyp: int."
                    },
                    {
                        "name":  "PowerConsumption",
                        "terms":  {
-                                     "en":  "P ow er Co ns um pt i o n",
-                                     "de":  "P ow er Co ns um pt i o n"
+                                     "de":  "Leistungsverbrauch",
+                                     "en":  "PowerConsumption"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027P ow er Co ns um pt i o n\u0027 / \u0027P ow er Co ns um pt i o n\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Leistungsverbrauch\u0027 / \u0027PowerConsumption\u0027. Datentyp: int."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "en":  "A cc uA ct u a l",
-                                     "de":  "A cc uA ct u a l"
+                                     "de":  "Aktueller Akkuwert [kW]",
+                                     "en":  "AccuActual"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Aktueller Akkuwert [kW]\u0027 / \u0027AccuActual\u0027. Datentyp: number."
                    },
                    {
                        "name":  "AccuMaximal",
                        "terms":  {
-                                     "en":  "A cc uM ax im a l",
-                                     "de":  "A cc uM ax im a l"
+                                     "de":  "Maximaler Akkuwert [kW]",
+                                     "en":  "AccuMaximal"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uM ax im a l\u0027 / \u0027A cc uM ax im a l\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Maximaler Akkuwert [kW]\u0027 / \u0027AccuMaximal\u0027. Datentyp: number."
                    },
                    {
                        "name":  "ForecastElectricityGeneration",
                        "terms":  {
-                                     "en":  "F or ec as tE le ct ri ci ty Ge ne ra ti o n",
-                                     "de":  "F or ec as tE le ct ri ci ty Ge ne ra ti o n"
+                                     "de":  "Vorhersage Leistungserzeugung",
+                                     "en":  "ForecastElectricityGeneration"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027F or ec as tE le ct ri ci ty Ge ne ra ti o n\u0027 / \u0027F or ec as tE le ct ri ci ty Ge ne ra ti o n\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Vorhersage Leistungserzeugung\u0027 / \u0027ForecastElectricityGeneration\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "en":  "S to ra ge Pa t h",
-                                     "de":  "S to ra ge Pa t h"
+                                     "de":  "Speicherpfad",
+                                     "en":  "StoragePath"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027Speicherpfad\u0027 / \u0027StoragePath\u0027. Datentyp: string."
                    },
                    {
                        "name":  "TimeBeforeSunriseToSetAccuToZeroWinter",
                        "terms":  {
-                                     "en":  "T im eB ef or eS un ri se To Se tA cc uT oZ er oW in t e r",
-                                     "de":  "T im eB ef or eS un ri se To Se tA cc uT oZ er oW in t e r"
+                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Winter)",
+                                     "en":  "TimeBeforeSunriseToSetAccuToZeroWinter"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eB ef or eS un ri se To Se tA cc uT oZ er oW in t e r\u0027 / \u0027T im eB ef or eS un ri se To Se tA cc uT oZ er oW in t e r\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Winter)\u0027 / \u0027TimeBeforeSunriseToSetAccuToZeroWinter\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeBeforeSunriseToSetAccuToZeroSummer",
                        "terms":  {
-                                     "en":  "T im eB ef or eS un ri se To Se tA cc uT oZ er oS um m e r",
-                                     "de":  "T im eB ef or eS un ri se To Se tA cc uT oZ er oS um m e r"
+                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Sommer)",
+                                     "en":  "TimeBeforeSunriseToSetAccuToZeroSummer"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eB ef or eS un ri se To Se tA cc uT oZ er oS um m e r\u0027 / \u0027T im eB ef or eS un ri se To Se tA cc uT oZ er oS um m e r\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Sommer)\u0027 / \u0027TimeBeforeSunriseToSetAccuToZeroSummer\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "NumberOfMinimumWidthDependence",
                        "terms":  {
-                                     "en":  "N um be rO fM in im um Wi dt hD ep en de n c e",
-                                     "de":  "N um be rO fM in im um Wi dt hD ep en de n c e"
+                                     "de":  "Anzahl Minimum Width Dependence",
+                                     "en":  "Number Of Minimum Width Dependence"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fM in im um Wi dt hD ep en de n c e\u0027 / \u0027N um be rO fM in im um Wi dt hD ep en de n c e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl Minimum Width Dependence\u0027 / \u0027Number Of Minimum Width Dependence\u0027. Datentyp: int."
                    },
                    {
                        "name":  "MinimumWidthDependence",
                        "terms":  {
-                                     "en":  "M in im um Wi dt hD ep en de n c e",
-                                     "de":  "M in im um Wi dt hD ep en de n c e"
+                                     "de":  "Minimale Ersatzstrombreite fÃƒÂ¼r AbhÃƒÂ¤ngigkeit [%]",
+                                     "en":  "MinimumWidthDependence"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027M in im um Wi dt hD ep en de n c e\u0027 / \u0027M in im um Wi dt hD ep en de n c e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Minimale Ersatzstrombreite fÃƒÂ¼r AbhÃƒÂ¤ngigkeit [%]\u0027 / \u0027MinimumWidthDependence\u0027. Datentyp: int."
                    },
                    {
                        "name":  "MinimumWidthDependenceTime",
                        "terms":  {
-                                     "en":  "M in im um Wi dt hD ep en de nc eT i m e",
-                                     "de":  "M in im um Wi dt hD ep en de nc eT i m e"
+                                     "de":  "Uhrzeit fÃƒÂ¼r AbhÃƒÂ¤ngigkeit",
+                                     "en":  "MinimumWidthDependenceTime"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027M in im um Wi dt hD ep en de nc eT i m e\u0027 / \u0027M in im um Wi dt hD ep en de nc eT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Uhrzeit fÃƒÂ¼r AbhÃƒÂ¤ngigkeit\u0027 / \u0027MinimumWidthDependenceTime\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "LicenseKey01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "LicenseKey02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "NumberOfWinterForecastRules",
                        "terms":  {
-                                     "en":  "N um be rO fW in te rF or ec as tR ul e s",
-                                     "de":  "N um be rO fW in te rF or ec as tR ul e s"
+                                     "de":  "Anzahl der Regeln fÃƒÂ¼r die Wintervorhersage",
+                                     "en":  "NumberOfWinterForecastRules"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fW in te rF or ec as tR ul e s\u0027 / \u0027N um be rO fW in te rF or ec as tR ul e s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der Regeln fÃƒÂ¼r die Wintervorhersage\u0027 / \u0027NumberOfWinterForecastRules\u0027. Datentyp: int."
                    },
                    {
                        "name":  "WinterForecastThresholdsKWh",
                        "terms":  {
-                                     "en":  "W in te rF or ec as tT hr es ho ld sK W h",
-                                     "de":  "W in te rF or ec as tT hr es ho ld sK W h"
+                                     "de":  "Winter Prognose Thresholds K Wh",
+                                     "en":  "Winter Forecast Thresholds K Wh"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027W in te rF or ec as tT hr es ho ld sK W h\u0027 / \u0027W in te rF or ec as tT hr es ho ld sK W h\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Winter Prognose Thresholds K Wh\u0027 / \u0027Winter Forecast Thresholds K Wh\u0027. Datentyp: number."
                    },
                    {
                        "name":  "WinterMinimumWidthPercents",
                        "terms":  {
-                                     "en":  "W in te rM in im um Wi dt hP er ce n t s",
-                                     "de":  "W in te rM in im um Wi dt hP er ce n t s"
+                                     "de":  "Winter Minimum Width Percents",
+                                     "en":  "Winter Minimum Width Percents"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027W in te rM in im um Wi dt hP er ce n t s\u0027 / \u0027W in te rM in im um Wi dt hP er ce n t s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Winter Minimum Width Percents\u0027 / \u0027Winter Minimum Width Percents\u0027. Datentyp: int."
                    },
                    {
                        "name":  "WinterDefaultMinimumWidthPercent",
                        "terms":  {
-                                     "en":  "W in te rD ef au lt Mi ni mu mW id th Pe rc e n t",
-                                     "de":  "W in te rD ef au lt Mi ni mu mW id th Pe rc e n t"
+                                     "de":  "Winter-Standard-Mindestbreite in Prozent",
+                                     "en":  "WinterDefaultMinimumWidthPercent"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027W in te rD ef au lt Mi ni mu mW id th Pe rc e n t\u0027 / \u0027W in te rD ef au lt Mi ni mu mW id th Pe rc e n t\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Winter-Standard-Mindestbreite in Prozent\u0027 / \u0027WinterDefaultMinimumWidthPercent\u0027. Datentyp: int."
                    },
                    {
                        "name":  "NumberOfSummerForecastRules",
                        "terms":  {
-                                     "en":  "N um be rO fS um me rF or ec as tR ul e s",
-                                     "de":  "N um be rO fS um me rF or ec as tR ul e s"
+                                     "de":  "Anzahl der Regeln fÃƒÂ¼r die Sommervorhersage",
+                                     "en":  "NumberOfSummerForecastRules"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fS um me rF or ec as tR ul e s\u0027 / \u0027N um be rO fS um me rF or ec as tR ul e s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der Regeln fÃƒÂ¼r die Sommervorhersage\u0027 / \u0027NumberOfSummerForecastRules\u0027. Datentyp: int."
                    },
                    {
                        "name":  "SummerForecastThresholdsKWh",
                        "terms":  {
-                                     "en":  "S um me rF or ec as tT hr es ho ld sK W h",
-                                     "de":  "S um me rF or ec as tT hr es ho ld sK W h"
+                                     "de":  "Summer Prognose Thresholds K Wh",
+                                     "en":  "Summer Forecast Thresholds K Wh"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S um me rF or ec as tT hr es ho ld sK W h\u0027 / \u0027S um me rF or ec as tT hr es ho ld sK W h\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Summer Prognose Thresholds K Wh\u0027 / \u0027Summer Forecast Thresholds K Wh\u0027. Datentyp: number."
                    },
                    {
                        "name":  "SummerMinimumWidthPercents",
                        "terms":  {
-                                     "en":  "S um me rM in im um Wi dt hP er ce n t s",
-                                     "de":  "S um me rM in im um Wi dt hP er ce n t s"
+                                     "de":  "Summer Minimum Width Percents",
+                                     "en":  "Summer Minimum Width Percents"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027S um me rM in im um Wi dt hP er ce n t s\u0027 / \u0027S um me rM in im um Wi dt hP er ce n t s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Summer Minimum Width Percents\u0027 / \u0027Summer Minimum Width Percents\u0027. Datentyp: int."
                    },
                    {
                        "name":  "SummerDefaultMinimumWidthPercent",
                        "terms":  {
-                                     "en":  "S um me rD ef au lt Mi ni mu mW id th Pe rc e n t",
-                                     "de":  "S um me rD ef au lt Mi ni mu mW id th Pe rc e n t"
+                                     "de":  "Sommer-Standard-Mindestbreite in Prozent",
+                                     "en":  "SummerDefaultMinimumWidthPercent"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027S um me rD ef au lt Mi ni mu mW id th Pe rc e n t\u0027 / \u0027S um me rD ef au lt Mi ni mu mW id th Pe rc e n t\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Sommer-Standard-Mindestbreite in Prozent\u0027 / \u0027SummerDefaultMinimumWidthPercent\u0027. Datentyp: int."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "MinimumWidth",
                         "terms":  {
-                                      "en":  "M in im um Wi d t h",
-                                      "de":  "M in im um Wi d t h"
+                                      "de":  "Minimale Ersatzstrombreite [%]",
+                                      "en":  "MinimumWidth"
                                   },
                         "type":  "int",
-                        "description":  "Ausgang für \u0027M in im um Wi d t h\u0027 / \u0027M in im um Wi d t h\u0027 (int)."
+                        "dataType":  "int",
+                        "description":  "Ausgang für \u0027Minimale Ersatzstrombreite [%]\u0027 / \u0027MinimumWidth\u0027. Datentyp: int."
                     },
                     {
                         "name":  "ResetSetManual",
                         "terms":  {
-                                      "en":  "R es et Se tM an u a l",
-                                      "de":  "R es et Se tM an u a l"
+                                      "de":  "Setze RÃƒÂ¼cksetzen manuell zurÃƒÂ¼ck",
+                                      "en":  "ResetSetManual"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027R es et Se tM an u a l\u0027 / \u0027R es et Se tM an u a l\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Setze RÃƒÂ¼cksetzen manuell zurÃƒÂ¼ck\u0027 / \u0027ResetSetManual\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -358,7 +391,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.40",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.40 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

@@ -26,85 +26,94 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "NumberOfInputsToLog",
                        "terms":  {
-                                     "en":  "N um be rO fI np ut sT oL o g",
-                                     "de":  "N um be rO fI np ut sT oL o g"
+                                     "de":  "Anzahl der zu protokollierenden EingÃƒÂ¤nge",
+                                     "en":  "Number Of Inputs To Log"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fI np ut sT oL o g\u0027 / \u0027N um be rO fI np ut sT oL o g\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der zu protokollierenden EingÃƒÂ¤nge\u0027 / \u0027Number Of Inputs To Log\u0027. Datentyp: int."
                    },
                    {
                        "name":  "InputsToLog",
                        "terms":  {
-                                     "en":  "I np ut sT oL o g",
-                                     "de":  "I np ut sT oL o g"
+                                     "de":  "Log EingeÃƒÂ¤nge",
+                                     "en":  "Inputs To Log"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027I np ut sT oL o g\u0027 / \u0027I np ut sT oL o g\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Log EingeÃƒÂ¤nge\u0027 / \u0027Inputs To Log\u0027. Datentyp: any."
                    },
                    {
                        "name":  "NumberOfFirstInputs",
                        "terms":  {
-                                     "en":  "N um be rO fF ir st In pu t s",
-                                     "de":  "N um be rO fF ir st In pu t s"
+                                     "de":  "Anzahl der zu speichernden erstenen Inputs",
+                                     "en":  "Number Of First Inputs"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fF ir st In pu t s\u0027 / \u0027N um be rO fF ir st In pu t s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der zu speichernden erstenen Inputs\u0027 / \u0027Number Of First Inputs\u0027. Datentyp: int."
                    },
                    {
                        "name":  "NumberOfLastInputs",
                        "terms":  {
-                                     "en":  "N um be rO fL as tI np u t s",
-                                     "de":  "N um be rO fL as tI np u t s"
+                                     "de":  "Anzahl der zu speichernden letzten Inputs",
+                                     "en":  "Number Of Last Inputs"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fL as tI np u t s\u0027 / \u0027N um be rO fL as tI np u t s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der zu speichernden letzten Inputs\u0027 / \u0027Number Of Last Inputs\u0027. Datentyp: int."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -140,7 +149,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

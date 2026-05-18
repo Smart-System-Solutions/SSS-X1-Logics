@@ -28,85 +28,94 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "en":  "D el a y",
-                                     "de":  "D el a y"
+                                     "de":  "Abfragerhytmus",
+                                     "en":  "Delay"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027D el a y\u0027 / \u0027D el a y\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Abfragerhytmus\u0027 / \u0027Delay\u0027. Datentyp: timespan."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "LastRestartX1String",
                         "terms":  {
-                                      "en":  "L as tR es ta r t X1 St ri n g",
-                                      "de":  "L as tR es ta r t X1 St ri n g"
+                                      "de":  "Letzter Neustart X1 - String",
+                                      "en":  "Last Restart X 1 String"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027L as tR es ta r t X1 St ri n g\u0027 / \u0027L as tR es ta r t X1 St ri n g\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Letzter Neustart X1 - String\u0027 / \u0027Last Restart X 1 String\u0027. Datentyp: string."
                     },
                     {
                         "name":  "LastTelegramX1String",
                         "terms":  {
-                                      "en":  "L as tT el eg ra m X1 St ri n g",
-                                      "de":  "L as tT el eg ra m X1 St ri n g"
+                                      "de":  "Letztes Telegramm X1 - String",
+                                      "en":  "Last Telegram X 1 String"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027L as tT el eg ra m X1 St ri n g\u0027 / \u0027L as tT el eg ra m X1 St ri n g\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Letztes Telegramm X1 - String\u0027 / \u0027Last Telegram X 1 String\u0027. Datentyp: string."
                     },
                     {
                         "name":  "LastRestartX1",
                         "terms":  {
-                                      "en":  "L as tR es ta r t X1",
-                                      "de":  "L as tR es ta r t X1"
+                                      "de":  "Letzter Neustart X1",
+                                      "en":  "Last Restart X 1"
                                   },
                         "type":  "datetime",
-                        "description":  "Ausgang für \u0027L as tR es ta r t X1\u0027 / \u0027L as tR es ta r t X1\u0027 (datetime)."
+                        "dataType":  "datetime",
+                        "description":  "Ausgang für \u0027Letzter Neustart X1\u0027 / \u0027Last Restart X 1\u0027. Datentyp: datetime."
                     },
                     {
                         "name":  "LastTelegramX1",
                         "terms":  {
-                                      "en":  "L as tT el eg ra m X1",
-                                      "de":  "L as tT el eg ra m X1"
+                                      "de":  "Letztes Telegramm X1",
+                                      "en":  "Last Telegram X 1"
                                   },
                         "type":  "datetime",
-                        "description":  "Ausgang für \u0027L as tT el eg ra m X1\u0027 / \u0027L as tT el eg ra m X1\u0027 (datetime)."
+                        "dataType":  "datetime",
+                        "description":  "Ausgang für \u0027Letztes Telegramm X1\u0027 / \u0027Last Telegram X 1\u0027. Datentyp: datetime."
                     },
                     {
                         "name":  "SDCardAvailaible",
                         "terms":  {
-                                      "en":  "S DC ar dA va il ai b l e",
-                                      "de":  "S DC ar dA va il ai b l e"
+                                      "de":  "SD-Karte verfÃƒÂ¼gbar",
+                                      "en":  "SD Card Availaible"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027S DC ar dA va il ai b l e\u0027 / \u0027S DC ar dA va il ai b l e\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027SD-Karte verfÃƒÂ¼gbar\u0027 / \u0027SD Card Availaible\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -138,7 +147,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

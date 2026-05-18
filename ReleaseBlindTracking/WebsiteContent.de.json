@@ -30,418 +30,464 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "BlindTrackingManual",
                        "terms":  {
-                                     "en":  "B li nd Tr ac ki ng Ma nu a l",
-                                     "de":  "B li nd Tr ac ki ng Ma nu a l"
+                                     "de":  "Rollladen Manuell",
+                                     "en":  "Blind Tracking Manual"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Ma nu a l\u0027 / \u0027B li nd Tr ac ki ng Ma nu a l\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Rollladen Manuell\u0027 / \u0027Blind Tracking Manual\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "BlindTrackingAutomatic",
                        "terms":  {
-                                     "en":  "B li nd Tr ac ki ng Au to ma t i c",
-                                     "de":  "B li nd Tr ac ki ng Au to ma t i c"
+                                     "de":  "Rollladen Automatik",
+                                     "en":  "Blind Tracking Automatic"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027B li nd Tr ac ki ng Au to ma t i c\u0027 / \u0027B li nd Tr ac ki ng Au to ma t i c\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Rollladen Automatik\u0027 / \u0027Blind Tracking Automatic\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "en":  "S um m e r",
-                                     "de":  "S um m e r"
+                                     "de":  "Sommer",
+                                     "en":  "Summer"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Sommer\u0027 / \u0027Summer\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Rain",
                        "terms":  {
-                                     "en":  "R a i n",
-                                     "de":  "R a i n"
+                                     "de":  "Regen",
+                                     "en":  "Rain"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R a i n\u0027 / \u0027R a i n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Regen\u0027 / \u0027Rain\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Day",
                        "terms":  {
-                                     "en":  "D a y",
-                                     "de":  "D a y"
+                                     "de":  "Tag",
+                                     "en":  "Day"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027D a y\u0027 / \u0027D a y\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Tag\u0027 / \u0027Day\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Holiday",
                        "terms":  {
-                                     "en":  "H ol id a y",
-                                     "de":  "H ol id a y"
+                                     "de":  "Urlaub",
+                                     "en":  "Holiday"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027H ol id a y\u0027 / \u0027H ol id a y\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Urlaub\u0027 / \u0027Holiday\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "WindToHigh",
                        "terms":  {
-                                     "en":  "W in dT oH i g h",
-                                     "de":  "W in dT oH i g h"
+                                     "de":  "Wind zu stark",
+                                     "en":  "Wind To High"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027W in dT oH i g h\u0027 / \u0027W in dT oH i g h\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Wind zu stark\u0027 / \u0027Wind To High\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Storm",
                        "terms":  {
-                                     "en":  "S to r m",
-                                     "de":  "S to r m"
+                                     "de":  "Unwetter",
+                                     "en":  "Storm"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S to r m\u0027 / \u0027S to r m\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Unwetter\u0027 / \u0027Storm\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TemperatureInside",
                        "terms":  {
-                                     "en":  "T em pe ra tu re In si d e",
-                                     "de":  "T em pe ra tu re In si d e"
+                                     "de":  "Innentemperatur",
+                                     "en":  "Temperature Inside"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re In si d e\u0027 / \u0027T em pe ra tu re In si d e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Innentemperatur\u0027 / \u0027Temperature Inside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutside",
                        "terms":  {
-                                     "en":  "T em pe ra tu re Ou ts i d e",
-                                     "de":  "T em pe ra tu re Ou ts i d e"
+                                     "de":  "AuÃƒÅ¸entemperatur",
+                                     "en":  "Temperature Outside"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts i d e\u0027 / \u0027T em pe ra tu re Ou ts i d e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessOutside",
                        "terms":  {
-                                     "en":  "B ri gh tn es sO ut si d e",
-                                     "de":  "B ri gh tn es sO ut si d e"
+                                     "de":  "Helligkeit AuÃƒÅ¸en",
+                                     "en":  "Brightness Outside"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sO ut si d e\u0027 / \u0027B ri gh tn es sO ut si d e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Helligkeit AuÃƒÅ¸en\u0027 / \u0027Brightness Outside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "Azimut",
                        "terms":  {
-                                     "en":  "A zi m u t",
-                                     "de":  "A zi m u t"
+                                     "de":  "Azimut",
+                                     "en":  "Azimut"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A zi m u t\u0027 / \u0027A zi m u t\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Azimut\u0027 / \u0027Azimut\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StartBrightnessThresholdAlways",
                        "terms":  {
-                                     "en":  "S ta rt Br ig ht ne ss Th re sh ol dA lw a y s",
-                                     "de":  "S ta rt Br ig ht ne ss Th re sh ol dA lw a y s"
+                                     "de":  "Schwellwert Starthelligkeit Immer",
+                                     "en":  "Start Brightness Threshold Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Th re sh ol dA lw a y s\u0027 / \u0027S ta rt Br ig ht ne ss Th re sh ol dA lw a y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert Starthelligkeit Immer\u0027 / \u0027Start Brightness Threshold Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "EndBrightnessThresholdAlways",
                        "terms":  {
-                                     "en":  "E nd Br ig ht ne ss Th re sh ol dA lw a y s",
-                                     "de":  "E nd Br ig ht ne ss Th re sh ol dA lw a y s"
+                                     "de":  "Schwellwert Endhelligkeit Immer",
+                                     "en":  "End Brightness Threshold Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E nd Br ig ht ne ss Th re sh ol dA lw a y s\u0027 / \u0027E nd Br ig ht ne ss Th re sh ol dA lw a y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert Endhelligkeit Immer\u0027 / \u0027End Brightness Threshold Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
                        "terms":  {
-                                     "en":  "T em pe ra tu re In si de Th re sh o l d",
-                                     "de":  "T em pe ra tu re In si de Th re sh o l d"
+                                     "de":  "Schwellwert Innentemperatur",
+                                     "en":  "Temperature Inside Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh o l d\u0027 / \u0027T em pe ra tu re In si de Th re sh o l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert Innentemperatur\u0027 / \u0027Temperature Inside Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThresholdAlways",
                        "terms":  {
-                                     "en":  "T em pe ra tu re In si de Th re sh ol dA lw a y s",
-                                     "de":  "T em pe ra tu re In si de Th re sh ol dA lw a y s"
+                                     "de":  "Schwellwert Innentemperatur Immer",
+                                     "en":  "Temperature Inside Threshold Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh ol dA lw a y s\u0027 / \u0027T em pe ra tu re In si de Th re sh ol dA lw a y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert Innentemperatur Immer\u0027 / \u0027Temperature Inside Threshold Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StartAzimutAlways",
                        "terms":  {
-                                     "en":  "S ta rt Az im ut Al wa y s",
-                                     "de":  "S ta rt Az im ut Al wa y s"
+                                     "de":  "Start Azimut Immer",
+                                     "en":  "Start Azimut Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Az im ut Al wa y s\u0027 / \u0027S ta rt Az im ut Al wa y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Start Azimut Immer\u0027 / \u0027Start Azimut Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "EndAzimutAlways",
                        "terms":  {
-                                     "en":  "E nd Az im ut Al wa y s",
-                                     "de":  "E nd Az im ut Al wa y s"
+                                     "de":  "End Azimut Immer",
+                                     "en":  "End Azimut Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E nd Az im ut Al wa y s\u0027 / \u0027E nd Az im ut Al wa y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027End Azimut Immer\u0027 / \u0027End Azimut Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfStartDependence",
                        "terms":  {
-                                     "en":  "N um be rO fS ta rt De pe nd en c e",
-                                     "de":  "N um be rO fS ta rt De pe nd en c e"
+                                     "de":  "Anzahl der StartabhÃƒÂ¤ngigkeiten",
+                                     "en":  "Number Of Start Dependence"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fS ta rt De pe nd en c e\u0027 / \u0027N um be rO fS ta rt De pe nd en c e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der StartabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of Start Dependence\u0027. Datentyp: int."
                    },
                    {
                        "name":  "StartTemperatureOutsideThresholdDependence",
                        "terms":  {
-                                     "en":  "S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e",
-                                     "de":  "S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e"
+                                     "de":  "Start Temperatur Outside Threshold Dependence",
+                                     "en":  "Start Temperature Outside Threshold Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 / \u0027S ta rt Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Start Temperatur Outside Threshold Dependence\u0027 / \u0027Start Temperature Outside Threshold Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StartBrightnessOutsideDependence",
                        "terms":  {
-                                     "en":  "S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e",
-                                     "de":  "S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e"
+                                     "de":  "Start Helligkeit Outside Dependence",
+                                     "en":  "Start Brightness Outside Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e\u0027 / \u0027S ta rt Br ig ht ne ss Ou ts id eD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Start Helligkeit Outside Dependence\u0027 / \u0027Start Brightness Outside Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StartBrightnessOutsideThresholdDependence",
                        "terms":  {
-                                     "en":  "S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e",
-                                     "de":  "S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e"
+                                     "de":  "Start Helligkeit Outside Threshold Dependence",
+                                     "en":  "Start Brightness Outside Threshold Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e\u0027 / \u0027S ta rt Br ig ht ne ss Ou ts id eT hr es ho ld De pe nd en c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Start Helligkeit Outside Threshold Dependence\u0027 / \u0027Start Brightness Outside Threshold Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "StartAzimutThresholdDependence",
                        "terms":  {
-                                     "en":  "S ta rt Az im ut Th re sh ol dD ep en de n c e",
-                                     "de":  "S ta rt Az im ut Th re sh ol dD ep en de n c e"
+                                     "de":  "Start Azimut Threshold Dependence",
+                                     "en":  "Start Azimut Threshold Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S ta rt Az im ut Th re sh ol dD ep en de n c e\u0027 / \u0027S ta rt Az im ut Th re sh ol dD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Start Azimut Threshold Dependence\u0027 / \u0027Start Azimut Threshold Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfEndDependence",
                        "terms":  {
-                                     "en":  "N um be rO fE nd De pe nd en c e",
-                                     "de":  "N um be rO fE nd De pe nd en c e"
+                                     "de":  "Anzahl der EndabhÃƒÂ¤ngigkeiten",
+                                     "en":  "Number Of End Dependence"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fE nd De pe nd en c e\u0027 / \u0027N um be rO fE nd De pe nd en c e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der EndabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of End Dependence\u0027. Datentyp: int."
                    },
                    {
                        "name":  "EndAzimutThresholdDependence",
                        "terms":  {
-                                     "en":  "E nd Az im ut Th re sh ol dD ep en de n c e",
-                                     "de":  "E nd Az im ut Th re sh ol dD ep en de n c e"
+                                     "de":  "Ende Azimut Threshold Dependence",
+                                     "en":  "End Azimut Threshold Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E nd Az im ut Th re sh ol dD ep en de n c e\u0027 / \u0027E nd Az im ut Th re sh ol dD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Ende Azimut Threshold Dependence\u0027 / \u0027End Azimut Threshold Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "EndTemperatureOutsideThresholdDependence",
                        "terms":  {
-                                     "en":  "E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e",
-                                     "de":  "E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e"
+                                     "de":  "Ende Temperatur Outside Threshold Dependence",
+                                     "en":  "End Temperature Outside Threshold Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 / \u0027E nd Te mp er at ur eO ut si de Th re sh ol dD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Ende Temperatur Outside Threshold Dependence\u0027 / \u0027End Temperature Outside Threshold Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "DelayThreshold",
                        "terms":  {
-                                     "en":  "D el ay Th re sh o l d",
-                                     "de":  "D el ay Th re sh o l d"
+                                     "de":  "Schwellwert Zeit",
+                                     "en":  "Delay Threshold"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027D el ay Th re sh o l d\u0027 / \u0027D el ay Th re sh o l d\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Schwellwert Zeit\u0027 / \u0027Delay Threshold\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "DelayCycle",
                        "terms":  {
-                                     "en":  "D el ay Cy c l e",
-                                     "de":  "D el ay Cy c l e"
+                                     "de":  "Aktualisierungszeit",
+                                     "en":  "Delay Cycle"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027D el ay Cy c l e\u0027 / \u0027D el ay Cy c l e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Delay Cycle\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "ResetManualWasSetAfterTime",
                        "terms":  {
-                                     "en":  "R es et Ma nu al Wa sS et Af te rT i m e",
-                                     "de":  "R es et Ma nu al Wa sS et Af te rT i m e"
+                                     "de":  "Reset Manuelles Setzen nach Zeit",
+                                     "en":  "Reset Manual Was Set After Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027R es et Ma nu al Wa sS et Af te rT i m e\u0027 / \u0027R es et Ma nu al Wa sS et Af te rT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Reset Manuelles Setzen nach Zeit\u0027 / \u0027Reset Manual Was Set After Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "HolidayBlindDown",
                        "terms":  {
-                                     "en":  "H ol id ay Bl in dD o w n",
-                                     "de":  "H ol id ay Bl in dD o w n"
+                                     "de":  "Urlaub Rollladen runter",
+                                     "en":  "Holiday Blind Down"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027H ol id ay Bl in dD o w n\u0027 / \u0027H ol id ay Bl in dD o w n\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Urlaub Rollladen runter\u0027 / \u0027Holiday Blind Down\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "HolidayBlindUp",
                        "terms":  {
-                                     "en":  "H ol id ay Bl in d U p",
-                                     "de":  "H ol id ay Bl in d U p"
+                                     "de":  "Urlaub Rollladen hoch",
+                                     "en":  "Holiday Blind Up"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027H ol id ay Bl in d U p\u0027 / \u0027H ol id ay Bl in d U p\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Urlaub Rollladen hoch\u0027 / \u0027Holiday Blind Up\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "TemperatureOutsideThreshold",
                        "terms":  {
-                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho l d",
-                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho l d"
+                                     "de":  "Schwellwert AuÃƒÅ¸entemperatur",
+                                     "en":  "Temperature Outside Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutsideThresholdAlways",
                        "terms":  {
-                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s",
-                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s"
+                                     "de":  "Schwellwert AuÃƒÅ¸entemperatur Immer",
+                                     "en":  "Temperature Outside Threshold Always"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho ld Al wa y s\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert AuÃƒÅ¸entemperatur Immer\u0027 / \u0027Temperature Outside Threshold Always\u0027. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessTemperatureThreshold",
                        "terms":  {
-                                     "en":  "B ri gh tn es sT em pe ra tu re Th re sh o l d",
-                                     "de":  "B ri gh tn es sT em pe ra tu re Th re sh o l d"
+                                     "de":  "Schwellwert Temperatur (FÃƒÂ¼r Helligkeit)",
+                                     "en":  "BrightnessTemperatureThreshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sT em pe ra tu re Th re sh o l d\u0027 / \u0027B ri gh tn es sT em pe ra tu re Th re sh o l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Schwellwert Temperatur (FÃƒÂ¼r Helligkeit)\u0027 / \u0027BrightnessTemperatureThreshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessOutsideThreshold",
                        "terms":  {
-                                     "en":  "B ri gh tn es sO ut si de Th re sh o l d",
-                                     "de":  "B ri gh tn es sO ut si de Th re sh o l d"
+                                     "de":  "Helligkeit Outside Threshold",
+                                     "en":  "Brightness Outside Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027B ri gh tn es sO ut si de Th re sh o l d\u0027 / \u0027B ri gh tn es sO ut si de Th re sh o l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Helligkeit Outside Threshold\u0027 / \u0027Brightness Outside Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "OutputBlindStorm",
                         "terms":  {
-                                      "en":  "O ut pu tB li nd St o r m",
-                                      "de":  "O ut pu tB li nd St o r m"
+                                      "de":  "Ausgang Sturm",
+                                      "en":  "Output Blind Storm"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut pu tB li nd St o r m\u0027 / \u0027O ut pu tB li nd St o r m\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang Sturm\u0027 / \u0027Output Blind Storm\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "OutputBlindHoliday",
                         "terms":  {
-                                      "en":  "O ut pu tB li nd Ho li d a y",
-                                      "de":  "O ut pu tB li nd Ho li d a y"
+                                      "de":  "Ausgang Urlaub",
+                                      "en":  "Output Blind Holiday"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut pu tB li nd Ho li d a y\u0027 / \u0027O ut pu tB li nd Ho li d a y\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang Urlaub\u0027 / \u0027Output Blind Holiday\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "ReleaseStartedThisDay",
                         "terms":  {
-                                      "en":  "R el ea se St ar te dT hi sD a y",
-                                      "de":  "R el ea se St ar te dT hi sD a y"
+                                      "de":  "Freigabe heute gestartet",
+                                      "en":  "Release Started This Day"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027R el ea se St ar te dT hi sD a y\u0027 / \u0027R el ea se St ar te dT hi sD a y\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Freigabe heute gestartet\u0027 / \u0027Release Started This Day\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleCycle",
                         "terms":  {
-                                      "en":  "L og Sc he du le Cy c l e",
-                                      "de":  "L og Sc he du le Cy c l e"
+                                      "de":  "Zeitplanungsprotokoll Cycle",
+                                      "en":  "Log Schedule Cycle"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleHour",
                         "terms":  {
-                                      "en":  "L og Sc he du le Ho u r",
-                                      "de":  "L og Sc he du le Ho u r"
+                                      "de":  "Zeitplanungsprotokoll Hour",
+                                      "en":  "Log Schedule Hour"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -477,7 +523,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.37",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.37 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

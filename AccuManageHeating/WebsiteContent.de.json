@@ -30,103 +30,114 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "en":  "S um m e r",
-                                     "de":  "S um m e r"
+                                     "de":  "Sommer",
+                                     "en":  "Summer"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Sommer\u0027 / \u0027Summer\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "StartAccuValue",
                        "terms":  {
-                                     "en":  "S ta rt Ac cu Va l u e",
-                                     "de":  "S ta rt Ac cu Va l u e"
+                                     "de":  "Startwert Akku",
+                                     "en":  "Start Accu Value"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027S ta rt Ac cu Va l u e\u0027 / \u0027S ta rt Ac cu Va l u e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Startwert Akku\u0027 / \u0027Start Accu Value\u0027. Datentyp: int."
                    },
                    {
                        "name":  "EndAccuValue",
                        "terms":  {
-                                     "en":  "E nd Ac cu Va l u e",
-                                     "de":  "E nd Ac cu Va l u e"
+                                     "de":  "Endwert Akku",
+                                     "en":  "End Accu Value"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027E nd Ac cu Va l u e\u0027 / \u0027E nd Ac cu Va l u e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Endwert Akku\u0027 / \u0027End Accu Value\u0027. Datentyp: int."
                    },
                    {
                        "name":  "SetPointShift",
                        "terms":  {
-                                     "en":  "S et Po in tS hi f t",
-                                     "de":  "S et Po in tS hi f t"
+                                     "de":  "Sollwertverschiebung",
+                                     "en":  "Set Point Shift"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027S et Po in tS hi f t\u0027 / \u0027S et Po in tS hi f t\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Sollwertverschiebung\u0027 / \u0027Set Point Shift\u0027. Datentyp: number."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "en":  "A cc uA ct u a l",
-                                     "de":  "A cc uA ct u a l"
+                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
+                                     "en":  "Accu Actual"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "SendSetPointShift",
                         "terms":  {
-                                      "en":  "S en dS et Po in tS hi f t",
-                                      "de":  "S en dS et Po in tS hi f t"
+                                      "de":  "Sende Sollwertverschiebung",
+                                      "en":  "Send Set Point Shift"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027S en dS et Po in tS hi f t\u0027 / \u0027S en dS et Po in tS hi f t\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Sende Sollwertverschiebung\u0027 / \u0027Send Set Point Shift\u0027. Datentyp: number."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -162,7 +173,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.17 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

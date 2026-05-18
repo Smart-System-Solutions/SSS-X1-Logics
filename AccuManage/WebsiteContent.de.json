@@ -32,184 +32,204 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateOutputWithAccu",
                        "terms":  {
-                                     "en":  "A ct iv at eO ut pu tW it hA c c u",
-                                     "de":  "A ct iv at eO ut pu tW it hA c c u"
+                                     "de":  "Aktiviere Ausgang mit Akku",
+                                     "en":  "Activate Output With Accu"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eO ut pu tW it hA c c u\u0027 / \u0027A ct iv at eO ut pu tW it hA c c u\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere Ausgang mit Akku\u0027 / \u0027Activate Output With Accu\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateOutputWithTime",
                        "terms":  {
-                                     "en":  "A ct iv at eO ut pu tW it hT i m e",
-                                     "de":  "A ct iv at eO ut pu tW it hT i m e"
+                                     "de":  "Aktiviere Ausgang mit Zeit",
+                                     "en":  "Activate Output With Time"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eO ut pu tW it hT i m e\u0027 / \u0027A ct iv at eO ut pu tW it hT i m e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere Ausgang mit Zeit\u0027 / \u0027Activate Output With Time\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Condition",
                        "terms":  {
-                                     "en":  "C on di ti o n",
-                                     "de":  "C on di ti o n"
+                                     "de":  "Bedingung",
+                                     "en":  "Condition"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti o n\u0027 / \u0027C on di ti o n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung\u0027 / \u0027Condition\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionTemperature",
                        "terms":  {
-                                     "en":  "C on di ti on Te mp er at u r e",
-                                     "de":  "C on di ti on Te mp er at u r e"
+                                     "de":  "Bedingung Temperatur",
+                                     "en":  "Condition Temperature"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti on Te mp er at u r e\u0027 / \u0027C on di ti on Te mp er at u r e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung Temperatur\u0027 / \u0027Condition Temperature\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerOutput",
                        "terms":  {
-                                     "en":  "T ri gg er Ou tp u t",
-                                     "de":  "T ri gg er Ou tp u t"
+                                     "de":  "Trigger Ausgang",
+                                     "en":  "Trigger Output"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ri gg er Ou tp u t\u0027 / \u0027T ri gg er Ou tp u t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Trigger Ausgang\u0027 / \u0027Trigger Output\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "StartAccuValue",
                        "terms":  {
-                                     "en":  "S ta rt Ac cu Va l u e",
-                                     "de":  "S ta rt Ac cu Va l u e"
+                                     "de":  "Startwert Akku",
+                                     "en":  "Start Accu Value"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027S ta rt Ac cu Va l u e\u0027 / \u0027S ta rt Ac cu Va l u e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Startwert Akku\u0027 / \u0027Start Accu Value\u0027. Datentyp: int."
                    },
                    {
                        "name":  "EndAccuValue",
                        "terms":  {
-                                     "en":  "E nd Ac cu Va l u e",
-                                     "de":  "E nd Ac cu Va l u e"
+                                     "de":  "Endwert Akku",
+                                     "en":  "End Accu Value"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027E nd Ac cu Va l u e\u0027 / \u0027E nd Ac cu Va l u e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Endwert Akku\u0027 / \u0027End Accu Value\u0027. Datentyp: int."
                    },
                    {
                        "name":  "Temperature",
                        "terms":  {
-                                     "en":  "T em pe ra tu r e",
-                                     "de":  "T em pe ra tu r e"
+                                     "de":  "Ist-Temperatur",
+                                     "en":  "Temperature"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu r e\u0027 / \u0027T em pe ra tu r e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Ist-Temperatur\u0027 / \u0027Temperature\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureEnd",
                        "terms":  {
-                                     "en":  "T em pe ra tu re E n d",
-                                     "de":  "T em pe ra tu re E n d"
+                                     "de":  "Endwert Temperatur",
+                                     "en":  "Temperature End"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re E n d\u0027 / \u0027T em pe ra tu re E n d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Endwert Temperatur\u0027 / \u0027Temperature End\u0027. Datentyp: number."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "en":  "A cc uA ct u a l",
-                                     "de":  "A cc uA ct u a l"
+                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
+                                     "en":  "Accu Actual"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TimeTriggerOutput",
                        "terms":  {
-                                     "en":  "T im eT ri gg er Ou tp u t",
-                                     "de":  "T im eT ri gg er Ou tp u t"
+                                     "de":  "Laufzeit fÃƒÂ¼r Ausgang mit Zeit",
+                                     "en":  "Time Trigger Output"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eT ri gg er Ou tp u t\u0027 / \u0027T im eT ri gg er Ou tp u t\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Laufzeit fÃƒÂ¼r Ausgang mit Zeit\u0027 / \u0027Time Trigger Output\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "RestOutputTime",
                         "terms":  {
-                                      "en":  "R es tO ut pu tT i m e",
-                                      "de":  "R es tO ut pu tT i m e"
+                                      "de":  "Endzeit fÃƒÂ¼r Ausgang mit Zeit",
+                                      "en":  "Rest Output Time"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027R es tO ut pu tT i m e\u0027 / \u0027R es tO ut pu tT i m e\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Endzeit fÃƒÂ¼r Ausgang mit Zeit\u0027 / \u0027Rest Output Time\u0027. Datentyp: string."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleStartWithTime",
                         "terms":  {
-                                      "en":  "L og Sc he du le St ar tW it hT i m e",
-                                      "de":  "L og Sc he du le St ar tW it hT i m e"
+                                      "de":  "Zeitplanungsprotokoll Start With Zeit",
+                                      "en":  "Log Schedule Start With Time"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleReset",
                         "terms":  {
-                                      "en":  "L og Sc he du le Re s e t",
-                                      "de":  "L og Sc he du le Re s e t"
+                                      "de":  "Zeitplanungsprotokoll ZurÃ¼cksetzen",
+                                      "en":  "Log Schedule Reset"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -245,7 +265,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.27",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.27 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

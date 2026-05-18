@@ -31,256 +31,284 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "LampOn",
                        "terms":  {
-                                     "en":  "L am p O n",
-                                     "de":  "L am p O n"
+                                     "de":  "Licht Ein",
+                                     "en":  "Lamp On"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027L am p O n\u0027 / \u0027L am p O n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Licht Ein\u0027 / \u0027Lamp On\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "NumberOfLamps",
                        "terms":  {
-                                     "en":  "N um be rO fL am p s",
-                                     "de":  "N um be rO fL am p s"
+                                     "de":  "Anzahl der Lampen",
+                                     "en":  "Number Of Lamps"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fL am p s\u0027 / \u0027N um be rO fL am p s\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der Lampen\u0027 / \u0027Number Of Lamps\u0027. Datentyp: int."
                    },
                    {
                        "name":  "PowerOneLamp",
                        "terms":  {
-                                     "en":  "P ow er On eL a m p",
-                                     "de":  "P ow er On eL a m p"
+                                     "de":  "Leistung einer Lampe",
+                                     "en":  "Power One Lamp"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027P ow er On eL a m p\u0027 / \u0027P ow er On eL a m p\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Leistung einer Lampe\u0027 / \u0027Power One Lamp\u0027. Datentyp: number."
                    },
                    {
                        "name":  "DimValueAverage",
                        "terms":  {
-                                     "en":  "D im Va lu eA ve ra g e",
-                                     "de":  "D im Va lu eA ve ra g e"
+                                     "de":  "Durchschnittlicher Dimmwert",
+                                     "en":  "Dim Value Average"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027D im Va lu eA ve ra g e\u0027 / \u0027D im Va lu eA ve ra g e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Durchschnittlicher Dimmwert\u0027 / \u0027Dim Value Average\u0027. Datentyp: number."
                    },
                    {
                        "name":  "CosPhi",
                        "terms":  {
-                                     "en":  "C os P h i",
-                                     "de":  "C os P h i"
+                                     "de":  "Cos Phi",
+                                     "en":  "Cos Phi"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027C os P h i\u0027 / \u0027C os P h i\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Cos Phi\u0027 / \u0027Cos Phi\u0027. Datentyp: number."
                    },
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "en":  "U pd at eT i m e",
-                                     "de":  "U pd at eT i m e"
+                                     "de":  "Aktualisierungszeit",
+                                     "en":  "Update Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027U pd at eT i m e\u0027 / \u0027U pd at eT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "ShortTime",
                        "terms":  {
-                                     "en":  "S ho rt Ti m e",
-                                     "de":  "S ho rt Ti m e"
+                                     "de":  "Kurze Zeit",
+                                     "en":  "Short Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027S ho rt Ti m e\u0027 / \u0027S ho rt Ti m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Kurze Zeit\u0027 / \u0027Short Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LongTime",
                        "terms":  {
-                                     "en":  "L on gT i m e",
-                                     "de":  "L on gT i m e"
+                                     "de":  "Lange Zeit",
+                                     "en":  "Long Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027L on gT i m e\u0027 / \u0027L on gT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Lange Zeit\u0027 / \u0027Long Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "en":  "S to ra ge Pa t h",
-                                     "de":  "S to ra ge Pa t h"
+                                     "de":  "Speicherpfad",
+                                     "en":  "Storage Path"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027Speicherpfad\u0027 / \u0027Storage Path\u0027. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "PowerDayLongTime",
                         "terms":  {
-                                      "en":  "P ow er Da yL on gT i m e",
-                                      "de":  "P ow er Da yL on gT i m e"
+                                      "de":  "Leistung Tag - Lange Zeit",
+                                      "en":  "Power Day Long Time"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er Da yL on gT i m e\u0027 / \u0027P ow er Da yL on gT i m e\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung Tag - Lange Zeit\u0027 / \u0027Power Day Long Time\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerDayShortTime",
                         "terms":  {
-                                      "en":  "P ow er Da yS ho rt Ti m e",
-                                      "de":  "P ow er Da yS ho rt Ti m e"
+                                      "de":  "Leistung Tag - Kurze Zeit",
+                                      "en":  "Power Day Short Time"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er Da yS ho rt Ti m e\u0027 / \u0027P ow er Da yS ho rt Ti m e\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung Tag - Kurze Zeit\u0027 / \u0027Power Day Short Time\u0027. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerUpdateTime",
                         "terms":  {
-                                      "en":  "C ur re nt Po we rU pd at eT i m e",
-                                      "de":  "C ur re nt Po we rU pd at eT i m e"
+                                      "de":  "Aktuelle Leistung - Intervallzeit",
+                                      "en":  "Current Power Update Time"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027C ur re nt Po we rU pd at eT i m e\u0027 / \u0027C ur re nt Po we rU pd at eT i m e\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Aktuelle Leistung - Intervallzeit\u0027 / \u0027Current Power Update Time\u0027. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerShortTime",
                         "terms":  {
-                                      "en":  "C ur re nt Po we rS ho rt Ti m e",
-                                      "de":  "C ur re nt Po we rS ho rt Ti m e"
+                                      "de":  "Aktuelle Leistung - Kurze Zeit",
+                                      "en":  "Current Power Short Time"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027C ur re nt Po we rS ho rt Ti m e\u0027 / \u0027C ur re nt Po we rS ho rt Ti m e\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Aktuelle Leistung - Kurze Zeit\u0027 / \u0027Current Power Short Time\u0027. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerLongTime",
                         "terms":  {
-                                      "en":  "C ur re nt Po we rL on gT i m e",
-                                      "de":  "C ur re nt Po we rL on gT i m e"
+                                      "de":  "Aktuelle Leistung - Lange Zeit",
+                                      "en":  "Current Power Long Time"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027C ur re nt Po we rL on gT i m e\u0027 / \u0027C ur re nt Po we rL on gT i m e\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Aktuelle Leistung - Lange Zeit\u0027 / \u0027Current Power Long Time\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerTotal",
                         "terms":  {
-                                      "en":  "P ow er To t a l",
-                                      "de":  "P ow er To t a l"
+                                      "de":  "Gesamtleistung",
+                                      "en":  "Power Total"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er To t a l\u0027 / \u0027P ow er To t a l\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Gesamtleistung\u0027 / \u0027Power Total\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerLastDay",
                         "terms":  {
-                                      "en":  "P ow er La st D a y",
-                                      "de":  "P ow er La st D a y"
+                                      "de":  "Leistung - Letzter Tag",
+                                      "en":  "Power Last Day"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La st D a y\u0027 / \u0027P ow er La st D a y\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung - Letzter Tag\u0027 / \u0027Power Last Day\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerLast7Days",
                         "terms":  {
-                                      "en":  "P ow er La s t7 Da y s",
-                                      "de":  "P ow er La s t7 Da y s"
+                                      "de":  "Leistung - Letzte 7 Tage",
+                                      "en":  "Power Last 7 Days"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La s t7 Da y s\u0027 / \u0027P ow er La s t7 Da y s\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung - Letzte 7 Tage\u0027 / \u0027Power Last 7 Days\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerLast30Days",
                         "terms":  {
-                                      "en":  "P ow er La s t30 Da y s",
-                                      "de":  "P ow er La s t30 Da y s"
+                                      "de":  "Leistung - Letzte 30 Tage",
+                                      "en":  "Power Last 30 Days"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La s t30 Da y s\u0027 / \u0027P ow er La s t30 Da y s\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung - Letzte 30 Tage\u0027 / \u0027Power Last 30 Days\u0027. Datentyp: number."
                     },
                     {
                         "name":  "PowerLast365Days",
                         "terms":  {
-                                      "en":  "P ow er La s t365 Da y s",
-                                      "de":  "P ow er La s t365 Da y s"
+                                      "de":  "Leistung - Letzte 365 Tage",
+                                      "en":  "Power Last 365 Days"
                                   },
                         "type":  "number",
-                        "description":  "Ausgang für \u0027P ow er La s t365 Da y s\u0027 / \u0027P ow er La s t365 Da y s\u0027 (number)."
+                        "dataType":  "number",
+                        "description":  "Ausgang für \u0027Leistung - Letzte 365 Tage\u0027 / \u0027Power Last 365 Days\u0027. Datentyp: number."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleUpdate",
                         "terms":  {
-                                      "en":  "L og Sc he du le Up da t e",
-                                      "de":  "L og Sc he du le Up da t e"
+                                      "de":  "Zeitplanungsprotokoll Update",
+                                      "en":  "Log Schedule Update"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleShort",
                         "terms":  {
-                                      "en":  "L og Sc he du le Sh o r t",
-                                      "de":  "L og Sc he du le Sh o r t"
+                                      "de":  "Zeitplanungsprotokoll Short",
+                                      "en":  "Log Schedule Short"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleLong",
                         "terms":  {
-                                      "en":  "L og Sc he du le Lo n g",
-                                      "de":  "L og Sc he du le Lo n g"
+                                      "de":  "Zeitplanungsprotokoll Long",
+                                      "en":  "Log Schedule Long"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleReset",
                         "terms":  {
-                                      "en":  "L og Sc he du le Re s e t",
-                                      "de":  "L og Sc he du le Re s e t"
+                                      "de":  "Zeitplanungsprotokoll ZurÃ¼cksetzen",
+                                      "en":  "Log Schedule Reset"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -316,7 +344,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.35",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.35 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

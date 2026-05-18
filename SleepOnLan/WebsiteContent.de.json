@@ -28,76 +28,84 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "IpAddress",
                        "terms":  {
-                                     "en":  "I pA dd re s s",
-                                     "de":  "I pA dd re s s"
+                                     "de":  "IP-Adresse",
+                                     "en":  "Ip Address"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027I pA dd re s s\u0027 / \u0027I pA dd re s s\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027IP-Adresse\u0027 / \u0027Ip Address\u0027. Datentyp: string."
                    },
                    {
                        "name":  "Port",
                        "terms":  {
-                                     "en":  "P o r t",
-                                     "de":  "P o r t"
+                                     "de":  "Port",
+                                     "en":  "Port"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027P o r t\u0027 / \u0027P o r t\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Port\u0027 / \u0027Port\u0027. Datentyp: int."
                    },
                    {
                        "name":  "Start",
                        "terms":  {
-                                     "en":  "S ta r t",
-                                     "de":  "S ta r t"
+                                     "de":  "Start",
+                                     "en":  "Start"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S ta r t\u0027 / \u0027S ta r t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Start\u0027 / \u0027Start\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -133,7 +141,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.16",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.16 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

@@ -1,6 +1,6 @@
 # Release-Changelog
 
-Datum: 2026-05-17
+Datum: 2026-05-18
 Konfiguration: Release
 
 Dieser Changelog ist für Endanwender bestimmt.

@@ -30,274 +30,304 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateCoolingWithoutAccuDependece",
                        "terms":  {
-                                     "en":  "A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e",
-                                     "de":  "A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e"
+                                     "de":  "Aktiviere KÃƒÂ¼hlen ohne Akku-AbhÃƒÂ¤ngigkeit",
+                                     "en":  "Activate Cooling Without Accu Dependece"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e\u0027 / \u0027A ct iv at eC oo li ng Wi th ou tA cc uD ep en de c e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere KÃƒÂ¼hlen ohne Akku-AbhÃƒÂ¤ngigkeit\u0027 / \u0027Activate Cooling Without Accu Dependece\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateCoolingOnlyWithAdditionalTemperatureInsideDependence",
                        "terms":  {
-                                     "en":  "A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e",
-                                     "de":  "A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e"
+                                     "de":  "Aktiviere KÃƒÂ¼hlen nur in AbhÃƒÂ¤ngigkeit der zusÃƒÂ¤tzlichen Innentemperatur",
+                                     "en":  "Activate Cooling Only With Additional Temperature Inside Dependence"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e\u0027 / \u0027A ct iv at eC oo li ng On ly Wi th Ad di ti on al Te mp er at ur eI ns id eD ep en de n c e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere KÃƒÂ¼hlen nur in AbhÃƒÂ¤ngigkeit der zusÃƒÂ¤tzlichen Innentemperatur\u0027 / \u0027Activate Cooling Only With Additional Temperature Inside Dependence\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "HeatingCooling",
                        "terms":  {
-                                     "en":  "H ea ti ng Co ol i n g",
-                                     "de":  "H ea ti ng Co ol i n g"
+                                     "de":  "Heizung/KÃƒÂ¼hlen",
+                                     "en":  "Heating Cooling"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027H ea ti ng Co ol i n g\u0027 / \u0027H ea ti ng Co ol i n g\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Heizung/KÃƒÂ¼hlen\u0027 / \u0027Heating Cooling\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "en":  "S um m e r",
-                                     "de":  "S um m e r"
+                                     "de":  "Sommer",
+                                     "en":  "Summer"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S um m e r\u0027 / \u0027S um m e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Sommer\u0027 / \u0027Summer\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "AdditionalTrigger",
                        "terms":  {
-                                     "en":  "A dd it io na lT ri gg e r",
-                                     "de":  "A dd it io na lT ri gg e r"
+                                     "de":  "ZusÃƒÂ¤tzlicher Trigger",
+                                     "en":  "Additional Trigger"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A dd it io na lT ri gg e r\u0027 / \u0027A dd it io na lT ri gg e r\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027ZusÃƒÂ¤tzlicher Trigger\u0027 / \u0027Additional Trigger\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Condition",
                        "terms":  {
-                                     "en":  "C on di ti o n",
-                                     "de":  "C on di ti o n"
+                                     "de":  "Bedingung",
+                                     "en":  "Condition"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti o n\u0027 / \u0027C on di ti o n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung\u0027 / \u0027Condition\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionAdditional01",
                        "terms":  {
-                                     "en":  "C on di ti on Ad di ti on a l01",
-                                     "de":  "C on di ti on Ad di ti on a l01"
+                                     "de":  "Bedingung - ZusÃƒÂ¤tzlich 01",
+                                     "en":  "Condition Additional 01"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti on Ad di ti on a l01\u0027 / \u0027C on di ti on Ad di ti on a l01\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Condition Additional 01\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionAdditional02",
                        "terms":  {
-                                     "en":  "C on di ti on Ad di ti on a l02",
-                                     "de":  "C on di ti on Ad di ti on a l02"
+                                     "de":  "Bedingung - ZusÃƒÂ¤tzlich 02",
+                                     "en":  "Condition Additional 02"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027C on di ti on Ad di ti on a l02\u0027 / \u0027C on di ti on Ad di ti on a l02\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Condition Additional 02\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TemperatureOutside",
                        "terms":  {
-                                     "en":  "T em pe ra tu re Ou ts i d e",
-                                     "de":  "T em pe ra tu re Ou ts i d e"
+                                     "de":  "AuÃƒÅ¸entemperatur",
+                                     "en":  "Temperature Outside"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts i d e\u0027 / \u0027T em pe ra tu re Ou ts i d e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutsideThreshold",
                        "terms":  {
-                                     "en":  "T em pe ra tu re Ou ts id eT hr es ho l d",
-                                     "de":  "T em pe ra tu re Ou ts id eT hr es ho l d"
+                                     "de":  "AuÃƒÅ¸entemperatur Schwellwert",
+                                     "en":  "Temperature Outside Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 / \u0027T em pe ra tu re Ou ts id eT hr es ho l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur Schwellwert\u0027 / \u0027Temperature Outside Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInside",
                        "terms":  {
-                                     "en":  "T em pe ra tu re In si d e",
-                                     "de":  "T em pe ra tu re In si d e"
+                                     "de":  "Innentemperatur",
+                                     "en":  "Temperature Inside"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re In si d e\u0027 / \u0027T em pe ra tu re In si d e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Innentemperatur\u0027 / \u0027Temperature Inside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
                        "terms":  {
-                                     "en":  "T em pe ra tu re In si de Th re sh o l d",
-                                     "de":  "T em pe ra tu re In si de Th re sh o l d"
+                                     "de":  "Innentemperatur Schwellwert",
+                                     "en":  "Temperature Inside Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027T em pe ra tu re In si de Th re sh o l d\u0027 / \u0027T em pe ra tu re In si de Th re sh o l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Innentemperatur Schwellwert\u0027 / \u0027Temperature Inside Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "AdditionalTemperatureInsideDependenceThreshold",
                        "terms":  {
-                                     "en":  "A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d",
-                                     "de":  "A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d"
+                                     "de":  "ZusÃƒÂ¤tzlicher Innentemperatur-Schwellwert",
+                                     "en":  "Additional Temperature Inside Dependence Threshold"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d\u0027 / \u0027A dd it io na lT em pe ra tu re In si de De pe nd en ce Th re sh o l d\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027ZusÃƒÂ¤tzlicher Innentemperatur-Schwellwert\u0027 / \u0027Additional Temperature Inside Dependence Threshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfAccuDependence",
                        "terms":  {
-                                     "en":  "N um be rO fA cc uD ep en de n c e",
-                                     "de":  "N um be rO fA cc uD ep en de n c e"
+                                     "de":  "Anzahl der AkkuabhÃƒÂ¤ngigkeiten",
+                                     "en":  "Number Of Accu Dependence"
                                  },
                        "type":  "int",
-                       "description":  "Eingang für \u0027N um be rO fA cc uD ep en de n c e\u0027 / \u0027N um be rO fA cc uD ep en de n c e\u0027 (int)."
+                       "dataType":  "int",
+                       "description":  "Eingang für \u0027Anzahl der AkkuabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of Accu Dependence\u0027. Datentyp: int."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "en":  "A cc uA ct u a l",
-                                     "de":  "A cc uA ct u a l"
+                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
+                                     "en":  "Accu Actual"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uA ct u a l\u0027 / \u0027A cc uA ct u a l\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
                    },
                    {
                        "name":  "AccuDependence",
                        "terms":  {
-                                     "en":  "A cc uD ep en de n c e",
-                                     "de":  "A cc uD ep en de n c e"
+                                     "de":  "Accu Dependence",
+                                     "en":  "Accu Dependence"
                                  },
                        "type":  "number",
-                       "description":  "Eingang für \u0027A cc uD ep en de n c e\u0027 / \u0027A cc uD ep en de n c e\u0027 (number)."
+                       "dataType":  "number",
+                       "description":  "Eingang für \u0027Accu Dependence\u0027 / \u0027Accu Dependence\u0027. Datentyp: number."
                    },
                    {
                        "name":  "TimeDependence",
                        "terms":  {
-                                     "en":  "T im eD ep en de n c e",
-                                     "de":  "T im eD ep en de n c e"
+                                     "de":  "Zeit Dependence",
+                                     "en":  "Time Dependence"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027T im eD ep en de n c e\u0027 / \u0027T im eD ep en de n c e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Zeit Dependence\u0027 / \u0027Time Dependence\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Cooling",
                         "terms":  {
-                                      "en":  "C oo li n g",
-                                      "de":  "C oo li n g"
+                                      "de":  "KÃƒÂ¼hlen",
+                                      "en":  "Cooling"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027C oo li n g\u0027 / \u0027C oo li n g\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027KÃƒÂ¼hlen\u0027 / \u0027Cooling\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "OperationModeCooling",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol i n g",
-                                      "de":  "O pe ra ti on Mo de Co ol i n g"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen",
+                                      "en":  "Operation Mode Cooling"
                                   },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol i n g\u0027 / \u0027O pe ra ti on Mo de Co ol i n g\u0027 (ByteValueObject)."
+                        "dataType":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen\u0027 / \u0027Operation Mode Cooling\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional01",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol in gA dd it io n a l01",
-                                      "de":  "O pe ra ti on Mo de Co ol in gA dd it io n a l01"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 01",
+                                      "en":  "Operation Mode Cooling Additional 01"
                                   },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l01\u0027 / \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l01\u0027 (ByteValueObject)."
+                        "dataType":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Operation Mode Cooling Additional 01\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional02",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol in gA dd it io n a l02",
-                                      "de":  "O pe ra ti on Mo de Co ol in gA dd it io n a l02"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 02",
+                                      "en":  "Operation Mode Cooling Additional 02"
                                   },
                         "type":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l02\u0027 / \u0027O pe ra ti on Mo de Co ol in gA dd it io n a l02\u0027 (ByteValueObject)."
+                        "dataType":  "ByteValueObject",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Operation Mode Cooling Additional 02\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingString",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol in gS tr i n g",
-                                      "de":  "O pe ra ti on Mo de Co ol in gS tr i n g"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen (string)",
+                                      "en":  "Operation Mode Cooling String"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr i n g\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr i n g\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string)\u0027 / \u0027Operation Mode Cooling String\u0027. Datentyp: string."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional01",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01",
-                                      "de":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 01",
+                                      "en":  "Operation Mode Cooling String Additional 01"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l01\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Operation Mode Cooling String Additional 01\u0027. Datentyp: string."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional02",
                         "terms":  {
-                                      "en":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02",
-                                      "de":  "O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02"
+                                      "de":  "Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 02",
+                                      "en":  "Operation Mode Cooling String Additional 02"
                                   },
                         "type":  "string",
-                        "description":  "Ausgang für \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02\u0027 / \u0027O pe ra ti on Mo de Co ol in gS tr in gA dd it io n a l02\u0027 (string)."
+                        "dataType":  "string",
+                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Operation Mode Cooling String Additional 02\u0027. Datentyp: string."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -333,7 +363,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.23",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.23 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

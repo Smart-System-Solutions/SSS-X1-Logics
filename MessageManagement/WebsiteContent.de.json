@@ -28,67 +28,74 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "SetMessage",
                        "terms":  {
-                                     "en":  "S et Me ss a g e",
-                                     "de":  "S et Me ss a g e"
+                                     "de":  "Setze Benachrichtung",
+                                     "en":  "Set Message"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027S et Me ss a g e\u0027 / \u0027S et Me ss a g e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Setze Benachrichtung\u0027 / \u0027Set Message\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ResetMessage",
                        "terms":  {
-                                     "en":  "R es et Me ss a g e",
-                                     "de":  "R es et Me ss a g e"
+                                     "de":  "RÃƒÂ¼cksetze Benachrichtigung",
+                                     "en":  "Reset Message"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Me ss a g e\u0027 / \u0027R es et Me ss a g e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027RÃƒÂ¼cksetze Benachrichtigung\u0027 / \u0027Reset Message\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "MessageCondition",
                        "terms":  {
-                                     "en":  "M es sa ge Co nd it i o n",
-                                     "de":  "M es sa ge Co nd it i o n"
+                                     "de":  "Bedingung Benachrichtigung",
+                                     "en":  "Message Condition"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027M es sa ge Co nd it i o n\u0027 / \u0027M es sa ge Co nd it i o n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Bedingung Benachrichtigung\u0027 / \u0027Message Condition\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ResetMessageIfConditionFalse",
                        "terms":  {
-                                     "en":  "R es et Me ss ag eI fC on di ti on Fa l s e",
-                                     "de":  "R es et Me ss ag eI fC on di ti on Fa l s e"
+                                     "de":  "RÃƒÂ¼cksetze Benachrichtigung ÃƒÂ¼ber Bedingung FALSE",
+                                     "en":  "Reset Message If Condition False"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Me ss ag eI fC on di ti on Fa l s e\u0027 / \u0027R es et Me ss ag eI fC on di ti on Fa l s e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027RÃƒÂ¼cksetze Benachrichtigung ÃƒÂ¼ber Bedingung FALSE\u0027 / \u0027Reset Message If Condition False\u0027. Datentyp: bool."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -120,7 +127,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.21",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.21 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

@@ -31,166 +31,184 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerReadStorage",
                        "terms":  {
-                                     "en":  "T ri gg er Re ad St or a g e",
-                                     "de":  "T ri gg er Re ad St or a g e"
+                                     "de":  "Trigger Speicher auslesen",
+                                     "en":  "Trigger Read Storage"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ri gg er Re ad St or a g e\u0027 / \u0027T ri gg er Re ad St or a g e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Trigger Speicher auslesen\u0027 / \u0027Trigger Read Storage\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "WriteOutputIfInputWasSet",
                        "terms":  {
-                                     "en":  "W ri te Ou tp ut If In pu tW as S e t",
-                                     "de":  "W ri te Ou tp ut If In pu tW as S e t"
+                                     "de":  "Schreibe Ausgang wenn Eingang gesetzt wurde",
+                                     "en":  "Write Output If Input Was Set"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027W ri te Ou tp ut If In pu tW as S e t\u0027 / \u0027W ri te Ou tp ut If In pu tW as S e t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Schreibe Ausgang wenn Eingang gesetzt wurde\u0027 / \u0027Write Output If Input Was Set\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "en":  "I np u t",
-                                     "de":  "I np u t"
+                                     "de":  "Eingang",
+                                     "en":  "Input"
                                  },
                        "type":  "any",
-                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (any)."
+                       "dataType":  "any",
+                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "en":  "S to ra ge Pa t h",
-                                     "de":  "S to ra ge Pa t h"
+                                     "de":  "Speicherpfad",
+                                     "en":  "Storage Path"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027S to ra ge Pa t h\u0027 / \u0027S to ra ge Pa t h\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027Speicherpfad\u0027 / \u0027Storage Path\u0027. Datentyp: string."
                    },
                    {
                        "name":  "DelayAfterInitialize",
                        "terms":  {
-                                     "en":  "D el ay Af te rI ni ti al i z e",
-                                     "de":  "D el ay Af te rI ni ti al i z e"
+                                     "de":  "Wartezeit nach Neustart vom X1",
+                                     "en":  "Delay After Initialize"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027D el ay Af te rI ni ti al i z e\u0027 / \u0027D el ay Af te rI ni ti al i z e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Wartezeit nach Neustart vom X1\u0027 / \u0027Delay After Initialize\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "ActivateReadStorageAfterDelay",
                        "terms":  {
-                                     "en":  "A ct iv at eR ea dS to ra ge Af te rD el a y",
-                                     "de":  "A ct iv at eR ea dS to ra ge Af te rD el a y"
+                                     "de":  "Aktiviere das Auslesen des Speichers nach Wartezeit",
+                                     "en":  "Activate Read Storage After Delay"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eR ea dS to ra ge Af te rD el a y\u0027 / \u0027A ct iv at eR ea dS to ra ge Af te rD el a y\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere das Auslesen des Speichers nach Wartezeit\u0027 / \u0027Activate Read Storage After Delay\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateSaveStorageInFirstRun",
                        "terms":  {
-                                     "en":  "A ct iv at eS av eS to ra ge In Fi rs tR u n",
-                                     "de":  "A ct iv at eS av eS to ra ge In Fi rs tR u n"
+                                     "de":  "Aktiviere Wert speichern beim ersten Eingangswert",
+                                     "en":  "Activate Save Storage In First Run"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027A ct iv at eS av eS to ra ge In Fi rs tR u n\u0027 / \u0027A ct iv at eS av eS to ra ge In Fi rs tR u n\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Aktiviere Wert speichern beim ersten Eingangswert\u0027 / \u0027Activate Save Storage In First Run\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Type",
                        "terms":  {
-                                     "en":  "T y p e",
-                                     "de":  "T y p e"
+                                     "de":  "Type",
+                                     "en":  "Type"
                                  },
                        "type":  "string",
-                       "description":  "Eingang für \u0027T y p e\u0027 / \u0027T y p e\u0027 (string)."
+                       "dataType":  "string",
+                       "description":  "Eingang für \u0027Type\u0027 / \u0027Type\u0027. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
                     },
                     {
                         "name":  "OutputOnlyTrigger",
                         "terms":  {
-                                      "en":  "O ut pu tO nl yT ri gg e r",
-                                      "de":  "O ut pu tO nl yT ri gg e r"
+                                      "de":  "Ausgang (Nur Trigger)",
+                                      "en":  "Output Only Trigger"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut pu tO nl yT ri gg e r\u0027 / \u0027O ut pu tO nl yT ri gg e r\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang (Nur Trigger)\u0027 / \u0027Output Only Trigger\u0027. Datentyp: any."
                     },
                     {
                         "name":  "OutputOnlyRestart",
                         "terms":  {
-                                      "en":  "O ut pu tO nl yR es ta r t",
-                                      "de":  "O ut pu tO nl yR es ta r t"
+                                      "de":  "Ausgang (Nur Neustart)",
+                                      "en":  "Output Only Restart"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut pu tO nl yR es ta r t\u0027 / \u0027O ut pu tO nl yR es ta r t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang (Nur Neustart)\u0027 / \u0027Output Only Restart\u0027. Datentyp: any."
                     },
                     {
                         "name":  "OutputOnlyInput",
                         "terms":  {
-                                      "en":  "O ut pu tO nl yI np u t",
-                                      "de":  "O ut pu tO nl yI np u t"
+                                      "de":  "Ausgang (Nur Eingang)",
+                                      "en":  "Output Only Input"
                                   },
                         "type":  "any",
-                        "description":  "Ausgang für \u0027O ut pu tO nl yI np u t\u0027 / \u0027O ut pu tO nl yI np u t\u0027 (any)."
+                        "dataType":  "any",
+                        "description":  "Ausgang für \u0027Ausgang (Nur Eingang)\u0027 / \u0027Output Only Input\u0027. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -226,7 +244,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.18",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.18 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",

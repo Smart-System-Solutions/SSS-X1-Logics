@@ -26,139 +26,154 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "en":  "A ct iv a t e",
-                                     "de":  "A ct iv a t e"
+                                     "de":  "Aktiviere",
+                                     "en":  "Activate"
                                  },
                        "type":  "bool",
-                       "description":  "Aktiviert oder deaktiviert den Baustein."
+                       "dataType":  "bool",
+                       "description":  "Aktiviert oder deaktiviert den Baustein. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "en":  "I np u t",
-                                     "de":  "I np u t"
+                                     "de":  "Eingang",
+                                     "en":  "Input"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027I np u t\u0027 / \u0027I np u t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ResetOutput",
                        "terms":  {
-                                     "en":  "R es et Ou tp u t",
-                                     "de":  "R es et Ou tp u t"
+                                     "de":  "Ausgang zurÃƒÂ¼cksetzen",
+                                     "en":  "Reset output"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Ou tp u t\u0027 / \u0027R es et Ou tp u t\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Ausgang zurÃƒÂ¼cksetzen\u0027 / \u0027Reset output\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ResetOutputIfInputIsFalse",
                        "terms":  {
-                                     "en":  "R es et Ou tp ut If In pu tI sF al s e",
-                                     "de":  "R es et Ou tp ut If In pu tI sF al s e"
+                                     "de":  "Ausgang zurÃƒÂ¼cksetzen wenn Eingang auf aus geht",
+                                     "en":  "Reset Output If Input Is False"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027R es et Ou tp ut If In pu tI sF al s e\u0027 / \u0027R es et Ou tp ut If In pu tI sF al s e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Ausgang zurÃƒÂ¼cksetzen wenn Eingang auf aus geht\u0027 / \u0027Reset Output If Input Is False\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TakeLongTime",
                        "terms":  {
-                                     "en":  "T ak eL on gT i m e",
-                                     "de":  "T ak eL on gT i m e"
+                                     "de":  "Nimm lange Wartezeit",
+                                     "en":  "Take Long Time"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eL on gT i m e\u0027 / \u0027T ak eL on gT i m e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Nimm lange Wartezeit\u0027 / \u0027Take Long Time\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TakeShortTime",
                        "terms":  {
-                                     "en":  "T ak eS ho rt Ti m e",
-                                     "de":  "T ak eS ho rt Ti m e"
+                                     "de":  "Nimm kurze Wartezeit",
+                                     "en":  "Take Short Time"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eS ho rt Ti m e\u0027 / \u0027T ak eS ho rt Ti m e\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Nimm kurze Wartezeit\u0027 / \u0027Take Short Time\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TakeShortTimeWhenLongTimeFinished",
                        "terms":  {
-                                     "en":  "T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d",
-                                     "de":  "T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d"
+                                     "de":  "Nimm kurze Wartezeit wenn lange Wartezeit beendet wurde",
+                                     "en":  "Take Short Time When Long Time Finished"
                                  },
                        "type":  "bool",
-                       "description":  "Eingang für \u0027T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d\u0027 / \u0027T ak eS ho rt Ti me Wh en Lo ng Ti me Fi ni sh e d\u0027 (bool)."
+                       "dataType":  "bool",
+                       "description":  "Eingang für \u0027Nimm kurze Wartezeit wenn lange Wartezeit beendet wurde\u0027 / \u0027Take Short Time When Long Time Finished\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ShortTime",
                        "terms":  {
-                                     "en":  "S ho rt Ti m e",
-                                     "de":  "S ho rt Ti m e"
+                                     "de":  "Kurze Wartezeit",
+                                     "en":  "Short Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027S ho rt Ti m e\u0027 / \u0027S ho rt Ti m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Kurze Wartezeit\u0027 / \u0027Short Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LongTime",
                        "terms":  {
-                                     "en":  "L on gT i m e",
-                                     "de":  "L on gT i m e"
+                                     "de":  "Lange Wartezeit",
+                                     "en":  "Long Time"
                                  },
                        "type":  "timespan",
-                       "description":  "Eingang für \u0027L on gT i m e\u0027 / \u0027L on gT i m e\u0027 (timespan)."
+                       "dataType":  "timespan",
+                       "description":  "Eingang für \u0027Lange Wartezeit\u0027 / \u0027Long Time\u0027. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "en":  "L ic en se K e y01",
-                                     "de":  "L ic en se K e y01"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
+                                     "en":  "License Key 01"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    },
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "en":  "L ic en se K e y02",
-                                     "de":  "L ic en se K e y02"
+                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
+                                     "en":  "License Key 02"
                                  },
                        "type":  "string",
-                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung."
+                       "dataType":  "string",
+                       "description":  "Lizenzschlüsselteil für die lokale Lizenzprüfung. Datentyp: string."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "en":  "O ut p u t",
-                                      "de":  "O ut p u t"
+                                      "de":  "Ausgang",
+                                      "en":  "Output"
                                   },
                         "type":  "bool",
-                        "description":  "Ausgang für \u0027O ut p u t\u0027 / \u0027O ut p u t\u0027 (bool)."
+                        "dataType":  "bool",
+                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "en":  "L og Ex ec u t e",
-                                      "de":  "L og Ex ec u t e"
+                                      "de":  "AusfÃ¼hrungsprotokoll",
+                                      "en":  "Log Execute"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "en":  "L og Sc he du l e",
-                                      "de":  "L og Sc he du l e"
+                                      "de":  "Zeitplanungsprotokoll",
+                                      "en":  "Log Schedule"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     },
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "en":  "L og Li ce n s e",
-                                      "de":  "L og Li ce n s e"
+                                      "de":  "Lizenzprotokoll",
+                                      "en":  "Log License"
                                   },
                         "type":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung."
+                        "dataType":  "string",
+                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
                     }
                 ],
     "examples":  [
@@ -194,7 +209,7 @@
     "changelog":  [
                       {
                           "version":  "3.0.21",
-                          "date":  "2026-05-17",
+                          "date":  "2026-05-18",
                           "changes":  [
                                           "Neue signierte Version 3.0.21 bereitgestellt.",
                                           "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
