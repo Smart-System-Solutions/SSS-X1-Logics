@@ -6,9 +6,9 @@
     "version":  "3.0.18",
     "slug":  "saveandloadvalues",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/saveandloadvalues/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Speichere und lese Werte",
@@ -16,23 +16,21 @@
               },
     "shortDescription":  "Stellt die Logik \u0027Speichere und lese Werte\u0027 für Smart-System-Solutions-Bausteine bereit.",
     "specialFeatures":  [
-                            "Datenpersistenz: Die Methode ermöglicht das Speichern und spätere Wiederherstellen eines Wertes aus einer Datei.",
-                            "Automatische Wiederherstellung: Nach einem Neustart oder nach einer einstellbaren Verzögerung kann der gespeicherte Wert automatisch wieder geladen werden.",
-                            "Flexible Eingaben: Es können verschiedene Datentypen gespeichert und wiederhergestellt werden (z. B. Zahlen, Texte, Wahrheitswerte).",
-                            "Lizenzprüfung: Das System erfordert eine gültige Lizenz zur Nutzung.",
-                            "Speicherung auf SD-Karte Die Werte werden auf einer SD-Karte unter /opt/card/SmartSystemSolutions/saveandload/ gespeichert. Falls keine SD-Karte vorhanden ist, kann die Speicherung nicht durchgeführt werden.",
-                            "Fehlerbehandlung: Es werden verschiedene Fehler abgefangen, insbesondere bei Dateioperationen oder ungültigen Eingaben.",
-                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt Diagnose, Datenaustausch oder persistente Werte für spätere Auswertung."
                         ],
     "detailedDescription":  [
-                                "Diese Methode ermöglicht das Speichern und Wiederherstellen von Werten auf einer SD-Karte. Durch Aktivierung der Speicherfunktion wird ein eingegebener Wert gespeichert, der später wieder abgerufen werden kann – entweder manuell oder automatisch nach einer definierten Verzögerung. Die Funktion unterstützt verschiedene Datentypen wie Zahlen, Texte und Wahrheitswerte. Zudem kann sie so konfiguriert werden, dass gespeicherte Werte nach einem Systemneustart automatisch wiederhergestellt werden. Hinweis: Besonders nützlich beim Austausch von Zustandlosen Werten mit anderen Systemen (z.B: HomeAssistant) ##"
+                                "Stellt die Logik \u0027Speichere und lese Werte\u0027 für Smart-System-Solutions-Bausteine bereit.",
+                                "Der Baustein \u0027Speichere und lese Werte\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -41,18 +39,18 @@
                    {
                        "name":  "TriggerReadStorage",
                        "terms":  {
-                                     "de":  "Trigger Speicher auslesen",
-                                     "en":  "Trigger Read Storage"
+                                     "en":  "Trigger Read Storage",
+                                     "de":  "Trigger Speicher auslesen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Trigger Speicher auslesen\u0027 / \u0027Trigger Read Storage\u0027. Datentyp: bool."
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion. Datentyp: bool."
                    },
                    {
                        "name":  "WriteOutputIfInputWasSet",
                        "terms":  {
-                                     "de":  "Schreibe Ausgang wenn Eingang gesetzt wurde",
-                                     "en":  "Write Output If Input Was Set"
+                                     "en":  "Write Output If Input Was Set",
+                                     "de":  "Schreibe Ausgang wenn Eingang gesetzt wurde"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -61,18 +59,18 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: any."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "de":  "Speicherpfad",
-                                     "en":  "Storage Path"
+                                     "en":  "Storage Path",
+                                     "de":  "Speicherpfad"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -81,18 +79,18 @@
                    {
                        "name":  "DelayAfterInitialize",
                        "terms":  {
-                                     "de":  "Wartezeit nach Neustart vom X1",
-                                     "en":  "Delay After Initialize"
+                                     "en":  "Delay After Initialize",
+                                     "de":  "Wartezeit nach Neustart vom X1"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Wartezeit nach Neustart vom X1\u0027 / \u0027Delay After Initialize\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "ActivateReadStorageAfterDelay",
                        "terms":  {
-                                     "de":  "Aktiviere das Auslesen des Speichers nach Wartezeit",
-                                     "en":  "Activate Read Storage After Delay"
+                                     "en":  "Activate Read Storage After Delay",
+                                     "de":  "Aktiviere das Auslesen des Speichers nach Wartezeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -101,8 +99,8 @@
                    {
                        "name":  "ActivateSaveStorageInFirstRun",
                        "terms":  {
-                                     "de":  "Aktiviere Wert speichern beim ersten Eingangswert",
-                                     "en":  "Activate Save Storage In First Run"
+                                     "en":  "Activate Save Storage In First Run",
+                                     "de":  "Aktiviere Wert speichern beim ersten Eingangswert"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -111,8 +109,8 @@
                    {
                        "name":  "Type",
                        "terms":  {
-                                     "de":  "Type",
-                                     "en":  "Type"
+                                     "en":  "Type",
+                                     "de":  "Type"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -121,8 +119,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -131,8 +129,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -143,18 +141,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "OutputOnlyTrigger",
                         "terms":  {
-                                      "de":  "Ausgang (Nur Trigger)",
-                                      "en":  "Output Only Trigger"
+                                      "en":  "Output Only Trigger",
+                                      "de":  "Ausgang (Nur Trigger)"
                                   },
                         "type":  "any",
                         "dataType":  "any",
@@ -163,18 +161,18 @@
                     {
                         "name":  "OutputOnlyRestart",
                         "terms":  {
-                                      "de":  "Ausgang (Nur Neustart)",
-                                      "en":  "Output Only Restart"
+                                      "en":  "Output Only Restart",
+                                      "de":  "Ausgang (Nur Neustart)"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang (Nur Neustart)\u0027 / \u0027Output Only Restart\u0027. Datentyp: any."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: any."
                     },
                     {
                         "name":  "OutputOnlyInput",
                         "terms":  {
-                                      "de":  "Ausgang (Nur Eingang)",
-                                      "en":  "Output Only Input"
+                                      "en":  "Output Only Input",
+                                      "de":  "Ausgang (Nur Eingang)"
                                   },
                         "type":  "any",
                         "dataType":  "any",
@@ -183,8 +181,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -193,8 +191,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -203,8 +201,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -244,12 +242,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.18",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.18 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.5",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

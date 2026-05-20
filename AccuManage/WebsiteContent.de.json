@@ -6,9 +6,9 @@
     "version":  "3.0.27",
     "slug":  "accumanage",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/accumanage/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Akku Management",
@@ -16,12 +16,9 @@
               },
     "shortDescription":  "Steuert Verbraucher oder Betriebszustände abhängig von Akkuladung, Zeitbedingungen und konfigurierten Grenzwerten.",
     "specialFeatures":  [
-                            "Flexible Aktivierungsbedingungen: Der Baustein kann basierend auf verschiedenen Kriterien wie Akkuladung, Temperaturbedingungen, Zeitsteuerung oder einer Kombination dieser Faktoren aktiviert und deaktiviert werden.",
-                            "Zeitbasierte Steuerung: Es kann eine automatische Aktivierung oder Deaktivierung nach einer definierten Zeit erfolgen.",
-                            "Lizenzvalidierung: Der Baustein prüft, ob eine gültige Lizenz und eine unmanipulierte .dll-Datei vorliegen. Ohne gültige Lizenz ist keine Funktion gewährleistet.",
-                            "Temperaturbedingung: Die Aktivierung erfolgt nur, wenn die aktuelle Temperatur ( Temperature ) unter einem definierten Grenzwert ( TemperatureEnd ) liegt.",
-                            "Fehlerbehandlung: Ausführliche Try-Catch-Blöcke sichern den Baustein gegen Fehler ab und erzeugen detaillierte Logs zur Diagnose.",
-                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten."
                         ],
     "detailedDescription":  [
                                 "Steuert Verbraucher oder Betriebszustände abhängig von Akkuladung, Zeitbedingungen und konfigurierten Grenzwerten.",
@@ -32,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -42,118 +39,118 @@
                    {
                        "name":  "ActivateOutputWithAccu",
                        "terms":  {
-                                     "de":  "Aktiviere Ausgang mit Akku",
-                                     "en":  "Activate Output With Accu"
+                                     "en":  "Activate Output With Accu",
+                                     "de":  "Aktiviere Ausgang mit Akku"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere Ausgang mit Akku\u0027 / \u0027Activate Output With Accu\u0027. Datentyp: bool."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateOutputWithTime",
                        "terms":  {
-                                     "de":  "Aktiviere Ausgang mit Zeit",
-                                     "en":  "Activate Output With Time"
+                                     "en":  "Activate Output With Time",
+                                     "de":  "Aktiviere Ausgang mit Zeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere Ausgang mit Zeit\u0027 / \u0027Activate Output With Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "Condition",
                        "terms":  {
-                                     "de":  "Bedingung",
-                                     "en":  "Condition"
+                                     "en":  "Condition",
+                                     "de":  "Bedingung"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung\u0027 / \u0027Condition\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionTemperature",
                        "terms":  {
-                                     "de":  "Bedingung Temperatur",
-                                     "en":  "Condition Temperature"
+                                     "en":  "Condition Temperature",
+                                     "de":  "Bedingung Temperatur"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung Temperatur\u0027 / \u0027Condition Temperature\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerOutput",
                        "terms":  {
-                                     "de":  "Trigger Ausgang",
-                                     "en":  "Trigger Output"
+                                     "en":  "Trigger Output",
+                                     "de":  "Trigger Ausgang"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Trigger Ausgang\u0027 / \u0027Trigger Output\u0027. Datentyp: bool."
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion. Datentyp: bool."
                    },
                    {
                        "name":  "StartAccuValue",
                        "terms":  {
-                                     "de":  "Startwert Akku",
-                                     "en":  "Start Accu Value"
+                                     "en":  "Start Accu Value",
+                                     "de":  "Startwert Akku"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Startwert Akku\u0027 / \u0027Start Accu Value\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "EndAccuValue",
                        "terms":  {
-                                     "de":  "Endwert Akku",
-                                     "en":  "End Accu Value"
+                                     "en":  "End Accu Value",
+                                     "de":  "Endwert Akku"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Endwert Akku\u0027 / \u0027End Accu Value\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "Temperature",
                        "terms":  {
-                                     "de":  "Ist-Temperatur",
-                                     "en":  "Temperature"
+                                     "en":  "Temperature",
+                                     "de":  "Ist-Temperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Ist-Temperatur\u0027 / \u0027Temperature\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureEnd",
                        "terms":  {
-                                     "de":  "Endwert Temperatur",
-                                     "en":  "Temperature End"
+                                     "en":  "Temperature End",
+                                     "de":  "Endwert Temperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Endwert Temperatur\u0027 / \u0027Temperature End\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
-                                     "en":  "Accu Actual"
+                                     "en":  "Accu Actual",
+                                     "de":  "Aktuelle Akkukapazität"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: number."
                    },
                    {
                        "name":  "TimeTriggerOutput",
                        "terms":  {
-                                     "de":  "Laufzeit fÃƒÂ¼r Ausgang mit Zeit",
-                                     "en":  "Time Trigger Output"
+                                     "en":  "Time Trigger Output",
+                                     "de":  "Laufzeit für Ausgang mit Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Laufzeit fÃƒÂ¼r Ausgang mit Zeit\u0027 / \u0027Time Trigger Output\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -162,8 +159,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -174,28 +171,28 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "RestOutputTime",
                         "terms":  {
-                                      "de":  "Endzeit fÃƒÂ¼r Ausgang mit Zeit",
-                                      "en":  "Rest Output Time"
+                                      "en":  "Rest Output Time",
+                                      "de":  "Endzeit für Ausgang mit Zeit"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Ausgang für \u0027Endzeit fÃƒÂ¼r Ausgang mit Zeit\u0027 / \u0027Rest Output Time\u0027. Datentyp: string."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: string."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -204,18 +201,18 @@
                     {
                         "name":  "LogScheduleStartWithTime",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Start With Zeit",
-                                      "en":  "Log Schedule Start With Time"
+                                      "en":  "Log Schedule Start With Time",
+                                      "de":  "Zeitplanungsprotokoll Start With Zeit"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Diagnoseausgabe für Ausführung, Zeitplanung oder Lizenzprüfung. Datentyp: string."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: string."
                     },
                     {
                         "name":  "LogScheduleReset",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll ZurÃ¼cksetzen",
-                                      "en":  "Log Schedule Reset"
+                                      "en":  "Log Schedule Reset",
+                                      "de":  "Zeitplanungsprotokoll Zurücksetzen"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -224,8 +221,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -265,12 +262,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.27",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.27 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

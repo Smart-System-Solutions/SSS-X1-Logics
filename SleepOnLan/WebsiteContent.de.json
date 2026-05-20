@@ -8,7 +8,7 @@
     "source":  {
                    "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/sleeponlan/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "SleepOnLan - UDP",
@@ -28,8 +28,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -38,8 +38,8 @@
                    {
                        "name":  "IpAddress",
                        "terms":  {
-                                     "de":  "IP-Adresse",
-                                     "en":  "Ip Address"
+                                     "en":  "Ip Address",
+                                     "de":  "IP-Adresse"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -48,8 +48,8 @@
                    {
                        "name":  "Port",
                        "terms":  {
-                                     "de":  "Port",
-                                     "en":  "Port"
+                                     "en":  "Port",
+                                     "de":  "Port"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -58,18 +58,18 @@
                    {
                        "name":  "Start",
                        "terms":  {
-                                     "de":  "Start",
-                                     "en":  "Start"
+                                     "en":  "Start",
+                                     "de":  "Start"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Start\u0027 / \u0027Start\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -78,8 +78,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -90,8 +90,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -100,8 +100,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -141,12 +141,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.16",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.16 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

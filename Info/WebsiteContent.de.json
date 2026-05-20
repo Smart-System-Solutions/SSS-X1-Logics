@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "info",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/info/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Info",
@@ -16,20 +16,20 @@
               },
     "shortDescription":  "Stellt die Logik \u0027Info\u0027 für Smart-System-Solutions-Bausteine bereit.",
     "specialFeatures":  [
-                            "Flexible Zeitsteuerung: Die Klasse bietet eine zeitgesteuerte Aktivierung, die über die Eingabe „Delay“ angepasst werden kann. Das Intervall beträgt standardmäßig 30 Sekunden und kann auf mindestens 5 Sekunden festgelegt werden.",
-                            "Automatischer Zeitplan: Bei Aktivierung wird ein Zeitplan initiiert, der periodisch aktualisiert wird. Wird die Aktivierung deaktiviert, stoppt der Zeitplan automatisch.",
-                            "Fehlerbehandlung: Die Klasse verfügt über integrierte Try-Catch-Blöcke zur Erfassung und Protokollierung von Fehlern während der Ausführung und Planung.",
-                            "Protokollierung: Änderungen und Ereignisse werden in den"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Die Baustein Info überwacht und verwaltet zeitgesteuerte Aktionen in einem Gira X1-System. Sie bietet eine flexible Steuerung von Prozessen über eine Aktivierung und eine einstellbare Verzögerung. Zusätzlich zeichnet sie wichtige Systeminformationen wie Neustarts und Telegramm-Zeitstempel auf. Der Baustein prüft auch, ob eine SD-Karte im System vorhanden ist. ##"
+                                "Stellt die Logik \u0027Info\u0027 für Smart-System-Solutions-Bausteine bereit.",
+                                "Der Baustein \u0027Info\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -38,30 +38,30 @@
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "de":  "Abfragerhytmus",
-                                     "en":  "Delay"
+                                     "en":  "Delay",
+                                     "de":  "Abfragerhytmus"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Abfragerhytmus\u0027 / \u0027Delay\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "LastRestartX1String",
                         "terms":  {
-                                      "de":  "Letzter Neustart X1 - String",
-                                      "en":  "Last Restart X 1 String"
+                                      "en":  "Last Restart X 1 String",
+                                      "de":  "Letzter Neustart X1 - String"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Ausgang für \u0027Letzter Neustart X1 - String\u0027 / \u0027Last Restart X 1 String\u0027. Datentyp: string."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: string."
                     },
                     {
                         "name":  "LastTelegramX1String",
                         "terms":  {
-                                      "de":  "Letztes Telegramm X1 - String",
-                                      "en":  "Last Telegram X 1 String"
+                                      "en":  "Last Telegram X 1 String",
+                                      "de":  "Letztes Telegramm X1 - String"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -70,18 +70,18 @@
                     {
                         "name":  "LastRestartX1",
                         "terms":  {
-                                      "de":  "Letzter Neustart X1",
-                                      "en":  "Last Restart X 1"
+                                      "en":  "Last Restart X 1",
+                                      "de":  "Letzter Neustart X1"
                                   },
                         "type":  "datetime",
                         "dataType":  "datetime",
-                        "description":  "Ausgang für \u0027Letzter Neustart X1\u0027 / \u0027Last Restart X 1\u0027. Datentyp: datetime."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: datetime."
                     },
                     {
                         "name":  "LastTelegramX1",
                         "terms":  {
-                                      "de":  "Letztes Telegramm X1",
-                                      "en":  "Last Telegram X 1"
+                                      "en":  "Last Telegram X 1",
+                                      "de":  "Letztes Telegramm X1"
                                   },
                         "type":  "datetime",
                         "dataType":  "datetime",
@@ -90,18 +90,18 @@
                     {
                         "name":  "SDCardAvailaible",
                         "terms":  {
-                                      "de":  "SD-Karte verfÃƒÂ¼gbar",
-                                      "en":  "SD Card Availaible"
+                                      "en":  "SD Card Availaible",
+                                      "de":  "SD-Karte verfügbar"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027SD-Karte verfÃƒÂ¼gbar\u0027 / \u0027SD Card Availaible\u0027. Datentyp: bool."
+                        "description":  "Ausgang für \u0027SD-Karte verfügbar\u0027 / \u0027SD Card Availaible\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -110,8 +110,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -147,12 +147,12 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Die Diagnoseausgänge werden in der Bausteinoberfläche wieder in einer eindeutigen Reihenfolge angezeigt.",
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

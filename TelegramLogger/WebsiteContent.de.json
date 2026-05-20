@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "telegramlogger",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/telegramlogger/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Telegramm Logger",
@@ -16,18 +16,22 @@
               },
     "shortDescription":  "Zeichnet Telegramme beziehungsweise Eingangswerte strukturiert auf und stellt sie für Analyse und Diagnose bereit.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Anzahl der"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden.",
+                            "Unterstützt Diagnose, Datenaustausch oder persistente Werte für spätere Auswertung."
                         ],
     "detailedDescription":  [
-                                "Dieser Baustein dient dazu, bestimmte Werteänderungen zu protokollieren. Sie kann genutzt werden, um bei Aktivierung automatisch festgelegte Datenpunkte zu überwachen und deren Werte zeitlich sortiert zu speichern. Es werden sowohl die ersten als auch die letzten festgelegten Werte erfasst. Dies ist besonders hilfreich, um den zeitlichen Verlauf und die Entwicklung von Daten zu analysieren – etwa in einem Smart-Home-System. Eine zentrale Ausgabe listet die erfassten Werte samt Zeitstempel und Auslöser der Veränderung auf. ##"
+                                "Zeichnet Telegramme beziehungsweise Eingangswerte strukturiert auf und stellt sie für Analyse und Diagnose bereit.",
+                                "Der Baustein \u0027Telegramm Logger\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -36,48 +40,48 @@
                    {
                        "name":  "NumberOfInputsToLog",
                        "terms":  {
-                                     "de":  "Anzahl der zu protokollierenden EingÃƒÂ¤nge",
-                                     "en":  "Number Of Inputs To Log"
+                                     "en":  "Number Of Inputs To Log",
+                                     "de":  "Anzahl der zu protokollierenden Eingänge"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der zu protokollierenden EingÃƒÂ¤nge\u0027 / \u0027Number Of Inputs To Log\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "InputsToLog",
                        "terms":  {
-                                     "de":  "Log EingeÃƒÂ¤nge",
-                                     "en":  "Inputs To Log"
+                                     "en":  "Inputs To Log",
+                                     "de":  "Log Eingeänge"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Log EingeÃƒÂ¤nge\u0027 / \u0027Inputs To Log\u0027. Datentyp: any."
+                       "description":  "Eingang für \u0027Log Eingeänge\u0027 / \u0027Inputs To Log\u0027. Datentyp: any."
                    },
                    {
                        "name":  "NumberOfFirstInputs",
                        "terms":  {
-                                     "de":  "Anzahl der zu speichernden erstenen Inputs",
-                                     "en":  "Number Of First Inputs"
+                                     "en":  "Number Of First Inputs",
+                                     "de":  "Anzahl der zu speichernden erstenen Inputs"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der zu speichernden erstenen Inputs\u0027 / \u0027Number Of First Inputs\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "NumberOfLastInputs",
                        "terms":  {
-                                     "de":  "Anzahl der zu speichernden letzten Inputs",
-                                     "en":  "Number Of Last Inputs"
+                                     "en":  "Number Of Last Inputs",
+                                     "de":  "Anzahl der zu speichernden letzten Inputs"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der zu speichernden letzten Inputs\u0027 / \u0027Number Of Last Inputs\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -86,8 +90,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -98,8 +102,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -108,8 +112,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -149,12 +153,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

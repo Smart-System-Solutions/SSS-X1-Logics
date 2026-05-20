@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "telegramtriggerbytimes",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/telegramtriggerbytimes/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Telegramm nach Zeiten triggern",
@@ -16,21 +16,21 @@
               },
     "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
     "specialFeatures":  [
-                            "Flexible Anzahl an Auslösezeiten Die Anzahl der gewünschten Uhrzeiten kann flexibel zwischen 1 und 30 eingestellt werden. Die Funktion passt sich dynamisch an die Anzahl der eingetragenen Uhrzeiten an.",
-                            "Tägliches Zurücksetzen der Auslösung Jede eingestellte Uhrzeit wird pro Tag nur einmal ausgelöst . Nach Mitternacht werden alle Zeitpunkte automatisch zurückgesetzt, sodass sie am nächsten Tag erneut aktiviert werden können.",
-                            "Fehlerprotokollierung integriert Sollte es zu einem Fehler bei der Ausführung oder Terminplanung kommen, wird dieser automatisch im Protokoll vermerkt , sodass eine einfache Analyse möglich ist.",
-                            "Automatische Protokollierung von Aktivitäten Die Logik dokumentiert sowohl, wann sie aktiviert/deaktiviert wurde , als auch wann eine Auslösezeit tatsächlich erreicht und ausgeführt wurde .",
-                            "Zeitgesteuerte Wiederholungsprüfung alle 30 Sekunden Intern wird alle 30 Sekunden überprüft, ob eine der eingestellten Uhrzeiten erreicht wurde. Dadurch wird eine präzise Ausführung ermöglicht. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Diese Logik ermöglicht es, eine Aktion automatisch zu bestimmten Uhrzeiten auszulösen. Dabei können bis zu 30 verschiedene Zeiten eingestellt werden, an denen ein Signal gesendet wird. Die Funktion überprüft regelmäßig, ob eine dieser Zeiten erreicht wurde, und gibt dann ein entsprechendes Signal aus. Zusätzlich wird protokolliert, wann der Auslösevorgang gestartet und wann er tatsächlich durchgeführt wurde. Dies ist besonders nützlich für zeitgesteuerte Automatisierungsprozesse. ##"
+                                "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+                                "Der Baustein \u0027Telegramm nach Zeiten triggern\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -39,28 +39,28 @@
                    {
                        "name":  "NumberOfTriggerByTime",
                        "terms":  {
-                                     "de":  "Anzahl der Zeittrigger",
-                                     "en":  "Number Of Trigger By Time"
+                                     "en":  "Number Of Trigger By Time",
+                                     "de":  "Anzahl der Zeittrigger"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der Zeittrigger\u0027 / \u0027Number Of Trigger By Time\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "TriggerByTime",
                        "terms":  {
-                                     "de":  "Trigger By Zeit",
-                                     "en":  "Trigger By Time"
+                                     "en":  "Trigger By Time",
+                                     "de":  "Trigger By Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Trigger By Zeit\u0027 / \u0027Trigger By Time\u0027. Datentyp: timespan."
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -69,8 +69,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -81,18 +81,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -101,8 +101,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -111,8 +111,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -152,12 +152,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

@@ -6,27 +6,23 @@
     "version":  "3.0.28",
     "slug":  "resetatmidnight",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/resetatmidnight/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Reset um Mitternacht",
                   "en":  "Reset At Midnight"
               },
-    "shortDescription":  "Diese Logik sorgt dafür, dass ein bestimmter Ausgang täglich um Mitternacht automatisch zurückgesetzt wird. Sie eignet sich besonders für Szenarien, bei denen ein täglicher Startwert oder eine Rücksetzung notwendig ist –",
+    "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Aktivierung über externes Signal.",
-                            "Optional nur Auslösung, wenn ein Eingang „Wahr“ oder „Falsch“ ist.",
-                            "Flexible Steuerung über ein internes Zeitintervall (zyklische Prüfung).",
-                            "Möglichkeit zur automatischen Rücksetzung nach Setzen des Ausgangs.",
-                            "Option, ob auf letzte Prüfung vor Mitternacht gewartet werden soll.",
-                            "Fehlerbehandlung:",
-                            "Fehler innerhalb der Funktion werden protokolliert und als Text ausgegeben."
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
                         ],
     "detailedDescription":  [
-                                "Diese Logik sorgt dafür, dass ein bestimmter Ausgang täglich um Mitternacht automatisch zurückgesetzt wird. Sie eignet sich besonders für Szenarien, bei denen ein täglicher Startwert oder eine Rücksetzung notwendig ist –",
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
                                 "Der Baustein \u0027Reset um Mitternacht\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
                                 "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
@@ -34,8 +30,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -44,38 +40,38 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: bool."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: bool."
                    },
                    {
                        "name":  "LastCycleTimeBeforeMidnight",
                        "terms":  {
-                                     "de":  "Last Cycle Zeit Before Midnight",
-                                     "en":  "Last Cycle Time Before Midnight"
+                                     "en":  "Last Cycle Time Before Midnight",
+                                     "de":  "Last Cycle Zeit Before Midnight"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Last Cycle Zeit Before Midnight\u0027 / \u0027Last Cycle Time Before Midnight\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "CycleTime",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Cycle Time"
+                                     "en":  "Cycle Time",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Cycle Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "InputHaveToBeFalse",
                        "terms":  {
-                                     "de":  "Eingang muss FALSE sein",
-                                     "en":  "Input Have To Be False"
+                                     "en":  "Input Have To Be False",
+                                     "de":  "Eingang muss FALSE sein"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -84,8 +80,8 @@
                    {
                        "name":  "InputHaveToBeTrue",
                        "terms":  {
-                                     "de":  "Eingang muss TRUE sein",
-                                     "en":  "Input Have To Be True"
+                                     "en":  "Input Have To Be True",
+                                     "de":  "Eingang muss TRUE sein"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -94,8 +90,8 @@
                    {
                        "name":  "SetFalseAfterSetTrue",
                        "terms":  {
-                                     "de":  "Setze FALSE nach TRUE",
-                                     "en":  "Set False After Set True"
+                                     "en":  "Set False After Set True",
+                                     "de":  "Setze FALSE nach TRUE"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -104,8 +100,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 01",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 01"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -114,8 +110,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 02",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 02"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -126,18 +122,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -146,8 +142,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -156,8 +152,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -197,12 +193,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.28",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.28 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.26",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.26 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.13",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

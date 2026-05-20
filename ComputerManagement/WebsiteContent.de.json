@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "computermanagement",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/computermanagement/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Computerverwaltung",
@@ -16,23 +16,20 @@
               },
     "shortDescription":  "Überwacht oder steuert Geräte über Statussignale, Netzwerkfunktionen oder Verwaltungslogik.",
     "specialFeatures":  [
-                            "Automatische Steuerung: Das Modul kann einen Computer und einen Monitor automatisch starten und herunterfahren.",
-                            "Zeitbasierte Abschaltung: Eine Zeitsteuerung erlaubt es, den Computer oder Monitor nach einer bestimmten Zeit auszuschalten.",
-                            "Zustandsüberwachung: Erkennt, ob der Computer online ist, und kann darauf reagieren.",
-                            "Steuerung der Steckdosen: Schaltet die Stromversorgung für PC und Monitor gezielt ein oder aus.",
-                            "Lizenzprüfung: Das Modul prüft, ob eine gültige Lizenz vorhanden ist, um sicherzustellen, dass es autorisiert verwendet wird.",
-                            "Logging: Erfasst relevante Ereignisse, wie das Ein- und Ausschalten oder Fehler bei der Ausführung.",
-                            "Fehlertoleranz: Enthält Schutzmechanismen gegen fehlerhafte Eingaben oder ungültige Zustände. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Das Computermanagement-Modul dient zur Steuerung eines Computers und eines Monitors. Es kann den PC starten, herunterfahren und überwachen, ob dieser online ist. Zusätzlich lassen sich die Steckdosen für PC und Monitor automatisch ein- und ausschalten, z. B. nach einer bestimmten Zeit oder wenn der PC nicht mehr online ist. Eine Lizenzprüfung stellt sicher, dass die Software nur mit einer gültigen Lizenz genutzt wird. ##"
+                                "Überwacht oder steuert Geräte über Statussignale, Netzwerkfunktionen oder Verwaltungslogik.",
+                                "Der Baustein \u0027Computerverwaltung\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -41,28 +38,28 @@
                    {
                        "name":  "TriggerStart",
                        "terms":  {
-                                     "de":  "Trigger Start Computer",
-                                     "en":  "Trigger Start"
+                                     "en":  "Trigger Start",
+                                     "de":  "Trigger Start Computer"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Trigger Start Computer\u0027 / \u0027Trigger Start\u0027. Datentyp: bool."
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion. Datentyp: bool."
                    },
                    {
                        "name":  "TriggerShutdown",
                        "terms":  {
-                                     "de":  "Trigger Computer herunterfahren",
-                                     "en":  "Trigger Shutdown"
+                                     "en":  "Trigger Shutdown",
+                                     "de":  "Trigger Computer herunterfahren"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Trigger Computer herunterfahren\u0027 / \u0027Trigger Shutdown\u0027. Datentyp: bool."
+                       "description":  "Trigger-Eingang für eine einmalige oder ereignisbasierte Aktion. Datentyp: bool."
                    },
                    {
                        "name":  "Online",
                        "terms":  {
-                                     "de":  "Computer Online",
-                                     "en":  "Online"
+                                     "en":  "Online",
+                                     "de":  "Computer Online"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -71,18 +68,18 @@
                    {
                        "name":  "ConditionOnline",
                        "terms":  {
-                                     "de":  "Bedingung Online",
-                                     "en":  "Condition Online"
+                                     "en":  "Condition Online",
+                                     "de":  "Bedingung Online"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung Online\u0027 / \u0027Condition Online\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateTurnOnOffSocketPC",
                        "terms":  {
-                                     "de":  "Aktiviere Steckdose Computer Ein-/Ausschalten",
-                                     "en":  "Activate Turn On Off Socket PC"
+                                     "en":  "Activate Turn On Off Socket PC",
+                                     "de":  "Aktiviere Steckdose Computer Ein-/Ausschalten"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -91,8 +88,8 @@
                    {
                        "name":  "ActivateTurnOnOffSocketMonitor",
                        "terms":  {
-                                     "de":  "Aktiviere Steckdose Bildschirm Ein-/Ausschalten",
-                                     "en":  "Activate Turn On Off Socket Monitor"
+                                     "en":  "Activate Turn On Off Socket Monitor",
+                                     "de":  "Aktiviere Steckdose Bildschirm Ein-/Ausschalten"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -101,48 +98,48 @@
                    {
                        "name":  "ConditionTurnOffSocketPC",
                        "terms":  {
-                                     "de":  "Bedingung Steckdose PC ausschalten",
-                                     "en":  "Condition Turn Off Socket PC"
+                                     "en":  "Condition Turn Off Socket PC",
+                                     "de":  "Bedingung Steckdose PC ausschalten"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung Steckdose PC ausschalten\u0027 / \u0027Condition Turn Off Socket PC\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "TimeToTurnOffSocketPC",
                        "terms":  {
-                                     "de":  "ZeitverzÃƒÂ¶gerung Steckdose Computer ausscchalten",
-                                     "en":  "Time To Turn Off Socket PC"
+                                     "en":  "Time To Turn Off Socket PC",
+                                     "de":  "Zeitverzögerung Steckdose Computer ausscchalten"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027ZeitverzÃƒÂ¶gerung Steckdose Computer ausscchalten\u0027 / \u0027Time To Turn Off Socket PC\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeToTurnOffSocketMonitor",
                        "terms":  {
-                                     "de":  "ZeitverzÃƒÂ¶gerung Steckdose Bildschirm ausscchalten",
-                                     "en":  "Time To Turn Off Socket Monitor"
+                                     "en":  "Time To Turn Off Socket Monitor",
+                                     "de":  "Zeitverzögerung Steckdose Bildschirm ausscchalten"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027ZeitverzÃƒÂ¶gerung Steckdose Bildschirm ausscchalten\u0027 / \u0027Time To Turn Off Socket Monitor\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Update Time"
+                                     "en":  "Update Time",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -151,8 +148,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -163,18 +160,18 @@
                     {
                         "name":  "Start",
                         "terms":  {
-                                      "de":  "Starte Computer",
-                                      "en":  "Start"
+                                      "en":  "Start",
+                                      "de":  "Starte Computer"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Starte Computer\u0027 / \u0027Start\u0027. Datentyp: bool."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                     },
                     {
                         "name":  "Shutdown",
                         "terms":  {
-                                      "de":  "Computer herunterfahren",
-                                      "en":  "Shutdown"
+                                      "en":  "Shutdown",
+                                      "de":  "Computer herunterfahren"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -183,8 +180,8 @@
                     {
                         "name":  "Status",
                         "terms":  {
-                                      "de":  "Status Computer",
-                                      "en":  "Status"
+                                      "en":  "Status",
+                                      "de":  "Status Computer"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -193,8 +190,8 @@
                     {
                         "name":  "SocketPC",
                         "terms":  {
-                                      "de":  "Steckdose PC",
-                                      "en":  "Socket PC"
+                                      "en":  "Socket PC",
+                                      "de":  "Steckdose PC"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -203,8 +200,8 @@
                     {
                         "name":  "SocketMonitor",
                         "terms":  {
-                                      "de":  "Steckdose Bildschirm",
-                                      "en":  "Socket Monitor"
+                                      "en":  "Socket Monitor",
+                                      "de":  "Steckdose Bildschirm"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -213,8 +210,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -223,8 +220,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -233,8 +230,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -274,12 +271,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.12",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

@@ -6,23 +6,22 @@
     "version":  "3.0.17",
     "slug":  "decision4values",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/decision4values/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Entscheidung - 4 Werte",
                   "en":  "Decision - 4 Values"
               },
-    "shortDescription":  "Die Methode Decision4Values dient dazu, basierend auf zwei logischen Entscheidungen einen der vier Eingabewerte als Ausgabe zu bestimmen. Diese Auswahl wird nur vorgenommen, wenn die Logik aktiviert ist. Fehler, die während der Ausführung auftreten, werden erfasst und im Protokoll ausgegeben. ##",
+    "shortDescription":  "Wählt anhand konfigurierter Bedingungen einen von mehreren Eingangswerten aus und gibt den passenden Wert weiter.",
     "specialFeatures":  [
-                            "Flexibilität durch Benutzerentscheidungen: Die Auswahl der Ausgabe erfolgt basierend auf zwei Entscheidungsvariablen, die verschiedene Werte als Ausgabe festlegen.",
-                            "Aktivierungskontrolle: Die Logik wird nur ausgeführt, wenn die Aktivierungsvariable gesetzt ist.",
-                            "Optimierte Ausgabeaktualisierung: Die Ausgabe wird nur aktualisiert, wenn sich der ausgewählte Wert geändert hat, was unnötige Aktualisierungen reduziert.",
-                            "Protokollierung: Die Methode speichert und zeigt eventuelle Fehler durch die Variable LogExecute an. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Die Methode Decision4Values dient dazu, basierend auf zwei logischen Entscheidungen einen der vier Eingabewerte als Ausgabe zu bestimmen. Diese Auswahl wird nur vorgenommen, wenn die Logik aktiviert ist. Fehler, die während der Ausführung auftreten, werden erfasst und im Protokoll ausgegeben. ##",
+                                "Wählt anhand konfigurierter Bedingungen einen von mehreren Eingangswerten aus und gibt den passenden Wert weiter.",
                                 "Der Baustein \u0027Entscheidung - 4 Werte\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
                                 "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
@@ -30,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -40,8 +39,8 @@
                    {
                        "name":  "DecisionFirstAndSecondValue",
                        "terms":  {
-                                     "de":  "Entscheidung Wert 1 und Wert 2",
-                                     "en":  "Decision First And Second Value"
+                                     "en":  "Decision First And Second Value",
+                                     "de":  "Entscheidung Wert 1 und Wert 2"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -50,8 +49,8 @@
                    {
                        "name":  "DecisionFirstAndThirdValue",
                        "terms":  {
-                                     "de":  "Entscheidung Wert 1 und Wert 3",
-                                     "en":  "Decision First And Third Value"
+                                     "en":  "Decision First And Third Value",
+                                     "de":  "Entscheidung Wert 1 und Wert 3"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -60,60 +59,60 @@
                    {
                        "name":  "Value1",
                        "terms":  {
-                                     "de":  "Wert 1",
-                                     "en":  "Value 1"
+                                     "en":  "Value 1",
+                                     "de":  "Wert 1"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 1\u0027 / \u0027Value 1\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    },
                    {
                        "name":  "Value2",
                        "terms":  {
-                                     "de":  "Wert 2",
-                                     "en":  "Value 2"
+                                     "en":  "Value 2",
+                                     "de":  "Wert 2"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 2\u0027 / \u0027Value 2\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    },
                    {
                        "name":  "Value3",
                        "terms":  {
-                                     "de":  "Wert 3",
-                                     "en":  "Value 3"
+                                     "en":  "Value 3",
+                                     "de":  "Wert 3"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 3\u0027 / \u0027Value 3\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    },
                    {
                        "name":  "Value4",
                        "terms":  {
-                                     "de":  "Wert 4",
-                                     "en":  "Value 4"
+                                     "en":  "Value 4",
+                                     "de":  "Wert 4"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 4\u0027 / \u0027Value 4\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -149,12 +148,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

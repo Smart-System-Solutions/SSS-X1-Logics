@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "timecontrolledtelegram",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/timecontrolledtelegram/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Zeitgesteuerte Telegramme",
@@ -16,24 +16,21 @@
               },
     "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Verzögerungszeit kann individuell angepasst werden.",
-                            "Möglichkeit, zwischen „nur bei Änderung senden“ und „immer senden“ zu wählen.",
-                            "Unterstützt verschiedene Datentypen – etwa Zahlen, Texte oder Schaltbefehle.",
-                            "Fehlerbehandlung:",
-                            "Bei jeder Ausführung und beim Zeitplanstart wird geprüft, ob Fehler aufgetreten sind.",
-                            "Entsprechende Fehlermeldungen werden in Textfeldern ausgegeben – so ist eine einfache Analyse möglich.",
-                            "Grenzen und Validierungen:"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion dient dazu, einen bestimmten Wert zeitgesteuert weiterzugeben. Sie wird aktiviert, wenn ein Startsignal gegeben wird, und sendet den Wert nach einer festgelegten Verzögerung. Dabei kann gewählt werden, ob der Wert nur gesendet werden soll, wenn er sich verändert hat. Zusätzlich gibt die Funktion Informationen zum Ausführungszeitpunkt und zu möglichen Fehlern als Text zurück. ##"
+                                "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+                                "Der Baustein \u0027Zeitgesteuerte Telegramme\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -42,38 +39,38 @@
                    {
                        "name":  "OnlyWriteChangedValue",
                        "terms":  {
-                                     "de":  "Schreibe Wert nur bei WertÃƒÂ¤nderung",
-                                     "en":  "Only Write Changed Value"
+                                     "en":  "Only Write Changed Value",
+                                     "de":  "Schreibe Wert nur bei Wertänderung"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Schreibe Wert nur bei WertÃƒÂ¤nderung\u0027 / \u0027Only Write Changed Value\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Schreibe Wert nur bei Wertänderung\u0027 / \u0027Only Write Changed Value\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: any."
                    },
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Delay"
+                                     "en":  "Delay",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Delay\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -82,8 +79,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -94,18 +91,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -114,8 +111,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -124,8 +121,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -165,12 +162,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

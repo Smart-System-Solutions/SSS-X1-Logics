@@ -6,20 +6,22 @@
     "version":  "3.0.17",
     "slug":  "takehighestvalue",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/takehighestvalue/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Höchster Wert",
                   "en":  "Highest Value"
               },
-    "shortDescription":  "Diese Methode findet den höchsten Wert aus einer Liste von Eingabewerten. Die Berechnung wird nur durchgeführt, wenn die Methode aktiviert ist, und alle Eingabewerte gültig sind. Der höchste Wert wird anschließend als Ergebnis ausgegeben, und der Prozess sowie eventuelle Fehler werden protokolliert. ##",
+    "shortDescription":  "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
     "specialFeatures":  [
-                            "Dynamische Anpassung der"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Diese Methode findet den höchsten Wert aus einer Liste von Eingabewerten. Die Berechnung wird nur durchgeführt, wenn die Methode aktiviert ist, und alle Eingabewerte gültig sind. Der höchste Wert wird anschließend als Ergebnis ausgegeben, und der Prozess sowie eventuelle Fehler werden protokolliert. ##",
+                                "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
                                 "Der Baustein \u0027Höchster Wert\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
                                 "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
@@ -27,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -37,18 +39,18 @@
                    {
                        "name":  "NumberOfInputs",
                        "terms":  {
-                                     "de":  "Anzahl der EingÃƒÂ¤nge",
-                                     "en":  "Number Of Inputs"
+                                     "en":  "Number Of Inputs",
+                                     "de":  "Anzahl der Eingänge"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der EingÃƒÂ¤nge\u0027 / \u0027Number Of Inputs\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "Inputs",
                        "terms":  {
-                                     "de":  "Inputs",
-                                     "en":  "Inputs"
+                                     "en":  "Inputs",
+                                     "de":  "Inputs"
                                  },
                        "type":  "any",
                        "dataType":  "any",
@@ -57,8 +59,8 @@
                    {
                        "name":  "Type",
                        "terms":  {
-                                     "de":  "Type",
-                                     "en":  "Type"
+                                     "en":  "Type",
+                                     "de":  "Type"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -69,18 +71,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -116,12 +118,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

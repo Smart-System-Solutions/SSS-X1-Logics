@@ -6,9 +6,9 @@
     "version":  "3.0.21",
     "slug":  "selectiontime",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/selectiontime/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Ausgang nach unterschiedlichen Zeiten triggern",
@@ -16,18 +16,21 @@
               },
     "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Verzögertes Einschalten: Der Ausgang wird niemals sofort gesetzt – immer erst nach Ablauf der gewählten Zeitspanne.",
-                            "Dynamische Zeitwahl: Je nach gesetzten"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion steuert das verzögerte Einschalten eines Ausgangssignals. Je nachdem, welche Auswahl getroffen wird, erfolgt die Aktivierung entweder nach einer kurzen oder nach einer langen Zeitspanne. Zusätzlich kann nach dem Ablauf der langen Verzögerung automatisch noch eine zweite Verzögerung (die kurze Zeit) folgen, bevor der Ausgang freigeschaltet wird. Damit eignet sich die Funktion hervorragend für sicherheitskritische Abläufe oder strukturierte Einschaltverzögerungen in der Gebäude- oder Prozessautomation. ##"
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+                                "Der Baustein \u0027Ausgang nach unterschiedlichen Zeiten triggern\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -36,88 +39,88 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: bool."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: bool."
                    },
                    {
                        "name":  "ResetOutput",
                        "terms":  {
-                                     "de":  "Ausgang zurÃƒÂ¼cksetzen",
-                                     "en":  "Reset output"
+                                     "en":  "Reset output",
+                                     "de":  "Ausgang zurücksetzen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Ausgang zurÃƒÂ¼cksetzen\u0027 / \u0027Reset output\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Ausgang zurücksetzen\u0027 / \u0027Reset output\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "ResetOutputIfInputIsFalse",
                        "terms":  {
-                                     "de":  "Ausgang zurÃƒÂ¼cksetzen wenn Eingang auf aus geht",
-                                     "en":  "Reset Output If Input Is False"
+                                     "en":  "Reset Output If Input Is False",
+                                     "de":  "Ausgang zurücksetzen wenn Eingang auf aus geht"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Ausgang zurÃƒÂ¼cksetzen wenn Eingang auf aus geht\u0027 / \u0027Reset Output If Input Is False\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Ausgang zurücksetzen wenn Eingang auf aus geht\u0027 / \u0027Reset Output If Input Is False\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TakeLongTime",
                        "terms":  {
-                                     "de":  "Nimm lange Wartezeit",
-                                     "en":  "Take Long Time"
+                                     "en":  "Take Long Time",
+                                     "de":  "Nimm lange Wartezeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Nimm lange Wartezeit\u0027 / \u0027Take Long Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "TakeShortTime",
                        "terms":  {
-                                     "de":  "Nimm kurze Wartezeit",
-                                     "en":  "Take Short Time"
+                                     "en":  "Take Short Time",
+                                     "de":  "Nimm kurze Wartezeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Nimm kurze Wartezeit\u0027 / \u0027Take Short Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "TakeShortTimeWhenLongTimeFinished",
                        "terms":  {
-                                     "de":  "Nimm kurze Wartezeit wenn lange Wartezeit beendet wurde",
-                                     "en":  "Take Short Time When Long Time Finished"
+                                     "en":  "Take Short Time When Long Time Finished",
+                                     "de":  "Nimm kurze Wartezeit wenn lange Wartezeit beendet wurde"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Nimm kurze Wartezeit wenn lange Wartezeit beendet wurde\u0027 / \u0027Take Short Time When Long Time Finished\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "ShortTime",
                        "terms":  {
-                                     "de":  "Kurze Wartezeit",
-                                     "en":  "Short Time"
+                                     "en":  "Short Time",
+                                     "de":  "Kurze Wartezeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Kurze Wartezeit\u0027 / \u0027Short Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LongTime",
                        "terms":  {
-                                     "de":  "Lange Wartezeit",
-                                     "en":  "Long Time"
+                                     "en":  "Long Time",
+                                     "de":  "Lange Wartezeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Lange Wartezeit\u0027 / \u0027Long Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -126,8 +129,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -138,18 +141,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -158,8 +161,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -168,8 +171,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -209,12 +212,32 @@
     "changelog":  [
                       {
                           "version":  "3.0.21",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.21 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.20",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.20 ?bernommen.",
+                                          "Eing?nge Input, ResetOutput und ResetOutputIfInputIsFalse erg?nzt."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

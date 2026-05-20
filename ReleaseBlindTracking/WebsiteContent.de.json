@@ -6,9 +6,9 @@
     "version":  "3.0.37",
     "slug":  "releaseblindtracking",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/releaseblindtracking/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Freigabe Jalousie-Nachführung",
@@ -16,22 +16,20 @@
               },
     "shortDescription":  "Gibt Jalousie- oder Beschattungsnachführung unter definierten Bedingungen frei.",
     "specialFeatures":  [
-                            "Kombination mit GIRA Jalousie-Nachführung: Dieser Baustein arbeitet ausschließlich in Verbindung mit dem GIRA-Baustein „Jalousie-Nachführung“ .",
-                            "Steuerung der Beschattung: Er entscheidet, ob Rollläden oder Jalousien aktiviert werden dürfen und gibt diese über den Ausgang Output zur Steuerung durch den GIRA-Baustein frei.",
-                            "Wetter- und Temperaturabhängige Kontrolle: Faktoren wie Helligkeit, Temperatur, Wind und Sturm beeinflussen, ob die Beschattung aktiviert oder deaktiviert wird.",
-                            "Ferienmodus: Spezielle Zeitsteuerung während der Ferien, um ein komfortableres Verhalten zu ermöglichen.",
-                            "Individuelle Schwellenwerte: Start- und Endwerte für Temperatur, Helligkeit und Sonnenstand (Azimut) sind flexibel einstellbar.",
-                            "Lizenzprüfung: Die Funktion erfordert eine gültige Lizenz, um aktiviert zu werden. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Der ReleaseBlindTracking -Baustein entscheidet, ob Jalousien oder Rollläden freigegeben werden. Er wertet Temperaturen, Helligkeit, Azimut und Wetterbedingungen aus, um eine optimale Steuerung der Beschattung zu ermöglichen. Nur wenn alle Bedingungen erfüllt sind, wird der Output -Wert auf „true“ gesetzt und die Jalousie-Nachführung von GIRA kann aktiv werden. Schutzmechanismen sorgen dafür, dass die Beschattung bei Sturm, starkem Wind oder Regen deaktiviert bleibt. ##"
+                                "Gibt Jalousie- oder Beschattungsnachführung unter definierten Bedingungen frei.",
+                                "Der Baustein \u0027Freigabe Jalousie-Nachführung\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -40,8 +38,8 @@
                    {
                        "name":  "BlindTrackingManual",
                        "terms":  {
-                                     "de":  "Rollladen Manuell",
-                                     "en":  "Blind Tracking Manual"
+                                     "en":  "Blind Tracking Manual",
+                                     "de":  "Rollladen Manuell"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -50,8 +48,8 @@
                    {
                        "name":  "BlindTrackingAutomatic",
                        "terms":  {
-                                     "de":  "Rollladen Automatik",
-                                     "en":  "Blind Tracking Automatic"
+                                     "en":  "Blind Tracking Automatic",
+                                     "de":  "Rollladen Automatik"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -60,8 +58,8 @@
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "de":  "Sommer",
-                                     "en":  "Summer"
+                                     "en":  "Summer",
+                                     "de":  "Sommer"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -70,8 +68,8 @@
                    {
                        "name":  "Rain",
                        "terms":  {
-                                     "de":  "Regen",
-                                     "en":  "Rain"
+                                     "en":  "Rain",
+                                     "de":  "Regen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -80,8 +78,8 @@
                    {
                        "name":  "Day",
                        "terms":  {
-                                     "de":  "Tag",
-                                     "en":  "Day"
+                                     "en":  "Day",
+                                     "de":  "Tag"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -90,8 +88,8 @@
                    {
                        "name":  "Holiday",
                        "terms":  {
-                                     "de":  "Urlaub",
-                                     "en":  "Holiday"
+                                     "en":  "Holiday",
+                                     "de":  "Urlaub"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -100,8 +98,8 @@
                    {
                        "name":  "WindToHigh",
                        "terms":  {
-                                     "de":  "Wind zu stark",
-                                     "en":  "Wind To High"
+                                     "en":  "Wind To High",
+                                     "de":  "Wind zu stark"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -110,8 +108,8 @@
                    {
                        "name":  "Storm",
                        "terms":  {
-                                     "de":  "Unwetter",
-                                     "en":  "Storm"
+                                     "en":  "Storm",
+                                     "de":  "Unwetter"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -120,38 +118,38 @@
                    {
                        "name":  "TemperatureInside",
                        "terms":  {
-                                     "de":  "Innentemperatur",
-                                     "en":  "Temperature Inside"
+                                     "en":  "Temperature Inside",
+                                     "de":  "Innentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Innentemperatur\u0027 / \u0027Temperature Inside\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutside",
                        "terms":  {
-                                     "de":  "AuÃƒÅ¸entemperatur",
-                                     "en":  "Temperature Outside"
+                                     "en":  "Temperature Outside",
+                                     "de":  "Außentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessOutside",
                        "terms":  {
-                                     "de":  "Helligkeit AuÃƒÅ¸en",
-                                     "en":  "Brightness Outside"
+                                     "en":  "Brightness Outside",
+                                     "de":  "Helligkeit Außen"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Helligkeit AuÃƒÅ¸en\u0027 / \u0027Brightness Outside\u0027. Datentyp: number."
+                       "description":  "Eingang für \u0027Helligkeit Außen\u0027 / \u0027Brightness Outside\u0027. Datentyp: number."
                    },
                    {
                        "name":  "Azimut",
                        "terms":  {
-                                     "de":  "Azimut",
-                                     "en":  "Azimut"
+                                     "en":  "Azimut",
+                                     "de":  "Azimut"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -160,178 +158,178 @@
                    {
                        "name":  "StartBrightnessThresholdAlways",
                        "terms":  {
-                                     "de":  "Schwellwert Starthelligkeit Immer",
-                                     "en":  "Start Brightness Threshold Always"
+                                     "en":  "Start Brightness Threshold Always",
+                                     "de":  "Schwellwert Starthelligkeit Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert Starthelligkeit Immer\u0027 / \u0027Start Brightness Threshold Always\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "EndBrightnessThresholdAlways",
                        "terms":  {
-                                     "de":  "Schwellwert Endhelligkeit Immer",
-                                     "en":  "End Brightness Threshold Always"
+                                     "en":  "End Brightness Threshold Always",
+                                     "de":  "Schwellwert Endhelligkeit Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert Endhelligkeit Immer\u0027 / \u0027End Brightness Threshold Always\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
                        "terms":  {
-                                     "de":  "Schwellwert Innentemperatur",
-                                     "en":  "Temperature Inside Threshold"
+                                     "en":  "Temperature Inside Threshold",
+                                     "de":  "Schwellwert Innentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert Innentemperatur\u0027 / \u0027Temperature Inside Threshold\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThresholdAlways",
                        "terms":  {
-                                     "de":  "Schwellwert Innentemperatur Immer",
-                                     "en":  "Temperature Inside Threshold Always"
+                                     "en":  "Temperature Inside Threshold Always",
+                                     "de":  "Schwellwert Innentemperatur Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert Innentemperatur Immer\u0027 / \u0027Temperature Inside Threshold Always\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "StartAzimutAlways",
                        "terms":  {
-                                     "de":  "Start Azimut Immer",
-                                     "en":  "Start Azimut Always"
+                                     "en":  "Start Azimut Always",
+                                     "de":  "Start Azimut Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Start Azimut Immer\u0027 / \u0027Start Azimut Always\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "EndAzimutAlways",
                        "terms":  {
-                                     "de":  "End Azimut Immer",
-                                     "en":  "End Azimut Always"
+                                     "en":  "End Azimut Always",
+                                     "de":  "End Azimut Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027End Azimut Immer\u0027 / \u0027End Azimut Always\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfStartDependence",
                        "terms":  {
-                                     "de":  "Anzahl der StartabhÃƒÂ¤ngigkeiten",
-                                     "en":  "Number Of Start Dependence"
+                                     "en":  "Number Of Start Dependence",
+                                     "de":  "Anzahl der Startabhängigkeiten"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der StartabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of Start Dependence\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "StartTemperatureOutsideThresholdDependence",
                        "terms":  {
-                                     "de":  "Start Temperatur Outside Threshold Dependence",
-                                     "en":  "Start Temperature Outside Threshold Dependence"
+                                     "en":  "Start Temperature Outside Threshold Dependence",
+                                     "de":  "Start Temperatur Outside Threshold Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Start Temperatur Outside Threshold Dependence\u0027 / \u0027Start Temperature Outside Threshold Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "StartBrightnessOutsideDependence",
                        "terms":  {
-                                     "de":  "Start Helligkeit Outside Dependence",
-                                     "en":  "Start Brightness Outside Dependence"
+                                     "en":  "Start Brightness Outside Dependence",
+                                     "de":  "Start Helligkeit Outside Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Start Helligkeit Outside Dependence\u0027 / \u0027Start Brightness Outside Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "StartBrightnessOutsideThresholdDependence",
                        "terms":  {
-                                     "de":  "Start Helligkeit Outside Threshold Dependence",
-                                     "en":  "Start Brightness Outside Threshold Dependence"
+                                     "en":  "Start Brightness Outside Threshold Dependence",
+                                     "de":  "Start Helligkeit Outside Threshold Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Start Helligkeit Outside Threshold Dependence\u0027 / \u0027Start Brightness Outside Threshold Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "StartAzimutThresholdDependence",
                        "terms":  {
-                                     "de":  "Start Azimut Threshold Dependence",
-                                     "en":  "Start Azimut Threshold Dependence"
+                                     "en":  "Start Azimut Threshold Dependence",
+                                     "de":  "Start Azimut Threshold Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Start Azimut Threshold Dependence\u0027 / \u0027Start Azimut Threshold Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfEndDependence",
                        "terms":  {
-                                     "de":  "Anzahl der EndabhÃƒÂ¤ngigkeiten",
-                                     "en":  "Number Of End Dependence"
+                                     "en":  "Number Of End Dependence",
+                                     "de":  "Anzahl der Endabhängigkeiten"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der EndabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of End Dependence\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "EndAzimutThresholdDependence",
                        "terms":  {
-                                     "de":  "Ende Azimut Threshold Dependence",
-                                     "en":  "End Azimut Threshold Dependence"
+                                     "en":  "End Azimut Threshold Dependence",
+                                     "de":  "Ende Azimut Threshold Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Ende Azimut Threshold Dependence\u0027 / \u0027End Azimut Threshold Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "EndTemperatureOutsideThresholdDependence",
                        "terms":  {
-                                     "de":  "Ende Temperatur Outside Threshold Dependence",
-                                     "en":  "End Temperature Outside Threshold Dependence"
+                                     "en":  "End Temperature Outside Threshold Dependence",
+                                     "de":  "Ende Temperatur Outside Threshold Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Ende Temperatur Outside Threshold Dependence\u0027 / \u0027End Temperature Outside Threshold Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "DelayThreshold",
                        "terms":  {
-                                     "de":  "Schwellwert Zeit",
-                                     "en":  "Delay Threshold"
+                                     "en":  "Delay Threshold",
+                                     "de":  "Schwellwert Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Schwellwert Zeit\u0027 / \u0027Delay Threshold\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "DelayCycle",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Delay Cycle"
+                                     "en":  "Delay Cycle",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Delay Cycle\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "ResetManualWasSetAfterTime",
                        "terms":  {
-                                     "de":  "Reset Manuelles Setzen nach Zeit",
-                                     "en":  "Reset Manual Was Set After Time"
+                                     "en":  "Reset Manual Was Set After Time",
+                                     "de":  "Reset Manuelles Setzen nach Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Reset Manuelles Setzen nach Zeit\u0027 / \u0027Reset Manual Was Set After Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "HolidayBlindDown",
                        "terms":  {
-                                     "de":  "Urlaub Rollladen runter",
-                                     "en":  "Holiday Blind Down"
+                                     "en":  "Holiday Blind Down",
+                                     "de":  "Urlaub Rollladen runter"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
@@ -340,8 +338,8 @@
                    {
                        "name":  "HolidayBlindUp",
                        "terms":  {
-                                     "de":  "Urlaub Rollladen hoch",
-                                     "en":  "Holiday Blind Up"
+                                     "en":  "Holiday Blind Up",
+                                     "de":  "Urlaub Rollladen hoch"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
@@ -350,38 +348,38 @@
                    {
                        "name":  "TemperatureOutsideThreshold",
                        "terms":  {
-                                     "de":  "Schwellwert AuÃƒÅ¸entemperatur",
-                                     "en":  "Temperature Outside Threshold"
+                                     "en":  "Temperature Outside Threshold",
+                                     "de":  "Schwellwert Außentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside Threshold\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutsideThresholdAlways",
                        "terms":  {
-                                     "de":  "Schwellwert AuÃƒÅ¸entemperatur Immer",
-                                     "en":  "Temperature Outside Threshold Always"
+                                     "en":  "Temperature Outside Threshold Always",
+                                     "de":  "Schwellwert Außentemperatur Immer"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert AuÃƒÅ¸entemperatur Immer\u0027 / \u0027Temperature Outside Threshold Always\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessTemperatureThreshold",
                        "terms":  {
-                                     "de":  "Schwellwert Temperatur (FÃƒÂ¼r Helligkeit)",
-                                     "en":  "BrightnessTemperatureThreshold"
+                                     "en":  "BrightnessTemperatureThreshold",
+                                     "de":  "Schwellwert Temperatur (Für Helligkeit)"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Schwellwert Temperatur (FÃƒÂ¼r Helligkeit)\u0027 / \u0027BrightnessTemperatureThreshold\u0027. Datentyp: number."
+                       "description":  "Eingang für \u0027Schwellwert Temperatur (Für Helligkeit)\u0027 / \u0027BrightnessTemperatureThreshold\u0027. Datentyp: number."
                    },
                    {
                        "name":  "BrightnessOutsideThreshold",
                        "terms":  {
-                                     "de":  "Helligkeit Outside Threshold",
-                                     "en":  "Brightness Outside Threshold"
+                                     "en":  "Brightness Outside Threshold",
+                                     "de":  "Helligkeit Outside Threshold"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -390,8 +388,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -400,8 +398,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -412,18 +410,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "OutputBlindStorm",
                         "terms":  {
-                                      "de":  "Ausgang Sturm",
-                                      "en":  "Output Blind Storm"
+                                      "en":  "Output Blind Storm",
+                                      "de":  "Ausgang Sturm"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -432,8 +430,8 @@
                     {
                         "name":  "OutputBlindHoliday",
                         "terms":  {
-                                      "de":  "Ausgang Urlaub",
-                                      "en":  "Output Blind Holiday"
+                                      "en":  "Output Blind Holiday",
+                                      "de":  "Ausgang Urlaub"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -442,18 +440,18 @@
                     {
                         "name":  "ReleaseStartedThisDay",
                         "terms":  {
-                                      "de":  "Freigabe heute gestartet",
-                                      "en":  "Release Started This Day"
+                                      "en":  "Release Started This Day",
+                                      "de":  "Freigabe heute gestartet"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Freigabe heute gestartet\u0027 / \u0027Release Started This Day\u0027. Datentyp: bool."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -462,8 +460,8 @@
                     {
                         "name":  "LogScheduleCycle",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Cycle",
-                                      "en":  "Log Schedule Cycle"
+                                      "en":  "Log Schedule Cycle",
+                                      "de":  "Zeitplanungsprotokoll Cycle"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -472,8 +470,8 @@
                     {
                         "name":  "LogScheduleHour",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Hour",
-                                      "en":  "Log Schedule Hour"
+                                      "en":  "Log Schedule Hour",
+                                      "de":  "Zeitplanungsprotokoll Hour"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -482,8 +480,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -523,12 +521,31 @@
     "changelog":  [
                       {
                           "version":  "3.0.37",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.37 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.30",
+                          "date":  "2025-06-11",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.30 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.26",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.26 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.9",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

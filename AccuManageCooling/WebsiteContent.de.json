@@ -6,9 +6,9 @@
     "version":  "3.0.23",
     "slug":  "accumanagecooling",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/accumanagecooling/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Akku Management - Kühlen",
@@ -16,22 +16,22 @@
               },
     "shortDescription":  "Steuert eine akku- und temperaturabhängige Kühlfreigabe für Gebäudeautomation und berücksichtigt dabei Innen-/Außentemperatur, Betriebszustand, Zeitlogik und Diagnoseausgaben.",
     "specialFeatures":  [
-                            "Flexible Steuerung des Kühlbetriebs: Dieser Baustein ermöglicht eine dynamische und anpassbare Kühlung, basierend auf verschiedenen Bedingungen wie Innen- und Außentemperaturen, Akkuladung und anderen Faktoren.",
-                            "Zeitbasierte Steuerung: Die Kühlung kann zeitabhängig gesteuert werden, abhängig von konfigurierten Zeitplänen.",
-                            "Lizenzvalidierung: Der Baustein prüft, ob eine gültige Lizenz und eine unmanipulierte .dll-Datei vorliegen. Ohne gültige Lizenz ist keine Funktion gewährleistet.",
-                            "Fehlerbehandlung: Ausführliche Try-Catch-Blöcke sichern den Baustein gegen Fehler ab und erzeugen detaillierte Logs zur Diagnose.",
-                            "Zusätzliche Sicherheits- und Komfortmodi: Die Klasse berücksichtigt Sommer- und Heizbetrieb sowie zusätzliche Triggerbedingungen.",
-                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
                         ],
     "detailedDescription":  [
-                                "Dieser Baustein steuert ein Kühlungssystem, das auf mehreren Eingabekriterien basiert. Sie erlaubt es, Bedingungen wie Innen- und Außentemperaturen, die Akkuladung und bestimmte Zeitpläne zu berücksichtigen, um den Kühlmodus dynamisch anzupassen. Außerdem werden Lizenzen validiert, um die Nutzung des Systems zu autorisieren. Die Ergebnisse der Ausführung werden protokolliert und in mehreren"
+                                "Steuert eine akku- und temperaturabhängige Kühlfreigabe für Gebäudeautomation und berücksichtigt dabei Innen-/Außentemperatur, Betriebszustand, Zeitlogik und Diagnoseausgaben.",
+                                "Der Baustein \u0027Akku Management - Kühlen\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -40,38 +40,38 @@
                    {
                        "name":  "ActivateCoolingWithoutAccuDependece",
                        "terms":  {
-                                     "de":  "Aktiviere KÃƒÂ¼hlen ohne Akku-AbhÃƒÂ¤ngigkeit",
-                                     "en":  "Activate Cooling Without Accu Dependece"
+                                     "en":  "Activate Cooling Without Accu Dependece",
+                                     "de":  "Aktiviere Kühlen ohne Akku-Abhängigkeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere KÃƒÂ¼hlen ohne Akku-AbhÃƒÂ¤ngigkeit\u0027 / \u0027Activate Cooling Without Accu Dependece\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "ActivateCoolingOnlyWithAdditionalTemperatureInsideDependence",
                        "terms":  {
-                                     "de":  "Aktiviere KÃƒÂ¼hlen nur in AbhÃƒÂ¤ngigkeit der zusÃƒÂ¤tzlichen Innentemperatur",
-                                     "en":  "Activate Cooling Only With Additional Temperature Inside Dependence"
+                                     "en":  "Activate Cooling Only With Additional Temperature Inside Dependence",
+                                     "de":  "Aktiviere Kühlen nur in Abhängigkeit der zusätzlichen Innentemperatur"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere KÃƒÂ¼hlen nur in AbhÃƒÂ¤ngigkeit der zusÃƒÂ¤tzlichen Innentemperatur\u0027 / \u0027Activate Cooling Only With Additional Temperature Inside Dependence\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "HeatingCooling",
                        "terms":  {
-                                     "de":  "Heizung/KÃƒÂ¼hlen",
-                                     "en":  "Heating Cooling"
+                                     "en":  "Heating Cooling",
+                                     "de":  "Heizung/Kühlen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Heizung/KÃƒÂ¼hlen\u0027 / \u0027Heating Cooling\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Heizung/Kühlen\u0027 / \u0027Heating Cooling\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "de":  "Sommer",
-                                     "en":  "Summer"
+                                     "en":  "Summer",
+                                     "de":  "Sommer"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -80,138 +80,138 @@
                    {
                        "name":  "AdditionalTrigger",
                        "terms":  {
-                                     "de":  "ZusÃƒÂ¤tzlicher Trigger",
-                                     "en":  "Additional Trigger"
+                                     "en":  "Additional Trigger",
+                                     "de":  "Zusätzlicher Trigger"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027ZusÃƒÂ¤tzlicher Trigger\u0027 / \u0027Additional Trigger\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Zusätzlicher Trigger\u0027 / \u0027Additional Trigger\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Condition",
                        "terms":  {
-                                     "de":  "Bedingung",
-                                     "en":  "Condition"
+                                     "en":  "Condition",
+                                     "de":  "Bedingung"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung\u0027 / \u0027Condition\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionAdditional01",
                        "terms":  {
-                                     "de":  "Bedingung - ZusÃƒÂ¤tzlich 01",
-                                     "en":  "Condition Additional 01"
+                                     "en":  "Condition Additional 01",
+                                     "de":  "Bedingung - Zusätzlich 01"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Condition Additional 01\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "ConditionAdditional02",
                        "terms":  {
-                                     "de":  "Bedingung - ZusÃƒÂ¤tzlich 02",
-                                     "en":  "Condition Additional 02"
+                                     "en":  "Condition Additional 02",
+                                     "de":  "Bedingung - Zusätzlich 02"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Bedingung - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Condition Additional 02\u0027. Datentyp: bool."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: bool."
                    },
                    {
                        "name":  "TemperatureOutside",
                        "terms":  {
-                                     "de":  "AuÃƒÅ¸entemperatur",
-                                     "en":  "Temperature Outside"
+                                     "en":  "Temperature Outside",
+                                     "de":  "Außentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur\u0027 / \u0027Temperature Outside\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureOutsideThreshold",
                        "terms":  {
-                                     "de":  "AuÃƒÅ¸entemperatur Schwellwert",
-                                     "en":  "Temperature Outside Threshold"
+                                     "en":  "Temperature Outside Threshold",
+                                     "de":  "Außentemperatur Schwellwert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027AuÃƒÅ¸entemperatur Schwellwert\u0027 / \u0027Temperature Outside Threshold\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInside",
                        "terms":  {
-                                     "de":  "Innentemperatur",
-                                     "en":  "Temperature Inside"
+                                     "en":  "Temperature Inside",
+                                     "de":  "Innentemperatur"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Innentemperatur\u0027 / \u0027Temperature Inside\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "TemperatureInsideThreshold",
                        "terms":  {
-                                     "de":  "Innentemperatur Schwellwert",
-                                     "en":  "Temperature Inside Threshold"
+                                     "en":  "Temperature Inside Threshold",
+                                     "de":  "Innentemperatur Schwellwert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Innentemperatur Schwellwert\u0027 / \u0027Temperature Inside Threshold\u0027. Datentyp: number."
+                       "description":  "Temperaturwert für die Regel- oder Vergleichslogik. Datentyp: number."
                    },
                    {
                        "name":  "AdditionalTemperatureInsideDependenceThreshold",
                        "terms":  {
-                                     "de":  "ZusÃƒÂ¤tzlicher Innentemperatur-Schwellwert",
-                                     "en":  "Additional Temperature Inside Dependence Threshold"
+                                     "en":  "Additional Temperature Inside Dependence Threshold",
+                                     "de":  "Zusätzlicher Innentemperatur-Schwellwert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027ZusÃƒÂ¤tzlicher Innentemperatur-Schwellwert\u0027 / \u0027Additional Temperature Inside Dependence Threshold\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "NumberOfAccuDependence",
                        "terms":  {
-                                     "de":  "Anzahl der AkkuabhÃƒÂ¤ngigkeiten",
-                                     "en":  "Number Of Accu Dependence"
+                                     "en":  "Number Of Accu Dependence",
+                                     "de":  "Anzahl der Akkuabhängigkeiten"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der AkkuabhÃƒÂ¤ngigkeiten\u0027 / \u0027Number Of Accu Dependence\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
-                                     "en":  "Accu Actual"
+                                     "en":  "Accu Actual",
+                                     "de":  "Aktuelle Akkukapazität"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: number."
                    },
                    {
                        "name":  "AccuDependence",
                        "terms":  {
-                                     "de":  "Accu Dependence",
-                                     "en":  "Accu Dependence"
+                                     "en":  "Accu Dependence",
+                                     "de":  "Accu Dependence"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Accu Dependence\u0027 / \u0027Accu Dependence\u0027. Datentyp: number."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                    },
                    {
                        "name":  "TimeDependence",
                        "terms":  {
-                                     "de":  "Zeit Dependence",
-                                     "en":  "Time Dependence"
+                                     "en":  "Time Dependence",
+                                     "de":  "Zeit Dependence"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit Dependence\u0027 / \u0027Time Dependence\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -220,8 +220,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -232,78 +232,78 @@
                     {
                         "name":  "Cooling",
                         "terms":  {
-                                      "de":  "KÃƒÂ¼hlen",
-                                      "en":  "Cooling"
+                                      "en":  "Cooling",
+                                      "de":  "Kühlen"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027KÃƒÂ¼hlen\u0027 / \u0027Cooling\u0027. Datentyp: bool."
+                        "description":  "Ausgang für \u0027Kühlen\u0027 / \u0027Cooling\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "OperationModeCooling",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen",
-                                      "en":  "Operation Mode Cooling"
+                                      "en":  "Operation Mode Cooling",
+                                      "de":  "Betriebsart Kühlen"
                                   },
                         "type":  "ByteValueObject",
                         "dataType":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen\u0027 / \u0027Operation Mode Cooling\u0027. Datentyp: ByteValueObject."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen\u0027 / \u0027Operation Mode Cooling\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional01",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 01",
-                                      "en":  "Operation Mode Cooling Additional 01"
+                                      "en":  "Operation Mode Cooling Additional 01",
+                                      "de":  "Betriebsart Kühlen - Zusätzlich 01"
                                   },
                         "type":  "ByteValueObject",
                         "dataType":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Operation Mode Cooling Additional 01\u0027. Datentyp: ByteValueObject."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen - Zusätzlich 01\u0027 / \u0027Operation Mode Cooling Additional 01\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingAdditional02",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 02",
-                                      "en":  "Operation Mode Cooling Additional 02"
+                                      "en":  "Operation Mode Cooling Additional 02",
+                                      "de":  "Betriebsart Kühlen - Zusätzlich 02"
                                   },
                         "type":  "ByteValueObject",
                         "dataType":  "ByteValueObject",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Operation Mode Cooling Additional 02\u0027. Datentyp: ByteValueObject."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen - Zusätzlich 02\u0027 / \u0027Operation Mode Cooling Additional 02\u0027. Datentyp: ByteValueObject."
                     },
                     {
                         "name":  "OperationModeCoolingString",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen (string)",
-                                      "en":  "Operation Mode Cooling String"
+                                      "en":  "Operation Mode Cooling String",
+                                      "de":  "Betriebsart Kühlen (string)"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string)\u0027 / \u0027Operation Mode Cooling String\u0027. Datentyp: string."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen (string)\u0027 / \u0027Operation Mode Cooling String\u0027. Datentyp: string."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional01",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 01",
-                                      "en":  "Operation Mode Cooling String Additional 01"
+                                      "en":  "Operation Mode Cooling String Additional 01",
+                                      "de":  "Betriebsart Kühlen (string) - Zusätzlich 01"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 01\u0027 / \u0027Operation Mode Cooling String Additional 01\u0027. Datentyp: string."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen (string) - Zusätzlich 01\u0027 / \u0027Operation Mode Cooling String Additional 01\u0027. Datentyp: string."
                     },
                     {
                         "name":  "OperationModeCoolingStringAdditional02",
                         "terms":  {
-                                      "de":  "Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 02",
-                                      "en":  "Operation Mode Cooling String Additional 02"
+                                      "en":  "Operation Mode Cooling String Additional 02",
+                                      "de":  "Betriebsart Kühlen (string) - Zusätzlich 02"
                                   },
                         "type":  "string",
                         "dataType":  "string",
-                        "description":  "Ausgang für \u0027Betriebsart KÃƒÂ¼hlen (string) - ZusÃƒÂ¤tzlich 02\u0027 / \u0027Operation Mode Cooling String Additional 02\u0027. Datentyp: string."
+                        "description":  "Ausgang für \u0027Betriebsart Kühlen (string) - Zusätzlich 02\u0027 / \u0027Operation Mode Cooling String Additional 02\u0027. Datentyp: string."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -312,8 +312,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -322,8 +322,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -363,12 +363,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.23",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.23 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

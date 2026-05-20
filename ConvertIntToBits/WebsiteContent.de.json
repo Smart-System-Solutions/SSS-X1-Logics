@@ -6,20 +6,22 @@
     "version":  "3.0.17",
     "slug":  "convertinttobits",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/convertinttobits/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Konvertiere Int zu Bits",
                   "en":  "Convert Int To Bits"
               },
-    "shortDescription":  "Diese Methode wandelt eine Ganzzahl in ein Binärformat um und gibt die Binärstellen als Liste von Wahrheitswerten (boolsche Werte) aus. Die Anzahl der ausgegebenen Bits kann dabei zwischen 16 und 32 festgelegt werden. Im Falle eines Fehlers wird dieser protokolliert und angezeigt. ##",
+    "shortDescription":  "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
     "specialFeatures":  [
-                            "Dynamische Anpassung der"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Diese Methode wandelt eine Ganzzahl in ein Binärformat um und gibt die Binärstellen als Liste von Wahrheitswerten (boolsche Werte) aus. Die Anzahl der ausgegebenen Bits kann dabei zwischen 16 und 32 festgelegt werden. Im Falle eines Fehlers wird dieser protokolliert und angezeigt. ##",
+                                "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
                                 "Der Baustein \u0027Konvertiere Int zu Bits\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
                                 "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
@@ -27,40 +29,40 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: int."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: int."
                    },
                    {
                        "name":  "NumberOfOutputs",
                        "terms":  {
-                                     "de":  "Anzahl der AusgÃƒÂ¤nge",
-                                     "en":  "Number Of Outputs"
+                                     "en":  "Number Of Outputs",
+                                     "de":  "Anzahl der Ausgänge"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der AusgÃƒÂ¤nge\u0027 / \u0027Number Of Outputs\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -92,12 +94,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

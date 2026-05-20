@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "accumanageheating",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/accumanageheating/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Akku Management - Heizen",
@@ -16,22 +16,22 @@
               },
     "shortDescription":  "Passt Heizungs-Sollwerte anhand des Akkuladestands an und unterstützt dadurch eine energieoptimierte Nutzung verfügbarer Speicherenergie.",
     "specialFeatures":  [
-                            "Flexible Steuerung des Kühlbetriebs: Dieser Baustein ermöglicht eine dynamische und anpassbare Kühlung, basierend auf verschiedenen Bedingungen wie Innen- und Außentemperaturen, Akkuladung und anderen Faktoren.",
-                            "Zeitbasierte Steuerung: Die Kühlung kann zeitabhängig gesteuert werden, abhängig von konfigurierten Zeitplänen.",
-                            "Lizenzvalidierung: Der Baustein prüft, ob eine gültige Lizenz und eine unmanipulierte .dll-Datei vorliegen. Ohne gültige Lizenz ist keine Funktion gewährleistet.",
-                            "Fehlerbehandlung: Ausführliche Try-Catch-Blöcke sichern den Baustein gegen Fehler ab und erzeugen detaillierte Logs zur Diagnose.",
-                            "Zusätzliche Sicherheits- und Komfortmodi: Die Klasse berücksichtigt Sommer- und Heizbetrieb sowie zusätzliche Triggerbedingungen.",
-                            "Logging und Statusmeldungen: Alle relevanten Ereignisse und Zustände werden in Log-Variablen protokolliert, die als"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten.",
+                            "Verarbeitet Kontextsignale wie Anwesenheit, Betriebsart oder Tageszustand für komfortorientierte Steuerungen."
                         ],
     "detailedDescription":  [
-                                "Dieser Baustein steuert ein Kühlungssystem, das auf mehreren Eingabekriterien basiert. Sie erlaubt es, Bedingungen wie Innen- und Außentemperaturen, die Akkuladung und bestimmte Zeitpläne zu berücksichtigen, um den Kühlmodus dynamisch anzupassen. Außerdem werden Lizenzen validiert, um die Nutzung des Systems zu autorisieren. Die Ergebnisse der Ausführung werden protokolliert und in mehreren"
+                                "Passt Heizungs-Sollwerte anhand des Akkuladestands an und unterstützt dadurch eine energieoptimierte Nutzung verfügbarer Speicherenergie.",
+                                "Der Baustein \u0027Akku Management - Heizen\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -40,8 +40,8 @@
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "de":  "Sommer",
-                                     "en":  "Summer"
+                                     "en":  "Summer",
+                                     "de":  "Sommer"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -50,28 +50,28 @@
                    {
                        "name":  "StartAccuValue",
                        "terms":  {
-                                     "de":  "Startwert Akku",
-                                     "en":  "Start Accu Value"
+                                     "en":  "Start Accu Value",
+                                     "de":  "Startwert Akku"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Startwert Akku\u0027 / \u0027Start Accu Value\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "EndAccuValue",
                        "terms":  {
-                                     "de":  "Endwert Akku",
-                                     "en":  "End Accu Value"
+                                     "en":  "End Accu Value",
+                                     "de":  "Endwert Akku"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Endwert Akku\u0027 / \u0027End Accu Value\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "SetPointShift",
                        "terms":  {
-                                     "de":  "Sollwertverschiebung",
-                                     "en":  "Set Point Shift"
+                                     "en":  "Set Point Shift",
+                                     "de":  "Sollwertverschiebung"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -80,18 +80,18 @@
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "de":  "Aktuelle AkkukapazitÃƒÂ¤t",
-                                     "en":  "Accu Actual"
+                                     "en":  "Accu Actual",
+                                     "de":  "Aktuelle Akkukapazität"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Aktuelle AkkukapazitÃƒÂ¤t\u0027 / \u0027Accu Actual\u0027. Datentyp: number."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: number."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -100,8 +100,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -112,18 +112,18 @@
                     {
                         "name":  "SendSetPointShift",
                         "terms":  {
-                                      "de":  "Sende Sollwertverschiebung",
-                                      "en":  "Send Set Point Shift"
+                                      "en":  "Send Set Point Shift",
+                                      "de":  "Sende Sollwertverschiebung"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Sende Sollwertverschiebung\u0027 / \u0027Send Set Point Shift\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -132,8 +132,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -173,12 +173,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

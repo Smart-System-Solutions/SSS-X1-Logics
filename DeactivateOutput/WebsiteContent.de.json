@@ -6,9 +6,9 @@
     "version":  "3.0.18",
     "slug":  "deactivateoutput",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/deactivateoutput/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Deaktiviere Ausgang",
@@ -16,24 +16,20 @@
               },
     "shortDescription":  "Stellt die Logik \u0027Deaktiviere Ausgang\u0027 für Smart-System-Solutions-Bausteine bereit.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität :",
-                            "Das Verhalten kann durch zwei Steuersignale beeinflusst werden: Aktivierung der Ausgabe und Invertierung der Logik .",
-                            "Die Eingabe und Ausgabe unterstützen beliebige Datentypen (z. B. Zahlen, Texte, Boolesche Werte etc.).",
-                            "Fehlerbehandlung :",
-                            "Alle Vorgänge sind in einer Fehlerüberwachung integriert. Tritt ein Fehler auf, wird dieser mit Zeitstempel dokumentiert.",
-                            "Grenzen und Validierungen :",
-                            "Bei erstmaligem Start wird das Verhalten initialisiert, selbst wenn kein neuer Wert gesetzt wurde.",
-                            "Eine Ausgabe erfolgt nur, wenn ein gültiger Eingabewert vorliegt und die Ausgabe nicht blockiert ist. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Der Baustein ermöglicht es, ein Signal (egal welchen Typs) gezielt freizugeben oder zu blockieren – basierend auf einem Steuerwert. Durch eine zusätzliche Option kann das Verhalten umgekehrt werden, sodass auch eine Negativlogik möglich ist. Es eignet sich ideal, um die Weitergabe von Informationen oder Steuerbefehlen abhängig von bestimmten Bedingungen flexibel zu steuern. Pro Ausführung wird automatisch ein Log erstellt, das das Verhalten dokumentiert und Fehler erfasst. ##"
+                                "Stellt die Logik \u0027Deaktiviere Ausgang\u0027 für Smart-System-Solutions-Bausteine bereit.",
+                                "Der Baustein \u0027Deaktiviere Ausgang\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "ActivateOutput",
                        "terms":  {
-                                     "de":  "Aktiviere Ausgang",
-                                     "en":  "ActivateOutput"
+                                     "en":  "ActivateOutput",
+                                     "de":  "Aktiviere Ausgang"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -42,8 +38,8 @@
                    {
                        "name":  "InvertActivation",
                        "terms":  {
-                                     "de":  "Invertiere Aktivierung",
-                                     "en":  "InvertActivation"
+                                     "en":  "InvertActivation",
+                                     "de":  "Invertiere Aktivierung"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -52,38 +48,38 @@
                    {
                        "name":  "IgnoreFalseInputs",
                        "terms":  {
-                                     "de":  "Ignoriere False-EingÃƒÂ¤nge",
-                                     "en":  "IgnoreFalseInputs"
+                                     "en":  "IgnoreFalseInputs",
+                                     "de":  "Ignoriere False-Eingänge"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Ignoriere False-EingÃƒÂ¤nge\u0027 / \u0027IgnoreFalseInputs\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Ignoriere False-Eingänge\u0027 / \u0027IgnoreFalseInputs\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "IgnoreTrueInputs",
                        "terms":  {
-                                     "de":  "Ignoriere True-EingÃƒÂ¤nge",
-                                     "en":  "IgnoreTrueInputs"
+                                     "en":  "IgnoreTrueInputs",
+                                     "de":  "Ignoriere True-Eingänge"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Ignoriere True-EingÃƒÂ¤nge\u0027 / \u0027IgnoreTrueInputs\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Ignoriere True-Eingänge\u0027 / \u0027IgnoreTrueInputs\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: any."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "LicenseKey01"
+                                     "en":  "LicenseKey01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -92,8 +88,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "LicenseKey02"
+                                     "en":  "LicenseKey02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -104,18 +100,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -124,8 +120,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -161,12 +157,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.18",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.18 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

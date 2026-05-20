@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "sendbydifferencemaxmin",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/sendbydifferencemaxmin/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Sendet nach Differenz und Max Min Value",
@@ -16,23 +16,20 @@
               },
     "shortDescription":  "Stellt die Logik \u0027Sendet nach Differenz und Max Min Value\u0027 für Smart-System-Solutions-Bausteine bereit.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Schwelle für Veränderungen ( Difference ) kann dynamisch angepasst werden.",
-                            "Der Zeitpunkt der Ausgaben kann durch den Zeitfilter verzögert und regelmäßig wiederholt werden.",
-                            "Die Speicherpfade für Daten können frei definiert werden.",
-                            "Fehlerbehandlung:",
-                            "Es existieren interne Absicherungen für alle Abläufe.",
-                            "Fehler werden aufgezeichnet und sind über die Protokoll"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion überwacht eine eingehende Zahl und prüft, ob sich deren Wert ausreichend stark verändert hat oder bestimmte Grenzwerte erreicht wurden. Nur wenn diese Bedingungen erfüllt sind, wird der neue Wert gespeichert und weitergegeben. Zusätzlich kann eine zeitgesteuerte Überprüfung aktiviert werden, bei der die Ausgabe regelmäßig unabhängig von Veränderungen erfolgt. Optional wird der zuletzt ausgegebene Wert auf einer SD-Karte gespeichert und beim nächsten Start wieder eingelesen. ##"
+                                "Stellt die Logik \u0027Sendet nach Differenz und Max Min Value\u0027 für Smart-System-Solutions-Bausteine bereit.",
+                                "Der Baustein \u0027Sendet nach Differenz und Max Min Value\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -41,28 +38,28 @@
                    {
                        "name":  "ActivateTimeFiler",
                        "terms":  {
-                                     "de":  "Aktiviere Zeitfilter",
-                                     "en":  "Activate Time Filer"
+                                     "en":  "Activate Time Filer",
+                                     "de":  "Aktiviere Zeitfilter"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere Zeitfilter\u0027 / \u0027Activate Time Filer\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: number."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: number."
                    },
                    {
                        "name":  "Difference",
                        "terms":  {
-                                     "de":  "Differenz",
-                                     "en":  "Difference"
+                                     "en":  "Difference",
+                                     "de":  "Differenz"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -71,8 +68,8 @@
                    {
                        "name":  "MinValue",
                        "terms":  {
-                                     "de":  "Minimaler Wert",
-                                     "en":  "Min Value"
+                                     "en":  "Min Value",
+                                     "de":  "Minimaler Wert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -81,8 +78,8 @@
                    {
                        "name":  "MaxValue",
                        "terms":  {
-                                     "de":  "Maximaler Wert",
-                                     "en":  "Max Value"
+                                     "en":  "Max Value",
+                                     "de":  "Maximaler Wert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -91,18 +88,18 @@
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Delay"
+                                     "en":  "Delay",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Delay\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "de":  "Speicherpfad",
-                                     "en":  "Storage Path"
+                                     "en":  "Storage Path",
+                                     "de":  "Speicherpfad"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -111,8 +108,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -121,8 +118,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -133,18 +130,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: number."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: number."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -153,8 +150,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -163,8 +160,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -204,12 +201,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "ondelay",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/ondelay/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Einschaltverzögerung",
@@ -16,19 +16,21 @@
               },
     "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität: Die Verzögerungszeit und die Aktualisierungsrate können dynamisch angepasst werden. Dadurch kann das Verhalten flexibel an unterschiedliche Anwendungen angepasst werden.",
-                            "Fehlerbehandlung: Es sind interne Protokollierungen bei der Ausführung und Terminplanung enthalten. Fehler werden automatisch erkannt und als Text ausgegeben.",
-                            "Grenzen und Validierungen: Eine Prüfung auf gültige Zustände erfolgt intern. Eine explizite Begrenzung von Minimal- oder Maximalwerten wird im Code nicht vorgenommen. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion dient dazu, ein Signal (z. B. ein Schaltbefehl) erst nach einer vorgegebenen Verzögerungszeit auszulösen. Sobald die Aktivierung erfolgt und ein Eingangssignal erkannt wird, beginnt ein Countdown. Nach Ablauf dieser Zeit wird ein Ausgang aktiviert. Die Funktion kann automatisch wieder deaktiviert werden und bietet eine Rückmeldung über den verbleibenden Countdown sowie eine Protokollierung des Ablaufs. ##"
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+                                "Der Baustein \u0027Einschaltverzögerung\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -37,38 +39,38 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: bool."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: bool."
                    },
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "de":  "VerzÃƒÂ¶gerung",
-                                     "en":  "Delay"
+                                     "en":  "Delay",
+                                     "de":  "Verzögerung"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027VerzÃƒÂ¶gerung\u0027 / \u0027Delay\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Update Time"
+                                     "en":  "Update Time",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 01",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 01"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -77,8 +79,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 02",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 02"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -89,8 +91,8 @@
                     {
                         "name":  "OutputTrue",
                         "terms":  {
-                                      "de":  "Ausgang TRUE",
-                                      "en":  "Output True"
+                                      "en":  "Output True",
+                                      "de":  "Ausgang TRUE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -99,8 +101,8 @@
                     {
                         "name":  "OutputFalse",
                         "terms":  {
-                                      "de":  "Ausgang FALSE",
-                                      "en":  "Output False"
+                                      "en":  "Output False",
+                                      "de":  "Ausgang FALSE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -109,18 +111,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "Countdown",
                         "terms":  {
-                                      "de":  "Countdown",
-                                      "en":  "Countdown"
+                                      "en":  "Countdown",
+                                      "de":  "Countdown"
                                   },
                         "type":  "timespan",
                         "dataType":  "timespan",
@@ -129,8 +131,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -139,8 +141,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -149,8 +151,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -190,12 +192,23 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

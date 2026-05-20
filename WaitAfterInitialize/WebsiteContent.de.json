@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "waitafterinitialize",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/waitafterinitialize/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Wartezeit nach Initialisierung",
@@ -16,24 +16,21 @@
               },
     "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Wartezeit ist individuell anpassbar.",
-                            "Es kann gewählt werden, ob ein bestehender Eingangswert übernommen oder ein definierter Standardwert gesetzt wird.",
-                            "Das Verhalten nach Systemstart lässt sich flexibel konfigurieren.",
-                            "Fehlerbehandlung:",
-                            "Alle Ausnahmen (Fehler im Ablauf) werden intern aufgefangen und in Protokollen dokumentiert.",
-                            "Bei falscher Typangabe wird eine Fehlermeldung generiert, ohne den Ablauf zu unterbrechen.",
-                            "Grenzen und Validierungen:"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion ermöglicht eine zeitverzögerte Ausgabe eines Eingangswertes. Sobald das System initialisiert ist, wartet es eine definierte Zeitspanne ab, bevor ein Ausgang aktiviert wird. Dabei kann konfiguriert werden, ob der Ausgang den aktuellen Eingangswert übernehmen soll oder einen festen Standardwert (z. B. true , false , 0 , etc.). Das Verhalten ist insbesondere beim Hochfahren eines Systems oder bei zeitkritischen Abläufen hilfreich, in denen eine sofortige Reaktion unerwünscht ist. ##"
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+                                "Der Baustein \u0027Wartezeit nach Initialisierung\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -42,28 +39,28 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: any."
                    },
                    {
                        "name":  "WaitingTime",
                        "terms":  {
-                                     "de":  "Wartezeit",
-                                     "en":  "Waiting Time"
+                                     "en":  "Waiting Time",
+                                     "de":  "Wartezeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Wartezeit\u0027 / \u0027Waiting Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "SetOutputAfterInitializeToInputValue",
                        "terms":  {
-                                     "de":  "Setze Ausgang nach Wartezeit auf den Eingangswert",
-                                     "en":  "Set Output After Initialize To Input Value"
+                                     "en":  "Set Output After Initialize To Input Value",
+                                     "de":  "Setze Ausgang nach Wartezeit auf den Eingangswert"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -72,28 +69,28 @@
                    {
                        "name":  "SetOutputAfterInitializeToFalse",
                        "terms":  {
-                                     "de":  "Setze Ausgang nach Wartezeit auf FALSE (nur fÃƒÂ¼r bool)",
-                                     "en":  "Set Output After Initialize To False"
+                                     "en":  "Set Output After Initialize To False",
+                                     "de":  "Setze Ausgang nach Wartezeit auf FALSE (nur für bool)"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Setze Ausgang nach Wartezeit auf FALSE (nur fÃƒÂ¼r bool)\u0027 / \u0027Set Output After Initialize To False\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Setze Ausgang nach Wartezeit auf FALSE (nur für bool)\u0027 / \u0027Set Output After Initialize To False\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "SetOutputAfterInitializeToTrue",
                        "terms":  {
-                                     "de":  "Setze Ausgang nach Wartezeit auf TRUE (nur fÃƒÂ¼r bool)",
-                                     "en":  "Set Output After Initialize To True"
+                                     "en":  "Set Output After Initialize To True",
+                                     "de":  "Setze Ausgang nach Wartezeit auf TRUE (nur für bool)"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Setze Ausgang nach Wartezeit auf TRUE (nur fÃƒÂ¼r bool)\u0027 / \u0027Set Output After Initialize To True\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Setze Ausgang nach Wartezeit auf TRUE (nur für bool)\u0027 / \u0027Set Output After Initialize To True\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Type",
                        "terms":  {
-                                     "de":  "Type",
-                                     "en":  "Type"
+                                     "en":  "Type",
+                                     "de":  "Type"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -102,8 +99,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -112,8 +109,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -124,18 +121,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -144,8 +141,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -154,8 +151,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -195,12 +192,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

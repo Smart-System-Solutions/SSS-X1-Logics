@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "convertstringtodatetime",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/convertstringtodatetime/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Konvertiere String zu DateTime",
@@ -16,29 +16,32 @@
               },
     "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Flexibilität bei der Datumsverarbeitung: Die Methode bietet eine flexible Eingabe von Datumsangaben sowohl mit als auch ohne Jahr. Wenn der StringWithoutYear -Parameter aktiviert ist, wird das aktuelle Jahr automatisch hinzugefügt.",
-                            "Zeitumwandlung in UTC und Lokalzeit: Die Methode konvertiert eine Datums- und Uhrzeitangabe im Textformat in UTC und lokal angepasste Zeit.",
-                            "Fehlerbehandlung und Logging: Wenn ein Formatfehler oder eine Ausnahme auftritt, wird eine Fehlernachricht in das Log ( LogExecute ) geschrieben, um das Problem zu dokumentieren. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Diese Methode konvertiert ein Datum und eine Uhrzeit, die als Text im Format \"yyyy-MM-dd HH:mm\" vorliegen, in UTC- und lokal angepasste Zeitwerte. Bei Bedarf kann die Methode das aktuelle Jahr automatisch hinzufügen, falls nur Tag und Monat angegeben wurden. Fehlerhafte Eingaben oder Ausnahmen werden protokolliert und als Text im Ausgabeprotokoll ( LogExecute ) hinterlegt. ##"
+                                "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
+                                "Der Baustein \u0027Konvertiere String zu DateTime\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "string",
                        "dataType":  "string",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: string."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: string."
                    },
                    {
                        "name":  "StringWithoutYear",
                        "terms":  {
-                                     "de":  "Datum als Text ohne Jahresangabe",
-                                     "en":  "String Without Year"
+                                     "en":  "String Without Year",
+                                     "de":  "Datum als Text ohne Jahresangabe"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -49,28 +52,28 @@
                     {
                         "name":  "UtcDateTime",
                         "terms":  {
-                                      "de":  "Datum und Uhrzeit in UTC",
-                                      "en":  "Utc Date Time"
+                                      "en":  "Utc Date Time",
+                                      "de":  "Datum und Uhrzeit in UTC"
                                   },
                         "type":  "datetime",
                         "dataType":  "datetime",
-                        "description":  "Ausgang für \u0027Datum und Uhrzeit in UTC\u0027 / \u0027Utc Date Time\u0027. Datentyp: datetime."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: datetime."
                     },
                     {
                         "name":  "LocalTime",
                         "terms":  {
-                                      "de":  "Lokale Zeit",
-                                      "en":  "Local Time"
+                                      "en":  "Local Time",
+                                      "de":  "Lokale Zeit"
                                   },
                         "type":  "datetime",
                         "dataType":  "datetime",
-                        "description":  "Ausgang für \u0027Lokale Zeit\u0027 / \u0027Local Time\u0027. Datentyp: datetime."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: datetime."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -102,12 +105,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

@@ -6,9 +6,9 @@
     "version":  "3.0.40",
     "slug":  "minreplacecurrentwidth",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/minreplacecurrentwidth/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Setze Minimale Breite Ersatzstrombereich",
@@ -16,24 +16,20 @@
               },
     "shortDescription":  "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Steuerung kann automatisch oder manuell betrieben werden.",
-                            "Stromprognosen, Akkustand und Zeitsteuerungen ermöglichen eine feinabgestimmte Regelung.",
-                            "Unterschiedliche Betriebsmodi (Sommer/Winter, Heizen/Kühlen) werden berücksichtigt. Fehlerbehandlung:",
-                            "Mehrstufige Fehlererkennung (z. B. fehlerhafte Prognosen, SD-Karten-Zugriffsfehler)",
-                            "Protokollierung aller Schritte und Fehler im Log",
-                            "Standardwerte (z. B. 1000 W bei Stromdifferenzfehler) werden automatisch gesetzt Grenzen und Validierungen:",
-                            "Akkumaximalwert ist auf 10 begrenzt"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld."
                         ],
     "detailedDescription":  [
-                                "Diese Logik steuert die minimale Breite eines Strombereichs, der auf Basis von Sonnenaufgang, Sonnenuntergang, Wetterprognosen und Akkuverbrauch automatisch angepasst wird. Ziel ist es, die Energieeffizienz zu verbessern und die Akkuladung intelligent zu nutzen. Die Methode erkennt Tageszeiten, berücksichtigt manuelle Einstellungen, prognostiziert den Energiebedarf und speichert relevante Daten auf einer SD-Karte. Abhängig von verschiedenen Faktoren wie Sommer-/Winterbetrieb oder Heiz-/Kühlbedarf wird automatisch entschieden, wie weit der Strombereich reduziert werden kann, ohne Komfort oder Funktionalität zu beeinträchtigen. ##"
+                                "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
+                                "Der Baustein \u0027Setze Minimale Breite Ersatzstrombereich\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Active",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Active"
+                                     "en":  "Active",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -42,8 +38,8 @@
                    {
                        "name":  "Summer",
                        "terms":  {
-                                     "de":  "Sommer",
-                                     "en":  "Summer"
+                                     "en":  "Summer",
+                                     "de":  "Sommer"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -52,18 +48,18 @@
                    {
                        "name":  "HeatingCooling",
                        "terms":  {
-                                     "de":  "Heizen/KÃƒÂ¼hlen",
-                                     "en":  "HeatingCooling"
+                                     "en":  "HeatingCooling",
+                                     "de":  "Heizen/Kühlen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Heizen/KÃƒÂ¼hlen\u0027 / \u0027HeatingCooling\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Heizen/Kühlen\u0027 / \u0027HeatingCooling\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "SetManual",
                        "terms":  {
-                                     "de":  "Setze Manuell",
-                                     "en":  "SetManual"
+                                     "en":  "SetManual",
+                                     "de":  "Setze Manuell"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -72,18 +68,18 @@
                    {
                        "name":  "TakeAccuPowerConsumptionCalculation",
                        "terms":  {
-                                     "de":  "Verwende Akku-Berechnung aufgrund von Leistungsverbrauch",
-                                     "en":  "TakeAccuPowerConsumptionCalculation"
+                                     "en":  "TakeAccuPowerConsumptionCalculation",
+                                     "de":  "Verwende Akku-Berechnung aufgrund von Leistungsverbrauch"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Verwende Akku-Berechnung aufgrund von Leistungsverbrauch\u0027 / \u0027TakeAccuPowerConsumptionCalculation\u0027. Datentyp: bool."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: bool."
                    },
                    {
                        "name":  "Sunrise",
                        "terms":  {
-                                     "de":  "Sonnenaufgang",
-                                     "en":  "Sunrise"
+                                     "en":  "Sunrise",
+                                     "de":  "Sonnenaufgang"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
@@ -92,8 +88,8 @@
                    {
                        "name":  "Sunset",
                        "terms":  {
-                                     "de":  "Sonnenuntergang",
-                                     "en":  "Sunset"
+                                     "en":  "Sunset",
+                                     "de":  "Sonnenuntergang"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
@@ -102,8 +98,8 @@
                    {
                        "name":  "MinimumWidthManual",
                        "terms":  {
-                                     "de":  "Minimale Ersatzstrombreite Manuell [%]",
-                                     "en":  "MinimumWidthManual"
+                                     "en":  "MinimumWidthManual",
+                                     "de":  "Minimale Ersatzstrombreite Manuell [%]"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -112,8 +108,8 @@
                    {
                        "name":  "PowerConsumption",
                        "terms":  {
-                                     "de":  "Leistungsverbrauch",
-                                     "en":  "PowerConsumption"
+                                     "en":  "PowerConsumption",
+                                     "de":  "Leistungsverbrauch"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -122,28 +118,28 @@
                    {
                        "name":  "AccuActual",
                        "terms":  {
-                                     "de":  "Aktueller Akkuwert [kW]",
-                                     "en":  "AccuActual"
+                                     "en":  "AccuActual",
+                                     "de":  "Aktueller Akkuwert [kW]"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Aktueller Akkuwert [kW]\u0027 / \u0027AccuActual\u0027. Datentyp: number."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: number."
                    },
                    {
                        "name":  "AccuMaximal",
                        "terms":  {
-                                     "de":  "Maximaler Akkuwert [kW]",
-                                     "en":  "AccuMaximal"
+                                     "en":  "AccuMaximal",
+                                     "de":  "Maximaler Akkuwert [kW]"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Maximaler Akkuwert [kW]\u0027 / \u0027AccuMaximal\u0027. Datentyp: number."
+                       "description":  "Akkubezogener Wert für Ladezustand, Abhängigkeit oder Steuerentscheidung. Datentyp: number."
                    },
                    {
                        "name":  "ForecastElectricityGeneration",
                        "terms":  {
-                                     "de":  "Vorhersage Leistungserzeugung",
-                                     "en":  "ForecastElectricityGeneration"
+                                     "en":  "ForecastElectricityGeneration",
+                                     "de":  "Vorhersage Leistungserzeugung"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -152,8 +148,8 @@
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "de":  "Speicherpfad",
-                                     "en":  "StoragePath"
+                                     "en":  "StoragePath",
+                                     "de":  "Speicherpfad"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -162,58 +158,58 @@
                    {
                        "name":  "TimeBeforeSunriseToSetAccuToZeroWinter",
                        "terms":  {
-                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Winter)",
-                                     "en":  "TimeBeforeSunriseToSetAccuToZeroWinter"
+                                     "en":  "TimeBeforeSunriseToSetAccuToZeroWinter",
+                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Winter)"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Winter)\u0027 / \u0027TimeBeforeSunriseToSetAccuToZeroWinter\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeBeforeSunriseToSetAccuToZeroSummer",
                        "terms":  {
-                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Sommer)",
-                                     "en":  "TimeBeforeSunriseToSetAccuToZeroSummer"
+                                     "en":  "TimeBeforeSunriseToSetAccuToZeroSummer",
+                                     "de":  "Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Sommer)"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit vor Sonnenaufgang um Akku auf 0 zu setzen (Sommer)\u0027 / \u0027TimeBeforeSunriseToSetAccuToZeroSummer\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "NumberOfMinimumWidthDependence",
                        "terms":  {
-                                     "de":  "Anzahl Minimum Width Dependence",
-                                     "en":  "Number Of Minimum Width Dependence"
+                                     "en":  "Number Of Minimum Width Dependence",
+                                     "de":  "Anzahl Minimum Width Dependence"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl Minimum Width Dependence\u0027 / \u0027Number Of Minimum Width Dependence\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "MinimumWidthDependence",
                        "terms":  {
-                                     "de":  "Minimale Ersatzstrombreite fÃƒÂ¼r AbhÃƒÂ¤ngigkeit [%]",
-                                     "en":  "MinimumWidthDependence"
+                                     "en":  "MinimumWidthDependence",
+                                     "de":  "Minimale Ersatzstrombreite für Abhängigkeit [%]"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Minimale Ersatzstrombreite fÃƒÂ¼r AbhÃƒÂ¤ngigkeit [%]\u0027 / \u0027MinimumWidthDependence\u0027. Datentyp: int."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: int."
                    },
                    {
                        "name":  "MinimumWidthDependenceTime",
                        "terms":  {
-                                     "de":  "Uhrzeit fÃƒÂ¼r AbhÃƒÂ¤ngigkeit",
-                                     "en":  "MinimumWidthDependenceTime"
+                                     "en":  "MinimumWidthDependenceTime",
+                                     "de":  "Uhrzeit für Abhängigkeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Uhrzeit fÃƒÂ¼r AbhÃƒÂ¤ngigkeit\u0027 / \u0027MinimumWidthDependenceTime\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "LicenseKey01"
+                                     "en":  "LicenseKey01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -222,8 +218,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "LicenseKey02"
+                                     "en":  "LicenseKey02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -232,18 +228,18 @@
                    {
                        "name":  "NumberOfWinterForecastRules",
                        "terms":  {
-                                     "de":  "Anzahl der Regeln fÃƒÂ¼r die Wintervorhersage",
-                                     "en":  "NumberOfWinterForecastRules"
+                                     "en":  "NumberOfWinterForecastRules",
+                                     "de":  "Anzahl der Regeln für die Wintervorhersage"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der Regeln fÃƒÂ¼r die Wintervorhersage\u0027 / \u0027NumberOfWinterForecastRules\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "WinterForecastThresholdsKWh",
                        "terms":  {
-                                     "de":  "Winter Prognose Thresholds K Wh",
-                                     "en":  "Winter Forecast Thresholds K Wh"
+                                     "en":  "Winter Forecast Thresholds K Wh",
+                                     "de":  "Winter Prognose Thresholds K Wh"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -252,8 +248,8 @@
                    {
                        "name":  "WinterMinimumWidthPercents",
                        "terms":  {
-                                     "de":  "Winter Minimum Width Percents",
-                                     "en":  "Winter Minimum Width Percents"
+                                     "en":  "Winter Minimum Width Percents",
+                                     "de":  "Winter Minimum Width Percents"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -262,8 +258,8 @@
                    {
                        "name":  "WinterDefaultMinimumWidthPercent",
                        "terms":  {
-                                     "de":  "Winter-Standard-Mindestbreite in Prozent",
-                                     "en":  "WinterDefaultMinimumWidthPercent"
+                                     "en":  "WinterDefaultMinimumWidthPercent",
+                                     "de":  "Winter-Standard-Mindestbreite in Prozent"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -272,18 +268,18 @@
                    {
                        "name":  "NumberOfSummerForecastRules",
                        "terms":  {
-                                     "de":  "Anzahl der Regeln fÃƒÂ¼r die Sommervorhersage",
-                                     "en":  "NumberOfSummerForecastRules"
+                                     "en":  "NumberOfSummerForecastRules",
+                                     "de":  "Anzahl der Regeln für die Sommervorhersage"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der Regeln fÃƒÂ¼r die Sommervorhersage\u0027 / \u0027NumberOfSummerForecastRules\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "SummerForecastThresholdsKWh",
                        "terms":  {
-                                     "de":  "Summer Prognose Thresholds K Wh",
-                                     "en":  "Summer Forecast Thresholds K Wh"
+                                     "en":  "Summer Forecast Thresholds K Wh",
+                                     "de":  "Summer Prognose Thresholds K Wh"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -292,8 +288,8 @@
                    {
                        "name":  "SummerMinimumWidthPercents",
                        "terms":  {
-                                     "de":  "Summer Minimum Width Percents",
-                                     "en":  "Summer Minimum Width Percents"
+                                     "en":  "Summer Minimum Width Percents",
+                                     "de":  "Summer Minimum Width Percents"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -302,8 +298,8 @@
                    {
                        "name":  "SummerDefaultMinimumWidthPercent",
                        "terms":  {
-                                     "de":  "Sommer-Standard-Mindestbreite in Prozent",
-                                     "en":  "SummerDefaultMinimumWidthPercent"
+                                     "en":  "SummerDefaultMinimumWidthPercent",
+                                     "de":  "Sommer-Standard-Mindestbreite in Prozent"
                                  },
                        "type":  "int",
                        "dataType":  "int",
@@ -314,8 +310,8 @@
                     {
                         "name":  "MinimumWidth",
                         "terms":  {
-                                      "de":  "Minimale Ersatzstrombreite [%]",
-                                      "en":  "MinimumWidth"
+                                      "en":  "MinimumWidth",
+                                      "de":  "Minimale Ersatzstrombreite [%]"
                                   },
                         "type":  "int",
                         "dataType":  "int",
@@ -324,18 +320,18 @@
                     {
                         "name":  "ResetSetManual",
                         "terms":  {
-                                      "de":  "Setze RÃƒÂ¼cksetzen manuell zurÃƒÂ¼ck",
-                                      "en":  "ResetSetManual"
+                                      "en":  "ResetSetManual",
+                                      "de":  "Setze Rücksetzen manuell zurück"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Setze RÃƒÂ¼cksetzen manuell zurÃƒÂ¼ck\u0027 / \u0027ResetSetManual\u0027. Datentyp: bool."
+                        "description":  "Ausgang für \u0027Setze Rücksetzen manuell zurück\u0027 / \u0027ResetSetManual\u0027. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -344,8 +340,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -354,8 +350,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -391,12 +387,32 @@
     "changelog":  [
                       {
                           "version":  "3.0.40",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.40 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.26",
+                          "date":  "2025-05-30",
+                          "changes":  [
+                                          "Berechnung von PowerConsumption korrigiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.25",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.25 ?bernommen.",
+                                          "Eingang TimeMinimumWidthNight erg?nzt."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.18",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

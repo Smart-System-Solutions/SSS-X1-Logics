@@ -6,7 +6,7 @@
         "title":  "Akku Management",
         "version":  "3.0.27",
         "contentPath":  "AccuManage/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/accumanage/"
     },
     {
@@ -16,7 +16,7 @@
         "title":  "Akku Management - Kühlen",
         "version":  "3.0.23",
         "contentPath":  "AccuManageCooling/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/accumanagecooling/"
     },
     {
@@ -26,7 +26,7 @@
         "title":  "Akku Management - Heizen",
         "version":  "3.0.17",
         "contentPath":  "AccuManageHeating/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/accumanageheating/"
     },
     {
@@ -36,7 +36,7 @@
         "title":  "Telegramme blockieren",
         "version":  "3.0.17",
         "contentPath":  "BlockTelegrams/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/blocktelegrams/"
     },
     {
@@ -46,7 +46,7 @@
         "title":  "Berechen Durchschnitt mit Zeitfilter",
         "version":  "3.0.17",
         "contentPath":  "CalculateAverageTime/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/calculteaveragetime/"
     },
     {
@@ -56,7 +56,7 @@
         "title":  "Leistung berechnen",
         "version":  "3.0.35",
         "contentPath":  "CalculateEnergy/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/calculateenergy/"
     },
     {
@@ -66,7 +66,7 @@
         "title":  "Leistung von Lampen berechnen",
         "version":  "3.0.35",
         "contentPath":  "CalculateEnergyLamps/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/calculateenergylamps/"
     },
     {
@@ -76,7 +76,7 @@
         "title":  "Computerverwaltung",
         "version":  "3.0.17",
         "contentPath":  "ComputerManagement/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/computermanagement/"
     },
     {
@@ -86,7 +86,7 @@
         "title":  "Konvertiere Int zu Bits",
         "version":  "3.0.17",
         "contentPath":  "ConvertIntToBits/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/convertinttobits/"
     },
     {
@@ -96,7 +96,7 @@
         "title":  "Konvertiere String zu DateTime",
         "version":  "3.0.17",
         "contentPath":  "ConvertStringToDateTime/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/convertstringtodatetime/"
     },
     {
@@ -106,7 +106,7 @@
         "title":  "Deaktiviere Ausgang",
         "version":  "3.0.18",
         "contentPath":  "DeactivateOutput/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/deactivateoutput/"
     },
     {
@@ -116,7 +116,7 @@
         "title":  "Entscheidung - 2 Werte",
         "version":  "3.0.17",
         "contentPath":  "Decision2Values/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/decision2values/"
     },
     {
@@ -126,7 +126,7 @@
         "title":  "Entscheidung - 4 Werte",
         "version":  "3.0.17",
         "contentPath":  "Decision4Values/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/decision4values/"
     },
     {
@@ -136,7 +136,7 @@
         "title":  "Info",
         "version":  "3.0.17",
         "contentPath":  "Info/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/info/"
     },
     {
@@ -146,7 +146,7 @@
         "title":  "Nachrichtenverwaltung",
         "version":  "3.0.21",
         "contentPath":  "MessageManagement/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/messagemanagement/"
     },
     {
@@ -156,7 +156,7 @@
         "title":  "Setze Minimale Breite Ersatzstrombereich",
         "version":  "3.0.40",
         "contentPath":  "MinReplaceCurrentWidth/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/minreplacecurrentwidth/"
     },
     {
@@ -166,7 +166,7 @@
         "title":  "Mehrfachsummierer",
         "version":  "3.0.17",
         "contentPath":  "MultipleSummator/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/multiplesummator/"
     },
     {
@@ -186,7 +186,7 @@
         "title":  "Einschaltverzögerung",
         "version":  "3.0.17",
         "contentPath":  "OnDelay/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/ondelay/"
     },
     {
@@ -196,7 +196,7 @@
         "title":  "Freigabe Jalousie-Nachführung",
         "version":  "3.0.37",
         "contentPath":  "ReleaseBlindTracking/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/releaseblindtracking/"
     },
     {
@@ -206,7 +206,7 @@
         "title":  "Reset um Mitternacht",
         "version":  "3.0.28",
         "contentPath":  "ResetAtMidnight/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/resetatmidnight/"
     },
     {
@@ -216,7 +216,7 @@
         "title":  "Speichere und lese Werte",
         "version":  "3.0.18",
         "contentPath":  "SaveAndLoadValues/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/saveandloadvalues/"
     },
     {
@@ -226,7 +226,7 @@
         "title":  "Ausgang nach unterschiedlichen Zeiten triggern",
         "version":  "3.0.21",
         "contentPath":  "SelectionTime/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/selectiontime/"
     },
     {
@@ -236,7 +236,7 @@
         "title":  "Sendet nach Differenz und Max Min Value",
         "version":  "3.0.17",
         "contentPath":  "SendByDifferenceMaxMin/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/sendbydifferencemaxmin/"
     },
     {
@@ -246,7 +246,7 @@
         "title":  "Reihenfolgenschalter",
         "version":  "3.0.17",
         "contentPath":  "SequenceBool/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/sequencebool/"
     },
     {
@@ -256,7 +256,7 @@
         "title":  "Ignoriere erstes Telegram",
         "version":  "3.0.17",
         "contentPath":  "SkipFirstTelegram/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/skipfirsttelegram/"
     },
     {
@@ -276,7 +276,7 @@
         "title":  "Höchster Wert",
         "version":  "3.0.17",
         "contentPath":  "TakeHighestValue/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/takehighestvalue/"
     },
     {
@@ -286,7 +286,7 @@
         "title":  "Niedrigster Wert",
         "version":  "3.0.17",
         "contentPath":  "TakeLowestValue/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/takelowestvalue/"
     },
     {
@@ -296,7 +296,7 @@
         "title":  "Beim Triggern Telegramm senden",
         "version":  "3.0.17",
         "contentPath":  "TelegramByTrigger/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/telegrambytrigger/"
     },
     {
@@ -306,7 +306,7 @@
         "title":  "Telegramm Logger",
         "version":  "3.0.17",
         "contentPath":  "TelegramLogger/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/telegramlogger/"
     },
     {
@@ -316,7 +316,7 @@
         "title":  "Telegramm einmal pro Tag senden",
         "version":  "3.0.17",
         "contentPath":  "TelegramOnceADay/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/telegramonceaday/"
     },
     {
@@ -326,7 +326,7 @@
         "title":  "Telegramm nach Zeiten triggern",
         "version":  "3.0.17",
         "contentPath":  "TelegramTriggerByTimes/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/telegramtriggerbytimes/"
     },
     {
@@ -336,7 +336,7 @@
         "title":  "Zeitgesteuerte Telegramme",
         "version":  "3.0.17",
         "contentPath":  "TimeControlledTelegram/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/timecontrolledtelegram/"
     },
     {
@@ -346,7 +346,7 @@
         "title":  "Schwellenwert-Überwachungsbaustein mit Zeitintervall-Logik",
         "version":  "3.0.17",
         "contentPath":  "ValueTime/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/valuetime/"
     },
     {
@@ -356,7 +356,7 @@
         "title":  "Wartezeit nach Initialisierung",
         "version":  "3.0.17",
         "contentPath":  "WaitAfterInitialize/WebsiteContent.de.json",
-        "sourceStatus":  "website-adapted",
+        "sourceStatus":  "generated",
         "websiteUrl":  "https://smart-system-solutions.de/waitafterinitialize/"
     }
 ]

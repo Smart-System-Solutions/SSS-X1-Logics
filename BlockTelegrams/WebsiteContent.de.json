@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "blocktelegrams",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/blocktelegrams/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Telegramme blockieren",
@@ -16,21 +16,21 @@
               },
     "shortDescription":  "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
     "specialFeatures":  [
-                            "Signalblockierung : Die Funktion kann Signale für eine bestimmte Zeit blockieren, nachdem sie empfangen oder deaktiviert wurden.",
-                            "Zeitverzögerung : Eine Verzögerung kann eingestellt werden, bevor ein Signal verarbeitet wird.",
-                            "Lizenzprüfung : Der Code prüft, ob eine gültige Lizenz vorliegt, bevor er ausgeführt wird.",
-                            "Protokollierung : Ereignisse werden in Logdateien gespeichert, um spätere Analysen zu ermöglichen.",
-                            "Fehlertoleranz : Falls ein Fehler auftritt, wird dieser in das Log geschrieben, um eine Diagnose zu erleichtern. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
-                                "Dieser Baustein steuert, ob ein Eingangssignal weitergeleitet oder blockiert wird. Die Blockierung kann zeitlich gesteuert werden, z. B. um zu verhindern, dass Signale zu häufig gesendet werden. Dabei gibt es verschiedene Modi, mit denen festgelegt werden kann, wann und wie lange Signale blockiert werden. Zudem werden alle relevanten Ereignisse protokolliert. Eine Lizenzprüfung stellt sicher, dass die Funktion nur mit einer gültigen Lizenz genutzt werden kann. ##"
+                                "Steuert die Weitergabe von Telegrammen oder Eingangswerten anhand von Triggern, Zeitregeln oder Sperrbedingungen.",
+                                "Der Baustein \u0027Telegramme blockieren\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -39,48 +39,48 @@
                    {
                        "name":  "BlockSignalForTimeAfterInput",
                        "terms":  {
-                                     "de":  "Blockiere Signale fÃƒÂ¼r eine Zeit nach Eingangssignal",
-                                     "en":  "Block Signal For Time After Input"
+                                     "en":  "Block Signal For Time After Input",
+                                     "de":  "Blockiere Signale für eine Zeit nach Eingangssignal"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Blockiere Signale fÃƒÂ¼r eine Zeit nach Eingangssignal\u0027 / \u0027Block Signal For Time After Input\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "BlockSignalForTimeAfterDeactivateInputForTime",
                        "terms":  {
-                                     "de":  "Blockiere Signale fÃƒÂ¼r eine Zeit nach Input \"Deaktiviere Eingang fÃƒÂ¼r eine bestimmte Zeit\"",
-                                     "en":  "Block Signal For Time After Deactivate Input For Time"
+                                     "en":  "Block Signal For Time After Deactivate Input For Time",
+                                     "de":  "Blockiere Signale für eine Zeit nach Input \"Deaktiviere Eingang für eine bestimmte Zeit\""
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Blockiere Signale fÃƒÂ¼r eine Zeit nach Input \"Deaktiviere Eingang fÃƒÂ¼r eine bestimmte Zeit\"\u0027 / \u0027Block Signal For Time After Deactivate Input For Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "DeactivateInputForTime",
                        "terms":  {
-                                     "de":  "Deaktiviere Eingang fÃƒÂ¼r eine bestimmte Zeit",
-                                     "en":  "Deactivate Input For Time"
+                                     "en":  "Deactivate Input For Time",
+                                     "de":  "Deaktiviere Eingang für eine bestimmte Zeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Deaktiviere Eingang fÃƒÂ¼r eine bestimmte Zeit\u0027 / \u0027Deactivate Input For Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: any."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: any."
                    },
                    {
                        "name":  "Reset",
                        "terms":  {
-                                     "de":  "Neustart",
-                                     "en":  "Reset"
+                                     "en":  "Reset",
+                                     "de":  "Neustart"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -89,18 +89,18 @@
                    {
                        "name":  "Delay",
                        "terms":  {
-                                     "de":  "Wartezeit",
-                                     "en":  "Delay"
+                                     "en":  "Delay",
+                                     "de":  "Wartezeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Wartezeit\u0027 / \u0027Delay\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -109,8 +109,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -121,18 +121,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "Blocked",
                         "terms":  {
-                                      "de":  "Blockiert",
-                                      "en":  "Blocked"
+                                      "en":  "Blocked",
+                                      "de":  "Blockiert"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -141,8 +141,8 @@
                     {
                         "name":  "Status",
                         "terms":  {
-                                      "de":  "Status",
-                                      "en":  "Status"
+                                      "en":  "Status",
+                                      "de":  "Status"
                                   },
                         "type":  "any",
                         "dataType":  "any",
@@ -151,8 +151,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "Log Execute",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Log Execute"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -161,8 +161,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Log Schedule",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Log Schedule"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -171,8 +171,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -212,12 +212,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

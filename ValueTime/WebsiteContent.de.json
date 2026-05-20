@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "valuetime",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/valuetime/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Schwellenwert-Überwachungsbaustein mit Zeitintervall-Logik",
@@ -16,8 +16,9 @@
               },
     "shortDescription":  "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Überwachungsgrenzen und Zeitintervalle sind vollständig über"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden."
                         ],
     "detailedDescription":  [
                                 "Stellt zeitbezogene Hilfslogik bereit, etwa Verzögerung, Zeitvergleich, periodische Auslösung oder Rücksetzung zu definierten Zeitpunkten.",
@@ -28,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -38,28 +39,28 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: number."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: number."
                    },
                    {
                        "name":  "ExceedingValue",
                        "terms":  {
-                                     "de":  "Zu ÃƒÂ¼berschreitender Wert",
-                                     "en":  "Exceeding Value"
+                                     "en":  "Exceeding Value",
+                                     "de":  "Zu überschreitender Wert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Zu ÃƒÂ¼berschreitender Wert\u0027 / \u0027Exceeding Value\u0027. Datentyp: number."
+                       "description":  "Eingang für \u0027Zu überschreitender Wert\u0027 / \u0027Exceeding Value\u0027. Datentyp: number."
                    },
                    {
                        "name":  "UndercuttingValue",
                        "terms":  {
-                                     "de":  "Zu unterschreitender Wert",
-                                     "en":  "Undercutting Value"
+                                     "en":  "Undercutting Value",
+                                     "de":  "Zu unterschreitender Wert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -68,58 +69,58 @@
                    {
                        "name":  "ExceedingValueHigh",
                        "terms":  {
-                                     "de":  "Zu ÃƒÂ¼berschreitender Wert (Hoch)",
-                                     "en":  "Exceeding Value High"
+                                     "en":  "Exceeding Value High",
+                                     "de":  "Zu überschreitender Wert (Hoch)"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Zu ÃƒÂ¼berschreitender Wert (Hoch)\u0027 / \u0027Exceeding Value High\u0027. Datentyp: number."
+                       "description":  "Eingang für \u0027Zu überschreitender Wert (Hoch)\u0027 / \u0027Exceeding Value High\u0027. Datentyp: number."
                    },
                    {
                        "name":  "ConditionValueForReset",
                        "terms":  {
-                                     "de":  "Bedingungswert fÃƒÂ¼r Reset (Zu unterschreitender Wert)",
-                                     "en":  "Condition Value For Reset"
+                                     "en":  "Condition Value For Reset",
+                                     "de":  "Bedingungswert für Reset (Zu unterschreitender Wert)"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Bedingungswert fÃƒÂ¼r Reset (Zu unterschreitender Wert)\u0027 / \u0027Condition Value For Reset\u0027. Datentyp: number."
+                       "description":  "Bedingung, die für die Ausführung erfüllt sein muss. Datentyp: number."
                    },
                    {
                        "name":  "TimeExceedingValue",
                        "terms":  {
-                                     "de":  "Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert",
-                                     "en":  "Time Exceeding Value"
+                                     "en":  "Time Exceeding Value",
+                                     "de":  "Zeit für den überschreitenden Wert"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert\u0027 / \u0027Time Exceeding Value\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeExceedingValueHigh",
                        "terms":  {
-                                     "de":  "Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert (Hoch)",
-                                     "en":  "Time Exceeding Value High"
+                                     "en":  "Time Exceeding Value High",
+                                     "de":  "Zeit für den überschreitenden Wert (Hoch)"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den ÃƒÂ¼berschreitenden Wert (Hoch)\u0027 / \u0027Time Exceeding Value High\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "TimeUndercuttingValue",
                        "terms":  {
-                                     "de":  "Zeit fÃƒÂ¼r den unterschreitenden Wert",
-                                     "en":  "Time Undercutting Value"
+                                     "en":  "Time Undercutting Value",
+                                     "de":  "Zeit für den unterschreitenden Wert"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den unterschreitenden Wert\u0027 / \u0027Time Undercutting Value\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "Reset",
                        "terms":  {
-                                     "de":  "Neustart",
-                                     "en":  "Reset"
+                                     "en":  "Reset",
+                                     "de":  "Neustart"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -128,28 +129,28 @@
                    {
                        "name":  "AlwaysReset",
                        "terms":  {
-                                     "de":  "Always ZurÃ¼cksetzen",
-                                     "en":  "Always Reset"
+                                     "en":  "Always Reset",
+                                     "de":  "Always Zurücksetzen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Always ZurÃ¼cksetzen\u0027 / \u0027Always Reset\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Always Zurücksetzen\u0027 / \u0027Always Reset\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "TimeUndercuttingValueToEarly",
                        "terms":  {
-                                     "de":  "Zeit fÃƒÂ¼r den unterschreitenden Wert (Zu FrÃƒÂ¼h)",
-                                     "en":  "Time Undercutting Value To Early"
+                                     "en":  "Time Undercutting Value To Early",
+                                     "de":  "Zeit für den unterschreitenden Wert (Zu Früh)"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit fÃƒÂ¼r den unterschreitenden Wert (Zu FrÃƒÂ¼h)\u0027 / \u0027Time Undercutting Value To Early\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "de":  "Speicherpfad",
-                                     "en":  "Storage Path"
+                                     "en":  "Storage Path",
+                                     "de":  "Speicherpfad"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -158,8 +159,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -168,8 +169,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -180,48 +181,48 @@
                     {
                         "name":  "ValueExceeded",
                         "terms":  {
-                                      "de":  "LÃƒÂ¤uft (Wert ÃƒÂ¼berschritten)",
-                                      "en":  "Value Exceeded"
+                                      "en":  "Value Exceeded",
+                                      "de":  "Läuft (Wert überschritten)"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027LÃƒÂ¤uft (Wert ÃƒÂ¼berschritten)\u0027 / \u0027Value Exceeded\u0027. Datentyp: bool."
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgain",
                         "terms":  {
-                                      "de":  "Fertig (Wert ÃƒÂ¼berschritten und danach wieder unterschritten)",
-                                      "en":  "Value Exceeded And Undercut Again"
+                                      "en":  "Value Exceeded And Undercut Again",
+                                      "de":  "Fertig (Wert überschritten und danach wieder unterschritten)"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Fertig (Wert ÃƒÂ¼berschritten und danach wieder unterschritten)\u0027 / \u0027Value Exceeded And Undercut Again\u0027. Datentyp: bool."
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededAndUndercutAgainToEarly",
                         "terms":  {
-                                      "de":  "Fehler 1 (Wert ÃƒÂ¼berschritten und danach wieder unterschritten (zu frÃƒÂ¼h))",
-                                      "en":  "Value Exceeded And Undercut Again To Early"
+                                      "en":  "Value Exceeded And Undercut Again To Early",
+                                      "de":  "Fehler 1 (Wert überschritten und danach wieder unterschritten (zu früh))"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Fehler 1 (Wert ÃƒÂ¼berschritten und danach wieder unterschritten (zu frÃƒÂ¼h))\u0027 / \u0027Value Exceeded And Undercut Again To Early\u0027. Datentyp: bool."
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: bool."
                     },
                     {
                         "name":  "ValueExceededButNotIncreasedHigh",
                         "terms":  {
-                                      "de":  "Fehler 2 (Wert ÃƒÂ¼berschritten aber hohen ÃƒÅ“berschreitungswert nicht erreicht)",
-                                      "en":  "Value Exceeded But Not Increased High"
+                                      "en":  "Value Exceeded But Not Increased High",
+                                      "de":  "Fehler 2 (Wert überschritten aber hohen Überschreitungswert nicht erreicht)"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Fehler 2 (Wert ÃƒÂ¼berschritten aber hohen ÃƒÅ“berschreitungswert nicht erreicht)\u0027 / \u0027Value Exceeded But Not Increased High\u0027. Datentyp: bool."
+                        "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -230,8 +231,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -240,8 +241,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -281,12 +282,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

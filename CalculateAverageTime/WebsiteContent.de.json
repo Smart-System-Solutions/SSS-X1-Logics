@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "calculteaveragetime",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/calculteaveragetime/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Berechen Durchschnitt mit Zeitfilter",
@@ -16,20 +16,22 @@
               },
     "shortDescription":  "Berechnet Durchschnittswerte über definierte Zeiträume oder Intervalle und stellt geglättete Werte für weitere Logiken bereit.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität:",
-                            "Die Aktualisierungszeit (UpdateTime) und die Ausgabefrequenz (OutputTime) sind individuell einstellbar.",
-                            "Die Methode startet und stoppt durch einen Steuerwert (Activate).",
-                            "Der Durchschnittswert berücksichtigt alle"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Berücksichtigt Zeit- oder Triggerbedingungen, um unnötige Telegramme und unkontrollierte Zustandswechsel zu vermeiden.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion berechnet automatisch den Durchschnittswert eines eingehenden Zahlenwerts über eine bestimmte Zeit. Es kann individuell eingestellt werden, wie oft neue Werte einfließen sollen und in welchem Rhythmus das Ergebnis ausgegeben wird. Die Funktion startet erst, wenn sie durch einen Steuerbefehl aktiviert wird. Zusätzlich werden zur Kontrolle Log-Nachrichten ausgegeben, um bei eventuellen Fehlern oder zur Nachverfolgung Hinweise zu erhalten. ##"
+                                "Berechnet Durchschnittswerte über definierte Zeiträume oder Intervalle und stellt geglättete Werte für weitere Logiken bereit.",
+                                "Der Baustein \u0027Berechen Durchschnitt mit Zeitfilter\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -38,38 +40,38 @@
                    {
                        "name":  "Input",
                        "terms":  {
-                                     "de":  "Eingang",
-                                     "en":  "Input"
+                                     "en":  "Input",
+                                     "de":  "Eingang"
                                  },
                        "type":  "number",
                        "dataType":  "number",
-                       "description":  "Eingang für \u0027Eingang\u0027 / \u0027Input\u0027. Datentyp: number."
+                       "description":  "Eingangswert, der vom Baustein verarbeitet wird. Datentyp: number."
                    },
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "de":  "Intervallzeit Eingang",
-                                     "en":  "Update Time"
+                                     "en":  "Update Time",
+                                     "de":  "Intervallzeit Eingang"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Intervallzeit Eingang\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "OutputTime",
                        "terms":  {
-                                     "de":  "Intervallzeit Ausgang",
-                                     "en":  "Output Time"
+                                     "en":  "Output Time",
+                                     "de":  "Intervallzeit Ausgang"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Intervallzeit Ausgang\u0027 / \u0027Output Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -78,8 +80,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -90,18 +92,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: number."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: number."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -110,8 +112,8 @@
                     {
                         "name":  "LogScheduleUpdate",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Update",
-                                      "en":  "Log Schedule Update"
+                                      "en":  "Log Schedule Update",
+                                      "de":  "Zeitplanungsprotokoll Update"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -120,8 +122,8 @@
                     {
                         "name":  "LogScheduleOutput",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Ausgang",
-                                      "en":  "Log Schedule Output"
+                                      "en":  "Log Schedule Output",
+                                      "de":  "Zeitplanungsprotokoll Ausgang"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -130,8 +132,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -171,12 +173,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

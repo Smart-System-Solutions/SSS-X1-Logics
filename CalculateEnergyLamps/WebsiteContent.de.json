@@ -6,9 +6,9 @@
     "version":  "3.0.35",
     "slug":  "calculateenergylamps",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/calculateenergylamps/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Leistung von Lampen berechnen",
@@ -16,23 +16,21 @@
               },
     "shortDescription":  "Berechnet den Energieverbrauch von Beleuchtung anhand von Lampenanzahl, Leistung und Dimmwerten.",
     "specialFeatures":  [
-                            "",
-                            "Flexibilität : Die Zeitintervalle für Aktualisierung, Kurz- und Langzeitanalyse sind frei einstellbar.",
-                            "Datenpersistenz : Verbrauchsdaten werden auf einer SD-Karte gespeichert und beim Neustart automatisch wiederhergestellt.",
-                            "Automatischer Tagesreset : Die Daten können optional um Mitternacht automatisch zurückgesetzt werden.",
-                            "Fehlerbehandlung : Jede Funktion ist mit Fehlerprotokollen ausgestattet, die bei Ausfällen automatisch ausgegeben werden.",
-                            "Leistungsberechnung : Die Leistung basiert auf Anzahl, Dimmbarkeit und physikalischem Wirkfaktor – dadurch realitätsnahe Energieermittlung.",
-                            "SD-Karten-Nutzung : Für die Speicherung wird eine SD-Karte benötigt. Falls diese nicht vorhanden ist, werden Fehler ausgegeben. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Unterstützt energieoptimierte Entscheidungen auf Basis von Speicher-, Leistungs- oder Verbrauchswerten."
                         ],
     "detailedDescription":  [
-                                "Diese Logik dient der Berechnung des Stromverbrauchs mehrerer Lampen in Echtzeit. Sie misst die aktuelle Leistungsaufnahme, den Tagesverbrauch sowie den Gesamtverbrauch über definierte Zeiträume hinweg. Die Messwerte werden dabei sowohl kurzfristig (z. B. alle 10 Sekunden) als auch langfristig (z. B. jede Minute) zusammengetragen. Zusätzlich wird der Verbrauch gespeichert, sodass nach einem Neustart oder Tageswechsel keine Daten verloren gehen. Das System erkennt, ob die Lampen eingeschaltet sind, und berechnet automatisch die benötigte Energie auf Basis der Leistung einer einzelnen Lampe, des Dimmwertes und eines physikalischen Faktors (CosPhi). Eine Rücksetzung der Tageswerte erfolgt automatisch um Mitternacht, sofern aktiviert. ##"
+                                "Berechnet den Energieverbrauch von Beleuchtung anhand von Lampenanzahl, Leistung und Dimmwerten.",
+                                "Der Baustein \u0027Leistung von Lampen berechnen\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -41,8 +39,8 @@
                    {
                        "name":  "LampOn",
                        "terms":  {
-                                     "de":  "Licht Ein",
-                                     "en":  "Lamp On"
+                                     "en":  "Lamp On",
+                                     "de":  "Licht Ein"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -51,18 +49,18 @@
                    {
                        "name":  "NumberOfLamps",
                        "terms":  {
-                                     "de":  "Anzahl der Lampen",
-                                     "en":  "Number Of Lamps"
+                                     "en":  "Number Of Lamps",
+                                     "de":  "Anzahl der Lampen"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der Lampen\u0027 / \u0027Number Of Lamps\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "PowerOneLamp",
                        "terms":  {
-                                     "de":  "Leistung einer Lampe",
-                                     "en":  "Power One Lamp"
+                                     "en":  "Power One Lamp",
+                                     "de":  "Leistung einer Lampe"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -71,8 +69,8 @@
                    {
                        "name":  "DimValueAverage",
                        "terms":  {
-                                     "de":  "Durchschnittlicher Dimmwert",
-                                     "en":  "Dim Value Average"
+                                     "en":  "Dim Value Average",
+                                     "de":  "Durchschnittlicher Dimmwert"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -81,8 +79,8 @@
                    {
                        "name":  "CosPhi",
                        "terms":  {
-                                     "de":  "Cos Phi",
-                                     "en":  "Cos Phi"
+                                     "en":  "Cos Phi",
+                                     "de":  "Cos Phi"
                                  },
                        "type":  "number",
                        "dataType":  "number",
@@ -91,38 +89,38 @@
                    {
                        "name":  "UpdateTime",
                        "terms":  {
-                                     "de":  "Aktualisierungszeit",
-                                     "en":  "Update Time"
+                                     "en":  "Update Time",
+                                     "de":  "Aktualisierungszeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Aktualisierungszeit\u0027 / \u0027Update Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "ShortTime",
                        "terms":  {
-                                     "de":  "Kurze Zeit",
-                                     "en":  "Short Time"
+                                     "en":  "Short Time",
+                                     "de":  "Kurze Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Kurze Zeit\u0027 / \u0027Short Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LongTime",
                        "terms":  {
-                                     "de":  "Lange Zeit",
-                                     "en":  "Long Time"
+                                     "en":  "Long Time",
+                                     "de":  "Lange Zeit"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Lange Zeit\u0027 / \u0027Long Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "StoragePath",
                        "terms":  {
-                                     "de":  "Speicherpfad",
-                                     "en":  "Storage Path"
+                                     "en":  "Storage Path",
+                                     "de":  "Speicherpfad"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -131,8 +129,8 @@
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -141,8 +139,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -153,58 +151,58 @@
                     {
                         "name":  "PowerDayLongTime",
                         "terms":  {
-                                      "de":  "Leistung Tag - Lange Zeit",
-                                      "en":  "Power Day Long Time"
+                                      "en":  "Power Day Long Time",
+                                      "de":  "Leistung Tag - Lange Zeit"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Leistung Tag - Lange Zeit\u0027 / \u0027Power Day Long Time\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "PowerDayShortTime",
                         "terms":  {
-                                      "de":  "Leistung Tag - Kurze Zeit",
-                                      "en":  "Power Day Short Time"
+                                      "en":  "Power Day Short Time",
+                                      "de":  "Leistung Tag - Kurze Zeit"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Leistung Tag - Kurze Zeit\u0027 / \u0027Power Day Short Time\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerUpdateTime",
                         "terms":  {
-                                      "de":  "Aktuelle Leistung - Intervallzeit",
-                                      "en":  "Current Power Update Time"
+                                      "en":  "Current Power Update Time",
+                                      "de":  "Aktuelle Leistung - Intervallzeit"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Aktuelle Leistung - Intervallzeit\u0027 / \u0027Current Power Update Time\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerShortTime",
                         "terms":  {
-                                      "de":  "Aktuelle Leistung - Kurze Zeit",
-                                      "en":  "Current Power Short Time"
+                                      "en":  "Current Power Short Time",
+                                      "de":  "Aktuelle Leistung - Kurze Zeit"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Aktuelle Leistung - Kurze Zeit\u0027 / \u0027Current Power Short Time\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "CurrentPowerLongTime",
                         "terms":  {
-                                      "de":  "Aktuelle Leistung - Lange Zeit",
-                                      "en":  "Current Power Long Time"
+                                      "en":  "Current Power Long Time",
+                                      "de":  "Aktuelle Leistung - Lange Zeit"
                                   },
                         "type":  "number",
                         "dataType":  "number",
-                        "description":  "Ausgang für \u0027Aktuelle Leistung - Lange Zeit\u0027 / \u0027Current Power Long Time\u0027. Datentyp: number."
+                        "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: number."
                     },
                     {
                         "name":  "PowerTotal",
                         "terms":  {
-                                      "de":  "Gesamtleistung",
-                                      "en":  "Power Total"
+                                      "en":  "Power Total",
+                                      "de":  "Gesamtleistung"
                                   },
                         "type":  "number",
                         "dataType":  "number",
@@ -213,8 +211,8 @@
                     {
                         "name":  "PowerLastDay",
                         "terms":  {
-                                      "de":  "Leistung - Letzter Tag",
-                                      "en":  "Power Last Day"
+                                      "en":  "Power Last Day",
+                                      "de":  "Leistung - Letzter Tag"
                                   },
                         "type":  "number",
                         "dataType":  "number",
@@ -223,8 +221,8 @@
                     {
                         "name":  "PowerLast7Days",
                         "terms":  {
-                                      "de":  "Leistung - Letzte 7 Tage",
-                                      "en":  "Power Last 7 Days"
+                                      "en":  "Power Last 7 Days",
+                                      "de":  "Leistung - Letzte 7 Tage"
                                   },
                         "type":  "number",
                         "dataType":  "number",
@@ -233,8 +231,8 @@
                     {
                         "name":  "PowerLast30Days",
                         "terms":  {
-                                      "de":  "Leistung - Letzte 30 Tage",
-                                      "en":  "Power Last 30 Days"
+                                      "en":  "Power Last 30 Days",
+                                      "de":  "Leistung - Letzte 30 Tage"
                                   },
                         "type":  "number",
                         "dataType":  "number",
@@ -243,8 +241,8 @@
                     {
                         "name":  "PowerLast365Days",
                         "terms":  {
-                                      "de":  "Leistung - Letzte 365 Tage",
-                                      "en":  "Power Last 365 Days"
+                                      "en":  "Power Last 365 Days",
+                                      "de":  "Leistung - Letzte 365 Tage"
                                   },
                         "type":  "number",
                         "dataType":  "number",
@@ -253,8 +251,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -263,8 +261,8 @@
                     {
                         "name":  "LogScheduleUpdate",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Update",
-                                      "en":  "Log Schedule Update"
+                                      "en":  "Log Schedule Update",
+                                      "de":  "Zeitplanungsprotokoll Update"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -273,8 +271,8 @@
                     {
                         "name":  "LogScheduleShort",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Short",
-                                      "en":  "Log Schedule Short"
+                                      "en":  "Log Schedule Short",
+                                      "de":  "Zeitplanungsprotokoll Short"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -283,8 +281,8 @@
                     {
                         "name":  "LogScheduleLong",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll Long",
-                                      "en":  "Log Schedule Long"
+                                      "en":  "Log Schedule Long",
+                                      "de":  "Zeitplanungsprotokoll Long"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -293,8 +291,8 @@
                     {
                         "name":  "LogScheduleReset",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll ZurÃ¼cksetzen",
-                                      "en":  "Log Schedule Reset"
+                                      "en":  "Log Schedule Reset",
+                                      "de":  "Zeitplanungsprotokoll Zurücksetzen"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -303,8 +301,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -344,12 +342,34 @@
     "changelog":  [
                       {
                           "version":  "3.0.35",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.35 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.32",
+                          "date":  "2025-05-22",
+                          "changes":  [
+                                          "Berechnung von PowerTotal korrigiert.",
+                                          "Protokollausgaben verbessert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.31",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.31 ?bernommen.",
+                                          "Zus?tzliche Ausg?nge f?r Leistungswerte des letzten Tages, der letzten 7 Tage, der letzten 30 Tage und der letzten 365 Tage erg?nzt.",
+                                          "Der nicht mehr ben?tigte Eingang ResetAtMidnight wurde entfernt."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]

@@ -8,7 +8,7 @@
     "source":  {
                    "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/nightmode/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Nachtmodus",
@@ -29,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -39,8 +39,8 @@
                    {
                        "name":  "NightModeActive",
                        "terms":  {
-                                     "de":  "Nachtmodus Aktiv",
-                                     "en":  "Night Mode Active"
+                                     "en":  "Night Mode Active",
+                                     "de":  "Nachtmodus Aktiv"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -49,28 +49,28 @@
                    {
                        "name":  "SkipFirstNightModeTrigger",
                        "terms":  {
-                                     "de":  "Ersten Nachtmodus-Trigger ÃƒÂ¼berspringen",
-                                     "en":  "Skip First Night Mode Trigger"
+                                     "en":  "Skip First Night Mode Trigger",
+                                     "de":  "Ersten Nachtmodus-Trigger überspringen"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Ersten Nachtmodus-Trigger ÃƒÂ¼berspringen\u0027 / \u0027Skip First Night Mode Trigger\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Ersten Nachtmodus-Trigger überspringen\u0027 / \u0027Skip First Night Mode Trigger\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "NumberOfBlinds",
                        "terms":  {
-                                     "de":  "Anzahl RolllÃƒÂ¤den",
-                                     "en":  "Number Of Blinds"
+                                     "en":  "Number Of Blinds",
+                                     "de":  "Anzahl Rollläden"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl RolllÃƒÂ¤den\u0027 / \u0027Number Of Blinds\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "DeactivateBlindsOn",
                        "terms":  {
-                                     "de":  "Deactivate Blinds On",
-                                     "en":  "Deactivate Blinds On"
+                                     "en":  "Deactivate Blinds On",
+                                     "de":  "Deactivate Blinds On"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -79,8 +79,8 @@
                    {
                        "name":  "DeactivateBlindsOff",
                        "terms":  {
-                                     "de":  "Deactivate Blinds Off",
-                                     "en":  "Deactivate Blinds Off"
+                                     "en":  "Deactivate Blinds Off",
+                                     "de":  "Deactivate Blinds Off"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -89,48 +89,48 @@
                    {
                        "name":  "BlindsOnStartTime",
                        "terms":  {
-                                     "de":  "Startzeit Rollladen schlieÃƒÅ¸en",
-                                     "en":  "Blinds On Start Time"
+                                     "en":  "Blinds On Start Time",
+                                     "de":  "Startzeit Rollladen schließen"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Startzeit Rollladen schlieÃƒÅ¸en\u0027 / \u0027Blinds On Start Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOnEndTime",
                        "terms":  {
-                                     "de":  "Endzeit Rollladen schlieÃƒÅ¸en",
-                                     "en":  "Blinds On End Time"
+                                     "en":  "Blinds On End Time",
+                                     "de":  "Endzeit Rollladen schließen"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Endzeit Rollladen schlieÃƒÅ¸en\u0027 / \u0027Blinds On End Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOffStartTime",
                        "terms":  {
-                                     "de":  "Startzeit Rollladen ÃƒÂ¶ffnen",
-                                     "en":  "Blinds Off Start Time"
+                                     "en":  "Blinds Off Start Time",
+                                     "de":  "Startzeit Rollladen öffnen"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Startzeit Rollladen ÃƒÂ¶ffnen\u0027 / \u0027Blinds Off Start Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "BlindsOffEndTime",
                        "terms":  {
-                                     "de":  "Endzeit Rollladen ÃƒÂ¶ffnen",
-                                     "en":  "Blinds Off End Time"
+                                     "en":  "Blinds Off End Time",
+                                     "de":  "Endzeit Rollladen öffnen"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Endzeit Rollladen ÃƒÂ¶ffnen\u0027 / \u0027Blinds Off End Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -139,8 +139,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -151,8 +151,8 @@
                     {
                         "name":  "Blinds",
                         "terms":  {
-                                      "de":  "Blinds",
-                                      "en":  "Blinds"
+                                      "en":  "Blinds",
+                                      "de":  "Blinds"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -161,8 +161,8 @@
                     {
                         "name":  "NightModeOnSetTrue",
                         "terms":  {
-                                      "de":  "Nachtmodus Ein setzt TRUE",
-                                      "en":  "Night Mode On Set True"
+                                      "en":  "Night Mode On Set True",
+                                      "de":  "Nachtmodus Ein setzt TRUE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -171,8 +171,8 @@
                     {
                         "name":  "NightModeOnSetFalse",
                         "terms":  {
-                                      "de":  "Nachtmodus Ein setzt FALSE",
-                                      "en":  "Night Mode On Set False"
+                                      "en":  "Night Mode On Set False",
+                                      "de":  "Nachtmodus Ein setzt FALSE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -181,8 +181,8 @@
                     {
                         "name":  "NightModeOffSetTrue",
                         "terms":  {
-                                      "de":  "Nachtmodus Aus setzt TRUE",
-                                      "en":  "Night Mode Off Set True"
+                                      "en":  "Night Mode Off Set True",
+                                      "de":  "Nachtmodus Aus setzt TRUE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -191,8 +191,8 @@
                     {
                         "name":  "NightModeOffSetFalse",
                         "terms":  {
-                                      "de":  "Nachtmodus Aus setzt FALSE",
-                                      "en":  "Night Mode Off Set False"
+                                      "en":  "Night Mode Off Set False",
+                                      "de":  "Nachtmodus Aus setzt FALSE"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
@@ -201,8 +201,8 @@
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -211,8 +211,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -252,12 +252,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

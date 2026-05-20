@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "decision2values",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/decision2values/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Entscheidung - 2 Werte",
@@ -16,10 +16,9 @@
               },
     "shortDescription":  "Wählt anhand konfigurierter Bedingungen einen von mehreren Eingangswerten aus und gibt den passenden Wert weiter.",
     "specialFeatures":  [
-                            "Flexible Wertewahl: Die Methode ermöglicht es, zwischen zwei möglichen Eingabewerten (Value1 und Value2) zu wählen. Dieser Wert wird dann in den Ausgang Output übertragen.",
-                            "Steuerbarkeit über Aktivierung: Die Funktion wird nur ausgeführt, wenn der Activate -Eingang auf „True“ gesetzt ist. Ohne diese Aktivierung erfolgt keine weitere Verarbeitung.",
-                            "Optimierte Ausgabeaktualisierung: Der Ausgangswert Output wird nur aktualisiert, wenn sich der ausgewählte Wert ändert, was unnötige Aktualisierungen verhindert.",
-                            "Protokollierung: Die Methode speichert und zeigt eventuelle Fehler durch die Variable LogExecute an. ###"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
                                 "Wählt anhand konfigurierter Bedingungen einen von mehreren Eingangswerten aus und gibt den passenden Wert weiter.",
@@ -30,8 +29,8 @@
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -40,8 +39,8 @@
                    {
                        "name":  "TakeFirstValue",
                        "terms":  {
-                                     "de":  "Nimm Wert 1",
-                                     "en":  "Take First Value"
+                                     "en":  "Take First Value",
+                                     "de":  "Nimm Wert 1"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -50,40 +49,40 @@
                    {
                        "name":  "Value1",
                        "terms":  {
-                                     "de":  "Wert 1",
-                                     "en":  "Value 1"
+                                     "en":  "Value 1",
+                                     "de":  "Wert 1"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 1\u0027 / \u0027Value 1\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    },
                    {
                        "name":  "Value2",
                        "terms":  {
-                                     "de":  "Wert 2",
-                                     "en":  "Value 2"
+                                     "en":  "Value 2",
+                                     "de":  "Wert 2"
                                  },
                        "type":  "any",
                        "dataType":  "any",
-                       "description":  "Eingang für \u0027Wert 2\u0027 / \u0027Value 2\u0027. Datentyp: any."
+                       "description":  "Wertausgabe oder Schwellwert für die jeweilige Bausteinlogik. Datentyp: any."
                    }
                ],
     "outputs":  [
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "any",
                         "dataType":  "any",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: any."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: any."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -119,12 +118,11 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
                                       ]
                       }
                   ]

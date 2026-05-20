@@ -6,9 +6,9 @@
     "version":  "3.0.17",
     "slug":  "sequencebool",
     "source":  {
-                   "status":  "website-adapted",
+                   "status":  "generated",
                    "websiteUrl":  "https://smart-system-solutions.de/sequencebool/",
-                   "reviewedAt":  "2026-05-16"
+                   "reviewedAt":  "2026-05-20"
                },
     "title":  {
                   "de":  "Reihenfolgenschalter",
@@ -16,18 +16,21 @@
               },
     "shortDescription":  "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
     "specialFeatures":  [
-                            "Funktionale Flexibilität :",
-                            "Die Anzahl der zu überwachenden"
+                            "Klare Trennung von Eingangssignalen, Ausgangswerten und Diagnoseausgaben.",
+                            "Geeignet für wiederverwendbare Gira-X1-Logikbausteine im Smart-Home- und Gebäudeautomationsumfeld.",
+                            "Reduziert komplexe Wertelogik auf einen klar nutzbaren Ausgangswert."
                         ],
     "detailedDescription":  [
-                                "Diese Funktion überwacht eine festgelegte Abfolge von digitalen Signalen (z. B. Schalter oder Taster) und erkennt, ob diese in der korrekten Reihenfolge aktiviert werden. Wird die vollständige Abfolge korrekt eingehalten, wird ein Ausgabesignal auf „Ein“ gesetzt. Es besteht außerdem die Möglichkeit, die Abfolge bei einem Fehler automatisch zurückzusetzen oder eine zeitgesteuerte Rücksetzung zu aktivieren. Diese Logik ist besonders geeignet für Szenarien, in denen eine bestimmte Reihenfolge zur Aktivierung notwendig ist – etwa bei Sicherheitsfreigaben oder Zugangskontrollen. ##"
+                                "Verarbeitet Werte, wandelt sie um oder wählt relevante Werte für nachgelagerte Automatisierungslogik aus.",
+                                "Der Baustein \u0027Reihenfolgenschalter\u0027 wird über seine Eingänge parametriert und liefert die berechneten oder ermittelten Ergebnisse über definierte Ausgänge zurück. Diagnoseausgänge helfen dabei, Ausführung, Zeitplanung und Lizenzstatus nachvollziehbar zu prüfen.",
+                                "Die Dokumentation in diesem Git-Content ist so strukturiert, dass die Website Kurzbeschreibung, Besonderheiten, Detailtext, Eingänge, Ausgänge, Beispiele, FAQ und Changelog direkt aus dem Repository lesen kann."
                             ],
     "inputs":  [
                    {
                        "name":  "Activate",
                        "terms":  {
-                                     "de":  "Aktiviere",
-                                     "en":  "Activate"
+                                     "en":  "Activate",
+                                     "de":  "Aktiviere"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -36,18 +39,18 @@
                    {
                        "name":  "ActivateResetWithTime",
                        "terms":  {
-                                     "de":  "Aktiviere Neustart nach Zeit",
-                                     "en":  "Activate Reset With Time"
+                                     "en":  "Activate Reset With Time",
+                                     "de":  "Aktiviere Neustart nach Zeit"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027Aktiviere Neustart nach Zeit\u0027 / \u0027Activate Reset With Time\u0027. Datentyp: bool."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: bool."
                    },
                    {
                        "name":  "OnlyActOnTrue",
                        "terms":  {
-                                     "de":  "Reagiere nur auf TRUE",
-                                     "en":  "Only Act On True"
+                                     "en":  "Only Act On True",
+                                     "de":  "Reagiere nur auf TRUE"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -56,8 +59,8 @@
                    {
                        "name":  "ResetIfWrongSequence",
                        "terms":  {
-                                     "de":  "Neustart bei falscher Reihenfolge",
-                                     "en":  "Reset If Wrong Sequence"
+                                     "en":  "Reset If Wrong Sequence",
+                                     "de":  "Neustart bei falscher Reihenfolge"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -66,8 +69,8 @@
                    {
                        "name":  "SetFalseToOutputIfReset",
                        "terms":  {
-                                     "de":  "Setze Ausgang auf False wenn neu gestartet wurde",
-                                     "en":  "Set False To Output If Reset"
+                                     "en":  "Set False To Output If Reset",
+                                     "de":  "Setze Ausgang auf False wenn neu gestartet wurde"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -76,28 +79,28 @@
                    {
                        "name":  "NumberOfInputs",
                        "terms":  {
-                                     "de":  "Anzahl der EingÃƒÂ¤nge",
-                                     "en":  "Number Of Inputs"
+                                     "en":  "Number Of Inputs",
+                                     "de":  "Anzahl der Eingänge"
                                  },
                        "type":  "int",
                        "dataType":  "int",
-                       "description":  "Eingang für \u0027Anzahl der EingÃƒÂ¤nge\u0027 / \u0027Number Of Inputs\u0027. Datentyp: int."
+                       "description":  "Anzahl der zu berücksichtigenden konfigurierbaren Werte. Datentyp: int."
                    },
                    {
                        "name":  "Inputs",
                        "terms":  {
-                                     "de":  "EingÃƒÂ¤nge",
-                                     "en":  "Inputs"
+                                     "en":  "Inputs",
+                                     "de":  "Eingänge"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
-                       "description":  "Eingang für \u0027EingÃƒÂ¤nge\u0027 / \u0027Inputs\u0027. Datentyp: bool."
+                       "description":  "Eingang für \u0027Eingänge\u0027 / \u0027Inputs\u0027. Datentyp: bool."
                    },
                    {
                        "name":  "Reset",
                        "terms":  {
-                                     "de":  "Neustart",
-                                     "en":  "Reset"
+                                     "en":  "Reset",
+                                     "de":  "Neustart"
                                  },
                        "type":  "bool",
                        "dataType":  "bool",
@@ -106,18 +109,18 @@
                    {
                        "name":  "ResetTime",
                        "terms":  {
-                                     "de":  "Zeit bis zum Neustart",
-                                     "en":  "Reset Time"
+                                     "en":  "Reset Time",
+                                     "de":  "Zeit bis zum Neustart"
                                  },
                        "type":  "timespan",
                        "dataType":  "timespan",
-                       "description":  "Eingang für \u0027Zeit bis zum Neustart\u0027 / \u0027Reset Time\u0027. Datentyp: timespan."
+                       "description":  "Zeitwert oder Zeitpunkt für die zeitabhängige Verarbeitung. Datentyp: timespan."
                    },
                    {
                        "name":  "LicenseKey01",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 1",
-                                     "en":  "License Key 01"
+                                     "en":  "License Key 01",
+                                     "de":  "Lizenzschlüssel 1"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -126,8 +129,8 @@
                    {
                        "name":  "LicenseKey02",
                        "terms":  {
-                                     "de":  "LizenzschlÃƒÂ¼ssel 2",
-                                     "en":  "License Key 02"
+                                     "en":  "License Key 02",
+                                     "de":  "Lizenzschlüssel 2"
                                  },
                        "type":  "string",
                        "dataType":  "string",
@@ -138,18 +141,18 @@
                     {
                         "name":  "Output",
                         "terms":  {
-                                      "de":  "Ausgang",
-                                      "en":  "Output"
+                                      "en":  "Output",
+                                      "de":  "Ausgang"
                                   },
                         "type":  "bool",
                         "dataType":  "bool",
-                        "description":  "Ausgang für \u0027Ausgang\u0027 / \u0027Output\u0027. Datentyp: bool."
+                        "description":  "Verarbeiteter Ausgangswert des Bausteins. Datentyp: bool."
                     },
                     {
                         "name":  "LogExecute",
                         "terms":  {
-                                      "de":  "AusfÃ¼hrungsprotokoll",
-                                      "en":  "Log Execute"
+                                      "en":  "Log Execute",
+                                      "de":  "Ausführungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -158,8 +161,8 @@
                     {
                         "name":  "LogSchedule",
                         "terms":  {
-                                      "de":  "Zeitplanungsprotokoll",
-                                      "en":  "Log Schedule"
+                                      "en":  "Log Schedule",
+                                      "de":  "Zeitplanungsprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -168,8 +171,8 @@
                     {
                         "name":  "LogLicense",
                         "terms":  {
-                                      "de":  "Lizenzprotokoll",
-                                      "en":  "Log License"
+                                      "en":  "Log License",
+                                      "de":  "Lizenzprotokoll"
                                   },
                         "type":  "string",
                         "dataType":  "string",
@@ -209,12 +212,24 @@
     "changelog":  [
                       {
                           "version":  "3.0.17",
-                          "date":  "2026-05-18",
+                          "date":  "2026-05-20",
                           "changes":  [
                                           "Bausteinpaket in Version 3.0.17 bereitgestellt.",
-                                          "Bausteinpaket für den Import in den Gira X1 aktualisiert.",
-                                          "Website-Dokumentation und Download-Informationen für dieses Bausteinpaket aktualisiert.",
-                                          "Keine Änderung an Eingangs-/Ausgangsnamen, Datentypen oder Baustein-Identität."
+                                          "Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.",
+                                          "Download-Informationen für dieses Bausteinpaket aktualisiert."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.15",
+                          "date":  "2025-05-06",
+                          "changes":  [
+                                          "Fehlerkorrekturen und Verbesserungen aus der ver?ffentlichten Version 3.0.15 ?bernommen."
+                                      ]
+                      },
+                      {
+                          "version":  "3.0.10",
+                          "changes":  [
+                                          "Erstver?ffentlichung des Bausteinpakets."
                                       ]
                       }
                   ]
