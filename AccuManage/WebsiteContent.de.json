@@ -231,13 +231,36 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Akku Management\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Akkubasierte Steuerung: Der Ausgang wird aktiviert, wenn der Akkustand mindestens 99 % erreicht, und deaktiviert, wenn er unter 98 % fällt.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "ActivateOutputWithAccu : true",
+                                       "AccuActual : 99.0",
+                                       "Condition : true",
+                                       "StartAccuValue : 99",
+                                       "EndAccuValue : 98",
+                                       "Ausgabe: Output : true (aktiviert)",
+                                       "RestOutputTime : \"Output On - Accu\""
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Kombination aus Akku- und Temperatursteuerung mit Zeitsteuerung: Der Ausgang wird nur aktiviert, wenn der Akkustand mindestens 99 % beträgt und die Temperatur unter 24 °C liegt. Wenn die Bedingung nicht mehr erfüllt ist oder die Zeit abgelaufen ist, dann geht der Ausgang aus.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "ActivateOutputWithAccu : true",
+                                       "ActivateOutputWithTime : true",
+                                       "AccuActual : 99.0",
+                                       "Condition: true",
+                                       "ConditionTemperature : true",
+                                       "StartAccuValue : 99",
+                                       "EndAccuValue : 98",
+                                       "Temperature : 20",
+                                       "EndTemperature : 24",
+                                       "TimeTriggerOutput : 00:30:00",
+                                       "Ausgabe: Output : true (aktiviert)",
+                                       "RestOutputTime : 00:29:59"
                                    ]
                      }
                  ],

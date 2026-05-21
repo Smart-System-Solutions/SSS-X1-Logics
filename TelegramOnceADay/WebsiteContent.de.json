@@ -111,13 +111,13 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Nutzung zur Erinnerung an Gartenbewässerung: Eine automatische Erinnerung zur Bewässerung soll einmal täglich übermittelt werden, wenn ein Sensor Trockenheit meldet.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Activate : true",
+                                       "Input: true",
+                                       "Reset: false",
+                                       "Ausgabe: Output : true wird genau 1x am Tag gesendet"
                                    ]
                      }
                  ],

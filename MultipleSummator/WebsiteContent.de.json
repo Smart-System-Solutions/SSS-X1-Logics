@@ -151,13 +151,29 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Mehrfachsummierer\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Energieverbrauch aus mehreren Geräten: Die Berechnung erfolgt nur dann , wenn sich ein Eingang ändert oder „Activate“ aktiv gesetzt wird. Auch hier gilt: Fehlende Eingabewerte verhindern die Berechnung nicht , aber sie muss extern ausgelöst werden .",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "ActivateTimeFiler: false",
+                                       "NumberOfInputs: 4",
+                                       "Inputs: 150, 200, leer, 90",
+                                       "Time : –",
+                                       "Type : int",
+                                       "Ausgabe: Sum : 440 n - Accu\""
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Energieverbrauch aus mehreren Geräten – mit Zeitfilter: In einem Smart-Home-System werden mehrere Geräte überwacht. Die jeweiligen Verbrauchswerte (in Watt) werden alle 10 Sekunden automatisch aufsummiert. Dabei kann es sein, dass einige Geräte ihren aktuellen Wert noch nicht geliefert haben – die Berechnung erfolgt trotzdem mit den verfügbaren Daten. Sobald fehlende Werte eintreffen, wird die Summe automatisch aktualisiert. Diese Variante hebt sich vom manuell ausgelösten Modus dadurch ab, dass kein Trigger von außen nötig ist – die Berechnung läuft kontinuierlich im Hintergrund.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "ActivateTimeFiler: true",
+                                       "NumberOfInputs: 5",
+                                       "Inputs: 150, 200, leer, 90, 60",
+                                       "Time : 10s",
+                                       "Type : int",
+                                       "Ausgabe: Sum : 500 Die Summe wurde aus den aktuell verfügbaren Werten berechnet, obwohl Gerät 3 noch keinen Wert gesendet hat. Sobald dieser nachgereicht wird, passt sich die Summe automatisch an."
                                    ]
                      }
                  ],

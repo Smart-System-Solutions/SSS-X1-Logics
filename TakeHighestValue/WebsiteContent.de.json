@@ -91,13 +91,30 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Höchster Wert\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Diese Konfiguration sucht den höchsten Wert aus einer Gruppe von 5 Ganzzahlen.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "NumberOfInputs : 5",
+                                       "Inputs : [10, 50, 30, 70, 20]",
+                                       "Type : int",
+                                       "Ausgabe:",
+                                       "Output : 70",
+                                       "LogExecute : Protokolliert den Ablauf und zeigt Set value: 70 ."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Ein Testlauf, bei dem ein Wert in der Eingabe fehlt.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "Activate : true",
+                                       "NumberOfInputs : 4",
+                                       "Inputs : [10, null, 30, 40]",
+                                       "Type : int",
+                                       "Ausgabe:",
+                                       "Output : Kein Ergebnis, da ein Wert fehlt.",
+                                       "LogExecute : Protokolliert die Fehlermeldung: 1 has no value ."
                                    ]
                      }
                  ],

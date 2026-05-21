@@ -490,13 +490,116 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Freigabe Jalousie-Nachführung\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Startbedingung mit 2 Abhängigkeiten (Sommer) – Temperatur, Azimut und Helligkeit: Szenario: Im Sommermodus soll die Jalousie herunterfahren, wenn mindestens eine der zwei definierten Abhängigkeiten für Temperatur, Helligkeit und Azimut erfüllt ist. Voraussetzungen: Der Sommermodus ist aktiv ( Summer = true ). Die Automatiksteuerung ist aktiv ( BlindTrackingAutomatic = true ). Die Temperatur ist hoch genug, um eine Beschattung zu erfordern. Die Sonne steht in einem geeigneten Winkel ( Azimut ). Die Helligkeit ist ausreichend hoch.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe:",
+                                       "Activate : true",
+                                       "BlindTrackingAutomatic: true",
+                                       "Summer: true",
+                                       "Day: true",
+                                       "TemperatureOutside: 28.5",
+                                       "StartTemperatureOutsideThresholdDependence[0]: 27.0",
+                                       "StartTemperatureOutsideThresholdDependence[1]: 30.0",
+                                       "BrightnessOutside: 6000",
+                                       "StartBrightnessOutsideDependence[0]: 5000",
+                                       "StartBrightnessOutsideDependence[1]: 7000",
+                                       "Azimut: 150",
+                                       "StartAzimutThresholdDependence[0]: 140",
+                                       "StartAzimutThresholdDependence[1]: 160",
+                                       "Ausgabe:",
+                                       "Output : true (Die Jalousie fährt runter)",
+                                       "ReleaseStartedThisDay: true (Die Beschattung wurde an diesem Tag gestartet.)",
+                                       "Erklärung:",
+                                       "Die Temperatur liegt über der ersten Schwelle ( 28.5°C \u003e 27.0°C ).",
+                                       "Die Helligkeit liegt über der ersten Schwelle ( 6000 Lux \u003e 5000 Lux ).",
+                                       "Der Azimut liegt über der ersten Schwelle ( 150° \u003e 140° ).",
+                                       "Mindestens eine der Abhängigkeiten ist erfüllt, daher fährt die Jalousie herunter."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Startbedingung mit Always (Winter) – Temperatur, Azimut und Helligkeit: Szenario: Im Wintermodus (kein Sommer) soll die Jalousie fahren, wenn eine feste Always-Bedingung erfüllt ist. Voraussetzungen: Der Sommermodus ist nicht aktiv ( Summer = false ). Die Temperatur ist hoch genug für eine Beschattung. Die Sonne steht in einem geeigneten Winkel ( Azimut ). Die Helligkeit ist hoch genug.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "Activate : true",
+                                       "BlindTrackingAutomatic: true",
+                                       "Summer: false",
+                                       "Day: true",
+                                       "TemperatureOutside : 22.0",
+                                       "TemperatureOutsideThresholdAlways: 20.0",
+                                       "BrightnessOutside: 4500",
+                                       "StartBrightnessThresholdAlways: 4000",
+                                       "Azimut: 180",
+                                       "StartAzimutAlways: 170",
+                                       "Ausgabe:",
+                                       "Output : true (Die Jalousie fährt herunter.)",
+                                       "ReleaseStartedThisDay: true (Die Beschattung wurde an diesem Tag gestartet.)",
+                                       "Erklärung:",
+                                       "Temperatur liegt über der Always-Schwelle ( 22.0°C \u003e 20.0°C ).",
+                                       "Helligkeit liegt über der Always-Schwelle ( 4500 Lux \u003e 4000 Lux ).",
+                                       "Azimut liegt über der Always-Schwelle ( 180° \u003e 170° ).",
+                                       "Alle Always-Bedingungen sind erfüllt, daher fährt die Jalousie herunter."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 3",
+                         "description":  "Beispiel 3 – Endbedingung (Sommer): Szenario: Die Jalousie soll wieder hochfahren, wenn die Endbedingungen für Temperatur und Azimut erfüllt sind.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "EndAzimutThresholdDependence[0]: 200",
+                                       "Azimut: 205",
+                                       "TemperatureOutside: 24",
+                                       "EndTemperatureOutsideThresholdDependence[0]: 25",
+                                       "Ausgabe:",
+                                       "Output : false (Die Jalousie fährt hoch.)",
+                                       "Erklärung:",
+                                       "Der Azimut überschreitet die End-Schwelle ( 205° \u003e 200° ).",
+                                       "Die Temperatur ist niedriger als die End-Schwelle ( 24.0°C \u003c 25.0°C ).",
+                                       "Beide Bedingungen sind erfüllt, daher fährt die Jalousie hoch."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 4",
+                         "description":  "Beispiel 4 – Endbedingung mit Always: Szenario: Jalousie soll immer hochfahren, wenn eine Always-Endbedingung erfüllt ist.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "TemperatureOutside: 18.0",
+                                       "TemperatureOutsideThresholdAlways: 20.0",
+                                       "BrightnessOutside: 3000",
+                                       "EndBrightnessThresholdAlways: 4000",
+                                       "Ausgabe:",
+                                       "Output : false (Die Jalousie fährt hoch.)",
+                                       "Erklärung:",
+                                       "Temperatur ist unter der Always-Schwelle ( 18.0°C \u003c 20.0°C ).",
+                                       "Helligkeit ist unter der Always-Schwelle ( 3000 Lux \u003c 4000 Lux ).",
+                                       "Jalousie fährt hoch, da Always-Bedingung erfüllt ist."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 5",
+                         "description":  "Beispiel 5 – Holiday (Urlaubsmodus): Szenario: Die Jalousie soll sich automatisch zu festgelegten Zeiten bewegen, wenn Holiday aktiv ist.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "Activate : true",
+                                       "Holiday: true",
+                                       "HolidayBlindUp: 07:00",
+                                       "HolidayBlindDown: 22:00",
+                                       "Ausgabe:",
+                                       "OutputBlindHoliday : false (Um 07:00Uhr) (Jalousie fährt hoch)",
+                                       "OutputBlindHoliday : true (Um 22:00Uhr) (Jalousie fährt runter)"
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 6",
+                         "description":  "Beispiel 6 – Storm (Sturm-Modus): Szenario: Jalousie fährt sofort hoch, wenn ein Sturm erkannt wird.",
+                         "steps":  [
+                                       "Eingabe:",
+                                       "Storm : true",
+                                       "Ausgabe:",
+                                       "OutputBlindStorm : false (Die Jalousie fährt hoch.)",
+                                       "Erklärung:",
+                                       "Der Sturmmodus setzt alle anderen Steuerungen außer Kraft."
                                    ]
                      }
                  ],

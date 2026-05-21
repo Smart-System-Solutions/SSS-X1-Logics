@@ -311,13 +311,27 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Die Leistungsaufnahme einer Leuchtengruppe wird anhand von Dimmwert und Lampenleistung für Tages- oder Gesamtwerte berechnet.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Stromverbrauch von 10 LED-Leuchten im Wohnzimmer messen: Im Wohnzimmer sind 10 LED-Lampen installiert, die mit 60 % gedimmt sind. Es soll überwacht werden, wie viel Strom täglich verbraucht wird.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true → Die Berechnung des Energieverbrauchs ist aktiv.",
+                                       "LampOn : true → Die Lampen sind eingeschaltet.",
+                                       "ResetAtMidnight : true → Tageswerte werden automatisch um Mitternacht zurückgesetzt.",
+                                       "NumberOfLamps : 10 → Es werden 10 Lampen berücksichtigt.",
+                                       "PowerOneLamp : 6 Watt → Jede Lampe hat eine Leistungsaufnahme von 6 Watt bei voller Helligkeit.",
+                                       "DimValueAverage : 60 → Die durchschnittliche Helligkeit beträgt 60 %.",
+                                       "CosPhi : 0.9 → Der Leistungsfaktor beträgt 0,9.",
+                                       "UpdateTime : 2 Sekunden → Alle 2 Sekunden wird die aktuelle Leistung ermittelt.",
+                                       "ShortTime : 10 Sekunden → Durchschnittswerte werden alle 10 Sekunden gebildet.",
+                                       "LongTime : 60 Sekunden → Durchschnittswerte und Tagesverbrauch werden alle 60 Sekunden zusammengefasst.",
+                                       "StoragePath : „Wohnzimmer_Lampen“ → Alle Messwerte werden im entsprechenden Ordner auf der SD-Karte gespeichert.",
+                                       "Ausgabe: CurrentPowerUpdateTime : → Gibt die aktuelle Leistung an, z. B. 32.4 Watt bei 60 % Dimmung.",
+                                       "CurrentPowerShortTime : → Durchschnitt über die letzten 10 Sekunden, z. B. 32.4 Watt .",
+                                       "CurrentPowerLongTime : → Durchschnitt über die letzten 60 Sekunden, z. B. 32.4 Watt .",
+                                       "PowerDayShortTime : → Tagesverbrauch basierend auf dem 10-Sekunden-Intervall, z. B. 0.12 kWh .",
+                                       "PowerDayLongTime : → Tagesverbrauch basierend auf dem 60-Sekunden-Intervall, z. B. 0.13 kWh – ideal für langfristige Auswertungen.",
+                                       "PowerTotal : → Zeigt den gesamten Verbrauch seit Start bzw. letztem Reset an, z. B. 1.25 kWh nach mehreren Tagen Nutzung.",
+                                       "LogScheduleLong : → Enthält Informationen zur letzten langfristigen Berechnung, inklusive möglicher Fehler."
                                    ]
                      }
                  ],

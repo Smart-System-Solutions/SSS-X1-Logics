@@ -142,13 +142,25 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Berechen Durchschnitt mit Zeitfilter\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Temperaturüberwachung in einem Wohnraum: In einem Wohnzimmer wird regelmäßig die Temperatur gemessen. Die Durchschnittstemperatur der letzten 5 Minuten soll alle 30 Sekunden ausgegeben werden, um Temperaturschwankungen zu glätten.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input: 21.4, 21,6, 21.5, ,...",
+                                       "UpdateTime: 10s",
+                                       "OutputTime: 30s",
+                                       "Ausgabe: Output: Durchschnitt der letzten 3 Messungen, z. B. 21.5 °C"
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 1 – Stromverbrauchsauswertung in einem Büro: Der Stromverbrauch eines Druckers wird sekundengenau erfasst. Alle 60 Sekunden soll der Durchschnitt ausgegeben werden.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "Input: 80.0, 85.0, 90.0,...",
+                                       "UpdateTime: 5s",
+                                       "OutputTime: 1min",
+                                       "Ausgabe: Output: Durchschnittlicher Stromverbrauch der letzten 60 Sekunden"
                                    ]
                      }
                  ],

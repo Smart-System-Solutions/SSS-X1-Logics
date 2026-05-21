@@ -120,13 +120,23 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Info\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Die Klasse wird verwendet, um in regelmäßigen Abständen den Status der Verbindung zu überprüfen.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate = true",
+                                       "Delay = 30s",
+                                       "Ausgabe:",
+                                       "Die Ausgänge LastRestartX1 und LastTelegramX1 zeigen die letzten Ereigniszeiten an. Protokolle werden in LogExecute und LogSchedule gespeichert."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Das Intervall wird auf ein benutzerdefiniertes Minimum von 10 Sekunden eingestellt, um die letzten Ereignisse genauer zu verfolgen.",
+                         "steps":  [
+                                       "Eingabe: Activate = true",
+                                       "Delay = 10s",
+                                       "Ausgabe:",
+                                       "Die Ausgänge zeigen die aktualisierten Zeiten für den Neustart und die Telegrammübertragung an. Protokolleinträge dokumentieren alle Änderungen."
                                    ]
                      }
                  ],

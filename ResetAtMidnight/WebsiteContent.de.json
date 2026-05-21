@@ -162,13 +162,17 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Täglicher Zähler-Reset: Ein Energiezähler soll vor Mitternacht zurückgesetzt werden.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input : true",
+                                       "LastCycleTimeBeforeMidnight: true",
+                                       "CycleTime: 10s",
+                                       "InputHaveToBeFalse: false",
+                                       "InputHaveToBeTrue: false",
+                                       "SetFalseAfterSetTrue: true",
+                                       "Ausgabe: Output : Ein Zyklus vor Mitternacht wird der Ausgang true und im Zyklus danach wieder false."
                                    ]
                      }
                  ],

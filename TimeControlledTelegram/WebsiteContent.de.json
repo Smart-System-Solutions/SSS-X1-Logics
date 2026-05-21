@@ -131,13 +131,14 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Temperaturmeldung alle 30 Sekunden, nur bei Änderung: Eine Temperatur wird alle 30 Sekunden an das zentrale System gesendet – jedoch nur, wenn sie sich verändert hat.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Activate : true",
+                                       "OnlyWriteChangedValue : true",
+                                       "Input : 22.5",
+                                       "Delay : 30s",
+                                       "Ausgabe: Output = 22,5°C (nur, wenn sich der Wert geändert hat)"
                                    ]
                      }
                  ],

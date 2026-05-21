@@ -161,13 +161,32 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Licht nach 10 Minuten Inaktivität automatisch ausschalten: In einem Besprechungsraum wird das Licht manuell eingeschaltet (z. B. über einen Taster oder durch die Gebäudeleittechnik). Ein Bewegungsmelder erkennt die Anwesenheit von Personen – aber schaltet das Licht nicht selbstständig ein . Stattdessen soll er nur dafür sorgen, dass das Licht 10 Minuten nach der letzten Bewegung automatisch ausgeschaltet wird , um Energie zu sparen.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input : false",
+                                       "→ Der Bewegungsmelder erkennt aktuell keine Bewegung mehr. Das System bereitet sich auf das Ausschalten vor.",
+                                       "Delay : 10min",
+                                       "UpdateTime: 30s",
+                                       "Ausgabe: Output : false → Das Ausschalten ist geplant , aber noch nicht ausgeführt. Das Licht bleibt an.",
+                                       "OutputTrue : false → Die Schaltung zum Ausschalten wurde noch nicht ausgeführt .",
+                                       "OutputTrue : true → Signalisiert, dass das Ausschalten noch aussteht .",
+                                       "Countdown : Startet bei 10 Minuten und zählt herunter (z. B. 9:30, 9:00, …) bis auf 0. Wird alle 30 Sekunden aktualisiert.",
+                                       "🔁 Was passiert, wenn während der Verzögerung wieder Bewegung erkannt wird?",
+                                       "Wenn der Bewegungsmelder innerhalb der 10 Minuten wieder aktiv wird (→ Input wird wieder true ):",
+                                       "Der Countdown wird abgebrochen .",
+                                       "Die Ausschaltung wird nicht durchgeführt.",
+                                       "Das Licht bleibt an.",
+                                       "Das System wartet erneut, ob wieder 10 Minuten ohne Bewegung vergehen.",
+                                       "🕒 Nach Ablauf der 10 Minuten (ohne erneute Bewegung):",
+                                       "Output: true → Das Ausschalt-Signal wird jetzt ausgelöst. Das Licht wird ausgeschaltet .",
+                                       "OutputTrue: true → Bestätigung, dass die Schaltung erfolgt ist.",
+                                       "OutputFalse: false → Die Ausschaltung wurde durchgeführt – kein weiterer Countdown aktiv.",
+                                       "Countdown: 00:00:00 → Verzögerung ist abgelaufen.",
+                                       "📝 Zusätzliche Hinweise:",
+                                       "Diese Art von Ausschaltverzögerung ist energieeffizient und ideal für Räume mit unregelmäßiger Nutzung.",
+                                       "Besonders sinnvoll dort, wo man nicht möchte , dass das Licht bei jeder kleinen Bewegung automatisch eingeschaltet wird – aber dennoch sicherstellen möchte, dass es nach dem Verlassen auch wirklich ausgeht ."
                                    ]
                      }
                  ],

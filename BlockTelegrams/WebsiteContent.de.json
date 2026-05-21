@@ -181,13 +181,29 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Blockierung nach Eingangssignal für eine bestimmte Zeit: Beschreibung : Ein Signal wird gesendet, aber nach dem ersten Empfang für eine gewisse Zeit blockiert.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Activate : false --\u003e true",
+                                       "BlockSignalForTimeAfterInput: true",
+                                       "Input: true",
+                                       "Delay : 10 Sekunden",
+                                       "Ausgabe: Output : true",
+                                       "Blocked: true",
+                                       "Nach 10 Sekunden wird wieder ein Eingangssignal zugelassen."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Blockierung nach Deaktivierung für eine bestimmte Zeit: Beschreibung : Nachdem die Funktion deaktiviert wurde, bleibt der Eingang für eine definierte Zeit blockiert.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "Input: true --\u003e false",
+                                       "BlockSignalForTimeAfterDeactivateInputForTime: true",
+                                       "Delay: 5 Sekunden",
+                                       "Ausgabe: Output : false",
+                                       "Blocked : true",
+                                       "Nach 5 Sekunden wird wieder ein Eingangssignal zugelassen."
                                    ]
                      }
                  ],

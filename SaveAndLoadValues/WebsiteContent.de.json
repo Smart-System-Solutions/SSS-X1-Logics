@@ -211,13 +211,50 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Speichere und lese Werte\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Speicherung und Wiederherstellung eines Heizungs-Sollwertes für HomeAssistant: Ein Smart-Home-Besitzer nutzt HomeAssistant zur Steuerung der Heizung über den Gira X1. Der Sollwert der Heizung wird über HomeAssistant eingestellt und über den X1 an das Heizsystem weitergeleitet. Wenn der X1 oder HomeAssistant neugestartet wird, geht dieser Wert normalerweise verloren, und die Heizung könnte auf einen Standardwert zurückspringen. Durch diesen Baustein kann HomeAssistant nach einem Neustart den zuletzt gesetzten Sollwert abrufen und erneut an die Heizung senden. Dadurch wird sichergestellt, dass die Temperatursteuerung nach einem Neustart nahtlos weiter funktioniert.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input: 21.5",
+                                       "Type : double",
+                                       "StoragePath : heizung_bad",
+                                       "ActivateSaveStorageInFirstRun: true",
+                                       "ActivateReadStorageAfterDelay: true",
+                                       "DelayAfterInitialize: 1m",
+                                       "Ausgabe: Output = 21.5",
+                                       "Vorteil für HomeAssistant:",
+                                       "Nach einem Neustart von HomeAssistant oder dem X1 kann HomeAssistant den letzten Sollwert erneut abrufen und sicherstellen, dass die Heizung sich nicht auf eine falsche Temperatur zurücksetzt"
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Manuelles Laden eines gespeicherten Wertes nach Neustart von HomeAssistant Nach einem Neustart von HomeAssistant möchte der Benutzer einen bestimmten Wert abrufen, der zuvor gespeichert wurde. Zum Beispiel wurde über den Gira X1 ein numerischer Wert gespeichert (z. B. eine Verbrauchsstatistik oder eine individuelle Einstellung), und HomeAssistant soll diesen abrufen. Da HomeAssistant nach einem Neustart seine internen Variablen verliert, kann er mit diesem Baustein aktiv den letzten gespeicherten Wert vom X1 anfordern und weiterverarbeiten.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "TriggerReadStorage : true",
+                                       "Type : int",
+                                       "StoragePath : lastValue",
+                                       "Ausgabe: OutputOnlyTrigger = 42",
+                                       "Vorteil für HomeAssistant:",
+                                       "HomeAssistant kann nach einem Neustart aktiv Werte abrufen, anstatt darauf warten zu müssen, dass der Gira X1 ihn von selbst sendet. So bleiben individuelle Einstellungen und Systemwerte erhalten."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 3",
+                         "description":  "Beispiel 3 – Speicherung eines individuellen Dimmwerts nur für den Gira X1 Ein Benutzer nutzt den Gira X1 zur Steuerung seiner Wohnzimmerbeleuchtung. Die Helligkeit wird manuell über ein Taster-Panel oder eine Visualisierung eingestellt. Ohne diesen Baustein wird der Dimmwert nach einem Neustart des X1 auf einen Standardwert zurückgesetzt, und der Benutzer muss die gewünschte Helligkeit erneut einstellen. Mit diesem Baustein kann der zuletzt eingestellte Dimmwert gespeichert und nach einem Neustart automatisch wiederhergestellt werden, sodass das Licht nach einem Neustart des X1 in der gewohnten Helligkeit bleibt.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "Input: 75",
+                                       "Type : int",
+                                       "StoragePath : dimmen_wohnzimmer",
+                                       "ActivateSaveStorageInFirstRun = true",
+                                       "ActivateReadStorageAfterDelay = true",
+                                       "DelayAfterInitialize = 1m",
+                                       "Ausgabe: OutputOnlyTrigger = 75",
+                                       "Vorteil für den X1 (ohne HomeAssistant):",
+                                       "Der Benutzer muss die Helligkeit nach einem Neustart nicht erneut einstellen.",
+                                       "Das Licht bleibt in der zuletzt gewählten Helligkeit.",
+                                       "Automatisierungen innerhalb des X1 können weiterhin auf den richtigen Wert zugreifen."
                                    ]
                      }
                  ],

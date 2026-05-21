@@ -91,13 +91,27 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Entscheidung - 2 Werte\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Die Methode wird genutzt, um basierend auf einem externen Schalter zwischen zwei Sensorwerten zu wechseln.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate = true",
+                                       "TakeFirstValue = true",
+                                       "Value1 ist ein Temperaturwert (z.B. 23°C)",
+                                       "Value2 ist ein Druckwert (z.B. 1,2 Bar).",
+                                       "Ausgabe:",
+                                       "Der Output gibt den Temperaturwert (23°C) aus. Wenn TakeFirstValue auf „False“ umgeschaltet wird, gibt der Output den Druckwert aus."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Bei Aktivierung wird ein alternativer Notfallwert bereitgestellt, der angezeigt werden soll.",
+                         "steps":  [
+                                       "Eingabe: Activate = true",
+                                       "TakeFirstValue = false",
+                                       "Value1 ist der Normalwert (z.B. Betriebsmodus „Normal“)",
+                                       "Value2 ist der Notfallwert („Emergency“).",
+                                       "Ausgabe:",
+                                       "Der Output gibt den Notfallwert („Emergency“) aus, falls TakeFirstValue deaktiviert bleibt."
                                    ]
                      }
                  ],

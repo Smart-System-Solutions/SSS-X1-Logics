@@ -131,13 +131,27 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Zustandsweitergabe bei Ereignis: Beim Betätigen eines Schalters soll ein gespeicherter Temperaturwert an eine Visualisierung weitergegeben werden.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Activate : true",
+                                       "Trigger : true",
+                                       "Input: 22,5 [°C]",
+                                       "SetToDefaultValueIfInputHasNoValue: true",
+                                       "DefaultValue: true",
+                                       "Ausgabe: Output : 22,5"
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Ersatzwert bei fehlender Eingabe: Wenn eine automatische Steuerung keinen Wert liefert, soll ein fester Standardwert gesendet werden.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "Trigger: true",
+                                       "Input: -",
+                                       "SetToDefaultValueIfInputHasNoValue: true",
+                                       "DefaultValue: 5",
+                                       "Ausgabe: Output : 5"
                                    ]
                      }
                  ],

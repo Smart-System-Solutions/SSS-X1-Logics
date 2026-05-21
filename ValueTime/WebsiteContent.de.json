@@ -251,13 +251,26 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Stromüberwachung zur Laufzustandsanalyse einer Waschmaschine: Über den gemessenen Stromverbrauch der Waschmaschine kann erkannt werden, ob: Die Maschine gestartet wurde (Strom steigt an), Sie fehlerhaft beim Start war (Strom kurz hoch, aber dann sofort wieder weg), Sie gerade läuft (konstanter Stromfluss), Der Waschvorgang beendet wurde (Strom fällt dauerhaft unter Grundlast). Die Stromaufnahme (z. B. in Watt) wird dauerhaft überwacht. Das Modul wertet dabei nicht nur einzelne Werte, sondern auch deren Dauer aus – das ist entscheidend, um z. B. „Fehlstarts“ zu erkennen.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input : Schwankt zwischen 0.0 W (aus) und bis zu 2100.0 W (je nach Waschphase)",
+                                       "ExceedingValue: 15.0",
+                                       "ExceedingValueHigh: 25.0",
+                                       "UndercuttingValue: 13.5",
+                                       "ConditionValueForReset: 13.5",
+                                       "TimeExceedingValue: 10s",
+                                       "TimeExceedingValueHigh: 2min",
+                                       "TimeUndercuttingValue: 30.0s",
+                                       "TimeUndercuttingValueToEarly: 5min",
+                                       "Reset: false",
+                                       "AlwaysReset: false",
+                                       "StoragePath: Waschmaschine",
+                                       "Ausgabe: ValueExceeded : true , wenn Waschmaschine aktiv ist (Verbrauch \u003e 15 W über min. 10 Sek.)",
+                                       "ValueExceededAndUndercutAgain: true , wenn Verbrauch später korrekt und dauerhaft unter 13,5 W fällt → Waschgang beendet",
+                                       "ValueExceededAndUndercutAgainToEarly: true , wenn der Verbrauch zu früh unter 13,5 W fällt (z. B. nach Stromausfall oder Störung)",
+                                       "ValueExceededButNotIncreasedHigh: true , wenn Waschmaschine nie auf \u003e25W kommt → möglicher Fehler im Heizsystem oder Fehlstart"
                                    ]
                      }
                  ],

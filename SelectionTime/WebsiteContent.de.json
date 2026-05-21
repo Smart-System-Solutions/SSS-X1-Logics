@@ -181,13 +181,32 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – PC-Zustandsabfrage mit Verzögerung zur Vermeidung falscher Erkennung: In einem Smart-Home-System soll der Zustand eines Computers (z. B. „Ein“ oder „Aus“) regelmäßig überprüft werden, z. B. um eine Steckdose automatisch zu schalten oder um Energieverbrauch zu analysieren. Um jedoch Fehlinformationen während Hochfahren, Herunterfahren oder Windows-Updates zu vermeiden , wird die Abfrage bewusst verzögert. Je nach Situation (z. B. schnelles oder langsames Hochfahren) soll unterschiedlich lang gewartet werden, bevor der Zustand als „gültig“ gewertet wird.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate: True",
+                                       "Input : true (z. B. wenn der PC eingeschaltet wird oder ein Abfrageprozess gestartet wird)",
+                                       "TakeShortTime: true (wenn der PC z. B. aus dem Standby kommt – kurze Bootzeit)",
+                                       "TakeLongTime: (wenn der PC vollständig startet oder ein Update macht – längere Bootzeit)",
+                                       "ShortTime: 20s",
+                                       "LongTime : 5m",
+                                       "TakeShortTimeWhenLongTimeFinished: true (nach der langen Wartezeit wird noch eine kurze zusätzliche Verzögerung abgewartet, um z. B. Netzwerktreiber zu initialisieren)",
+                                       "Ausgabe: Output : true - Wird erst nach Ablauf der eingestellten Verzögerung aktiviert , also z. B. nach insgesamt 5 Minuten , wenn beide Zeiten genutzt werden.",
+                                       "In diesem Moment kann man davon ausgehen, dass der PC stabil läuft, alle Dienste aktiv sind und eine Abfrage sinnvoll ist."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Zustandsabfrage der Waschmaschine zur Steuerung eines Lüfters oder Alarms: In einem Smart-Home-System soll automatisch ein Lüfter im Hauswirtschaftsraum eingeschaltet werden, wenn die Waschmaschine läuft – aber nicht sofort , weil die Waschmaschine direkt nach dem Einschalten oft nur misst, Wasser zieht oder pausiert. Die Zeitverzögerung hilft, falsche Einschaltungen des Lüfters zu verhindern – besonders bei kurzen Unterbrechungen oder wenn die Waschmaschine gerade erst startet.",
+                         "steps":  [
+                                       "Eingabe: Activate: true",
+                                       "Input : true (z. B. über eine smarte Steckdose, die erkennt: Waschmaschine läuft)",
+                                       "TakeShortTime: true (wenn ein Kurzprogramm gewählt wurde – z. B. bei Wäsche „30 Minuten“)",
+                                       "TakeLongTime: Inaktiv",
+                                       "ShortTime: 30s (30 Sekunden Wartezeit, bis der Lüfter startet)",
+                                       "LongTime : 2m (wird ignoriert, weil nicht aktiv)",
+                                       "TakeShortTimeWhenLongTimeFinished: false",
+                                       "Ausgabe: Output : true - Wird nach 30 Sekunden aktiviert → ab dann läuft der Lüfter."
                                    ]
                      }
                  ],

@@ -1,6 +1,6 @@
 # Release-Changelog
 
-Datum: 2026-05-20
+Datum: 2026-05-21
 Konfiguration: Release
 
 Dieser Changelog ist für Endanwender bestimmt.
@@ -131,11 +131,11 @@ Dieser Changelog ist für Endanwender bestimmt.
 - Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.
 - Download-Informationen für dieses Bausteinpaket aktualisiert.
 
-## Zuhause-Urlaubs-Modus 2.0.46
+## Zuhause-Urlaubs-Modus 2.0.47
 
-- Bausteinpaket in Version 2.0.46 bereitgestellt.
+- Bausteinpaket in Version 2.0.47 bereitgestellt.
+- Importpaket für den Gira X1 aktualisiert.
 - Dokumentation der Eingänge und Ausgänge mit technischen Namen, deutschen/englischen Bezeichnungen und Datentypen ergänzt.
-- Download-Informationen für dieses Bausteinpaket aktualisiert.
 
 ## Info 3.0.17
 

@@ -170,13 +170,42 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Sendet nach Differenz und Max Min Value\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Überwachung der Leistungsaufnahme eines Haushaltsgeräts (in Watt): Die Leistungsaufnahme eines größeren Haushaltsgeräts (z. B. eines Wäschetrockners oder einer Wärmepumpe) wird überwacht. Der Wert soll nur dann übertragen oder gespeichert werden , wenn sich die Leistungsaufnahme deutlich verändert oder bestimmte kritische Schwellen erreicht werden (z. B. besonders hoher Verbrauch).",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "ActivateTimeFiler: false",
+                                       "Input : 2200",
+                                       "Difference: 300",
+                                       "MinValue: 100",
+                                       "MaxValue: 4000",
+                                       "Delay: –",
+                                       "StoragePath: stromverbrauch_geraet",
+                                       "Ausgabe: Die aktuelle Leistungsaufnahme wird nur dann ausgegeben , wenn sich der Wert um mehr als 300 Watt vom zuletzt ausgegebenen Wert unterscheidet.",
+                                       "Oder wenn der Wert genau 100 Watt (Standby) oder genau 4000 Watt (Grenze zur Überlastung) erreicht – in diesen Fällen erfolgt eine sofortige Ausgabe , unabhängig von der Differenzregel.",
+                                       "Es findet keine regelmäßige Ausgabe statt, wenn sich der Wert nur geringfügig verändert oder stabil bleibt."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 1 – Mit Zeitfilter – Regelmäßige Leistungsmeldung, unabhängig von Änderungen: Der Energieverbrauch eines Haushaltsgeräts wird regelmäßig an eine Visualisierung oder Auswertung gesendet – auch wenn sich der Verbrauch aktuell nicht verändert hat. Dies ist z. B. sinnvoll, um Verbrauchskurven zu dokumentieren oder Trends zu erkennen.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "ActivateTimeFiler: true",
+                                       "Input : 1500",
+                                       "Difference: 500",
+                                       "MinValue: 1000",
+                                       "MaxValue: -1000",
+                                       "Delay: 10s",
+                                       "StoragePath: stromverbrauch_geraet_02",
+                                       "Ausgabe: - Alle 10 Sekunden wird der aktuelle Wert der Leistungsaufnahme ausgegeben – auch wenn sich der Wert nicht geändert hat .",
+                                       "Die Difference -Einstellung ist in diesem Modus sekundär, da die Ausgabe zeitgesteuert unabhängig von Änderungen erfolgt .",
+                                       "Sonderregel bei MinValue: Wird der Wert genau 1000 Watt , erfolgt zusätzlich eine sofortige Ausgabe , selbst wenn der Zeitpunkt der nächsten geplanten Ausgabe noch nicht erreicht ist.",
+                                       "Da MaxValue = -1000 , ist die Maximalwertprüfung deaktiviert – hohe Verbrauchswerte führen nicht zu einer gesonderten Ausgabe.",
+                                       "✅ Warum das sinnvoll ist:",
+                                       "Ohne Zeitfilter werden nur wirklich relevante Änderungen oder Zustände weitergegeben → ideal zur Vermeidung unnötiger Datenflut.",
+                                       "Mit Zeitfilter ist eine kontinuierliche und gleichmäßige Erfassung möglich , z. B. für Logging, Monitoring oder visuelle Darstellung.",
+                                       "Durch die Grenzwerte können besondere Zustände erkannt und hervorgehoben werden , z. B. Standby oder Überlast."
                                    ]
                      }
                  ],

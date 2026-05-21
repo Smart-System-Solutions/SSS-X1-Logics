@@ -91,13 +91,13 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Initiales Einschalten einer Lampe: Beim Systemstart wird ein Statuswert empfangen, der jedoch irrelevant ist. Erst nach dem Einschalten eines Schalters soll die Lampe auf diesen Befehl reagieren.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Input : true",
+                                       "Ausgabe: Output: Keine Ausgabe beim ersten Eingang („Ein“ wird ignoriert)",
+                                       "Output: „Aus“ wird korrekt weitergeleitet",
+                                       "LogExecute: Enthält zwei Zeitstempel – einer für das Ignorieren und einer für das Weiterleiten"
                                    ]
                      }
                  ],

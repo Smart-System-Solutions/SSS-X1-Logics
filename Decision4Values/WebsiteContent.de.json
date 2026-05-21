@@ -121,13 +121,33 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Entscheidung - 4 Werte\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Der Benutzer möchte Value3 ausgeben lassen, wenn nur die zweite Entscheidungsvariable true ist.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate = true",
+                                       "DecisionFirstAndSecondValue = false",
+                                       "DecisionFirstAndThirdValue = true",
+                                       "Value1 = 10",
+                                       "Value2 = 20",
+                                       "Value3 = 30",
+                                       "Value4 = 40",
+                                       "Ausgabe:",
+                                       "Der Output gibt den Temperaturwert (23°C) aus. Wenn TakeFirstValue auf „False“ umgeschaltet wird, gibt der Output den Druckwert aus."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Der Benutzer möchte Value3 ausgeben lassen, wenn nur die zweite Entscheidungsvariable true ist.",
+                         "steps":  [
+                                       "Eingabe: Activate = true",
+                                       "DecisionFirstAndSecondValue = false",
+                                       "DecisionFirstAndThirdValue = false",
+                                       "Value1 = 15",
+                                       "Value2 = 25",
+                                       "Value3 = 35",
+                                       "Value4 = 45",
+                                       "Ausgabe:",
+                                       "Output = 45 , da beide Entscheidungsvariablen false sind."
                                    ]
                      }
                  ],

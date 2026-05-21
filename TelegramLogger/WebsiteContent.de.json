@@ -122,13 +122,17 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Telegramm Logger\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Fehlersuche bei Systemausfällen: Bei sporadischen Ausfällen im KNX-System soll nachverfolgt werden, welche Telegramme kurz vor und nach dem Fehler gesendet wurden.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "NumberOfInputsToLog: 10",
+                                       "InputsToLog: Verschiedene KNX-Komponenten (Schalter, Dimmer, etc.)",
+                                       "NumberOfFirstInputs: 10",
+                                       "NumberOfLastInputs: 10",
+                                       "Ausgabe: LogExecute : Die ersten 10 Telegramme nach Systemstart werden protokolliert.",
+                                       "Die letzten 10 Telegramme unmittelbar vor einem möglichen Fehler werden ebenfalls gespeichert.",
+                                       "Fehlerprotokolle mit Zeitangabe bei Ausnahmefällen."
                                    ]
                      }
                  ],

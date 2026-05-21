@@ -181,13 +181,36 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Reihenfolgenschalter\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Person läuft an zwei Bewegungsmeldern vorbei: Ein Flur ist mit zwei Bewegungsmeldern ausgestattet – einer am Eingang und einer am Ende. Es soll erkannt werden, wenn eine Person den Flur von Anfang bis Ende durchläuft. Die Reihenfolge ist entscheidend: Zuerst muss der erste Bewegungsmelder (am Eingang) aktiviert werden, danach der zweite (am Ende). Nur dann wird das Ausgangssignal aktiviert, z. B. um das Licht einzuschalten oder eine Zählung auszulösen.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "NumberOfInputs : 2",
+                                       "Input[0] : Bewegungsmelder am Eingang des Flurs",
+                                       "Input[1] : Bewegungsmelder am Ende des Flurs",
+                                       "OnlyActOnTrue: true",
+                                       "ResetIfWrongSequence: true",
+                                       "SetFalseToOutputIfReset: true",
+                                       "ActivateResetWithTime: true",
+                                       "ActivateResetWithTime: 5",
+                                       "Ausgabe: Output : Wird auf true gesetzt, sobald zuerst Bewegungsmelder 1 und danach Bewegungsmelder 2 ausgelöst wird.",
+                                       "Nutzen in der Praxis",
+                                       "Richtungsabhängige Bewegungserkennung : Es wird nur erkannt, wenn die Bewegung von Eingang → Ausgang erfolgt. Rückwärtsgehen (zuerst Ausgang, dann Eingang) löst kein Signal aus.",
+                                       "Zählung oder Lichtsteuerung : Kann verwendet werden, um Personen zu zählen oder das Licht nur dann einzuschalten, wenn eine Person vollständig den Flur betritt.",
+                                       "Vermeidung von Fehlauslösungen : Durch die Reset-Funktion bei falscher Reihenfolge wird verhindert, dass z. B. herumlaufende Tiere oder Luftbewegungen am zweiten Bewegungsmelder unbeabsichtigt eine Aktion auslösen."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Zugangskontrolle mit Tastenfolge: Eine Tür soll nur geöffnet werden, wenn drei Taster in der Reihenfolge A → B → C gedrückt werden.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "NumberOfInputs: 3",
+                                       "Inputs: Taster A, B, C",
+                                       "OnlyActOnTrue: true",
+                                       "ResetIfWrongSequence: true",
+                                       "SetFalseToOutputIfReset: true",
+                                       "Ausgabe: Output : Wird auf true gesetzt, wenn A → B → C gedrückt wird."
                                    ]
                      }
                  ],

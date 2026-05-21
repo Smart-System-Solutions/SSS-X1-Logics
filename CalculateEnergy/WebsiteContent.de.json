@@ -301,13 +301,35 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Energie- oder Leistungswerte werden gesammelt, berechnet und an eine Visualisierung oder Optimierungslogik übergeben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Energieüberwachung mit MDT AMI im Technikraum: Ein MDT AMI Energiemessgerät misst kontinuierlich die aktuelle Leistungsaufnahme einer Heizungsanlage im Technikraum. Ziel ist es, auf Basis dieser Werte automatisch den Tages- und Gesamtverbrauch zu berechnen. Zusätzlich soll sichergestellt werden, dass bei niedriger Last ein anderer Leistungsfaktor verwendet wird als bei hoher Last. Die Daten sollen dauerhaft auf der SD-Karte gespeichert werden – selbst bei Stromausfall. Ein automatischer Reset der Tageswerte erfolgt täglich um Mitternacht.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate: true → Die Berechnung des Energieverbrauchs ist aktiv.",
+                                       "ResetAtMidnight: true → Tageswerte werden automatisch um Mitternacht zurückgesetzt.",
+                                       "CurrentPower: 115 → Aktueller Leistungswert in Watt, bereitgestellt durch das MDT AMI.",
+                                       "Threshold: 100 → Schwellenwert: Liegt der Leistungswert darüber, wird CosPhi_2 verwendet – darunter CosPhi_1.",
+                                       "CosPhi_1: 0.95 → Korrekturfaktor bei geringer Last, d. h. wenn CurrentPower unter 100 Watt liegt.",
+                                       "CosPhi_2: 0.85 → Korrekturfaktor bei höherer Last, d. h. wenn CurrentPower 100 Watt oder mehr beträgt.",
+                                       "UpdateTime: 00:00:02 → Alle 2 Sekunden wird der aktuelle Leistungswert verarbeitet.",
+                                       "ShortTime: 00:00:10 → Durchschnittsberechnung über jeweils 10 Sekunden.",
+                                       "LongTime: 00:01:00 → Auswertung und Speicherung erfolgen alle 60 Sekunden.",
+                                       "StoragePath: „Technikraum“ → Daten werden auf der SD-Karte im Verzeichnis „/opt/card/SmartSystemSolutions/calculateworkfromami/Technikraum“ gespeichert.",
+                                       "Ausgabe: CurrentPowerUpdateTime: 97.75 → Der aktuelle Leistungswert nach Anwendung des passenden CosPhi-Faktors (115 × 0.85).",
+                                       "CurrentPowerShortTime: 98.1 → Durchschnittlicher Leistungswert der letzten 10 Sekunden (mit CosPhi-Faktor berechnet).",
+                                       "CurrentPowerLongTime: 97.6 → Durchschnittlicher Leistungswert der letzten 60 Sekunden.",
+                                       "PowerDayShortTime: 0.14 → Tagesverbrauch auf Basis des Kurzzeit-Intervalls – z. B. nach 3 Stunden Laufzeit.",
+                                       "PowerDayLongTime: 0.15 → Tagesverbrauch auf Basis des Langzeit-Intervalls – Werte werden regelmäßig aktualisiert.",
+                                       "PowerTotal: 18.75 → Gesamter Energieverbrauch in Kilowattstunden (inkl. vergangener Tage).",
+                                       "LogExecute: → Enthält Hinweise zur Initialisierung, SD-Kartenprüfung und Systemstart (z. B. „Init erfolgreich, Speicherpfad erkannt“).",
+                                       "LogScheduleUpdate: → Zeigt, wann das letzte Update des Leistungswerts durchgeführt wurde.",
+                                       "LogScheduleShort: → Dokumentiert die Kurzzeitauswertung – z. B. „Short interval processed, value updated.“",
+                                       "LogScheduleLong: → Bestätigt die Speicherung der Tages- und Verbrauchsdaten auf der SD-Karte.",
+                                       "LogScheduleReset: → Dokumentiert, wann der Tagesverbrauch automatisch zurückgesetzt wurde – z. B. „Reset at 00:00 erfolgreich.“",
+                                       "📌 Hinweise",
+                                       "Das MDT AMI sollte regelmäßig neue Leistungswerte senden (idealerweise mindestens alle 2 Sekunden).",
+                                       "Bei Stromausfall oder Neustart bleiben alle gespeicherten Verbrauchswerte erhalten.",
+                                       "Die Berechnung erfolgt nur, wenn der Leistungswert größer 0 ist.",
+                                       "Die Umschaltung zwischen CosPhi_1 und CosPhi_2 erfolgt automatisch anhand des Schwellenwerts."
                                    ]
                      }
                  ],

@@ -121,13 +121,13 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Telegrammfluss gezielt steuern",
-                         "description":  "Ein Eingangswert wird nur dann weitergegeben, wenn die konfigurierte Trigger-, Zeit- oder Sperrbedingung erfüllt ist.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Rolladensteuerung nach Tageszeit: Morgens und abends sollen automatisch die Rollläden geöffnet bzw. geschlossen werden.",
                          "steps":  [
-                                       "Baustein aktivieren.",
-                                       "Eingangswert und Bedingung verbinden.",
-                                       "Ausgang mit der nachgelagerten Logik verbinden.",
-                                       "Logausgänge zur Inbetriebnahme beobachten."
+                                       "Eingabe: Activate : true",
+                                       "NumberOfTriggerByTime: 2",
+                                       "TriggerByTime: 06:30, 21:00",
+                                       "Ausgabe: Output : Um 06:30 wird ein Signal zum Öffnen gesendet. Um 21:00 folgt ein weiteres Signal zum Schließen."
                                    ]
                      }
                  ],

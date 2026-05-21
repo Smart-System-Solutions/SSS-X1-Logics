@@ -142,13 +142,62 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Der Baustein wird zwischen Eingangssignalen und nachgelagerter Logik eingesetzt, um die jeweilige Aufgabe von \u0027Akku Management - Heizen\u0027 zentral wiederverwendbar abzubilden.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Automatische Kühlung basierend auf Außentemperaturen: In diesem Beispiel wird die Kühlung automatisch aktiviert, wenn die Außentemperatur über einem definierten Schwellenwert liegt und der Sommermodus aktiv ist. Die Steuerung orientiert sich ausschließlich an der Außentemperatur.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate: true (Die Kühlung ist eingeschaltet.)",
+                                       "HeatingCooling: false (Kühlen ist aktiv)",
+                                       "Condition: true (Bedingung erfüllt)",
+                                       "TemperatureOutside: 25.0 (Die aktuelle Außentemperatur beträgt 25 °C.)",
+                                       "TemperatureOutsideThreshold: 15.0 (Die Kühlung wird aktiviert, wenn die Außentemperatur über 15 °C liegt.)",
+                                       "TemperatureInsideThreshold: -1000 (Innentemperaturabfrage deaktiviert)",
+                                       "Summer: true (Der Sommermodus ist aktiv.)",
+                                       "CoolingWithoutAccuDependece: false (Die Kühlung hängt von weiteren Bedingungen, wie Akkustatus, ab, aber in diesem Beispiel beeinflusst dies das Ergebnis nicht.)",
+                                       "Ausgabe: Cooling: true (Die Kühlung wird aktiviert, da die Außentemperatur den Schwellenwert überschreitet und der Sommermodus aktiv ist.)",
+                                       "OperationModeCooling: 1 (Der Komfortmodus ist aktiviert, da die Bedingungen für eine aktive Kühlung erfüllt sind.)",
+                                       "OperationModeCoolingString: \"Komfort\" (Die Ausgabe beschreibt den Betriebsmodus der Kühlung in Textform, der auf Komfort eingestellt ist.)",
+                                       "Erklärung:",
+                                       "Die Außentemperatur (25 °C) liegt über dem Schwellenwert (15 °C), wodurch die Bedingung zur Aktivierung der Kühlung erfüllt ist. Da außerdem der Sommermodus eingeschaltet ist, wird der Komfortmodus aktiviert, und die Kühlung läuft ."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Zeitplanbasierte Kühlung mit Akkuladung: In diesem Beispiel wird die Kühlung nur zu bestimmten geplanten Zeiten aktiviert, vorausgesetzt, die Akkuladung erfüllt die Anforderungen. Die Temperaturbedingungen werden dabei nicht geprüft.",
+                         "steps":  [
+                                       "Eingabe: Activate: true (Die Kühlung ist eingeschaltet.)",
+                                       "HeatingCooling: false (Kühlen ist aktiv)",
+                                       "Condition: true (Bedingung erfüllt)",
+                                       "NumberOfAccuDependence: 2 (Es gibt zwei geplante Akkuladungswerte für den Betrieb.)",
+                                       "AccuDependence: [60, 40] (Die geplanten Akkuladegrenzen sind 60 % und 40 % zu den entsprechenden Zeitpunkten.)",
+                                       "AccuActual: 70 (Die aktuelle Akkuladung beträgt 70 %.)",
+                                       "TimeDependence: [12:00, 18:00] (Die Kühlung darf nur um 12:00 Uhr und 18:00 Uhr aktiviert werden.)",
+                                       "TemperatureOutsideThreshold: -1000 (Die Überprüfung der Außentemperatur ist deaktiviert.)",
+                                       "TemperatureInsideThreshold: -1000 (Die Überprüfung der Innentemperatur ist deaktiviert.)",
+                                       "Ausgabe: Cooling: true (Die Kühlung ist aktiv, da der aktuelle Zeitpunkt mit einem geplanten Zeitpunkt übereinstimmt und die Akkuladung ausreicht.)",
+                                       "OperationModeCooling: 1 (Der Komfortmodus ist aktiviert.)",
+                                       "OperationModeCoolingString: \"Komfort\" (Der Betriebsmodus der Kühlung wird als Komfortmodus beschrieben.)",
+                                       "Erklärung:",
+                                       "Die Steuerung überprüft die geplanten Zeiten ( TimeDependence ) und wählt die nächste gültige Zeit aus (z. B. 12:00 Uhr). Wenn die aktuelle Zeit und die Akkuladung (70 %) mit den Bedingungen übereinstimmen (z. B. 60 % oder mehr zur geplanten Zeit), wird die Kühlung aktiviert. In diesem Fall läuft die Kühlung im Komfortmodus, unabhängig von den Temperaturbedingungen."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 3",
+                         "description":  "Beispiel 3 – Zusätzliche Kühlung abhängig von Innentemperatur: Hier wird die Kühlung aktiviert, wenn die Innentemperatur einen definierten Schwellenwert überschreitet. Dies ist zusätzlich zu den normalen Bedingungen wie Akkuladung und Zeitplan möglich.",
+                         "steps":  [
+                                       "Eingabe: Activate: true (Die Kühlung ist eingeschaltet.)",
+                                       "HeatingCooling: false (Kühlen ist aktiv)",
+                                       "Condition: true (Bedingung erfüllt)",
+                                       "AdditionalCoolingWithDependenceTemperatureInside: true (Es wird eine zusätzliche Kühlung aktiviert, abhängig von der Innentemperatur.)",
+                                       "TemperatureInside: 24.0 (Die aktuelle Innentemperatur beträgt 24 °C.)",
+                                       "AdditionalCoolingWithDependenceTemperatureInsideThreshold: 23.5 (Die Kühlung wird aktiviert, wenn die Innentemperatur über 23,5 °C liegt.)",
+                                       "AccuActual: 50 (Die Akkuladung beträgt 50 %.)",
+                                       "AccuDependence: [40] (Die minimale Akkuladung für den Betrieb beträgt 40 %.)",
+                                       "TimeDependence: [12:00] (Die Kühlung darf um 12:00 Uhr aktiviert werden.)",
+                                       "Ausgabe: Cooling: true (Die Kühlung wird aktiviert, da die Innentemperatur die Schwelle von 23,5 °C überschreitet und die Akkuladung ausreichend ist.)",
+                                       "OperationModeCooling: 1 (Der Komfortmodus wird aktiviert.)",
+                                       "OperationModeCoolingString: \"Komfort\" (Die Kühlung läuft im Komfortmodus.)",
+                                       "Erklärung:",
+                                       "Die zusätzliche Kühlung wird basierend auf der Innentemperatur aktiviert. Da die aktuelle Innentemperatur (24 °C) den Schwellenwert (23,5 °C) überschreitet und die Akkuladung (50 %) ausreicht, wird die Kühlung eingeschaltet. Dies geschieht unabhängig von der Außentemperatur, da die Bedingung nur auf der Innentemperatur basiert. Der Komfortmodus wird aktiviert, da alle Bedingungen erfüllt sind."
                                    ]
                      }
                  ],

@@ -82,13 +82,25 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Eingabe eines vollständigen Datums und Uhrzeit: Ein vollständiges Datum und eine Uhrzeit (z. B. \"2023-11-05 14:30\" ) wird eingegeben.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Input : \"2023-11-05 14:30\"",
+                                       "StringWithoutYear : false",
+                                       "Ausgabe: UtcDateTime : Zeigt die UTC-Zeit an.",
+                                       "LocalTime : Zeigt die loakele Zeit an.",
+                                       "LogExecute : Enthält die Nachricht über die erfolgreiche Konvertierung."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Eingabe ohne Jahr (automatisches Jahr): Nur der Monat, Tag und Uhrzeit werden angegeben (z. B. \"11-05 14:30\" ), und das aktuelle Jahr wird hinzugefügt.",
+                         "steps":  [
+                                       "Eingabe: Input : \"11-05 14:30\"",
+                                       "StringWithoutYear : true",
+                                       "Ausgabe: UtcDateTime : Zeigt die UTC-Zeit an. (Jahr wird automatisch ergänzt)",
+                                       "LocalTime : Zeigt die loakele Zeit an. (Jahr wird automatisch ergänzt)",
+                                       "LogExecute : Enthält die Nachricht über die erfolgreiche Konvertierung."
                                    ]
                      }
                  ],

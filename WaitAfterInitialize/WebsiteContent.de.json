@@ -161,13 +161,31 @@
                 ],
     "examples":  [
                      {
-                         "title":  "Typische Verwendung",
-                         "description":  "Ein Signal wird zeitversetzt oder zu definierten Zeitpunkten weitergegeben, damit Startphasen und wiederkehrende Abläufe kontrolliert bleiben.",
+                         "title":  "Beispiel 1",
+                         "description":  "Beispiel 1 – Lichtsteuerung mit Verzögerung nach Neustart: Nach dem Neustart eines Systems soll die Lichtszene nicht sofort aktiviert werden, sondern erst nach 30 Sekunden.",
                          "steps":  [
-                                       "Baustein in der Logikengine platzieren.",
-                                       "Erforderliche Eingänge verbinden.",
-                                       "Ausgänge mit Aktorik, Visualisierung oder weiterer Logik verbinden.",
-                                       "Diagnoseausgänge während der Inbetriebnahme prüfen."
+                                       "Eingabe: Activate : true",
+                                       "Input: 3",
+                                       "WaitingTime: 30s",
+                                       "SetOutputAfterInitializeToInputValue: true",
+                                       "SetOutputAfterInitializeToFalse: false",
+                                       "SetOutputAfterInitializeToTrue: false",
+                                       "Type: int",
+                                       "Ausgabe: Output : Nach 30 Sekunden wird die „3“ an das Lichtsteuerungssystem ausgegeben."
+                                   ]
+                     },
+                     {
+                         "title":  "Beispiel 2",
+                         "description":  "Beispiel 2 – Standardwert setzen, wenn Eingang fehlt: Wenn kein Eingangswert vorliegt, soll der Ausgang nach 1 Minute auf false gesetzt werden.",
+                         "steps":  [
+                                       "Eingabe: Activate : true",
+                                       "Input : –",
+                                       "WaitingTime: 1m",
+                                       "SetOutputAfterInitializeToInputValue: true",
+                                       "SetOutputAfterInitializeToFalse: true",
+                                       "SetOutputAfterInitializeToTrue: false",
+                                       "Type : bool",
+                                       "Ausgabe: Output : true - Nach 1 Minute wird false ausgegeben, weil kein Eingangswert vorhanden ist."
                                    ]
                      }
                  ],
